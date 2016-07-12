@@ -1,0 +1,40 @@
+{
+  "name": "ar_hobby",
+  "version": "1.0.1",
+  "description": "hobby design",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.5",
+    "autoprefixer-core": "^6.0.1",
+    "cssnext": "^1.8.4",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.1",
+    "grunt-contrib-csslint": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-htmlmin": "^1.4.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-csscomb": "^3.1.0",
+    "grunt-html-validation": "^0.1.18",
+    "grunt-postcss": "^0.8.0",
+    "grunt-purifycss": "^0.1.1",
+    "grunt-regarde": "^0.1.1",
+    "grunt-rucksack": "^0.1.2",
+    "grunt-strip-css-comments": "^1.2.0",
+    "grunt-stripcomments": "^0.5.0",
+    "grunt-uncss": "^0.5.0",
+    "precss": "^1.4.0",
+    "stylelint-statement-max-nesting-depth": "^2.0.1"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "author": "AR",
+  "license": "ISC"
+}
