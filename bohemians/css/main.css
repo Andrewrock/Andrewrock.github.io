@@ -1,0 +1,289 @@
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-size:100%;
+  line-height:1.5;
+  margin: 0;
+  width:100vw;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.example-item {
+  padding:1em;
+  border-radius:5px;
+  max-width:15em;
+}
+
+.grid-full {
+  width: 100%;
+}
+
+.flex-parent {
+  display:flex;
+  flex-direction:row;
+}
+
+.flex-child {
+  align-items: center;
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.media-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height:340px;
+  width:100%;
+  background: url('../img/dalymount.jpg') no-repeat center;
+  background-size: cover;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.bohs-intro .bohs-logo {
+  width:260px;
+  height:200px;
+  border-radius:50%;
+}
+
+.flexbox-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.flexbox-container > div {
+  width: 50%;
+}
+
+.form-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.games {
+  flex:1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flexbox-container > .right {
+  background: rgba(0, 0, 0, .9);
+}
+
+.form {
+  width:85px;
+  background: rgba(0,0,0,0.75);
+}
+
+.league {
+  width:85px;
+  background: rgba(229, 14, 7, 0.45);
+}
+
+.btn {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:visited {
+  color: #fff;
+}
+
+.btn:hover.btn:focus.btn.btn-hover.league {
+  color: #fff;
+  background: rgba(229, 14, 7, 0.45);
+  text-decoration: none;
+  outline: none;
+}
+.btn:hover.btn:focus.btn.btn-hover.form{
+  color: #fff;
+  background: rgba(0,0,0,0.75);
+  text-decoration: none;
+  outline: none;
+}
+
+.btn.btn-pill {
+  border-radius: 100px;
+}
+
+.intro-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height:100px;
+  width:100%;
+  background: #ddd;
+}
+
+.box {
+  flex: 1;
+  height:250px;
+  color:#fff;
+  font-size: 3em;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-self: stretch;
+  -webkit-box-orient: vertical;
+}
+
+.box-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.box-content h1{
+  flex-grow:2;
+  text-align: center;
+  font-size: 5rem;
+  margin: 0 auto;
+  opacity: 0.6;
+}
+
+.box-image{
+  min-width:30%;
+  max-width:40%;
+}
+
+.box:nth-child(1) {
+  background: linear-gradient( rgba(229, 14, 7, 0.45), rgba(229, 14, 7, 0.45)),  url('../img/player.jpg')center bottom no-repeat;
+}
+.box:nth-child(2) {
+  background: linear-gradient( rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  url('../img/team.jpeg')center center no-repeat;
+}
+.box:nth-child(3) {
+  background: linear-gradient( rgba(229, 14, 7, 0.45), rgba(229, 14, 7, 0.45)),  url('../img/player.jpg')center center no-repeat;
+}
+.box:nth-child(4) {
+  background: linear-gradient( rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  url('../img/bohs.jpg')left bottom no-repeat;
+}
+
+.box-footer{
+  height:30px;
+  margin-top: auto;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.red{
+  background: linear-gradient( rgba(229, 14, 7, 0.45), rgba(229, 14, 7, 0.45));
+}
+
+.black{
+  background: linear-gradient( rgba(0,0,0,0.75), rgba(0,0,0,0.75));
+}
+
+.scoreboard-message {
+  font: normal 1rem Arial, sans-serif;
+  background: #f2f2f2;
+  position: relative;
+  width: 95%;
+  margin:0 auto 1rem;
+}
+
+.scoreboard-message {
+  padding: 20px;
+}
+
+.scoreboard-message h1 {
+  background: #323031;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: -20px -20px 20px;
+  font-size: 12px;
+}
+
+.scoreboard-message .score {
+  overflow: scroll;
+  position: relative;
+}
+
+.scoreboard-message .team-logo {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  margin-top: -5px;
+}
+
+.scoreboard-message .team-logo + .team-logo {
+  left: auto;
+  right: 0;
+}
+
+.scoreboard-message  .team-logo > img {
+  max-height: 70px;
+  max-width: 100%;
+}
+
+.scoreboard-message .team-logo .cork {
+  position: relative;
+  top: -20px;
+  left: -5px;
+  max-height: 105px;
+}
+
+.scoreboard-message > .statusMessage > .score > span {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+}
+
+.scoreboard-message > .statusMessage > .score  .first-team{
+  text-align:right;
+}
+
+.scoreboard-message > .statusMessage > .score > .second-team{
+  text-align:left;
+  padding-right:60px;
+}
+
+.scoreboard-message footer {
+  background: linear-gradient( rgba(0,0,0,0.75), rgba(0,0,0,0.75));
+  color:#f2f2f2;
+  height: 20px;
+  line-height: 20px;
+  margin: 20px -20px -20px;
+  text-align: center;
+  font-size: 12px;
+}

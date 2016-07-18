@@ -1,0 +1,734 @@
+.header,
+.home,
+.videos,
+video {
+    overflow : hidden;
+}
+
+.list-items-top {
+    display : table;
+    margin : 0 auto;
+    list-style-type : none;
+}
+
+.navigation-area .individual-list-item {
+    display : inline-block;
+}
+
+.active {
+    border-bottom : 2px solid #ff5a84;
+}
+
+.individual-list-item li:last-child {
+    margin-right : 0;
+}
+.home p {
+    margin : 0;
+}
+.btn {
+    display : inline-block;
+    padding : 0.8em 1.1em;
+    cursor : default;
+    text-decoration : none;
+    color : #fff;
+    outline : 0;
+}
+
+/*
+career section
+ */
+.career {
+    display : none;
+}
+
+.header {
+    position : relative;
+    top : 25px;
+    height : 50px;
+}
+
+.circle {
+    position : relative;
+    top : 10px;
+    width : 25px;
+    height : 25px;
+    border-radius : 50%;
+    background-color : #7d47f5;
+}
+
+.employment {
+    position : absolute;
+    top : 2px;
+    left : 35px;
+}
+
+.career-progress {
+    position : relative;
+    margin : 0 0 0 12px;
+    padding : 20px;
+    list-style : none;
+    border-left : 1px solid #7d47f5;
+}
+
+.job {
+    position : relative;
+    margin : 25px 0 20px 0;
+    padding-bottom : 15px;
+    border-bottom : 1px solid rgba(160, 160, 160, 0.2);
+}
+
+.title,
+.elevator {
+    color : #7d47f5;
+}
+
+.company-location,
+.languages {
+    color : #acacb3;
+}
+
+.company-location,
+.languages,
+.elevator {
+    font-family : 'Nunito', sans-serif;
+    font-size : 1.2rem;
+}
+
+
+.job:last-of-type {
+    margin-bottom : 60px;
+    border : none;
+}
+
+.job::before,
+.job::after {
+    position : absolute;
+    top : 0;
+    display : block;
+}
+
+.job::before {
+    left : -177.5px;
+    min-width : 120px;
+    text-align : right;
+}
+
+.job::after {
+    top : 5px;
+    left : -26px;
+    width : 11px;
+    height : 11px;
+    content : '';
+    border-radius : 50%;
+    background : #7d47f5;
+}
+
+/* instagram page */
+
+.insta {
+    padding-bottom : 100px;
+}
+
+.insta-heading-contact {
+    position : relative;
+    top : 15px;
+    padding : 10px;
+    border-left : 5px solid #ff5a84;
+}
+
+.insta-heading-contact::before {
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    width : 200px;
+    content : '';
+    border-bottom : 5px solid #ff5a84;
+}
+
+.insta-header {
+    position : relative;
+    top : 10px;
+    box-sizing : border-box;
+    min-height : 1rem;
+    margin : 0 auto;
+}
+
+.insta-heading {
+    padding : 10px;
+}
+
+.mobile-insta {
+    position : relative;
+    top : 5px;
+}
+
+.insta-home-image {
+    text-align : center;
+}
+
+.circle-image {
+    position : relative;
+    width : 150px;
+    height : 150px;
+    border-radius : 100%;
+}
+
+.insta-username-heading-contact {
+    position : relative;
+    top : 15px;
+    padding : 10px;
+    text-align : end;
+    border-right : 5px solid #ff5a84;
+}
+
+.insta-username-heading-contact::before {
+    position : absolute;
+    top : 0;
+    right : 0;
+    width : 200px;
+    content : '';
+    border-bottom : 5px solid #ff5a84;
+}
+
+.insta-username-heading {
+    padding : 10px;
+}
+
+.instaphotos {
+    display : -ms-flexbox;
+    display : flex;
+        flex-direction : row;
+    max-width : 1100px;
+    padding-top : 30px;
+
+    align-content : stretch;
+    -ms-flex-direction : row;
+    -ms-flex-line-pack : stretch;
+    -ms-flex-pack : start;
+    -ms-flex-wrap : wrap;
+        flex-wrap : wrap;
+    justify-content : flex-start;
+}
+
+.instaphotos a {
+    position : relative;
+    display : block;
+    width : calc(100%/3);
+
+    -ms-flex : 0 0 auto;
+        flex : 0 0 auto;
+}
+
+.instaphotos img {
+    display : block;
+    width : 100%;
+}
+
+/*-- videos here --*/
+.slide {
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    transition : 1s opacity;
+    opacity : 0;
+}
+
+.slide:nth-of-type(1) {
+    background : url(../img/waterplanes.png) no-repeat center center fixed;
+    background-size : cover;
+}
+
+.slide:nth-of-type(2) {
+    background : url(../img/raincouver.png) no-repeat center center fixed;
+    background-size : cover;
+}
+
+.slide:nth-of-type(3) {
+    background : url(../img/bcplacedark.png) no-repeat center center fixed;
+    background-size : cover;
+}
+
+.slide:nth-of-type(4) {
+    background : url(../img/pcplacelight.png) no-repeat center center fixed;
+    background-size : cover;
+}
+
+.slide:nth-of-type(5) {
+    background : url(../img/web-header.png) no-repeat center center fixed;
+    background-size : cover;
+}
+
+.slide:nth-of-type(6) {
+    background : url(../img/waterfall-behind.jpg) no-repeat center center fixed;
+    background-size : cover;
+}
+
+.slide:nth-of-type(7) {
+    background : url(../img/large-waterfall.jpg) no-repeat center center fixed;
+    background-size : cover;
+}
+
+video {
+    position : absolute;
+    z-index : 2;
+    top : 50%;
+    left : 50%;
+    height : 100vh;
+    -webkit-transform : translate(-50%, -50%) scale(1);
+            transform : translate(-50%, -50%) scale(1);
+}
+
+.slide.show {
+    position : relative;
+    transition : 1s opacity;
+    opacity : 1;
+}
+
+.slide-header {
+    position : relative;
+    z-index : 4;
+    height : 100px;
+    text-align : center;
+    background : linear-gradient( rgba(0,0,0,0.75), rgba(0,0,0,0.75));
+}
+
+.slide-info {
+    padding-top : 30px;
+}
+
+.slide-number,
+.slide-title {
+    display : inline-block;
+    color : #ff5a84;
+}
+
+.slide-title {
+    color : #fff;
+}
+
+.slide-title {
+    padding-left : 15px;
+}
+
+.vid1 {
+    -webkit-transform : translate(-50%, -60%) scale(1);
+            transform : translate(-50%, -60%) scale(1);
+}
+
+.vid3 {
+    -webkit-transform : translate(-40%, -50%) scale(1);
+            transform : translate(-40%, -50%) scale(1);
+}
+
+.vid6,
+.vid7 {
+    top : 60%;
+    left : 50%;
+    height : 121vh;
+    -webkit-transform : translate(-60%, -60%) scale(1);
+            transform : translate(-50%, -60%) scale(1);
+}
+
+.directional_nav {
+    position : relative;
+    z-index : 3;
+    bottom : 50%;
+    height : 40px;
+}
+
+.previous {
+    position : absolute;
+    top : 0;
+    bottom : 0;
+    left : 10px;
+    margin : auto;
+}
+
+.next {
+    position : absolute;
+    top : 0;
+    right : 10px;
+    bottom : 0;
+    margin : auto;
+}
+
+.previous,
+.next {
+    width : 40px;
+    height : 40px;
+    cursor : pointer;
+    border-radius : 100%;
+    background : #ff5a84;
+}
+
+.previous:hover,
+.next:hover {
+    opacity : 1;
+}
+
+/* Responsive css here */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navigation-area {
+        height : 75px;
+    }
+
+    .border {
+        top : -webkit-calc(40% - 5%);
+        height : 60%;
+    }
+
+    .video {
+        height : 100vh;
+    }
+
+    .vid3 {
+        -webkit-transform : translate(-50%,-50%) scale(1);
+           -moz-transform : translate(-50%,-50%) scale(1);
+            -ms-transform : translate(-50%,-50%) scale(1);
+             -o-transform : translate(-50%,-50%) scale(1);
+                transform : translate(-50%,-50%) scale(1);
+    }
+}
+
+@media screen and (min-height: 1024px) {
+    .main-container {
+        margin : 10% auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .job:nth-child(1)::before,
+    .job:nth-child(3)::before,
+    .job:nth-child(4)::before {
+        top : 38px;
+    }
+
+    .hide-xs {
+        display : none!important;
+    }
+
+    .circle-image {
+        width : 120px;
+        height : 120px;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    .sub-area.text-area {
+        padding : 45px 0 0 15px;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .home-contact {
+        width : 95%;
+    }
+
+    .individual-list-item {
+        margin-right : 0;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .sub-area.text-area {
+        padding : 45px 0 0 10px;
+    }
+
+    .list-items-top {
+        padding : 0;
+    }
+
+    .btn {
+        padding : 0.8em 0.8em;
+    }
+}
+
+/*iphone 6s  */
+@media only screen and (max-width: 435px) {
+    .main-container {
+        height : 100%;
+    }
+    .overlay .btn {
+        position : relative;
+        display : inline-block;
+        overflow : hidden;
+        cursor : pointer;
+        text-decoration : none;
+        color : #fff;
+    }
+    .overlay .btn:hover::after,
+    .overlay .btn:focus::after,
+    .overlay .btn:active::after {
+        width : 100%;
+    }
+    .overlay .btn::after {
+        position : absolute;
+        bottom : 0;
+        left : 50%;
+        width : 0;
+        height : 3px;
+        content : '';
+        transition : 0.35s;
+        transform : translateX(-50%);
+        background : #fff;
+    }
+    .career-area {
+        padding-top : 10px;
+    }
+    .job:last-of-type {
+        margin-bottom : 0;
+        padding-bottom : 0;
+    }
+    .insta {
+        height : 100%;
+        padding : 40px 0 5px 0;
+    }
+    .instaphotos a {
+        width : 100%;
+    }
+    .insta-username-heading-contact::before {
+        width : 180px;
+    }
+    .insta-username-heading-contact {
+        top : 5px;
+        padding : 10px 0;
+        text-align : start;
+    }
+    .circle-image {
+        width : 80px;
+        height : 80px;
+    }
+    .hide-xs {
+        display : none !important;
+    }
+    .videos {
+        overflow : hidden;
+        height : 100%;
+        margin-top : 0;
+    }
+    video {
+        display : none;
+    }
+    .slide-title {
+        padding-left : 10px;
+    }
+}
+
+
+/* 5 - 6+ */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+    .hide-xs-side {
+        display : none;
+    }
+
+    .main-container {
+        margin : 0 auto;
+    }
+
+    .navigation-area {
+        display : none;
+    }
+
+    .text-area {
+        width : 75%;
+        padding : 30px 0 0 30px;
+    }
+
+    .image-area {
+        width : 25%;
+    }
+
+    .border {
+        position : relative;
+        top : -webkit-calc(50% - 32%);
+        top :    -moz-calc(50% - 32%);
+        left : 0;
+        width : 100%;
+        height : 90%;
+    }
+
+    .text-area-content,
+    .home-contact,
+    .work-area {
+        top : 5px;
+        padding : 5px;
+    }
+
+
+    .name-city {
+        margin : 0 0 10px;
+    }
+
+    .underline {
+        padding : 0 0 0 20px;
+    }
+
+    .navigation-area-mobile {
+        position : absolute;
+        z-index : 5;
+        top : 0;
+        left : 0;
+        display : block;
+        overflow : hidden;
+        width : 100%;
+        height : 50px;
+        -webkit-transition : all 0.5s ease-out, background 1s ease-out;
+                transition : all 0.5s ease-out, background 1s ease-out;
+        -webkit-transition-delay : 0.2s;
+                transition-delay : 0.2s;
+        opacity : 1;
+        background : transparent;
+    }
+
+    .overlay-menu {
+        opacity : 0;
+    }
+
+    .open .overlay-menu {
+        display : list-item;
+        -webkit-transition : all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+                transition : all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        -webkit-transition-delay : 0.3s;
+                transition-delay : 0.3s;
+        text-align : center;
+        opacity : 1;
+
+        justify-content : space-around;
+    }
+
+    .individual-list-item {
+        list-style : none;
+    }
+
+    .burger-container {
+        position : absolute;
+        z-index : 7;
+        left : 0;
+        width : 30px;
+        height : 40px;
+        cursor : pointer;
+        -webkit-user-select : none;
+           -moz-user-select : none;
+            -ms-user-select : none;
+        -webkit-transition : all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+                transition : all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        -webkit-transform : rotate(0deg);
+                transform : rotate(0deg);
+
+        -webkit-tap-highlight-color : transparent;
+    }
+
+    .burger {
+        position : relative;
+        top : 50%;
+        display : block;
+        width : 18px;
+        height : 8px;
+        margin : -4px auto 0;
+    }
+
+    .bar {
+        position : relative;
+        display : block;
+        width : 100%;
+        height : 1px;
+        -webkit-transition : all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+                transition : all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        -webkit-transition-delay : 0s;
+                transition-delay : 0s;
+        background : #7d47f5;
+    }
+
+    .topBar {
+        -webkit-transform : translateY(0px) rotate(0deg);
+                transform : translateY(0px) rotate(0deg);
+    }
+
+    .btmBar {
+        -webkit-transform : translateY(6px) rotate(0deg);
+                transform : translateY(6px) rotate(0deg);
+    }
+
+    .open {
+        z-index : 6;
+        width : 100%;
+        height : 100%;
+        -webkit-transition : all 0.3s ease-in;
+                transition : all 0.3s ease-in;
+        -webkit-transition-delay : 0.25s;
+                transition-delay : 0.25s;
+        opacity : 1;
+        background-color : #7d47f5;
+    }
+
+    .open .burger-container {
+        -webkit-transform : rotate(90deg);
+                transform : rotate(90deg);
+    }
+
+    .open .bar {
+        -webkit-transition : all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+                transition : all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        -webkit-transition-delay : 0.2s;
+                transition-delay : 0.2s;
+    }
+
+    .open .topBar {
+        -webkit-transform : translateY(4px) rotate(45deg);
+                transform : translateY(4px) rotate(45deg);
+        background : #fff;
+    }
+
+    .open .btmBar {
+        -webkit-transform : translateY(3px) rotate(-45deg);
+                transform : translateY(3px) rotate(-45deg);
+        background : #fff;
+    }
+
+    .career-area {
+        padding : 10px;
+    }
+
+    .job:last-of-type {
+        margin-bottom : 0;
+    }
+
+    .insta {
+        padding-bottom : 10px;
+    }
+    .insta-home-image {
+        text-align : left;
+    }
+
+    video {
+        display : none;
+    }
+
+    .slide-header {
+        height : 60px;
+    }
+    .slide-info {
+        height : 100%;
+        padding-top : 0;
+    }
+}
+
+
+/* --animation keyframes here -- */
+@keyframes menuFade {
+    0% {
+        left : -25%;
+        opacity : 0;
+
+        filter : alpha(opacity=0);
+    }
+    100% {
+        left : 0;
+        opacity : 1;
+
+        filter : alpha(opacity=100);
+    }
+}
