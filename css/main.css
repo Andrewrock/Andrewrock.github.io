@@ -368,6 +368,11 @@ video {
 }
 
 @media only screen and (max-width: 768px) {
+    .main-container {
+        width : 98%;
+        margin : 10% auto;
+    }
+
     .circle-image {
         width : 120px;
         height : 120px;

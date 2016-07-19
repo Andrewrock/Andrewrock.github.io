@@ -10,7 +10,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    
     csscomb: {
       dist: {
         files: {
@@ -65,7 +64,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-uncss');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-contrib-concat');
