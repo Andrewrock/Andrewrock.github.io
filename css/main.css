@@ -436,6 +436,15 @@ video {
     .slide-title {
         padding-left : 10px;
     }
+
+    .slide-header {
+        height : 60px;
+    }
+
+    .slide-info {
+        height : 100%;
+        padding-top : 0;
+    }
 }
 
 /* 5 - 6+ */
