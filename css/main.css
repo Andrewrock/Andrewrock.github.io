@@ -5,14 +5,9 @@ video {
     overflow : hidden;
 }
 
-.hide-xs {
-    display : none!important;
-}
 
 .list-items-top {
-    display : table;
-    margin : 0 auto;
-    list-style : none;
+    text-align : center;
 }
 
 .navigation-area .individual-list-item {
@@ -289,13 +284,9 @@ video {
 .slide-header {
     position : relative;
     z-index : 4;
-    height : 100px;
+    height : 60px;
     text-align : center;
     background : linear-gradient( rgba(0,0,0,0.75), rgba(0,0,0,0.75));
-}
-
-.slide-info {
-    padding-top : 30px;
 }
 
 .slide-number,
@@ -360,13 +351,11 @@ video {
 }
 
 /* Responsive css here */
-
 @media screen and (min-height: 1024px) {
     .main-container {
         margin : 10% auto;
     }
 }
-
 @media only screen and (max-width: 768px) {
     .main-container {
         width : 98%;
@@ -378,102 +367,82 @@ video {
         height : 120px;
     }
 }
-
-/*iphone 6s  */
-
+/*iphone 6s + bigger screens on mobile starting at 435 rather than 375  */
 @media only screen and (max-width: 435px) {
     .main-container {
+        width : 96%;
         height : 100%;
+        max-height : 530px;
+        border-radius : 4px;
+        background : #fff;
     }
-
-    .career-area {
-        padding-top : 10px;
+    .image-area {
+        display : none;
     }
-
-    .job:last-of-type {
-        margin-bottom : 0;
-        padding-bottom : 0;
+    .genre-content {
+        overflow : scroll;
+        height : 100%;
+        padding : 0;
     }
-
+    .main-area {
+        overflow : hidden;
+    }
+    .sub-area {
+        width : 100%;
+    }
+    .image-area {
+        display : none;
+    }
+    .navigation-area-mobile {
+        position : absolute;
+        z-index : 4;
+    }
+    .overlay-menu {
+        top : 50px;
+    }
     .insta {
         height : 100%;
-        padding : 40px 0 5px 0;
     }
-
     .instaphotos a {
         width : 100%;
     }
-
     .insta-username-heading-contact::before {
         width : 180px;
     }
-
     .insta-username-heading-contact {
         top : 5px;
         padding : 10px 0;
         text-align : start;
     }
-
     .circle-image {
         width : 80px;
         height : 80px;
     }
-
     .hide-xs {
         display : none !important;
     }
-
-    .videos {
-        overflow : hidden;
-        height : 100%;
-        margin-top : 0;
-    }
-
-    video {
-        display : none;
-    }
-
     .slide-title {
         padding-left : 10px;
     }
-
-    .slide-header {
-        height : 60px;
-    }
-
-    .slide-info {
-        height : 100%;
-        padding-top : 0;
-    }
 }
-
 /* 5 - 6+ */
-
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 736px)
 and (orientation : landscape) {
-    .hide-xs-side {
-        display : none;
-    }
-
     .main-container {
         margin : 0 auto;
     }
-
-    .navigation-area {
-        display : none;
-    }
-
     .text-area {
         width : 75%;
         padding : 30px 0 0 30px;
     }
-
     .image-area {
         width : 25%;
     }
-
+    .hide-xs-side {
+        display : none;
+    }
     .border {
         position : relative;
         top : -webkit-calc(50% - 32%);
@@ -482,176 +451,35 @@ and (orientation : landscape) {
         width : 100%;
         height : 90%;
     }
-
     .text-area-content,
     .home-contact,
     .work-area {
         top : 5px;
         padding : 5px;
     }
-
     .name-city {
         margin : 0 0 10px;
     }
-
     .underline {
         padding : 0 0 0 20px;
     }
-
     .navigation-area-mobile {
-        position : absolute;
         z-index : 5;
-        top : 0;
-        left : 0;
-        display : block;
-        overflow : hidden;
-        width : 100%;
-        height : 50px;
-        -webkit-transition : all 0.5s ease-out, background 1s ease-out;
-                transition : all 0.5s ease-out, background 1s ease-out;
-        -webkit-transition-delay : 0.2s;
-                transition-delay : 0.2s;
         opacity : 1;
-        background : transparent;
     }
-
-    .overlay-menu {
-        opacity : 0;
-    }
-
     .open .overlay-menu {
-        display : list-item;
-        -webkit-transition : all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-                transition : all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-        -webkit-transition-delay : 0.3s;
-                transition-delay : 0.3s;
         text-align : center;
-        opacity : 1;
 
         justify-content : space-around;
     }
-
-    .individual-list-item {
-        list-style : none;
-    }
-
-    .burger-container {
-        position : absolute;
-        z-index : 7;
-        left : 0;
-        width : 30px;
-        height : 40px;
-        cursor : pointer;
-        -webkit-user-select : none;
-           -moz-user-select : none;
-            -ms-user-select : none;
-        -webkit-transition : all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-                transition : all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-        -webkit-transform : rotate(0deg);
-                transform : rotate(0deg);
-
-        -webkit-tap-highlight-color : transparent;
-    }
-
-    .burger {
-        position : relative;
-        top : 50%;
-        display : block;
-        width : 18px;
-        height : 8px;
-        margin : -4px auto 0;
-    }
-
-    .bar {
-        position : relative;
-        display : block;
-        width : 100%;
-        height : 1px;
-        -webkit-transition : all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-                transition : all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-        -webkit-transition-delay : 0s;
-                transition-delay : 0s;
-        background : #7d47f5;
-    }
-
-    .topBar {
-        -webkit-transform : translateY(0px) rotate(0deg);
-                transform : translateY(0px) rotate(0deg);
-    }
-
-    .btmBar {
-        -webkit-transform : translateY(6px) rotate(0deg);
-                transform : translateY(6px) rotate(0deg);
-    }
-
-    .open {
-        z-index : 6;
-        width : 100%;
-        height : 100%;
-        -webkit-transition : all 0.3s ease-in;
-                transition : all 0.3s ease-in;
-        -webkit-transition-delay : 0.25s;
-                transition-delay : 0.25s;
-        opacity : 1;
-        background-color : #7d47f5;
-    }
-
-    .open .burger-container {
-        -webkit-transform : rotate(90deg);
-                transform : rotate(90deg);
-    }
-
-    .open .bar {
-        -webkit-transition : all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-                transition : all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-        -webkit-transition-delay : 0.2s;
-                transition-delay : 0.2s;
-    }
-
-    .open .topBar {
-        -webkit-transform : translateY(4px) rotate(45deg);
-                transform : translateY(4px) rotate(45deg);
-        background : #fff;
-    }
-
-    .open .btmBar {
-        -webkit-transform : translateY(3px) rotate(-45deg);
-                transform : translateY(3px) rotate(-45deg);
-        background : #fff;
-    }
-
-    .career-area {
-        padding : 10px;
-    }
-
-    .job:last-of-type {
-        margin-bottom : 0;
-    }
-
     .insta {
         padding-bottom : 10px;
     }
-
     .insta-home-image {
         text-align : left;
     }
-
-    video {
-        display : none;
-    }
-
-    .slide-header {
-        height : 60px;
-    }
-
-    .slide-info {
-        height : 100%;
-        padding-top : 0;
-    }
 }
-
 /* --animation keyframes here -- */
-
 @keyframes menuFade {
     0% {
         left : -25%;
