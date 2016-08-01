@@ -448,6 +448,18 @@ and (orientation : landscape) {
 }
 
 
+@media only screen
+and (max-device-width: 736px)
+and (min-device-width: 320px)
+and (orientation: landscape) {
+  .border {
+    top : 18%;
+    left : 0;
+    width : 100%;
+    height : 90%;
+  }
+}
+
 /* keyframes for page interaction */
 @-webkit-keyframes fadeInLeft {
   from {
