@@ -316,10 +316,24 @@ video {
   }
 }
 
+@media only screen and (max-width: 995px) {
+  .border {
+    left : 13%;
+  }
+}
+@media only screen and (max-width: 955px) {
+  .border {
+    left : 8%;
+    width : 82%;
+  }
+}
+
 @media only screen and (max-width: 940px) {
   .border {
+    top : 0;
     left : 0;
     width : 100%;
+    height : 88%;
   }
 }
 
@@ -348,6 +362,22 @@ and (max-device-width : 1024px) {
   .circle-image {
     width : 120px;
     height : 120px;
+  }
+  .border {
+    top : 41%;
+    height : 51%;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .border {
+    top : 0;
+    left : 8%;
+    width : 93%;
+    height : 85%;
   }
 }
 
