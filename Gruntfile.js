@@ -10,45 +10,10 @@ module.exports = function(grunt) {
         }
       }
     },
-    csscomb: {
-      dist: {
-        files: {
-          'css/main.css': ['css/main.css']
-        }
-      }
-    },
-    purifycss: {
-      options: {},
-      target: {
-        src: ['index.html'],
-        css: ['css/flexboxgrid.css'],
-        dest: 'dist/flexboxgrid.css'
-      }
-    },
-    concat: {
-      css: {
-        src: ['dist/flexboxgrid.css', 'css/core.css', 'css/main.css'],
-        dest: 'dist/production.css'
-      },
-      options: {
-        stripBanners: true
-      }
-    },
-    cssmin: {
-      dist: {
-        files: [
-          {
-            src: 'dist/production.css',
-            dest: 'dist/production.css'
-          }
-        ]
-      }
-    },
     uglify: {
-      my_target: {
-        files: {
-          'dist/production.min.js': ['js/instafeed.js', 'js/main.js']
-        }
+      build: {
+        src: ['js/*.js'],
+        dest: 'dist/main.min.js'
       }
     },
     htmlmin: {
@@ -61,29 +26,87 @@ module.exports = function(grunt) {
           'index.html': 'dist/index.html'
         }
       }
+    },
+    sass: {
+      dist: {
+        options: {
+          sourcemap: 'none'
+        },
+        files: [{
+          expand: true,
+          cwd: 'sass',
+          src: ['**/*.scss'],
+          dest: 'dist',
+          ext: '.css'
+        }]
+      }
+    },
+    scsslint: {
+      allFiles: [
+        'sass/**/*.scss',
+      ],
+      options: {
+        bundleExec: false,
+        colorizeOutput: true,
+        config: 'sass/.scss-lint-test.yml',
+        reporterOutput: null
+      }
+    },
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+          require('autoprefixer')({browsers: ['last 3 versions']}),
+        ]
+      },
+      dist: {
+        src: 'dist/main.css'
+      }
+    },
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'dist',
+          src: ['*.css', '!*.min.css'],
+          dest: 'dist',
+          ext: '.min.css'
+        }]
+      }
+    },
+    watch: { // Compile everything into one task with Watch Plugin
+      css: {
+        files: '**/*.scss',
+        tasks: ['sass', 'postcss', 'cssmin']
+      },
+      js: {
+        files: '**/*.js',
+        tasks: ['uglify']
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-csscomb');
-  grunt.loadNpmTasks('grunt-uncss');
-  grunt.loadNpmTasks('grunt-purifycss');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
-
-
+  grunt.loadNpmTasks('grunt-csscomb');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-scss-lint');
+  grunt.loadNpmTasks('grunt-postcss');
 
   grunt.registerTask('build', [
-    'csscomb',
-    'purifycss',
-    'concat',
+    'scsslint',
+    'sass',
+    'postcss',
     'cssmin',
     'uglify',
     'htmlmin'
   ]);
 
+  grunt.registerTask('default', ['watch']);
 
   grunt.registerTask('server',[
     'connect'

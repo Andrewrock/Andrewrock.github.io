@@ -1,0 +1,60 @@
+$container-width: 80%;
+$card-width: 650px;
+$card-height: 300px;
+$panel-width: 50%;
+$hover-me-space-top: -50px;
+
+.homepage-container {
+  width: $container-width;
+}
+
+.homepage-card {
+  flex-flow: row wrap;
+  height: $card-height;
+  width: $card-width;
+}
+
+.text-container,
+.poster-container {
+  align-items: stretch;
+  flex-flow: column nowrap;
+  height: $height;
+  width: $panel-width;
+}
+
+.poster-container {
+  position: relative;
+
+  .hover-me {
+    top: $hover-me-space-top;
+  }
+
+
+  &:hover {
+    background: url('/img/trump.gif') center center;
+    background-size: cover;
+
+    .poster {
+      display: none;
+    }
+  }
+}
+
+.corner-border {
+  height: $height;
+  width: auto;
+
+  h3 {
+    padding-bottom: 30px;
+  }
+
+  h5 {
+    box-sizing: border-box;
+    padding: 0 35px 30px;
+  }
+
+  ul {
+    padding-bottom: 0;
+  }
+}
+

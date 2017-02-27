@@ -1,0 +1,44 @@
+@mixin corners($bg, $border-bg, $border-width, $bracket-width) {
+  background-color: $bg;
+  border: $border-width solid $border-bg;
+  box-sizing: border-box;
+  padding: $border-width / 2;
+  position: relative;
+  z-index: 2;
+
+  &::before,
+  &::after {
+    background-color: $bg;
+    content: '';
+    height: $height;
+    position: absolute;
+    width: $width;
+    z-index: 1;
+  }
+
+  &::before {
+    height: calc((#{$border-width} * 2) + (#{$height}));
+    left: $bracket-width; // $bracket-width
+    right: 0;
+    top: $border-width * -1;
+    width: calc((#{$width}) - (#{$bracket-width} * 2));
+  }
+
+  .corner-content {
+    bottom: $border-width;
+    left: $border-width;
+    position: absolute;
+    right: $border-width;
+    top: $border-width;
+    z-index: 3;
+  }
+
+  &::after {
+    bottom: 0;
+    height: calc((#{$height}) - (#{$bracket-width} * 2));
+    right: $border-width * -1;
+    top: $bracket-width;
+    width: calc((#{$border-width} * 2) + (#{$width}));
+  }
+}
+
