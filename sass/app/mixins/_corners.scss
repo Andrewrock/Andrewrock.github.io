@@ -13,7 +13,6 @@
     height: $height;
     position: absolute;
     width: $width;
-    z-index: 1;
   }
 
   &::before {
@@ -30,7 +29,7 @@
     position: absolute;
     right: $border-width;
     top: $border-width;
-    z-index: 3;
+    z-index: 1;
   }
 
   &::after {
