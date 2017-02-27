@@ -74,6 +74,24 @@ module.exports = function(grunt) {
         }]
       }
     },
+    svgmin: {
+      withconfig: {
+        options: {
+          plugins: [
+            {removeViewBox: false},
+            {convertPathData: {straightCurves: false}}
+          ]
+        }
+      },
+      multiple: {
+        files: [{
+          expand: true,
+          cwd: 'img/',
+          src: ['**/*.svg'],
+          dest: 'img/'
+        }]
+      }
+    },
     watch: { // Compile everything into one task with Watch Plugin
       css: {
         files: '**/*.scss',
@@ -96,6 +114,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-scss-lint');
   grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-svgmin');
 
   grunt.registerTask('build', [
     'scsslint',
