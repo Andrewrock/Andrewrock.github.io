@@ -1,0 +1,52 @@
+$star-color: #f61f1e;
+$star-size: 15px;
+
+.star-container {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin: auto;
+
+  &::before,
+  &::after {
+    background-color: $star-color;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  &::before {
+    margin-left: -50%;
+    right: 8px;
+  }
+
+  &::after {
+    left: 8px;
+    margin-right: -50%;
+  }
+}
+
+.stars {
+  color: $star-color;
+  padding: 0 8px;
+
+  &::before {
+    content: '\2605';
+    font-family: entypo, sans-serif;
+    font-size: $star-size;
+  }
+
+  &:checked ~ ::before {
+    content: '\2606';
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+

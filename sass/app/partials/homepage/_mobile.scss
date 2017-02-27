@@ -1,0 +1,156 @@
+$card-width: 300px;
+$individual-card-height: 250px;
+
+$content-bg: $white;
+$panel-width: 50%;
+
+$poster-card-margin: 15px;
+
+$star-size: 15px;
+$icon-size: 40px;
+
+$hover-me-space-top: -25px;
+
+
+.homepage-container,
+.homepage-content,
+.homepage-card,
+.text-container,
+.poster-container,
+.corner-content,
+.poster {
+  display: flex;
+}
+
+.homepage-content,
+.homepage-card,
+.poster-container,
+.text-container {
+  box-sizing: border-box;
+}
+
+.text-container {
+  background-color: $white;
+  overflow: hidden;
+}
+
+.homepage-container {
+  align-items: center;
+  width: $card-width;
+}
+
+.homepage-content {
+  box-sizing: border-box;
+  flex-flow: row wrap;
+  padding: 20px;
+  width: $width;
+  z-index: 1;
+}
+
+.homepage-card {
+  flex-flow: column-reverse wrap;
+  margin: auto;
+  width: $width;
+}
+
+.text-container,
+.poster-container {
+  align-items: center;
+  flex-flow: column nowrap;
+  height: $individual-card-height;
+  width: $width;
+}
+
+.text,
+.poster {
+  align-items: center;
+  flex-flow: row wrap;
+  height: $height;
+  margin: 0 15px;
+  overflow: hidden;
+}
+
+.poster-container {
+  background: $poster-bg;
+  position: relative;
+
+  .hover-me {
+    color: $hover-me;
+    font-family: $libre;
+    position: absolute;
+    top: $hover-me-space-top;
+  }
+}
+
+.poster {
+
+  h1 {
+    color: $white;
+    font-size: $h1;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+.corner-content {
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.corner-border {
+  @include corners($white, $poster-bg, 6px, 12px);
+  height: calc(#{$height} - 20px);
+  margin: 15px;
+  width: calc(#{$width} - 20px);
+
+  h3,
+  h5 {
+    color: $poster-bg;
+    font-family: $open-sans;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    width: $width;
+  }
+
+  h3 {
+    font-size: $h3;
+    padding-top: 10px;
+  }
+
+  h5 {
+    font-size: $h5;
+  }
+}
+
+.social-container {
+  align-items: flex-end;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    margin: 0 5px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  svg {
+    fill: $star-color;
+    height: $icon-size;
+    width: $icon-size;
+  }
+}
+
+
+
+
+
+
+
