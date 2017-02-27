@@ -39,14 +39,6 @@ $hover-me-space-top: -25px;
   width: $card-width;
 }
 
-.homepage-content {
-  box-sizing: border-box;
-  flex-flow: row wrap;
-  padding: 20px;
-  width: $width;
-  z-index: 1;
-}
-
 .homepage-card {
   flex-flow: column-reverse wrap;
   margin: auto;
