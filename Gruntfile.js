@@ -125,10 +125,14 @@ module.exports = function(grunt) {
     'htmlmin'
   ]);
 
-  grunt.registerTask('default', ['watch']);
-
-  grunt.registerTask('server',[
-    'connect'
+  grunt.registerTask('default', [
+    'connect',
+    'scsslint',
+    'sass',
+    'postcss',
+    'cssmin',
+    'uglify',
+    'htmlmin'
   ]);
 
 };

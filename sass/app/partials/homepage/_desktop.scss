@@ -17,7 +17,6 @@ $hover-me-space-top: -50px;
 .text-container,
 .poster-container {
   align-items: stretch;
-  flex-flow: column nowrap;
   height: $height;
   width: $panel-width;
 }
@@ -28,7 +27,6 @@ $hover-me-space-top: -50px;
   .hover-me {
     top: $hover-me-space-top;
   }
-
 
   &:hover {
     background: url('/img/trump.gif') center center;

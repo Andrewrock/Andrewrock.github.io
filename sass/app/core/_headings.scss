@@ -2,12 +2,9 @@
 
 $open-sans: 'Open Sans', sans-serif;
 $libre: 'Libre Baskerville', serif;
-
 $font-size-base: 1rem;
-
 $font-weight-normal: 400;
 $font-weight-bold: 600;
-
 $line-height-base: 1.5;
 
 $h1: 2.5rem;
@@ -22,8 +19,6 @@ $spacer: 1rem !default;
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-weight: 500 !default;
 $headings-line-height: 1.1 !default;
-$headings-color: inherit !default;
-
 
 h1,
 h2,
@@ -31,7 +26,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: $headings-color;
   font-family: $libre;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;

@@ -1,5 +1,8 @@
+$star-font-family: entypo, sans-serif;
 $star-color: #f61f1e;
 $star-size: $h6;
+$star-container-width: 50%;
+$star-padding: 8px;
 
 .star-container {
   align-items: center;
@@ -12,31 +15,28 @@ $star-size: $h6;
   &::after {
     background-color: $star-color;
     content: '';
-    display: inline-block;
     height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
+    width: $star-container-width;
   }
 
   &::before {
-    margin-left: -50%;
-    right: 8px;
+    margin-left: -$star-container-width;
+    right: $star-padding;
   }
 
   &::after {
-    left: 8px;
-    margin-right: -50%;
+    left: $star-padding;
+    margin-right: -$star-container-width;
   }
 }
 
 .stars {
   color: $star-color;
-  padding: 0 8px;
+  padding: 0 $star-padding;
 
   &::before {
     content: '\2605';
-    font-family: entypo, sans-serif;
+    font-family: $star-font-family;
     font-size: $star-size;
   }
 
@@ -48,5 +48,4 @@ $star-size: $h6;
     outline: 0;
   }
 }
-
 

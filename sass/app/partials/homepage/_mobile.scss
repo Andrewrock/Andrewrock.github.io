@@ -11,7 +11,6 @@ $icon-size: 40px;
 
 $hover-me-space-top: -25px;
 
-
 .homepage-container,
 .homepage-content,
 .homepage-card,
@@ -35,14 +34,11 @@ $hover-me-space-top: -25px;
 }
 
 .homepage-container {
-  align-items: center;
   width: $card-width;
 }
 
 .homepage-card {
   flex-flow: column-reverse wrap;
-  margin: auto;
-  width: $width;
 }
 
 .text-container,
@@ -107,12 +103,7 @@ $hover-me-space-top: -25px;
   }
 
   h3 {
-    font-size: $h3;
     padding-top: 10px;
-  }
-
-  h5 {
-    font-size: $h5;
   }
 }
 
