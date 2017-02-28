@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2922ef68-4dae-407e-bba3-82acc1342303" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/2c17a969aa0a6d97196b2840e850d75a05f8f73f/_headings.scssc" afterPath="$PROJECT_DIR$/.sass-cache/2c17a969aa0a6d97196b2840e850d75a05f8f73f/_headings.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/9cb521805aea54b521e4502e0363be7d2b87ca9f/_desktop.scssc" afterPath="$PROJECT_DIR$/.sass-cache/9cb521805aea54b521e4502e0363be7d2b87ca9f/_desktop.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/9cb521805aea54b521e4502e0363be7d2b87ca9f/_mobile.scssc" afterPath="$PROJECT_DIR$/.sass-cache/9cb521805aea54b521e4502e0363be7d2b87ca9f/_mobile.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/a3053e6ef86eef7590f414c4ca4c8f9bb0983d35/_stars.scssc" afterPath="$PROJECT_DIR$/.sass-cache/a3053e6ef86eef7590f414c4ca4c8f9bb0983d35/_stars.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/c7f9e2cc9c2a39be012a6744b5943c2a9fe510a3/_corners.scssc" afterPath="$PROJECT_DIR$/.sass-cache/c7f9e2cc9c2a39be012a6744b5943c2a9fe510a3/_corners.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.css" afterPath="$PROJECT_DIR$/dist/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.min.css" afterPath="$PROJECT_DIR$/dist/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/app/components/_stars.scss" afterPath="$PROJECT_DIR$/sass/app/components/_stars.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/app/core/_headings.scss" afterPath="$PROJECT_DIR$/sass/app/core/_headings.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/app/mixins/_corners.scss" afterPath="$PROJECT_DIR$/sass/app/mixins/_corners.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/app/partials/homepage/_desktop.scss" afterPath="$PROJECT_DIR$/sass/app/partials/homepage/_desktop.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/app/partials/homepage/_mobile.scss" afterPath="$PROJECT_DIR$/sass/app/partials/homepage/_mobile.scss" />
     </list>
     <ignored path="Andrewrock.github.io.iws" />
@@ -39,7 +27,7 @@
       <file leaf-file-name="_body.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/app/core/_body.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
               <folding />
             </state>
@@ -49,7 +37,7 @@
       <file leaf-file-name="_colours.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/app/core/_colours.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
+            <state vertical-scroll-proportion="0.0">
               <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding />
             </state>
@@ -59,22 +47,22 @@
       <file leaf-file-name="_index.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/app/core/_index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5">
+            <state vertical-scroll-proportion="0.0">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_mobile.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_mobile.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/app/partials/homepage/_mobile.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.75">
-              <caret line="130" column="3" selection-start-line="130" selection-start-column="3" selection-end-line="130" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.18181819">
+              <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
               <folding>
-                <element signature="e#1778#1824#0" expanded="false" />
-                <element signature="e#1830#1862#0" expanded="false" />
-                <element signature="e#1870#1945#0" expanded="false" />
+                <element signature="e#1794#1840#0" expanded="false" />
+                <element signature="e#1846#1878#0" expanded="false" />
+                <element signature="e#1886#1961#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -83,7 +71,7 @@
       <file leaf-file-name="_headings.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/app/core/_headings.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
+            <state vertical-scroll-proportion="0.0">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#505#646#0" expanded="false" />
@@ -95,7 +83,7 @@
       <file leaf-file-name="_corners.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/app/mixins/_corners.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.5">
+            <state vertical-scroll-proportion="0.0">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="e#571#718#0" expanded="false" />
@@ -105,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_desktop.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_desktop.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/app/partials/homepage/_desktop.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8490566">
+            <state vertical-scroll-proportion="-27.958334">
               <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
@@ -179,11 +167,14 @@
         <dependency value="uglify" />
         <dependency value="htmlmin" />
       </alias-task>
-      <alias-task name="default" info="Alias for &quot;watch&quot; task." file-path="$PROJECT_DIR$/Gruntfile.js">
-        <dependency value="watch" />
-      </alias-task>
-      <alias-task name="server" info="Alias for &quot;connect&quot; task." file-path="$PROJECT_DIR$/Gruntfile.js">
+      <alias-task name="default" info="Alias for &quot;connect&quot;, &quot;scsslint&quot;, &quot;sass&quot;, &quot;postcss&quot;, &quot;cssmin&quot;, &quot;uglify&quot;, &quot;htmlmin&quot; tasks." file-path="$PROJECT_DIR$/Gruntfile.js">
         <dependency value="connect" />
+        <dependency value="scsslint" />
+        <dependency value="sass" />
+        <dependency value="postcss" />
+        <dependency value="cssmin" />
+        <dependency value="uglify" />
+        <dependency value="htmlmin" />
       </alias-task>
       <core-task name="connect" info="Start a connect web server." file-path="$PROJECT_DIR$/node_modules/grunt-contrib-connect/tasks/connect.js" multi="true">
         <target value="all" />
@@ -252,7 +243,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -390,6 +380,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -495,15 +486,15 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25496426" sideWeight="0.39178082" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25496426" sideWeight="0.38797814" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25496426" sideWeight="0.6082192" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25496426" sideWeight="0.61202186" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32816902" sideWeight="0.5254777" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5859155" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55342466" sideWeight="0.4745223" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5532787" sideWeight="0.4745223" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49315068" sideWeight="0.4787686" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4918033" sideWeight="0.4787686" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5225352" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -814,7 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,7 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="58" selection-start-line="0" selection-start-column="58" selection-end-line="0" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,7 +844,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/app/core/_headings.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#505#646#0" expanded="false" />
@@ -873,7 +862,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/app/core/_colours.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
         </state>
@@ -881,7 +870,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/app/core/_index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
@@ -891,13 +880,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.5985403">
           <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/app/mixins/_corners.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#571#718#0" expanded="false" />
@@ -906,23 +894,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/app/partials/homepage/_mobile.scss">
+    <entry file="file://$PROJECT_DIR$/sass/app/partials/homepage/_desktop.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.75">
-          <caret line="130" column="3" selection-start-line="130" selection-start-column="3" selection-end-line="130" selection-end-column="3" />
-          <folding>
-            <element signature="e#1778#1824#0" expanded="false" />
-            <element signature="e#1830#1862#0" expanded="false" />
-            <element signature="e#1870#1945#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-27.958334">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/app/partials/homepage/_desktop.scss">
+    <entry file="file://$PROJECT_DIR$/sass/app/partials/homepage/_mobile.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8490566">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.18181819">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+          <folding>
+            <element signature="e#1794#1840#0" expanded="false" />
+            <element signature="e#1846#1878#0" expanded="false" />
+            <element signature="e#1886#1961#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
