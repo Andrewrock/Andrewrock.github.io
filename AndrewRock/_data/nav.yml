@@ -1,0 +1,15 @@
+main:
+    - {
+    url: '/',
+    title: 'Home'
+  }
+
+    - {
+    url: '/cv',
+    title: 'CV'
+  }
+
+    - {
+    url: '/instagram',
+    title: 'Instagram'
+  }

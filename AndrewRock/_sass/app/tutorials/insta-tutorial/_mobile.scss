@@ -1,0 +1,73 @@
+$insta-button-bg: #3897f0;
+$insta-button-color: $white;
+$breakpoint-tablet: 735px;
+$breakpoint-desktop: 736px;
+
+$dot-size: 10px;
+$dot-position-top: 6px;
+$dot-position-left: -10px;
+$dot-position-right: 10px;
+
+.tutorial-insta-container,
+.tutorial-content,
+.instafeed-setup,
+.checklist {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tutorial-insta-container,
+.instafeed-setup,
+.checklist {
+  margin: auto;
+}
+
+.tutorial-insta-container {
+  justify-content: center;
+}
+
+.tutorial-content {
+  width: $width;
+}
+
+.instafeed-setup,
+.checklist {
+  justify-content: flex-start;
+  max-width: 640px;
+  width: $width;
+}
+
+.instafeed-setup > li {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  position: relative;
+
+  &::before {
+    background-color: $nav-link-color;
+    border-radius: 50%;
+    content: '';
+    height: $dot-size;
+    left: $dot-position-left;
+    position: absolute;
+    top: $dot-position-top;
+    width: $dot-size;
+    z-index: 2;
+  }
+
+  a {
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.checklist > li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.checklist-item {
+  color: $nav-link-color;
+}

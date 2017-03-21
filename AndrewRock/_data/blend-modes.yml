@@ -1,0 +1,71 @@
+- title: "normal"
+  description: "This is the default attribute which specifies no blending.
+                The blending formula simply selects the source color."
+
+- title: "multiply"
+  description: "The source color is multiplied by the destination color and replaces the destination.
+                The resultant color is always at least as dark as either the source or destination color.
+                Multiplying any color with black results in black. Multiplying any color with white preserves
+                the original color."
+
+- title: "screen"
+  description: "Multiplies the complements of the backdrop and source color values, then complements the result.
+                The result color is always at least as light as either of the two constituent colors.
+                Screening any color with white produces white; screening with black leaves the original color unchanged.
+                The effect is similar to projecting multiple photographic slides simultaneously onto a single screen"
+
+- title: "overlay"
+  description: "Multiplies or screens the colors, depending on the backdrop color value.
+                Source colors overlay the backdrop while preserving its highlights and shadows.
+                The backdrop color is not replaced but is mixed with the source color to reflect the lightness or
+                darkness of the backdrop."
+
+- title: "darken"
+  description: "Selects the darker of the backdrop and source colors.
+                The backdrop is replaced with the source where the source is darker
+                otherwise, it is left unchanged."
+
+- title: "lighten"
+  description: "Selects the lighter of the backdrop and source colors.
+                The backdrop is replaced with the source where the source is lighter
+                otherwise, it is left unchanged."
+
+- title: "color-dodge"
+  description: "Brightens the backdrop color to reflect the source color
+                Painting with black produces no changes."
+
+- title: "color-burn"
+  description: "Darkens the backdrop color to reflect the source color.
+               Painting with white produces no change"
+
+- title: "hard-light"
+  description: "Multiplies or screens the colors, depending on the source color value.
+                The effect is similar to shining a harsh spotlight on the backdrop."
+
+- title: "soft-light"
+  description: "Darkens or lightens the colors, depending on the source color value.
+                The effect is similar to shining a diffused spotlight on the backdrop."
+
+- title: "difference"
+  description: "Subtracts the darker of the two constituent colors from the lighter color.
+                Painting with white inverts the backdrop color painting with black produces no change."
+
+- title: "exclusion"
+  description: "Produces an effect similar to that of the Difference mode but lower in contrast.
+                Painting with white inverts the backdrop color, painting with black produces no change."
+
+- title: "hue"
+  description: "Creates a color with the hue of the source color and the saturation and luminosity of the backdrop color."
+
+- title: "saturation"
+  description: "Creates a color with the saturation of the source color and the hue and luminosity of the backdrop color.
+                Painting with this mode in an area of the backdrop that is a pure gray (no saturation) produces no change."
+
+- title: "color"
+  description: "Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color.
+                This preserves the gray levels of the backdrop and is useful for coloring monochrome images or
+                tinting color images"
+
+- title: "luminosity"
+  description: "Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color.
+                This produces an inverse effect to that of the Color mode."

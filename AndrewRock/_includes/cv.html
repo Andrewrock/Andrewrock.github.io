@@ -1,0 +1,26 @@
+<div class="blurb-wrapper">
+  <h2 class="blurb">
+    Graduated a Business Analyst, currently disguised as a web developer
+  </h2>
+</div>
+<div class="cv-wrapper">
+  <ul class="cv-list">
+    {% for nav in site.data.jobs %}
+    {% if nav.subcategories != null %}
+    <li class="job-info">
+      <h1> {{ nav.title }} </h1>
+      <h2> {{ nav.company }} </h2>
+      <h3> {{ nav.location }} </h3>
+      <p class="job-desc">  {{ nav.description }}</p>
+      <ul class="role-wrapper">
+        {% for subcategory in nav.subcategories %}
+        <li class="role-info">
+          <p class="role"> {{ subcategory.subtitle }} </p>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,53 @@
+- title: "Front-end Developer"
+  company: "House of The Oireachtas / Each&Other"
+  location: "Dublin"
+  description: "Front-end developer contracted for six month contract on the new
+                House of The Oireachtas website launching during centenary
+                celebration of the Irish Government."
+  subcategories:
+    - subtitle: "Converted Sketch ﬁles into templates using Nunjucks and HTML."
+    - subtitle: "Mobile ﬁrst delivery with two breakpoints."
+    - subtitle: "Content and styles divided into components, modules, partials."
+    - subtitle: "Front-end developed with Flexbox with support to Internet explorer 10."
+    - subtitle: "Developed mixin library for easy customisation of components."
+
+- title: "Front-end Developer"
+  company: "Pacnet Services"
+  location: "Vancouver"
+  description: "Responsible for developing multiple hosted payment pages to meet the latest PCI (Payment Card Industry) compliance standards. Integrated with Stripe payments to facilitate card checks on the client side."
+  subcategories:
+    - subtitle: "Converted user requirements into wireframes, prototypes and a final product."
+    - subtitle: "Analysed key metrics (e.g. browser, visit volume, location) and identified core browsers."
+    - subtitle: "Created a list of browser features, establishing feature tests in Modernizr."
+    - subtitle: "Integrated with Stripe payments libraries for client side luhn check."
+    - subtitle: "Implemented a suite of tests in Ruby and Selenium along with BrowserStack."
+    - subtitle: "Worked on SPA with Angular and D3."
+
+- title: "Front-end Developer"
+  company: "TerminalFour Solutions"
+  location: "Dublin"
+  description: "Part of a two person team accountable for building, developing and maintaining the company brand through enforcing a style guide and coding standards for all front-end development."
+  subcategories:
+    - subtitle: "Transformed previous screens to latest branding while revising UX."
+    - subtitle: "Created interactive prototypes to recreate potential flow of data."
+    - subtitle: "Maintained relationships with QA to find and document bugs."
+    - subtitle: "Designed and developed views on top of backbone, using handlebars and html."
+
+- title: "Postgraduate Tutor"
+  company: "University College Cork"
+  location: "Cork"
+  description: "Given an opportunity to exhibit my skills and knowledge as a college Tutor for 120 postgraduate students. Brought my own ideas to teaching based on my own experiences of learning to code, ensuring an interactive lab session twice a week."
+  subcategories:
+    - subtitle: "Introduced students to HTML, CSS and Javascript in semester one."
+    - subtitle: "Created interactive websites using PHP and mySQL in semester two."
+    - subtitle: "Reverse engineered assignments to ensure students understood semantics."
+
+
+- title: "AML Analyst"
+  company: "SMBC"
+  location: "New York"
+  description: "Reviewed suspicious activity reports in compliance with established regulatory guidelines. Gathered regulatory differences between several countries, compiling reports on risk."
+  subcategories:
+    - subtitle: "Performed the required KYC screenings on customers."
+    - subtitle: "Developed AML /KYC reports on questionable accounts and transactions."
+    - subtitle: "Assisted Compliance department moving regulatory reports to cloud developing front end portal."

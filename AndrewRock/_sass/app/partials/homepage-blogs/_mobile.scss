@@ -1,0 +1,165 @@
+$homepage-max-width: 900px;
+$homepage-padding: 0 20px;
+$post-separator: 5px;
+$post-padding: 20px;
+$post-icon-height: 50px;
+
+.home-posts,
+.post-wrapper,
+.post,
+.post-body,
+.post-content,
+.post-icon,
+.post-footer,
+.post-details,
+.tag-details {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.home-posts,
+.post-wrapper,
+.post-content,
+.post-body,
+.post-footer {
+  width: $width;
+}
+
+.post-details,
+.tag-details {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.svg-wrapper,
+.tag-wrapper {
+  align-items: stretch;
+}
+
+.home-posts {
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: $homepage-max-width;
+}
+
+.post-body {
+  order: 1;
+}
+
+.post-wrapper {
+  background-color: darken($nav-link-color, 2%);
+  color: $white;
+  flex-flow: row wrap;
+  height: 400px;
+  margin-bottom: $post-padding;
+  overflow: hidden;
+  padding: $post-padding;
+}
+
+.post {
+  flex: 0 0 $width;
+
+  &:nth-of-type(odd) {
+    .post-wrapper {
+      background-color: lighten($nav-link-color, 2%);
+    }
+  }
+
+  &:nth-child(4n) {
+    .post-wrapper {
+      background-color: darken($nav-link-color, 2%);
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.content-title {
+  margin-bottom: 20px;
+  position: relative;
+
+  &::after {
+    background-color: $white;
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 20px auto 0;
+    width: 60px;
+  }
+}
+
+.post-content {
+  align-items: center;
+  flex-flow: column wrap;
+  height: $height;
+  justify-content: center;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.post-icon {
+  flex-flow: row nowrap;
+  height: $post-icon-height;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  svg {
+    fill: $white;
+    height: $height;
+    width: $width;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.post-footer {
+  flex-flow: row nowrap;
+  order: 2;
+}
+
+
+.tag-details,
+.post-details {
+  align-items: center;
+  flex: 1 0 50%;
+  flex-flow: row wrap;
+
+  svg,
+  p {
+    padding-right: 5px;
+  }
+
+  svg {
+    fill: $transparent;
+    height: 50px;
+    width: 35px;
+  }
+
+  p {
+    display: flex;
+    line-height: 1.2;
+  }
+}
+
+.svg-wrapper {
+  display: flex;
+  width: 25%;
+}
+
+.tag-wrapper,
+.date-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: auto;
+  padding-left: 10px;
+  width: 75%;
+}
+

@@ -1,0 +1,5 @@
+@import 'mobile';
+
+@media screen and (min-width: $desktop-width) {
+  @import 'desktop';
+}

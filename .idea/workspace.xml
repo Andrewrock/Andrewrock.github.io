@@ -2,7 +2,152 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2922ef68-4dae-407e-bba3-82acc1342303" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/bg16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/bg2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/bg44.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/bg50.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/bg51.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/bg52.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/bg7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/fantasy-football.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/insta-screen-desktop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/insta-screen-mobile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/insta-steps.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/registered.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/registered.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/.scss-lint.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_config.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_data/blend-modes.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_data/global.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_data/jobs.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_data/nav.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/cards.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/container.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/cv-hero.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/cv.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/hero.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/insta-hero.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/instafeed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/intro.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/pagination.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/toggler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/tutorial-group.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/tutorial-hero.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_includes/tutorial-post.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_layouts/cv.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_layouts/default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_layouts/insta.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_layouts/tutorial.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_pages/cv.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_pages/instagram.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_posts/2016-08-31-my-first-normal-post.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_posts/2016-08-31-my-first-video-post.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_posts/2017-03-15-background-blend-modes.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_posts/2017-03-17-recreating-instagram.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/components/_blurb.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/components/_hero.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/components/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/components/_loader.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/components/_stars.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/components/_toggle-list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/core/_body.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/core/_colours.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/core/_headings.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/core/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/core/_reset.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/mixins/_background-images.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/mixins/_breakpoints.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/mixins/_corners.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/mixins/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/Cv/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/Cv/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/Cv/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/cards/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/cards/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/cards/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/footer/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/footer/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/footer/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/homepage-blogs/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/homepage-blogs/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/homepage-blogs/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/homepage/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/homepage/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/homepage/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/image-grid/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/image-grid/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/image-grid/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/insta-cards/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/insta-cards/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/insta-cards/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/navigation/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/navigation/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/partials/navigation/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/blend-modes/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/blend-modes/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/blend-modes/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/code-editor/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/code-editor/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/code-editor/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/insta-tutorial/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/insta-tutorial/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/insta-tutorial/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/tutorial-theme/_desktop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/tutorial-theme/_index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/app/tutorials/tutorial-theme/_mobile.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/_sass/index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/css/style.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/grid.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/list.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/AFC_Bournemouth.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Arsenal.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Chelsea.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Crystal_Palace.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Everton_FC.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Hull_City.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Leicester_City.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Liverpool.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Manchester_City.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Manchester_United.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Middlesbrough_FC.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Southampton.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Stoke_City.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Sunderland.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Swansea_City.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Tottenham_Hotspur.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/Watford.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/West_Bromwich_Albion.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/soccer/West_Ham_United.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/img/yin_yang.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/js/insta-tutorial.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/js/instafeed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/js/power.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/js/respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndrewRock/package.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AndrewRock/_site/Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AndrewRock/_site/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AndrewRock/_site/about/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AndrewRock/_site/example-post.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AndrewRock/_site/Gemfile.lock" afterPath="$PROJECT_DIR$/AndrewRock/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndrewRock/_site/css/style.css" afterPath="$PROJECT_DIR$/AndrewRock/_site/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndrewRock/_site/index.html" afterPath="$PROJECT_DIR$/AndrewRock/_site/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndrewRock/_site/js/power.js" afterPath="$PROJECT_DIR$/AndrewRock/_site/js/power.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndrewRock/_site/my-first-normal-post.html" afterPath="$PROJECT_DIR$/AndrewRock/_site/my-first-normal-post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndrewRock/_site/my-first-video-post.html" afterPath="$PROJECT_DIR$/AndrewRock/_site/my-first-video-post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.css" afterPath="$PROJECT_DIR$/dist/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.min.css" afterPath="$PROJECT_DIR$/dist/main.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/app/partials/homepage/_desktop.scss" afterPath="$PROJECT_DIR$/sass/app/partials/homepage/_desktop.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/app/partials/homepage/_mobile.scss" afterPath="$PROJECT_DIR$/sass/app/partials/homepage/_mobile.scss" />
     </list>
     <ignored path="Andrewrock.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,12 +201,12 @@
       <file leaf-file-name="_mobile.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/app/partials/homepage/_mobile.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="9.166667">
-              <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
-                <element signature="e#1794#1840#0" expanded="false" />
-                <element signature="e#1846#1878#0" expanded="false" />
-                <element signature="e#1886#1961#0" expanded="false" />
+                <element signature="e#1778#1824#0" expanded="false" />
+                <element signature="e#1830#1862#0" expanded="false" />
+                <element signature="e#1870#1945#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -92,11 +237,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_desktop.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_desktop.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/app/partials/homepage/_desktop.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.375">
-              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            <state vertical-scroll-proportion="-7.5">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5973451">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -153,6 +308,7 @@
         <option value="$PROJECT_DIR$/sass/app/core/_headings.scss" />
         <option value="$PROJECT_DIR$/sass/app/partials/homepage/_mobile.scss" />
         <option value="$PROJECT_DIR$/sass/app/partials/homepage/_desktop.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -224,7 +380,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -242,8 +398,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,114 +426,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Andrewrock.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Andrewrock.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homepage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Andrewrock.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Andrewrock.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Andrewrock.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Andrewrock.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mixins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Andrewrock.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Andrewrock.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Andrewrock.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Andrewrock.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Andrewrock.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Andrewrock.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndrewRock" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -485,9 +553,9 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25496426" sideWeight="0.38387978" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25496426" sideWeight="0.6612022" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909605" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25496426" sideWeight="0.6161202" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25496426" sideWeight="0.3387978" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32816902" sideWeight="0.5254777" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5859155" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -524,6 +592,35 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sass/app/core/_headings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#505#646#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/app/mixins/_corners.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#571#718#0" expanded="false" />
+            <element signature="e#731#920#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/app/partials/homepage/_desktop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/app/core/_headings.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -664,34 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/bootstrap-4.0.0-alpha.6/scss/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/bootstrap-4.0.0-alpha.6/scss/_type.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4814815">
-          <caret line="19" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/bootstrap-4.0.0-alpha.6/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0384616">
-          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/bootstrap-4.0.0-alpha.6/scss/utilities/_flex.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.48883376">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/linkedin.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09911894">
@@ -724,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="45" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,10 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5440252">
           <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -882,20 +946,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/app/partials/homepage/_mobile.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.166667">
-          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#1794#1840#0" expanded="false" />
-            <element signature="e#1846#1878#0" expanded="false" />
-            <element signature="e#1886#1961#0" expanded="false" />
+            <element signature="e#1778#1824#0" expanded="false" />
+            <element signature="e#1830#1862#0" expanded="false" />
+            <element signature="e#1870#1945#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/app/partials/homepage/_desktop.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.375">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5973451">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

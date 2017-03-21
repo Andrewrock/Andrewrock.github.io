@@ -1,0 +1,28 @@
+$max-toggle-width: 965px;
+$toggler-height: 40px;
+$toggle-padding: 10px;
+$toggler-margin-bottom: 30px;
+
+.toggler-row {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  height: $toggler-height;
+  justify-content: flex-end;
+  margin: 0 auto $toggler-margin-bottom;
+  max-width: $max-toggle-width;
+  padding: 0 $toggle-padding;
+  width: $width;
+}
+
+.toggler {
+  color: $toggler-color;
+  font-size: $h3;
+  margin-left: 8px;
+  text-align: center;
+
+  &.active {
+    color: $nav-link-color;
+  }
+}

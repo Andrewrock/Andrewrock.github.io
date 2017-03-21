@@ -1,0 +1,144 @@
+$cv-line-width: 1px;
+$cv-position-top: 10px;
+$cv-position-left: -4.5px;
+$cv-padding: 0 20px;
+$cv-max-width: 640px;
+$cv-dot-size: 10px;
+$cv-dot-position-top: 2px;
+$cv-dot-position-left: -9px;
+$job-margin-bottom: 35px;
+$job-padding: 15px;
+$role-padding: 5px;
+$role-margin-bottom: 10px;
+$role-dot-top: 2px;
+
+.cv-list,
+.cv-overflow,
+.cv-wrapper,
+.job-info,
+.role-wrapper,
+.role-info,
+.role {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  width: $width;
+}
+
+.job-info,
+.role-info,
+.cv-list {
+  position: relative;
+}
+
+.job-info,
+.role-info {
+
+  &::before {
+    background-color: $nav-link-color;
+    border-radius: 50%;
+    content: '';
+    height: $cv-dot-size;
+    left: $cv-dot-position-left;
+    position: absolute;
+    top: $cv-dot-position-top;
+    width: $cv-dot-size;
+    z-index: 2;
+  }
+}
+
+.job-desc {
+  margin-bottom: 20px;
+}
+
+.cv-wrapper {
+  margin: 0 auto;
+  max-width: $cv-max-width;
+  padding: $cv-padding;
+}
+
+.cv-list {
+  list-style: none;
+  margin: 0;
+  width: $width;
+
+  &::after {
+    border-left: $cv-line-width solid $grey;
+    bottom: 0;
+    content: '';
+    height: calc(#{$height} - #{$cv-position-top});
+    left: $cv-position-left;
+    position: absolute;
+    top: $cv-dot-position-top;
+  }
+}
+
+.job-info {
+  margin: 0 0 $job-margin-bottom;
+  padding-left: $job-padding;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    display: flex;
+    width: $width;
+  }
+
+  h2,
+  h3 {
+    color: $grey;
+  }
+
+  h1 {
+    color: $nav-link-color;
+    font-size: $h4;
+    order: 1;
+  }
+
+  h2 {
+    align-items: center;
+    font-size: $h5;
+    order: 2;
+  }
+
+  h3 {
+    font-size: $h6;
+    order: 3;
+    padding: 0;
+  }
+
+  p {
+    font-family: $lora;
+    line-height: 1.5;
+    order: 4;
+  }
+}
+
+.role-wrapper {
+  order: 5;
+  padding: $cv-padding;
+}
+
+.role-info {
+  margin: 0;
+  padding: 0 $role-padding;
+  width: $width;
+
+  &::before {
+    height: $cv-dot-size / 2;
+    left: -5px;
+    top: 7px;
+    width: $cv-dot-size / 2;
+  }
+}
+
+.role {
+  font-family: $lora;
+  margin-bottom: $role-margin-bottom;
+  padding-left: $role-padding;
+}
