@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "hobby design",
   "main": "Gruntfile.js",
+  "sasslintConfig": ".scss-lint.yml",
   "dependencies": {
     "grunt": "^0.4.5"
   },
@@ -38,6 +39,7 @@
     "postcss": "^5.2.15",
     "postcss-font-magician": "^1.6.0",
     "precss": "^1.4.0",
+    "sass-lint": "^1.10.2",
     "stylelint-statement-max-nesting-depth": "^2.0.1"
   },
   "author": "AR",
