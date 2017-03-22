@@ -1841,7 +1841,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("../img/bg7.jpg") #c6b4ff center center/cover no-repeat;
+  background: url("/img/bg7.jpg") #c6b4ff center center/cover no-repeat;
   background-blend-mode: screen;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1876,16 +1876,18 @@ header {
   position: relative;
   width: 100%; }
 
-.insta {
-  background: url("../img/bg16.jpg") #c6b4ff center center/cover no-repeat;
+.insta,
+.tutorial {
   background-blend-mode: screen; }
+
+.insta {
+  background: url("/img/bg16.jpg") #c6b4ff center center/cover no-repeat; }
 
 .tutorial {
-  background: url("../img/bg2.jpg") #c6b4ff center center/cover no-repeat;
-  background-blend-mode: screen; }
+  background: url("/img/bg2.jpg") #c6b4ff center center/cover no-repeat; }
 
 .cv {
-  background: url("../img/bg52.jpg") #c6b4ff center center/cover no-repeat;
+  background: url("/img/bg52.jpg") #c6b4ff center center/cover no-repeat;
   background-blend-mode: color-dodge; }
   .cv svg {
     position: absolute;

@@ -1,6 +1,4 @@
 $header-height: 280px;
-$header-gradient1: #667eea;
-$header-gradient2: #764ba2;
 $spike-height: 80px;
 $header-top: 200px;
 $header-bottom: 15px;
@@ -8,7 +6,7 @@ $speed: 2s;
 
 header {
   align-items: center;
-  background: url('../img/bg7.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
+  background: url('/img/bg7.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
   background-blend-mode: screen;
   display: flex;
   height: $header-height;
@@ -38,18 +36,21 @@ header {
   width: $width;
 }
 
-.insta {
-  background: url('../img/bg16.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
+.insta,
+.tutorial {
   background-blend-mode: screen;
+}
+
+.insta {
+  background: url('/img/bg16.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
 }
 
 .tutorial {
-  background: url('../img/bg2.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
-  background-blend-mode: screen;
+  background: url('/img/bg2.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
 }
 
 .cv {
-  background: url('../img/bg52.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
+  background: url('/img/bg52.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
   background-blend-mode: color-dodge;
 
   svg {
