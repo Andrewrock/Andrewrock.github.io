@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { border: 0; margin: 0; padding: 0; vertical-align: baseline; }
+
+* { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+*::before, *::after { box-sizing: inherit; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote::before, blockquote::after { content: ''; }
+
+q::before, q::after { content: ''; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Libre Baskerville", serif; font-weight: 500; line-height: 1.1; margin: 0 0 0.5rem; }
+
+h1 { font-size: 2.5rem; }
+
+h2 { font-size: 2rem; }
+
+h3 { font-size: 1.75rem; }
+
+h4 { font-size: 1.5rem; }
+
+h5 { font-size: 1.25rem; }
+
+h6 { font-size: 1rem; }
+
+[class*="entypo-"]:before { font-family: 'entypo', sans-serif; }
+
+body { background-color: #f4f3f1; box-sizing: border-box; height: 100%; margin: 0; width: 100%; }
+
+.homepage-container, .homepage-content, .homepage-card, .text-container, .poster-container, .corner-content, .poster { display: flex; }
+
+.homepage-content, .homepage-card, .poster-container, .text-container { box-sizing: border-box; }
+
+.text-container { background-color: #fff; overflow: hidden; }
+
+.homepage-container { width: 300px; }
+
+.homepage-card { flex-flow: column-reverse wrap; }
+
+.text-container, .poster-container { align-items: center; flex-flow: column nowrap; height: 250px; width: 100%; }
+
+.text, .poster { align-items: center; flex-flow: row wrap; height: 100%; margin: 0 15px; overflow: hidden; }
+
+.poster-container { background: #1b2136; position: relative; }
+.poster-container .hover-me { color: #8a3b58; font-family: "Libre Baskerville", serif; position: absolute; top: -25px; }
+
+.poster h1 { color: #fff; font-size: 2.5rem; text-align: center; text-transform: capitalize; }
+
+.corner-content { flex-flow: column nowrap; justify-content: center; padding: 0 20px; }
+
+.corner-border { background-color: #fff; border: 6px solid #1b2136; box-sizing: border-box; position: relative; z-index: 2; height: calc(100% - 20px); margin: 15px; width: calc(100% - 20px); }
+.corner-border::before, .corner-border::after { background-color: #fff; content: ''; height: 100%; position: absolute; width: 100%; }
+.corner-border::before { height: calc((6px * 2) + (100%)); left: 12px; right: 0; top: -6px; width: calc((100%) - (12px * 2)); }
+.corner-border .corner-content { bottom: 6px; left: 6px; position: absolute; right: 6px; top: 6px; z-index: 1; }
+.corner-border::after { bottom: 0; height: calc((100%) - (12px * 2)); right: -6px; top: 12px; width: calc((6px * 2) + (100%)); }
+.corner-border h3, .corner-border h5 { color: #1b2136; font-family: "Open Sans", sans-serif; padding-bottom: 20px; text-align: center; text-transform: capitalize; width: 100%; }
+.corner-border h3 { padding-top: 10px; }
+
+.social-container { align-items: flex-end; display: flex; flex-flow: row nowrap; justify-content: center; margin: 0; padding: 0; }
+.social-container li { list-style: none; margin: 0 5px; }
+.social-container a { text-decoration: none; }
+.social-container svg { fill: #a00101; height: 40px; width: 40px; }
+
+@media screen and (min-width: 620px) { .homepage-container { width: 80%; }
+  .homepage-card { flex-flow: row wrap; height: 300px; width: 650px; }
+  .text-container, .poster-container { align-items: stretch; height: 100%; width: 50%; }
+  .poster-container { position: relative; }
+  .poster-container .hover-me { top: -50px; }
+  .poster-container:hover { background: url("/img/trump.gif") center center; background-size: cover; }
+  .poster-container:hover .poster { display: none; }
+  .corner-border { width: auto; }
+  .corner-border h3 { padding-bottom: 30px; }
+  .corner-border h5 { box-sizing: border-box; padding: 0 35px 30px; }
+  .corner-border ul { padding-bottom: 0; } }
+.intro { display: flex; flex-flow: row wrap; max-width: 100%; padding: 0 20px; width: 100%; }
+.intro p { box-sizing: border-box; flex: 0 1 80%; padding: 0 0 0 40px; }
+.intro p span { background: #fff; color: #6534ff; display: flex; font-family: "Fauna One", serif; font-size: 1rem; line-height: 1.4; padding: 5px; width: 100%; }
+.intro h1 { align-items: center; display: flex; flex: 0 1 75%; font-family: "Playfair Display", serif; }
+.intro h1 span:nth-of-type(1) { color: #6534ff; font-family: "Playfair Display", serif; font-size: 60px; width: 40px; }
+.intro h1 span:nth-of-type(2) { background: linear-gradient(to top, #6534ff 90%, transparent 90%, transparent); color: #fff; flex: 0 1 75%; font-weight: 700; padding: 15px 30px; }
+
+@media screen and (min-width: 620px) { .intro { max-width: 1200px; padding: 20px 40px; }
+  .intro p { padding: 0 60px; }
+  .intro p span { padding: 0 10px; } }
+nav { padding: 15px; }
+nav svg { fill: #6534ff; height: 40px; width: 40px; }
+
+nav, .nav-wrapper, .nav-wrapper > ul, .nav-wrapper > ul > li { display: flex; }
+
+nav, .nav-wrapper, .topics { box-sizing: border-box; width: 100%; }
+
+.socials, .topics { justify-content: flex-start; }
+
+.nav-wrapper { align-items: center; box-sizing: border-box; flex-flow: row wrap; justify-content: flex-start; list-style: none; }
+
+.nav-wrapper > ul { padding: 0; }
+.nav-wrapper > ul li { flex-flow: row nowrap; justify-content: flex-start; }
+
+.socials { align-items: center; flex-flow: row nowrap; margin: 0 0 20px; width: 120px; }
+
+.topics { flex-flow: row wrap; text-align: center; }
+
+.topics > li:not(:last-of-type)::after { align-items: center; color: inherit; content: '/'; display: flex; font-size: 15px; padding-left: 10px; }
+.topics > li:not(.current) a { color: #6534ff; }
+
+.current { padding: 0 10px; }
+.current a { box-sizing: border-box; color: #fff; position: relative; width: 100%; z-index: 2; }
+.current a::before { background-color: #6534ff; content: ''; height: calc(100% - 5px); left: 0; position: absolute; top: 0; transform: translate(0%, 5%) scaleX(1); transition: .3s ease; width: 100%; z-index: -1; }
+.current a:hover { box-shadow: none; }
+
+.topics > li > a { font-family: "Playfair Display", serif; font-size: 15px; line-height: 2; padding: 0 10px 5px; text-decoration: none; }
+.topics > li > a:hover { box-shadow: 0 -3px 0 #521bff inset; }
+
+@media screen and (min-width: 620px) { nav { padding: 20px 40px; width: 100%; }
+  .nav-wrapper { width: 1200px; }
+  .nav-wrapper > ul > li { justify-content: center; }
+  .socials { margin: 0; width: 33%; }
+  .socials li { width: 25%; }
+  .topics { justify-content: flex-end; width: calc(100% - 33%); }
+  .topics > li:last-of-type a { padding: 0 10px 5px; }
+  .topics > li > a { font-size: 18px; padding: 0 10px; } }
+footer { align-items: center; display: flex; flex-flow: row nowrap; height: 80px; justify-content: center; width: 100%; }
+
+.footer > ul { display: flex; flex-flow: row nowrap; justify-content: center; }
+.footer > ul li { list-style: none; }
+.footer > ul li a { background: url("../img/yin_yang.svg") center left no-repeat; color: #6534ff; padding: 10px 40px; }
+
+.container { display: flex; flex-flow: row wrap; height: 600px; justify-content: flex-start; margin: auto; padding: 20px; width: 100%; }
+
+.insta-quote { box-sizing: border-box; display: flex; flex-flow: row wrap; margin-bottom: 30px; width: 100%; }
+.insta-quote .quote-wrapper { box-sizing: border-box; display: flex; flex-flow: row wrap; justify-content: center; max-width: 965px; margin: auto; padding: 10px; width: 100%; }
+.insta-quote .quote-wrapper span { color: #6534ff; display: flex; font-size: 3.5rem; }
+.insta-quote .quote-wrapper span:nth-of-type(1) { order: 1; }
+.insta-quote .quote-wrapper span:nth-of-type(2) { order: 3; }
+.insta-quote .quote-wrapper .author { color: #6534ff; font-family: "Playfair Display", serif; font-size: 1rem; order: 4; margin: auto; }
+
+h3 { align-items: baseline; display: flex; font-size: 1.25rem; font-family: "Fauna One", serif; order: 2; padding: 10px; text-align: center; }
+
+.instagram-wrapper { display: flex; flex-flow: row wrap; justify-content: space-around; flex-grow: 1; margin: 0 auto 30px; height: 100%; max-width: 965px; box-sizing: border-box; width: 100%; }
+
+.insta-item { box-sizing: border-box; flex: 1 0 33%; padding: 0 10px; margin-bottom: 10px; width: 100%; }
+
+.insta-image { animation: slide-item .3s ease forwards; display: block; height: 100%; opacity: 0; position: relative; transition: all 0.17s cubic-bezier(0.4, 0, 1, 1); visibility: hidden; width: 100%; }
+.insta-image img { display: block; transition: all 0.17s cubic-bezier(0.4, 0, 1, 1); max-width: 100%; }
+
+.img-backdrop { background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: none; flex-flow: column wrap; justify-content: center; padding: 0; top: 0; width: 100%; height: 100%; position: absolute; z-index: 1; opacity: 0; transition: all 0.3s ease; }
+
+.insta-caption { display: none; flex-flow: row wrap; padding: 0 30px; text-align: left; }
+.insta-caption p { font-family: "Fauna One", serif; color: #fff; }
+
+.insta-btn { background-color: transparent; border: solid 1px #6534ff; color: #6534ff; cursor: pointer; display: flex; font-family: "Playfair Display", serif; justify-content: center; margin: 0 auto 30px; outline: 0; padding: 10px; position: relative; text-transform: uppercase; transition: all 0.3s ease; width: 130px; }
+.insta-btn:hover { border: solid 1px #521bff; background-color: #5d2aff; color: #fff; }
+.insta-btn[disabled] { background: #ccc; }
+
+@keyframes slide-item { 60% { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
+  100% { opacity: 1; visibility: visible; -webkit-transform: translateY(0); transform: translateY(0); } }
+@media screen and (min-width: 620px) { .insta-image:hover .img-backdrop { opacity: 1; }
+  .img-backdrop, .insta-caption { display: flex; } }
+.card-wrapper { display: flex; flex-flow: row wrap; height: 100%; width: 100%; }
+
+.star-container { align-items: center; display: flex; flex-flow: row nowrap; justify-content: space-around; margin: auto; }
+.star-container::before, .star-container::after { background-color: #f61f1e; content: ''; height: 1px; width: 50%; }
+.star-container::before { margin-left: -50%; right: 8px; }
+.star-container::after { left: 8px; margin-right: -50%; }
+
+.stars { color: #f61f1e; padding: 0 8px; }
+.stars::before { content: '\2605'; font-family: entypo, sans-serif; font-size: 1rem; }
+.stars:checked ~ ::before { content: '\2606'; }
+.stars:focus { outline: 0; }
+
+header { align-items: center; background: url("../img/bg7.jpg") #c6b4ff center center/cover no-repeat; display: flex; background-blend-mode: screen; transition: background-color .5s; height: 280px; justify-content: center; margin-bottom: 30px; position: relative; }
+header::after { content: ''; display: block; padding-bottom: 25%; }
+header svg { bottom: 0; fill: #f4f3f1; height: 80px; position: absolute; transition: background-color 2s ease; width: 100%; }
+header h1 { color: #fff; font-family: "Playfair Display", serif; font-size: 2.5rem; text-align: center; }
+
+.insta { background: url("../img/bg16.jpg") #c6b4ff center center/cover no-repeat; background-blend-mode: screen; transition: background-color .5s; width: 100%; }
+
+@media (max-width: 699px) { .svg--lg { display: none; } }
+@media (min-width: 700px) { .svg--sm { display: none; } }
+.toggler-row { align-items: center; box-sizing: border-box; display: flex; flex-flow: row nowrap; height: 40px; justify-content: flex-end; margin: 0 auto 30px; max-width: 965px; padding: 0 10px; width: 100%; }
+
+.toggler { color: #aaaaaa; font-size: 1.75rem; margin-left: 8px; text-align: center; }
+.toggler.active { color: #6534ff; }

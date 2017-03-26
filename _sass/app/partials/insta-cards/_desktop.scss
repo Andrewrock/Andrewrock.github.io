@@ -1,0 +1,13 @@
+.insta-image {
+
+  &:hover {
+    .img-backdrop {
+      opacity: 1;
+    }
+  }
+}
+
+.img-backdrop,
+.insta-caption{
+  display: flex;
+}

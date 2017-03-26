@@ -1,0 +1,15 @@
+$intro-width: 1200px;
+$intro-padding: 20px 40px;
+
+.intro {
+  max-width: $intro-width;
+  padding: $intro-padding;
+
+  p {
+    padding: 0 60px;
+
+    span {
+      padding: 0 10px;
+    }
+  }
+}
