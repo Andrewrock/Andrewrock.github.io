@@ -77,6 +77,8 @@ $post-icon-height: 50px;
 
 .post {
   background-color: darken($nav-link-color, 2%);
+  flex: 1;
+  justify-content: center;
 
   a {
     text-decoration: none;

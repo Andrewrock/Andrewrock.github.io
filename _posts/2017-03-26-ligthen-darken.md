@@ -1,64 +1,69 @@
 ---
 layout: tutorial
-title: 'The lighten and darken functions'
-date: 2017-03-15
+title: 'Color functions'
+date: 2017-03-26
 read: '5min'
 tags: HTML SCSS
-lead_text: Creating interesting color combinations.
+lead_text: Using Sass to play with colours .
 ---
 
 <div class="tutorial-body">
-<p class="tutorial-paragraph"> Thinking back to school, I can remember I
- was never any good at drawing, most of the time I was just happy to be 
- sitting in a double art class rather than a french class, but like all 
- good teachers, Mr Barrett had a way of making you remember the important
- things, and just as the history teacher would say 'In 1492 Columbus 
- sailed the ocean blue.', Mr Barrett would encourage the use of the color
- to tell a story, influence moods.
+<p class="tutorial-paragraph"> Thinking back to school, I can remember 
+I was never any good at art, most of the time I was just happy to be 
+sitting in a double art class rather than a French class, it often the 
+classes that at fifteen you think cannot help you going forward but like
+all good teachers, Mr Barrett had a way of making you remember the 
+important things. Just as the history teacher would drill in to you 
+that 'In 1492 Columbus sailed the ocean blue.', Mr Barrett would 
+encourage the use of the colour to tell a story, influence moods and to
+serve as a bridge to something new.
 </p>
 
-<p class="tutorial-paragraph"> It's ten years since those art classes and
- the way use color throughout our sites has been curtailed, with
- limited choices available before having to turn to javascript. However 
- now we have the ability to easily manipulate a single color resulting 
- in a myriad of different colors.
- </p>
+<p class="tutorial-paragraph"> Ten years have past since those art 
+classes, I'm now a front-end developer and closer to colours and those 
+art classes than my college degree.
+</p>
  
-<p class="tutorial-paragraph">To start we need one color, we will use
-this color as our base color. The color I have used for my own site is
-<span class="code-font purple">#6534ff </span>
+<p class="tutorial-paragraph"> The way colour has been used on the web 
+throughout those last ten years has been relatively stagnant, with 
+limited choices available before having to turn to javascript or relying
+on the support of a polyfill library. 
+</p> 
+
+<p class="tutorial-paragraph"> However now we have the ability to easily
+manipulate a single colour which can result in a plethora of different 
+colours.
+</p>
+ 
+<p class="tutorial-paragraph">To begin we use one colour, setting this 
+as our base colour. The colour I have used for my own site 
+is <span class="code-font purple">#6534ff</span>
 </p>
 
-<p class="tutorial-paragraph"> Sass offers us plenty of options for 
-creating unique and different color combinations. Lets look at the following</p>
+<p class="tutorial-paragraph"> <span class="code-font">Sass</span> 
+provides plenty of options out of the box allowing us to create unique 
+and different colour combinations with ease. We will be looking at:
+</p>
 
-  <ul class="instafeed-setup">
-    <li>
-      <p> Shade & Tint </p>
-    </li>
-    <li>
-      <p> Lighten & Darken </p>
-    </li>
-    <li>
-      <p> Combine effects </p>
-    </li>
+  <ul class="simple-list">
+    <li> <p> Shade & Tint </p> </li>
+    <li> <p> Lighten & Darken </p> </li>
+    <li> <p> Multiple colours </p> </li>
   </ul>
-
 
 <div class="color-functions">
 <h2 class="tutorial-section-heading">Shade & Tint</h2>
-<p class="tutorial-paragraph"> Adding tints and shades to your color, 
-can result in a whole palette, or even introduce colors you may not 
+<p class="tutorial-paragraph"> Adding a tint or shade to your colour, 
+can result in a fresh palette, or even introduce colours you may not 
 previously have considered.
 </p>
 
 <p class="tutorial-paragraph"> To use the <span class="code-font">
 tint</span> and <span class="code-font"> shade</span> 
-we use the the <span class="code-font">mix()</span> function.
-We mix our color with a value of white ( <span class="code-font">tint</span> ) 
-and black ( <span class="code-font">shade</span> )
+we use the <span class="code-font">mix()</span> function.
+mixing the colour with white (<span class="code-font">tint</span>) 
+and black (<span class="code-font">shade</span>)
 </p>
-
 
 <div class='code-container'>
   <pre class='code code-css'><code>
@@ -75,16 +80,15 @@ $grey: #999;
 </code></pre>
 </div>
 
-<p class="tutorial-paragraph"> As we will be using these color functions
- more than once it is best to make them into a reusable function
- We name our function "shade" and "tint" so it is easy to recognise what
- each one does. 
+<p class="tutorial-paragraph"> We name our function "shade" and "tint" 
+so it is easy to differentiate between them. 
 </p>
 
 <p class="tutorial-paragraph"> The benefits of using the 
 <span class="code-font"> tint</span> and
-<span class="code-font"> shade</span> allow us to create more colors 
-while retaining consistency and adhering to your original colour/colours.
+<span class="code-font"> shade</span> include allowing us to create 
+more colors with less effort all while retaining consistency and 
+adhering to your original colour/colours.
 </p>
 
 <div class='code-container'>
@@ -126,30 +130,32 @@ $purple: #6534ff;
 
 <h4 class="code-font"> Shade </h4>
 <ul class="shade">
-  <li>0</li>
-  <li>20</li>
-  <li>40</li>
-  <li>60</li>
-  <li>80</li>
-  <li>100</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>
+
 <h4 class="code-font"> Tint </h4>
 <ul class="tint">
-  <li>0</li>
-  <li>20</li>
-  <li>40</li>
-  <li>60</li>
-  <li>80</li>
-  <li>100</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>
 
-<p class="tutorial-paragraph"> Starting at 0 we increase the 
+<p class="tutorial-paragraph"> Starting at 0 we increase the amount of
 <span class="code-font"> tint</span> and <span class="code-font"> shade</span>
-applied to each item in increments of ten until we reach 100.
+in increments of ten until we reach 100.
 </p>
 
-<p class="tutorial-paragraph"> To add the increment we know there are
-six items, so we loop through each and apply our desired 
+<p class="tutorial-paragraph">To increase the increment every item, we 
+first need to need know how many increments are needed. In this case it is
+six. Using the loop we cycle through each and apply our desired 
 <span class="code-font">shade</span> or <span class="code-font">tint</span>
 </p>
 
@@ -171,13 +177,12 @@ six items, so we loop through each and apply our desired
 }</code></pre>
 </div>
 
-<p class="tutorial-paragraph">
-A good way to know when to use either function is to remember that
-<span class="code-font">shade</span> is the mixture of a color with black,
-which reduces lightness
-<span class="code-font">tint</span> is the mixture of a color with white,
-which increases lightness
-
+<p class="tutorial-paragraph"> If you find yourself confused as to what
+the purpose of each is, remember that
+<span class="code-font">shade</span> is the mixture of a colour with 
+black, which reduces lightness
+<span class="code-font">tint</span> is the mixture of a colour with 
+white, which increases lightness
 </p>
 
 <h4 class="tutorial-section-heading">Possible blend combinations</h4>
@@ -196,11 +201,12 @@ which increases lightness
 
 
 <h2 class="tutorial-section-heading">lighten & darken</h2>
-<p class="tutorial-paragraph"> Often, All that is needed is just 
-a single shade or highlight variation of our base color. To achieve this
-we use the <span class="code-font"> Sass </span> 
+<p class="tutorial-paragraph"> Often, we are just looking for a single 
+shade or highlight variation of our base colour. To achieve this
+we use the <span class="code-font">Sass</span> 
 <span class="code-font">darken</span> and 
-<span class="code-font">lighten</span>. These functions are pretty simple.
+<span class="code-font">lighten</span>. These functions are pretty 
+simple.
 </p>
 
 <div class='code-container'>
@@ -208,22 +214,24 @@ we use the <span class="code-font"> Sass </span>
 lighten($color, 10%);</code></pre>
 </div>
 
-
-<p class="tutorial-paragraph"> As the lighten and darken functions can 
-quickly result in white and black, it is usually best to stay in the 
-range of 3-20%. Sass will produce an error if the amount applied is
-over 100%, this is important to know especially if using a single 
-color for multiple items 
+<p class="tutorial-paragraph"> As the <span class="code-font">lighten</span>
+and <span class="code-font">darken</span> functions can quickly result 
+in over powering results of white and black, try staying in the range of
+3-20%. <span class="code-font">Sass</span> will produce an error if the 
+amount of <span class="code-font">shade</span> or 
+<span class="code-font">tint</span> exceeds 100%, this is important to 
+remember especially if using a single colour for multiple items, or 
+outputting an incremented value from a large amount of items.
 </p>
 
 <ul class="light-dark">
-  <li>Original color</li>
+  <li>Original colour</li>
   <li>Lighten (2.5%)</li>
   <li>Lighten (5%)</li>
   <li>Lighten (7.5%)</li>
   <li>Lighten (10%)</li>
   <li>Lighten (12.5%)</li>
-  <li>Original color</li>
+  <li>Original colour</li>
   <li>Darken (2.5%)</li>
   <li>Darken (5%)</li>
   <li>Darken (7.5%)</li>
@@ -246,24 +254,23 @@ color for multiple items
 </ul>
 
 
-<h4 class="tutorial-section-heading"><span class="code-font"> tint </span>
-<span class="code-font">tint</span>,
+<h4 class="tutorial-section-heading"><span class="code-font">tint</span>,
 <span class="code-font">shade</span>,
-<span class="code-font">lighten</span> and
+<span class="code-font">darken</span>
+<span class="code-font">lighten</span>
 </h4>
 
 <p class="tutorial-paragraph">
-Now that we have already seen how the 
+Have already seen how the 
 <span class="code-font">tint</span>,
 <span class="code-font">shade</span>,
 <span class="code-font">lighten</span> and
-<span class="code-font">darken</span> change the original color.
+<span class="code-font">darken</span> can change the original colour.
 Lets put everything together, starting with
-<span class="code-font"> tint </span>,
-<span class="code-font"> lighten </span>,
-<span class="code-font"> shade </span> and 
-<span class="code-font">darken</span>. Notice the difference between
-each.
+<span class="code-font">tint</span>,
+<span class="code-font">lighten</span>,
+<span class="code-font">shade</span> and 
+<span class="code-font">darken</span>.
 </p>
 
 <ul class="all-together">
@@ -290,30 +297,35 @@ each.
 </ul>
 
 
-<h2 class="tutorial-section-heading">Combining colours</h2>
-<p class="tutorial-paragraph"> So far we looked at
+<h2 class="tutorial-section-heading">Multiple colours</h2>
+<p class="tutorial-paragraph"> We looked at
 <span class="code-font">tint</span>,
 <span class="code-font">shade</span>,
 <span class="code-font">lighten</span> and
 <span class="code-font">darken</span>. However so far we have only worked
-with one singular color <span class="code-font purple">#6534ff</span>
+with one singular colour <span class="code-font purple">#6534ff</span>
 </p>
 
 <p class="tutorial-paragraph"> We also have the ability to perform the 
-same actions using multiple colors. Needless to say to use multiple 
-colours we need more than one color, lets use
+same actions using multiple colours. Needless to say to use multiple 
+colours we need more than one colour, lets use
 <span class="code-font purple">#6534ff</span>
 <span class="code-font pink">#fc0152</span>
 </p>
 
 <ul class="combined">
-  <li>0</li>
-  <li>20</li>
-  <li>40</li>
-  <li>60</li>
-  <li>80</li>
-  <li>100</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>
+
+<p class="tutorial-paragraph"> As you can see from the code below, the 
+approach is similar to using a single colour.
+</p>
+
 
 <div class='code-container'>
  <pre class='code code-css'><code>$purple: #6534ff;
@@ -331,6 +343,7 @@ $pink: #fc0152;
   }
 }</code></pre>
 </div>
+
 <h4 class="code-font"> lighten & darken </h4>
 <ul class="combined-blend">
   <li></li>
@@ -350,14 +363,12 @@ $pink: #fc0152;
 </ul>
 
 <p class="tutorial-paragraph">We already compared the differences
- between
-<span class="code-font">tint</span>,
+between <span class="code-font">tint</span>,
 <span class="code-font">shade</span>,
 <span class="code-font">lighten</span> and
 <span class="code-font">darken</span> with a single colour, now lets 
 compare with two colours.
 </p>
-
 
 <ul class="all-together-two">
   <li></li>
@@ -412,52 +423,39 @@ all the effects together </p>
   <li>tint</li>
   <li>tint</li>
   <li>tint</li>
-  <li>tint</li>
-  
-  
+  <li>tint</li>  
   <li>lighten</li>
   <li>lighten</li>
   <li>lighten</li>
   <li>lighten</li>
   <li>lighten</li>
-  
-  
   <li>shade</li>
   <li>shade</li>
   <li>shade</li>
   <li>shade</li>
   <li>shade</li>
-  
-  
   <li>darken</li>
   <li>darken</li>
   <li>darken</li>
   <li>darken</li>
   <li>darken</li>
-  
   <li>tint-shade</li>
   <li>tint-shade</li>
   <li>tint-shade</li>
   <li>tint-shade</li>
   <li>tint-shade</li>
-  
-  
   <li>light-dark</li>
   <li>light-dark</li>
   <li>light-dark</li>
   <li>light-dark</li>
   <li>light-dark</li>
-  
   <li> original </li>
-  
 </ul>
-
-
-
 
 <p class="tutorial-paragraph"> Just as my art teacher urged us to play
 with colours, I encourage you to experiment with colours in your own 
-designs, the results may surprise you.
+designs, the results may surprise you. 
+</p>
 
 
 </div>

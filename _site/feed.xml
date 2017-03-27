@@ -1,4 +1,625 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2017-03-27T13:19:30+01:00</updated><id>http://0.0.0.0:4000/</id><entry><title type="html">Instafeed Tutorial</title><link href="http://0.0.0.0:4000/recreating-instagram.html" rel="alternate" type="text/html" title="Instafeed Tutorial" /><published>2017-03-17T00:00:00+00:00</published><updated>2017-03-17T00:00:00+00:00</updated><id>http://0.0.0.0:4000/recreating-instagram</id><content type="html" xml:base="http://0.0.0.0:4000/recreating-instagram.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2017-03-27T20:49:48+01:00</updated><id>http://0.0.0.0:4000/</id><entry><title type="html">:not() selector</title><link href="http://0.0.0.0:4000/not-selector.html" rel="alternate" type="text/html" title=":not() selector" /><published>2017-03-27T00:00:00+01:00</published><updated>2017-03-27T00:00:00+01:00</updated><id>http://0.0.0.0:4000/not-selector</id><content type="html" xml:base="http://0.0.0.0:4000/not-selector.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+  
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; The &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt;
+may be one of the least used css selectors however it is packed with
+potential. &lt;span class=&quot;code-cont&quot;&gt;:not()&lt;/span&gt; can used with all 
+simple selectors, in other words any regular selector
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;  
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;:not(selector) {
+ css declarations;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+  
+ 
+&lt;ul class=&quot;simple-list&quot;&gt;
+ &lt;li&gt;&lt;p&gt;Type selector (e.g p, button, pre etc)&lt;/p&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;p&gt;Class selector (e.g .header, .footer, .nav etc)&lt;/p&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;p&gt;ID selector (e.g #logo)&lt;/p&gt; &lt;/li&gt;
+ &lt;li&gt;&lt;p&gt;Pseudo-class selector (e.g :checked, :active)&lt;/p&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;p&gt;Attribute selector (e.g [type=&quot;submit&quot;])&lt;/p&gt; &lt;/li&gt;    
+&lt;/ul&gt;
+  
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; There are however a few exceptions as to
+what we can use &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt;. The list of 
+un-supported selectors is smaller than the supported so it may be easier
+to learn the not supported list 
+&lt;/p&gt;
+  
+&lt;div class=&quot;code-container&quot;&gt;  
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;/* The following example will not work */
+
+div:not(:not(.same)) {}
+
+li:not(:not(:last-child)) {}
+
+:not(::first-letter) {}
+
+a:not(::after) {}
+
+p:not(::before) {}
+
+/* :not() cannot be nested either */
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+  
+  
+&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;Using the alphabet to test
+ &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt;
+&lt;/h2&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; We can use the alphabet to illustrate the
+power of the &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;div class=&quot;alphabet-container&quot;&gt;
+&lt;ul class=&quot;alphabet&quot;&gt;
+    &lt;li&gt;a&lt;/li&gt;
+    &lt;li&gt;b&lt;/li&gt;
+    &lt;li&gt;c&lt;/li&gt;
+    &lt;li&gt;d&lt;/li&gt;
+    &lt;li&gt;e&lt;/li&gt;
+    &lt;li&gt;f&lt;/li&gt;
+    &lt;li&gt;g&lt;/li&gt;
+    &lt;li&gt;h&lt;/li&gt;
+    &lt;li&gt;i&lt;/li&gt;
+    &lt;li&gt;j&lt;/li&gt;
+    &lt;li&gt;k&lt;/li&gt;
+    &lt;li&gt;l&lt;/li&gt;
+    &lt;li&gt;m&lt;/li&gt;
+    &lt;li&gt;n&lt;/li&gt;
+    &lt;li&gt;o&lt;/li&gt;
+    &lt;li&gt;p&lt;/li&gt;
+    &lt;li&gt;q&lt;/li&gt;
+    &lt;li&gt;r&lt;/li&gt;
+    &lt;li&gt;s&lt;/li&gt;
+    &lt;li&gt;t&lt;/li&gt;
+    &lt;li&gt;u&lt;/li&gt;
+    &lt;li&gt;v&lt;/li&gt;
+    &lt;li&gt;y&lt;/li&gt;
+    &lt;li&gt;x&lt;/li&gt;
+    &lt;li&gt;y&lt;/li&gt;
+    &lt;li&gt;z&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Now lets say we want to only show vowels.
+To achieve this I have added a &lt;span class=&quot;code-font&quot;&gt;vowel&lt;/span&gt;
+class. This is the hook our &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt;
+selector will check against before returning items.
+&lt;/p&gt;
+&lt;div class=&quot;code-container&quot;&gt;  
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.alphabet &amp;gt; li:not(.vowel) {
+display: none;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;alphabet vowel&quot;&gt;
+    &lt;li class=&quot;vowel&quot;&gt;a&lt;/li&gt;
+    &lt;li&gt;b&lt;/li&gt;
+    &lt;li&gt;c&lt;/li&gt;
+    &lt;li&gt;d&lt;/li&gt;
+    &lt;li class=&quot;vowel&quot;&gt;e&lt;/li&gt;
+    &lt;li&gt;f&lt;/li&gt;
+    &lt;li&gt;g&lt;/li&gt;
+    &lt;li&gt;h&lt;/li&gt;
+    &lt;li class=&quot;vowel&quot;&gt;i&lt;/li&gt;
+    &lt;li&gt;j&lt;/li&gt;
+    &lt;li&gt;k&lt;/li&gt;
+    &lt;li&gt;l&lt;/li&gt;
+    &lt;li&gt;m&lt;/li&gt;
+    &lt;li&gt;n&lt;/li&gt;
+    &lt;li class=&quot;vowel&quot;&gt;o&lt;/li&gt;
+    &lt;li&gt;p&lt;/li&gt;
+    &lt;li&gt;q&lt;/li&gt;
+    &lt;li&gt;r&lt;/li&gt;
+    &lt;li&gt;s&lt;/li&gt;
+    &lt;li&gt;t&lt;/li&gt;
+    &lt;li class=&quot;vowel&quot;&gt;u&lt;/li&gt;
+    &lt;li&gt;v&lt;/li&gt;
+    &lt;li&gt;y&lt;/li&gt;
+    &lt;li&gt;x&lt;/li&gt;
+    &lt;li&gt;y&lt;/li&gt;
+    &lt;li&gt;z&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Now lets say we want to only change the
+background color for vowels
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;  
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.alphabet-test &amp;gt; li {
+background-color: $nav-link-color;
+  &amp;amp;:not(.vowel) {
+   background-color: grey;
+   color: $body-color;
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul class=&quot;alphabet-test&quot;&gt;
+    &lt;li class=&quot;vowel&quot;&gt;a&lt;/li&gt;
+    &lt;li&gt;b&lt;/li&gt;
+    &lt;li&gt;c&lt;/li&gt;
+    &lt;li&gt;d&lt;/li&gt;
+    &lt;li class=&quot;vowel&quot;&gt;e&lt;/li&gt;
+    &lt;li&gt;f&lt;/li&gt;
+    &lt;li&gt;g&lt;/li&gt;
+    &lt;li&gt;h&lt;/li&gt;
+    &lt;li class=&quot;vowel&quot;&gt;i&lt;/li&gt;
+    &lt;li&gt;j&lt;/li&gt;
+    &lt;li&gt;k&lt;/li&gt;
+    &lt;li&gt;l&lt;/li&gt;
+    &lt;li&gt;m&lt;/li&gt;
+    &lt;li&gt;n&lt;/li&gt;
+    &lt;li class=&quot;vowel&quot;&gt;o&lt;/li&gt;
+    &lt;li&gt;p&lt;/li&gt;
+    &lt;li&gt;q&lt;/li&gt;
+    &lt;li&gt;r&lt;/li&gt;
+    &lt;li&gt;s&lt;/li&gt;
+    &lt;li&gt;t&lt;/li&gt;
+    &lt;li class=&quot;vowel&quot;&gt;u&lt;/li&gt;
+    &lt;li&gt;v&lt;/li&gt;
+    &lt;li&gt;y&lt;/li&gt;
+    &lt;li&gt;x&lt;/li&gt;
+    &lt;li&gt;y&lt;/li&gt;
+    &lt;li&gt;z&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="HTML" /><category term="SCSS" /><summary type="html">The :not() may be one of the least used css selectors however it is packed with potential. :not() can used with all simple selectors, in other words any regular selector</summary></entry><entry><title type="html">Color functions</title><link href="http://0.0.0.0:4000/ligthen-darken.html" rel="alternate" type="text/html" title="Color functions" /><published>2017-03-26T00:00:00+00:00</published><updated>2017-03-26T00:00:00+00:00</updated><id>http://0.0.0.0:4000/ligthen-darken</id><content type="html" xml:base="http://0.0.0.0:4000/ligthen-darken.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Thinking back to school, I can remember 
+I was never any good at art, most of the time I was just happy to be 
+sitting in a double art class rather than a French class, it often the 
+classes that at fifteen you think cannot help you going forward but like
+all good teachers, Mr Barrett had a way of making you remember the 
+important things. Just as the history teacher would drill in to you 
+that 'In 1492 Columbus sailed the ocean blue.', Mr Barrett would 
+encourage the use of the colour to tell a story, influence moods and to
+serve as a bridge to something new.
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Ten years have past since those art 
+classes, I'm now a front-end developer and closer to colours and those 
+art classes than my college degree.
+&lt;/p&gt;
+ 
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; The way colour has been used on the web 
+throughout those last ten years has been relatively stagnant, with 
+limited choices available before having to turn to javascript or relying
+on the support of a polyfill library. 
+&lt;/p&gt; 
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; However now we have the ability to easily
+manipulate a single colour which can result in a plethora of different 
+colours.
+&lt;/p&gt;
+ 
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;To begin we use one colour, setting this 
+as our base colour. The colour I have used for my own site 
+is &lt;span class=&quot;code-font purple&quot;&gt;#6534ff&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; &lt;span class=&quot;code-font&quot;&gt;Sass&lt;/span&gt; 
+provides plenty of options out of the box allowing us to create unique 
+and different colour combinations with ease. We will be looking at:
+&lt;/p&gt;
+
+  &lt;ul class=&quot;simple-list&quot;&gt;
+    &lt;li&gt; &lt;p&gt; Shade &amp;amp; Tint &lt;/p&gt; &lt;/li&gt;
+    &lt;li&gt; &lt;p&gt; Lighten &amp;amp; Darken &lt;/p&gt; &lt;/li&gt;
+    &lt;li&gt; &lt;p&gt; Multiple colours &lt;/p&gt; &lt;/li&gt;
+  &lt;/ul&gt;
+
+&lt;div class=&quot;color-functions&quot;&gt;
+&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;Shade &amp;amp; Tint&lt;/h2&gt;
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Adding a tint or shade to your colour, 
+can result in a fresh palette, or even introduce colours you may not 
+previously have considered.
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; To use the &lt;span class=&quot;code-font&quot;&gt;
+tint&lt;/span&gt; and &lt;span class=&quot;code-font&quot;&gt; shade&lt;/span&gt; 
+we use the &lt;span class=&quot;code-font&quot;&gt;mix()&lt;/span&gt; function.
+mixing the colour with white (&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;) 
+and black (&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;)
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+  &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;
+$body-color: #282828;
+$grey: #999;
+
+@function shade($color, $percentage) {
+  @return mix($body-color, $color, $percentage);
+}
+
+@function tint($color, $percentage) {
+  @return mix($white, $color, $percentage);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; We name our function &quot;shade&quot; and &quot;tint&quot; 
+so it is easy to differentiate between them. 
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; The benefits of using the 
+&lt;span class=&quot;code-font&quot;&gt; tint&lt;/span&gt; and
+&lt;span class=&quot;code-font&quot;&gt; shade&lt;/span&gt; include allowing us to create 
+more colors with less effort all while retaining consistency and 
+adhering to your original colour/colours.
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+  &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;
+@function shade($color, $percentage) {
+  @return mix($body-color, $color, $percentage);
+}
+
+$body-color: #282828;
+$grey: #999;
+$purple: #6534ff;
+
+.tint li
+.shade li {
+  background: $blue;
+  flex: 1 0 auto;
+}
+
+.tint li {
+  $tint-num: 6;
+
+  @for $i from 1 through $shade-num {
+    &amp;amp;:nth-of-type(#{$i}) {
+      background-color: tint($purple, ($i * 10%));
+    }
+  }
+}
+
+.shade li {
+  $shade-num: 6;
+
+  @for $i from 1 through $shade-num {
+    &amp;amp;:nth-of-type(#{$i}) {
+      background-color: shade($purple, ($i * 10%));
+    }
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 class=&quot;code-font&quot;&gt; Shade &lt;/h4&gt;
+&lt;ul class=&quot;shade&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 class=&quot;code-font&quot;&gt; Tint &lt;/h4&gt;
+&lt;ul class=&quot;tint&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Starting at 0 we increase the amount of
+&lt;span class=&quot;code-font&quot;&gt; tint&lt;/span&gt; and &lt;span class=&quot;code-font&quot;&gt; shade&lt;/span&gt;
+in increments of ten until we reach 100.
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;To increase the increment every item, we 
+first need to need know how many increments are needed. In this case it is
+six. Using the loop we cycle through each and apply our desired 
+&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt; or &lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+ &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;
+ $shade-num: 6;
+ $tint-num: 6;
+  
+ @for $i from 1 through $shade-num {
+   &amp;amp;:nth-of-type(#{$i}) {
+     background-color: shade($purple, ($i * 10%));
+  }
+   
+ @for $i from 1 through $shade-num {
+   &amp;amp;:nth-of-type(#{$i}) {
+    background-color: tint($purple, ($i * 10%));
+ }
+
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; If you find yourself confused as to what
+the purpose of each is, remember that
+&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt; is the mixture of a colour with 
+black, which reduces lightness
+&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt; is the mixture of a colour with 
+white, which increases lightness
+&lt;/p&gt;
+
+&lt;h4 class=&quot;tutorial-section-heading&quot;&gt;Possible blend combinations&lt;/h4&gt;
+&lt;ul class=&quot;tint-shade&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;lighten &amp;amp; darken&lt;/h2&gt;
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Often, we are just looking for a single 
+shade or highlight variation of our base colour. To achieve this
+we use the &lt;span class=&quot;code-font&quot;&gt;Sass&lt;/span&gt; 
+&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt; and 
+&lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt;. These functions are pretty 
+simple.
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+ &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;darken($color, 10%);
+lighten($color, 10%);&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; As the &lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt;
+and &lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt; functions can quickly result 
+in over powering results of white and black, try staying in the range of
+3-20%. &lt;span class=&quot;code-font&quot;&gt;Sass&lt;/span&gt; will produce an error if the 
+amount of &lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt; or 
+&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt; exceeds 100%, this is important to 
+remember especially if using a single colour for multiple items, or 
+outputting an incremented value from a large amount of items.
+&lt;/p&gt;
+
+&lt;ul class=&quot;light-dark&quot;&gt;
+  &lt;li&gt;Original colour&lt;/li&gt;
+  &lt;li&gt;Lighten (2.5%)&lt;/li&gt;
+  &lt;li&gt;Lighten (5%)&lt;/li&gt;
+  &lt;li&gt;Lighten (7.5%)&lt;/li&gt;
+  &lt;li&gt;Lighten (10%)&lt;/li&gt;
+  &lt;li&gt;Lighten (12.5%)&lt;/li&gt;
+  &lt;li&gt;Original colour&lt;/li&gt;
+  &lt;li&gt;Darken (2.5%)&lt;/li&gt;
+  &lt;li&gt;Darken (5%)&lt;/li&gt;
+  &lt;li&gt;Darken (7.5%)&lt;/li&gt;
+  &lt;li&gt;Darken (10%)&lt;/li&gt;
+  &lt;li&gt;Darken (12.5%)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 class=&quot;tutorial-section-heading&quot;&gt;Possible blend combinations&lt;/h4&gt;
+&lt;ul class=&quot;light-dark-mix&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h4 class=&quot;tutorial-section-heading&quot;&gt;&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
+&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;,
+&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt;
+&lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt;
+&lt;/h4&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;
+Have already seen how the 
+&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
+&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;,
+&lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt; and
+&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt; can change the original colour.
+Lets put everything together, starting with
+&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
+&lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt;,
+&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt; and 
+&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt;.
+&lt;/p&gt;
+
+&lt;ul class=&quot;all-together&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;Multiple colours&lt;/h2&gt;
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; We looked at
+&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
+&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;,
+&lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt; and
+&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt;. However so far we have only worked
+with one singular colour &lt;span class=&quot;code-font purple&quot;&gt;#6534ff&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; We also have the ability to perform the 
+same actions using multiple colours. Needless to say to use multiple 
+colours we need more than one colour, lets use
+&lt;span class=&quot;code-font purple&quot;&gt;#6534ff&lt;/span&gt;
+&lt;span class=&quot;code-font pink&quot;&gt;#fc0152&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;ul class=&quot;combined&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; As you can see from the code below, the 
+approach is similar to using a single colour.
+&lt;/p&gt;
+
+
+&lt;div class=&quot;code-container&quot;&gt;
+ &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;$purple: #6534ff;
+$pink: #fc0152;
+
+.combined li {
+  background: $nav-link-color;
+  flex: 1 0 auto;
+  $combine-num: 6;
+
+  @for $i from 1 through $combine-num {
+    &amp;amp;:nth-of-type(#{$i}) {
+      background-color: mix(darken($nav-link-color,($i * 7.5%)),lighten($pink,($i * 10%)));
+    }
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 class=&quot;code-font&quot;&gt; lighten &amp;amp; darken &lt;/h4&gt;
+&lt;ul class=&quot;combined-blend&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 class=&quot;code-font&quot;&gt; tint &amp;amp; shade &lt;/h4&gt;
+&lt;ul class=&quot;combined-blend darken-lighten&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;We already compared the differences
+between &lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
+&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;,
+&lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt; and
+&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt; with a single colour, now lets 
+compare with two colours.
+&lt;/p&gt;
+
+&lt;ul class=&quot;all-together-two&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+ &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.all-together-two li {
+$tint-num: 10;
+$darken-num: 20;
+background-blend-mode: overlay;
+flex: 1 0 20%;
+
+ @for $i from 1 through $tint-num {
+   &amp;amp;:nth-of-type(#{$i}) {
+     background: $image-one mix(tint($nav-link-color,($i * 5%)),shade($pink,($i * 2%))) center center / cover no-repeat;
+   }
+ }
+
+ @for $i from 11 through $darken-num {
+   &amp;amp;:nth-of-type(#{$i}) {
+    background: $image-one mix(darken($nav-link-color,($i * 5%)),lighten($pink,($i * 2%))) center center / cover no-repeat;
+  }
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; For the ultimate comparison, lets combine
+all the effects together &lt;/p&gt;
+
+
+&lt;ul class=&quot;all-together-all&quot;&gt;
+  &lt;li&gt;tint&lt;/li&gt;
+  &lt;li&gt;tint&lt;/li&gt;
+  &lt;li&gt;tint&lt;/li&gt;
+  &lt;li&gt;tint&lt;/li&gt;
+  &lt;li&gt;tint&lt;/li&gt;  
+  &lt;li&gt;lighten&lt;/li&gt;
+  &lt;li&gt;lighten&lt;/li&gt;
+  &lt;li&gt;lighten&lt;/li&gt;
+  &lt;li&gt;lighten&lt;/li&gt;
+  &lt;li&gt;lighten&lt;/li&gt;
+  &lt;li&gt;shade&lt;/li&gt;
+  &lt;li&gt;shade&lt;/li&gt;
+  &lt;li&gt;shade&lt;/li&gt;
+  &lt;li&gt;shade&lt;/li&gt;
+  &lt;li&gt;shade&lt;/li&gt;
+  &lt;li&gt;darken&lt;/li&gt;
+  &lt;li&gt;darken&lt;/li&gt;
+  &lt;li&gt;darken&lt;/li&gt;
+  &lt;li&gt;darken&lt;/li&gt;
+  &lt;li&gt;darken&lt;/li&gt;
+  &lt;li&gt;tint-shade&lt;/li&gt;
+  &lt;li&gt;tint-shade&lt;/li&gt;
+  &lt;li&gt;tint-shade&lt;/li&gt;
+  &lt;li&gt;tint-shade&lt;/li&gt;
+  &lt;li&gt;tint-shade&lt;/li&gt;
+  &lt;li&gt;light-dark&lt;/li&gt;
+  &lt;li&gt;light-dark&lt;/li&gt;
+  &lt;li&gt;light-dark&lt;/li&gt;
+  &lt;li&gt;light-dark&lt;/li&gt;
+  &lt;li&gt;light-dark&lt;/li&gt;
+  &lt;li&gt; original &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Just as my art teacher urged us to play
+with colours, I encourage you to experiment with colours in your own 
+designs, the results may surprise you. 
+&lt;/p&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="HTML" /><category term="SCSS" /><summary type="html">Thinking back to school, I can remember I was never any good at art, most of the time I was just happy to be sitting in a double art class rather than a French class, it often the classes that at fifteen you think cannot help you going forward but like all good teachers, Mr Barrett had a way of making you remember the important things. Just as the history teacher would drill in to you that 'In 1492 Columbus sailed the ocean blue.', Mr Barrett would encourage the use of the colour to tell a story, influence moods and to serve as a bridge to something new.</summary></entry><entry><title type="html">Instafeed Tutorial</title><link href="http://0.0.0.0:4000/recreating-instagram.html" rel="alternate" type="text/html" title="Instafeed Tutorial" /><published>2017-03-17T00:00:00+00:00</published><updated>2017-03-17T00:00:00+00:00</updated><id>http://0.0.0.0:4000/recreating-instagram</id><content type="html" xml:base="http://0.0.0.0:4000/recreating-instagram.html">&lt;div class=&quot;tutorial-body&quot;&gt;
   &lt;p class=&quot;tutorial-paragraph&quot;&gt;
     With over 300 million daily images posted to instagram, it is
     the number one social network for sharing images and videos.
@@ -41,7 +662,7 @@
     without developer access we cannot fetch photos, once we have access
     we can configure our options, but first to gain access.
   &lt;/p&gt;
-  &lt;ul class=&quot;instafeed-setup&quot;&gt;
+  &lt;ul class=&quot;simple-list&quot;&gt;
     &lt;li&gt;
       &lt;p&gt;Go to
         &lt;span class=&quot;underline-definition&quot;&gt;
@@ -192,7 +813,7 @@
         &lt;/td&gt;
         &lt;td&gt;
           &lt;p class=&quot;tutorial-paragraph&quot;&gt; Three options:&lt;/p&gt;
-          &lt;ul class=&quot;instafeed-setup&quot;&gt;
+          &lt;ul class=&quot;simple-list&quot;&gt;
             &lt;li&gt;thumbnail (default)
               &lt;span class=&quot;solid-definition&quot;&gt; 150 x 150 &lt;/span&gt;
             &lt;/li&gt;
@@ -233,7 +854,7 @@
         &lt;/td&gt;
         &lt;td&gt;
           &lt;p class=&quot;tutorial-paragraph&quot;&gt; There are a number of options here &lt;/p&gt;
-          &lt;ul class=&quot;instafeed-setup&quot;&gt;
+          &lt;ul class=&quot;simple-list&quot;&gt;
             &lt;li&gt; popular (default) - Images from the popular page &lt;/li&gt;
             &lt;li&gt; tagged - Images with a specific tag. Use 
               &lt;span class=&quot;solid-definition&quot;&gt; tagName&lt;/span&gt; 
@@ -256,7 +877,7 @@
         &lt;/td&gt;
         &lt;td&gt;
           &lt;p class=&quot;tutorial-paragraph&quot;&gt; There are a number of options here &lt;/p&gt;
-          &lt;ul class=&quot;instafeed-setup&quot;&gt;
+          &lt;ul class=&quot;simple-list&quot;&gt;
             &lt;li&gt;none (default) - As they come from Instagram. &lt;/li&gt;
             &lt;li&gt;most-recent&lt;/li&gt;
             &lt;li&gt;least-recent&lt;/li&gt;
@@ -603,461 +1224,7 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
   visibility: visible;
  }
 }&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name></name></author><category term="HTML" /><category term="Flexbox" /><category term="SCSS" /><summary type="html">With over 300 million daily images posted to instagram, it is the number one social network for sharing images and videos. This tutorial will show you how to display your instagram feed on your website. Before we begin it is important to mention that this tutorial is not exclusive to Instagram, for the purpose of this demo I will be using Instagram. If you are more interested in the SCSS then click Here Lets get started, to follow this demo you will need the following Instafeed.js and Instagram developer access Getting started Once you have downloaded Instafeed.js place it your javascript directory and reference it &amp;lt;script type=&quot;text/javascript&quot; src=&quot;js/instafeed.min.js&quot;&amp;gt; Then we add it to our html &amp;lt;div id=&quot;instafeed-tutorial&quot;&amp;gt;&amp;lt;/div&amp;gt; Instagram Developer Before we can access our photos we must first register our application with Instagram. In terms of API's this one is relatively simple to set up. The following steps are to set up a developer account with Instagram, without developer access we cannot fetch photos, once we have access we can configure our options, but first to gain access. Go to Instagram developer portal Click the 'Register Your Application' button. Application Name: This can be anything, As long as it does not contain any of the following: ‘insta’, ‘gram’, ‘IG’ or ‘Instagram’  Description: Best to keep this simple, e.g. &quot;Gallery for personal site&quot;  Company Name: Company name can be your name Website URL: This is the url of your website Valid Redirect URIs: For the purpose of this demo your sites URL will suffice nobody will be logging into our application as we are running in Sandbox mode. Privacy Policy: If you have a privacy policy include it here, if not just add your site URL. Contact Email: Add your email Finally, switch to the Security tab and deselect the ‘Disable implicit OAuth’ checkbox, then hit Register. Connecting Instagram There are a number of steps involved here, it may take one or two tries to get it all correct. Before we can any further, we need to get our USER-ID, The easiest way to do this is to click here You want to enter the username, the one you use to sign in. Once you have your own ID keep it handy as you will need it soon. To get your ClientID, paste the following into your browser https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&amp;amp;redirect_uri=REDIRECT-URI&amp;amp;response_type=token Now replace CLIENT-ID with the client ID generated. Now replace REDIRECT-URI with the redirect URI that you included when setting up. Load the URL. Once you have loaded the URL, your access token should be in the URL 'http://your-redirect-uri#access_token=ACCESS-TOKEN' Copy the ACCESS-TOKEN Instafeed Options We now have everyhting that is needed to use instafeed, now lets briefly explore the API options, For detailed information about the API head over to the Github page . Resolution: Three options: thumbnail (default) 150 x 150 low_resolution 306 x 306 standard_resolution 612 x 612 Target Either the ID name or the DOM element itself where you want to add the images to. Template: Allows us to use a custom template to use for images, I will explain this further as we will be using the template to create our gallery Get: There are a number of options here popular (default) - Images from the popular page tagged - Images with a specific tag. Use tagName to specify the tag. location - Images from a location. Use locationId to specify the location user - Images from a user. Use userId to specify the user. SortBy: There are a number of options here none (default) - As they come from Instagram. most-recent least-recent most-liked least-liked most-commented least-commented Links: Wrap the image in a link. Limit: By default our instagram photos will run in sandbox mode, This means tht we are capped at a maximum of twenty images, by adding a limit that is less than the maximum twenty we can paginate through our images and take advantage of lazy loading. Advanced Options There are a number of advanced options such as what to do before an after images are returned. Before: Function called before fetching images from Instagram After: Function called when images have been added to the page. Success: Function called when Instagram returns valid data. Error: Function called when there is an error fetching images. Filter: Function used to exclude images from your results, e.g Show only photos, videos Putting it all together document.addEventListener(&quot;DOMContentLoaded&quot;, function() { var tutorialFeed = new Instafeed ({ get: 'user', userId: '623597756', clientId: 'Client', target: 'tutorial-instafeed', accessToken: 'Access-Token', resolution: 'standard_resolution', sortBy: 'most-recent', limit: 9, template: '&amp;lt;div class=&quot;image-item insta-page&quot;&amp;gt;' + '&amp;lt;a class=&quot;image insta-image&quot; href=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' + '&amp;lt;img alt=&quot;&amp;#123;&amp;#123;user.full_name&amp;#125;&amp;#125;&quot; src=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' + '&amp;lt;div class=&quot;img-backdrop-tutorial&quot;&amp;gt;' + '&amp;lt;div class=&quot;insta-caption&quot;&amp;gt;' + '&amp;lt;p&amp;gt;&amp;#123;&amp;#123;caption&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;div class=&quot;captions&quot;&amp;gt;' + '&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;/a&amp;gt;' + '&amp;lt;/div&amp;gt;'</summary></entry><entry><title type="html">The lighten and darken functions</title><link href="http://0.0.0.0:4000/ligthen-darken.html" rel="alternate" type="text/html" title="The lighten and darken functions" /><published>2017-03-15T00:00:00+00:00</published><updated>2017-03-15T00:00:00+00:00</updated><id>http://0.0.0.0:4000/ligthen-darken</id><content type="html" xml:base="http://0.0.0.0:4000/ligthen-darken.html">&lt;div class=&quot;tutorial-body&quot;&gt;
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; Thinking back to school, I can remember I
- was never any good at drawing, most of the time I was just happy to be 
- sitting in a double art class rather than a french class, but like all 
- good teachers, Mr Barrett had a way of making you remember the important
- things, and just as the history teacher would say 'In 1492 Columbus 
- sailed the ocean blue.', Mr Barrett would encourage the use of the color
- to tell a story, influence moods.
-&lt;/p&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; It's ten years since those art classes and
- the way use color throughout our sites has been curtailed, with
- limited choices available before having to turn to javascript. However 
- now we have the ability to easily manipulate a single color resulting 
- in a myriad of different colors.
- &lt;/p&gt;
- 
-&lt;p class=&quot;tutorial-paragraph&quot;&gt;To start we need one color, we will use
-this color as our base color. The color I have used for my own site is
-&lt;span class=&quot;code-font purple&quot;&gt;#6534ff &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; Sass offers us plenty of options for 
-creating unique and different color combinations. Lets look at the following&lt;/p&gt;
-
-  &lt;ul class=&quot;instafeed-setup&quot;&gt;
-    &lt;li&gt;
-      &lt;p&gt; Shade &amp;amp; Tint &lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;p&gt; Lighten &amp;amp; Darken &lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;p&gt; Combine effects &lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-
-
-&lt;div class=&quot;color-functions&quot;&gt;
-&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;Shade &amp;amp; Tint&lt;/h2&gt;
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; Adding tints and shades to your color, 
-can result in a whole palette, or even introduce colors you may not 
-previously have considered.
-&lt;/p&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; To use the &lt;span class=&quot;code-font&quot;&gt;
-tint&lt;/span&gt; and &lt;span class=&quot;code-font&quot;&gt; shade&lt;/span&gt; 
-we use the the &lt;span class=&quot;code-font&quot;&gt;mix()&lt;/span&gt; function.
-We mix our color with a value of white ( &lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt; ) 
-and black ( &lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt; )
-&lt;/p&gt;
-
-
-&lt;div class=&quot;code-container&quot;&gt;
-  &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;
-$body-color: #282828;
-$grey: #999;
-
-@function shade($color, $percentage) {
-  @return mix($body-color, $color, $percentage);
-}
-
-@function tint($color, $percentage) {
-  @return mix($white, $color, $percentage);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; As we will be using these color functions
- more than once it is best to make them into a reusable function
- We name our function &quot;shade&quot; and &quot;tint&quot; so it is easy to recognise what
- each one does. 
-&lt;/p&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; The benefits of using the 
-&lt;span class=&quot;code-font&quot;&gt; tint&lt;/span&gt; and
-&lt;span class=&quot;code-font&quot;&gt; shade&lt;/span&gt; allow us to create more colors 
-while retaining consistency and adhering to your original colour/colours.
-&lt;/p&gt;
-
-&lt;div class=&quot;code-container&quot;&gt;
-  &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;
-@function shade($color, $percentage) {
-  @return mix($body-color, $color, $percentage);
-}
-
-$body-color: #282828;
-$grey: #999;
-$purple: #6534ff;
-
-.tint li
-.shade li {
-  background: $blue;
-  flex: 1 0 auto;
-}
-
-.tint li {
-  $tint-num: 6;
-
-  @for $i from 1 through $shade-num {
-    &amp;amp;:nth-of-type(#{$i}) {
-      background-color: tint($purple, ($i * 10%));
-    }
-  }
-}
-
-.shade li {
-  $shade-num: 6;
-
-  @for $i from 1 through $shade-num {
-    &amp;amp;:nth-of-type(#{$i}) {
-      background-color: shade($purple, ($i * 10%));
-    }
-  }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 class=&quot;code-font&quot;&gt; Shade &lt;/h4&gt;
-&lt;ul class=&quot;shade&quot;&gt;
-  &lt;li&gt;0&lt;/li&gt;
-  &lt;li&gt;20&lt;/li&gt;
-  &lt;li&gt;40&lt;/li&gt;
-  &lt;li&gt;60&lt;/li&gt;
-  &lt;li&gt;80&lt;/li&gt;
-  &lt;li&gt;100&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 class=&quot;code-font&quot;&gt; Tint &lt;/h4&gt;
-&lt;ul class=&quot;tint&quot;&gt;
-  &lt;li&gt;0&lt;/li&gt;
-  &lt;li&gt;20&lt;/li&gt;
-  &lt;li&gt;40&lt;/li&gt;
-  &lt;li&gt;60&lt;/li&gt;
-  &lt;li&gt;80&lt;/li&gt;
-  &lt;li&gt;100&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; Starting at 0 we increase the 
-&lt;span class=&quot;code-font&quot;&gt; tint&lt;/span&gt; and &lt;span class=&quot;code-font&quot;&gt; shade&lt;/span&gt;
-applied to each item in increments of ten until we reach 100.
-&lt;/p&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; To add the increment we know there are
-six items, so we loop through each and apply our desired 
-&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt; or &lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;div class=&quot;code-container&quot;&gt;
- &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;
- $shade-num: 6;
- $tint-num: 6;
-  
- @for $i from 1 through $shade-num {
-   &amp;amp;:nth-of-type(#{$i}) {
-     background-color: shade($purple, ($i * 10%));
-  }
-   
- @for $i from 1 through $shade-num {
-   &amp;amp;:nth-of-type(#{$i}) {
-    background-color: tint($purple, ($i * 10%));
- }
-
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt;
-A good way to know when to use either function is to remember that
-&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt; is the mixture of a color with black,
-which reduces lightness
-&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt; is the mixture of a color with white,
-which increases lightness
-
-&lt;/p&gt;
-
-&lt;h4 class=&quot;tutorial-section-heading&quot;&gt;Possible blend combinations&lt;/h4&gt;
-&lt;ul class=&quot;tint-shade&quot;&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;lighten &amp;amp; darken&lt;/h2&gt;
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; Often, All that is needed is just 
-a single shade or highlight variation of our base color. To achieve this
-we use the &lt;span class=&quot;code-font&quot;&gt; Sass &lt;/span&gt; 
-&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt; and 
-&lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt;. These functions are pretty simple.
-&lt;/p&gt;
-
-&lt;div class=&quot;code-container&quot;&gt;
- &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;darken($color, 10%);
-lighten($color, 10%);&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; As the lighten and darken functions can 
-quickly result in white and black, it is usually best to stay in the 
-range of 3-20%. Sass will produce an error if the amount applied is
-over 100%, this is important to know especially if using a single 
-color for multiple items 
-&lt;/p&gt;
-
-&lt;ul class=&quot;light-dark&quot;&gt;
-  &lt;li&gt;Original color&lt;/li&gt;
-  &lt;li&gt;Lighten (2.5%)&lt;/li&gt;
-  &lt;li&gt;Lighten (5%)&lt;/li&gt;
-  &lt;li&gt;Lighten (7.5%)&lt;/li&gt;
-  &lt;li&gt;Lighten (10%)&lt;/li&gt;
-  &lt;li&gt;Lighten (12.5%)&lt;/li&gt;
-  &lt;li&gt;Original color&lt;/li&gt;
-  &lt;li&gt;Darken (2.5%)&lt;/li&gt;
-  &lt;li&gt;Darken (5%)&lt;/li&gt;
-  &lt;li&gt;Darken (7.5%)&lt;/li&gt;
-  &lt;li&gt;Darken (10%)&lt;/li&gt;
-  &lt;li&gt;Darken (12.5%)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 class=&quot;tutorial-section-heading&quot;&gt;Possible blend combinations&lt;/h4&gt;
-&lt;ul class=&quot;light-dark-mix&quot;&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h4 class=&quot;tutorial-section-heading&quot;&gt;&lt;span class=&quot;code-font&quot;&gt; tint &lt;/span&gt;
-&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
-&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;,
-&lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt; and
-&lt;/h4&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt;
-Now that we have already seen how the 
-&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
-&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;,
-&lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt; and
-&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt; change the original color.
-Lets put everything together, starting with
-&lt;span class=&quot;code-font&quot;&gt; tint &lt;/span&gt;,
-&lt;span class=&quot;code-font&quot;&gt; lighten &lt;/span&gt;,
-&lt;span class=&quot;code-font&quot;&gt; shade &lt;/span&gt; and 
-&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt;. Notice the difference between
-each.
-&lt;/p&gt;
-
-&lt;ul class=&quot;all-together&quot;&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;Combining colours&lt;/h2&gt;
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; So far we looked at
-&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
-&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;,
-&lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt; and
-&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt;. However so far we have only worked
-with one singular color &lt;span class=&quot;code-font purple&quot;&gt;#6534ff&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; We also have the ability to perform the 
-same actions using multiple colors. Needless to say to use multiple 
-colours we need more than one color, lets use
-&lt;span class=&quot;code-font purple&quot;&gt;#6534ff&lt;/span&gt;
-&lt;span class=&quot;code-font pink&quot;&gt;#fc0152&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;ul class=&quot;combined&quot;&gt;
-  &lt;li&gt;0&lt;/li&gt;
-  &lt;li&gt;20&lt;/li&gt;
-  &lt;li&gt;40&lt;/li&gt;
-  &lt;li&gt;60&lt;/li&gt;
-  &lt;li&gt;80&lt;/li&gt;
-  &lt;li&gt;100&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;code-container&quot;&gt;
- &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;$purple: #6534ff;
-$pink: #fc0152;
-
-.combined li {
-  background: $nav-link-color;
-  flex: 1 0 auto;
-  $combine-num: 6;
-
-  @for $i from 1 through $combine-num {
-    &amp;amp;:nth-of-type(#{$i}) {
-      background-color: mix(darken($nav-link-color,($i * 7.5%)),lighten($pink,($i * 10%)));
-    }
-  }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;h4 class=&quot;code-font&quot;&gt; lighten &amp;amp; darken &lt;/h4&gt;
-&lt;ul class=&quot;combined-blend&quot;&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 class=&quot;code-font&quot;&gt; tint &amp;amp; shade &lt;/h4&gt;
-&lt;ul class=&quot;combined-blend darken-lighten&quot;&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt;We already compared the differences
- between
-&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
-&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;,
-&lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt; and
-&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt; with a single colour, now lets 
-compare with two colours.
-&lt;/p&gt;
-
-
-&lt;ul class=&quot;all-together-two&quot;&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;code-container&quot;&gt;
- &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.all-together-two li {
-$tint-num: 10;
-$darken-num: 20;
-background-blend-mode: overlay;
-flex: 1 0 20%;
-
- @for $i from 1 through $tint-num {
-   &amp;amp;:nth-of-type(#{$i}) {
-     background: $image-one mix(tint($nav-link-color,($i * 5%)),shade($pink,($i * 2%))) center center / cover no-repeat;
-   }
- }
-
- @for $i from 11 through $darken-num {
-   &amp;amp;:nth-of-type(#{$i}) {
-    background: $image-one mix(darken($nav-link-color,($i * 5%)),lighten($pink,($i * 2%))) center center / cover no-repeat;
-  }
- }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; For the ultimate comparison, lets combine
-all the effects together &lt;/p&gt;
-
-
-&lt;ul class=&quot;all-together-all&quot;&gt;
-  &lt;li&gt;tint&lt;/li&gt;
-  &lt;li&gt;tint&lt;/li&gt;
-  &lt;li&gt;tint&lt;/li&gt;
-  &lt;li&gt;tint&lt;/li&gt;
-  &lt;li&gt;tint&lt;/li&gt;
-  
-  
-  &lt;li&gt;lighten&lt;/li&gt;
-  &lt;li&gt;lighten&lt;/li&gt;
-  &lt;li&gt;lighten&lt;/li&gt;
-  &lt;li&gt;lighten&lt;/li&gt;
-  &lt;li&gt;lighten&lt;/li&gt;
-  
-  
-  &lt;li&gt;shade&lt;/li&gt;
-  &lt;li&gt;shade&lt;/li&gt;
-  &lt;li&gt;shade&lt;/li&gt;
-  &lt;li&gt;shade&lt;/li&gt;
-  &lt;li&gt;shade&lt;/li&gt;
-  
-  
-  &lt;li&gt;darken&lt;/li&gt;
-  &lt;li&gt;darken&lt;/li&gt;
-  &lt;li&gt;darken&lt;/li&gt;
-  &lt;li&gt;darken&lt;/li&gt;
-  &lt;li&gt;darken&lt;/li&gt;
-  
-  &lt;li&gt;tint-shade&lt;/li&gt;
-  &lt;li&gt;tint-shade&lt;/li&gt;
-  &lt;li&gt;tint-shade&lt;/li&gt;
-  &lt;li&gt;tint-shade&lt;/li&gt;
-  &lt;li&gt;tint-shade&lt;/li&gt;
-  
-  
-  &lt;li&gt;light-dark&lt;/li&gt;
-  &lt;li&gt;light-dark&lt;/li&gt;
-  &lt;li&gt;light-dark&lt;/li&gt;
-  &lt;li&gt;light-dark&lt;/li&gt;
-  &lt;li&gt;light-dark&lt;/li&gt;
-  
-  &lt;li&gt; original &lt;/li&gt;
-  
-&lt;/ul&gt;
-
-
-
-
-&lt;p class=&quot;tutorial-paragraph&quot;&gt; Just as my art teacher urged us to play
-with colours, I encourage you to experiment with colours in your own 
-designs, the results may surprise you.
-
-
-&amp;lt;/div&amp;gt;
-&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="HTML" /><category term="SCSS" /><summary type="html">Thinking back to school, I can remember I was never any good at drawing, most of the time I was just happy to be sitting in a double art class rather than a french class, but like all good teachers, Mr Barrett had a way of making you remember the important things, and just as the history teacher would say 'In 1492 Columbus sailed the ocean blue.', Mr Barrett would encourage the use of the color to tell a story, influence moods.</summary></entry><entry><title type="html">Background-blend modes</title><link href="http://0.0.0.0:4000/background-blend-modes.html" rel="alternate" type="text/html" title="Background-blend modes" /><published>2017-03-15T00:00:00+00:00</published><updated>2017-03-15T00:00:00+00:00</updated><id>http://0.0.0.0:4000/background-blend-modes</id><content type="html" xml:base="http://0.0.0.0:4000/background-blend-modes.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="HTML" /><category term="Flexbox" /><category term="SCSS" /><summary type="html">With over 300 million daily images posted to instagram, it is the number one social network for sharing images and videos. This tutorial will show you how to display your instagram feed on your website. Before we begin it is important to mention that this tutorial is not exclusive to Instagram, for the purpose of this demo I will be using Instagram. If you are more interested in the SCSS then click Here Lets get started, to follow this demo you will need the following Instafeed.js and Instagram developer access Getting started Once you have downloaded Instafeed.js place it your javascript directory and reference it &amp;lt;script type=&quot;text/javascript&quot; src=&quot;js/instafeed.min.js&quot;&amp;gt; Then we add it to our html &amp;lt;div id=&quot;instafeed-tutorial&quot;&amp;gt;&amp;lt;/div&amp;gt; Instagram Developer Before we can access our photos we must first register our application with Instagram. In terms of API's this one is relatively simple to set up. The following steps are to set up a developer account with Instagram, without developer access we cannot fetch photos, once we have access we can configure our options, but first to gain access. Go to Instagram developer portal Click the 'Register Your Application' button. Application Name: This can be anything, As long as it does not contain any of the following: ‘insta’, ‘gram’, ‘IG’ or ‘Instagram’  Description: Best to keep this simple, e.g. &quot;Gallery for personal site&quot;  Company Name: Company name can be your name Website URL: This is the url of your website Valid Redirect URIs: For the purpose of this demo your sites URL will suffice nobody will be logging into our application as we are running in Sandbox mode. Privacy Policy: If you have a privacy policy include it here, if not just add your site URL. Contact Email: Add your email Finally, switch to the Security tab and deselect the ‘Disable implicit OAuth’ checkbox, then hit Register. Connecting Instagram There are a number of steps involved here, it may take one or two tries to get it all correct. Before we can any further, we need to get our USER-ID, The easiest way to do this is to click here You want to enter the username, the one you use to sign in. Once you have your own ID keep it handy as you will need it soon. To get your ClientID, paste the following into your browser https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&amp;amp;redirect_uri=REDIRECT-URI&amp;amp;response_type=token Now replace CLIENT-ID with the client ID generated. Now replace REDIRECT-URI with the redirect URI that you included when setting up. Load the URL. Once you have loaded the URL, your access token should be in the URL 'http://your-redirect-uri#access_token=ACCESS-TOKEN' Copy the ACCESS-TOKEN Instafeed Options We now have everyhting that is needed to use instafeed, now lets briefly explore the API options, For detailed information about the API head over to the Github page . Resolution: Three options: thumbnail (default) 150 x 150 low_resolution 306 x 306 standard_resolution 612 x 612 Target Either the ID name or the DOM element itself where you want to add the images to. Template: Allows us to use a custom template to use for images, I will explain this further as we will be using the template to create our gallery Get: There are a number of options here popular (default) - Images from the popular page tagged - Images with a specific tag. Use tagName to specify the tag. location - Images from a location. Use locationId to specify the location user - Images from a user. Use userId to specify the user. SortBy: There are a number of options here none (default) - As they come from Instagram. most-recent least-recent most-liked least-liked most-commented least-commented Links: Wrap the image in a link. Limit: By default our instagram photos will run in sandbox mode, This means tht we are capped at a maximum of twenty images, by adding a limit that is less than the maximum twenty we can paginate through our images and take advantage of lazy loading. Advanced Options There are a number of advanced options such as what to do before an after images are returned. Before: Function called before fetching images from Instagram After: Function called when images have been added to the page. Success: Function called when Instagram returns valid data. Error: Function called when there is an error fetching images. Filter: Function used to exclude images from your results, e.g Show only photos, videos Putting it all together document.addEventListener(&quot;DOMContentLoaded&quot;, function() { var tutorialFeed = new Instafeed ({ get: 'user', userId: '623597756', clientId: 'Client', target: 'tutorial-instafeed', accessToken: 'Access-Token', resolution: 'standard_resolution', sortBy: 'most-recent', limit: 9, template: '&amp;lt;div class=&quot;image-item insta-page&quot;&amp;gt;' + '&amp;lt;a class=&quot;image insta-image&quot; href=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' + '&amp;lt;img alt=&quot;&amp;#123;&amp;#123;user.full_name&amp;#125;&amp;#125;&quot; src=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' + '&amp;lt;div class=&quot;img-backdrop-tutorial&quot;&amp;gt;' + '&amp;lt;div class=&quot;insta-caption&quot;&amp;gt;' + '&amp;lt;p&amp;gt;&amp;#123;&amp;#123;caption&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;div class=&quot;captions&quot;&amp;gt;' + '&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;/a&amp;gt;' + '&amp;lt;/div&amp;gt;'</summary></entry><entry><title type="html">Background-blend modes</title><link href="http://0.0.0.0:4000/background-blend-modes.html" rel="alternate" type="text/html" title="Background-blend modes" /><published>2017-03-15T00:00:00+00:00</published><updated>2017-03-15T00:00:00+00:00</updated><id>http://0.0.0.0:4000/background-blend-modes</id><content type="html" xml:base="http://0.0.0.0:4000/background-blend-modes.html">&lt;div class=&quot;tutorial-body&quot;&gt;
   &lt;p class=&quot;tutorial-paragraph&quot;&gt; If you browse the web, read newspapers,
     glance at advertising or even watch television, there is
     a chance that you are familiar with blending.

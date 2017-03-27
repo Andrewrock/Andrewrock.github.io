@@ -50,7 +50,7 @@ padding: no
     without developer access we cannot fetch photos, once we have access
     we can configure our options, but first to gain access.
   </p>
-  <ul class="instafeed-setup">
+  <ul class="simple-list">
     <li>
       <p>Go to
         <span class="underline-definition">
@@ -201,7 +201,7 @@ padding: no
         </td>
         <td>
           <p class="tutorial-paragraph"> Three options:</p>
-          <ul class="instafeed-setup">
+          <ul class="simple-list">
             <li>thumbnail (default)
               <span class="solid-definition"> 150 x 150 </span>
             </li>
@@ -242,7 +242,7 @@ padding: no
         </td>
         <td>
           <p class="tutorial-paragraph"> There are a number of options here </p>
-          <ul class="instafeed-setup">
+          <ul class="simple-list">
             <li> popular (default) - Images from the popular page </li>
             <li> tagged - Images with a specific tag. Use 
               <span class="solid-definition"> tagName</span> 
@@ -265,7 +265,7 @@ padding: no
         </td>
         <td>
           <p class="tutorial-paragraph"> There are a number of options here </p>
-          <ul class="instafeed-setup">
+          <ul class="simple-list">
             <li>none (default) - As they come from Instagram. </li>
             <li>most-recent</li>
             <li>least-recent</li>
