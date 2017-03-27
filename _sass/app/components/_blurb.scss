@@ -1,7 +1,7 @@
-$blurb-padding: 10px 5px;
 $blurb-max-width: 640px;
 $blurb-line-height: 2px;
 $blurb-line-width: 60px;
+$blurb-margin: 24px;
 $spacer: 1rem;
 $blurb-bottom-line-margin: ($spacer / 2);
 
@@ -9,6 +9,7 @@ $blurb-bottom-line-margin: ($spacer / 2);
 .blurb,
 .sub-blurb {
   box-sizing: border-box;
+  text-align: center;
 }
 
 .blurb-wrapper {
@@ -16,9 +17,8 @@ $blurb-bottom-line-margin: ($spacer / 2);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 0 auto 20px;
+  margin: $blurb-margin auto;
   max-width: $blurb-max-width;
-  padding: $blurb-padding;
   position: relative;
 
   &::after {
@@ -33,19 +33,18 @@ $blurb-bottom-line-margin: ($spacer / 2);
 
 .blurb,
 .sub-blurb {
-  box-sizing: border-box;
   font-family: $lora;
-  text-align: center;
   width: $width;
 }
 
 .blurb {
-  line-height: 1.6;
 
   &::first-letter {
     color: $nav-link-color;
     font-size: $h2;
-    line-height: 1;
-    padding-right: 1px;
   }
+}
+
+.sub-blurb {
+  padding: 0 10px;
 }

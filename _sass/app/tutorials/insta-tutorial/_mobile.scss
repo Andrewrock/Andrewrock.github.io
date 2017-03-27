@@ -2,9 +2,8 @@ $insta-button-bg: #3897f0;
 $insta-button-color: $white;
 $breakpoint-tablet: 735px;
 $breakpoint-desktop: 736px;
-
-$dot-size: 10px;
-$dot-position-top: 6px;
+$dot-size: 5px;
+$dot-position-top: 10px;
 $dot-position-left: -10px;
 $dot-position-right: 10px;
 
@@ -24,6 +23,7 @@ $dot-position-right: 10px;
 }
 
 .tutorial-insta-container {
+  flex: 1 0 $width;
   justify-content: center;
 }
 
@@ -34,14 +34,14 @@ $dot-position-right: 10px;
 .instafeed-setup,
 .checklist {
   justify-content: flex-start;
-  max-width: 640px;
+  max-width: 530px;
   width: $width;
 }
 
 .instafeed-setup > li {
-  line-height: 1.5;
-  margin-bottom: 20px;
-  padding-left: 15px;
+  flex: 1 0 $width;
+  margin-bottom: 12px;
+  padding-left: 10px;
   position: relative;
 
   &::before {
@@ -54,6 +54,10 @@ $dot-position-right: 10px;
     top: $dot-position-top;
     width: $dot-size;
     z-index: 2;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 
   a {

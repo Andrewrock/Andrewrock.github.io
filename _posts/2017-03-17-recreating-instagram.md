@@ -1,85 +1,74 @@
 ---
 layout: tutorial
-title: 'Creating an instagram powered gallery'
+title: 'Instafeed Tutorial'
 date: 2017-03-17
 read: '15min'
 tags: HTML Flexbox SCSS
-lead_text: 'Display your instagram feed on your site.'
+lead_text: 'Display your instagram photos on your site.'
 padding: no
 ---
-
 <div class="tutorial-body">
-
   <p class="tutorial-paragraph">
     With over 300 million daily images posted to instagram, it is
     the number one social network for sharing images and videos.
     This tutorial will show you how to display your instagram feed
     on your website.
   </p>
-
   <p class="tutorial-paragraph">
     Before we begin it is important to mention that this tutorial is not
     exclusive to Instagram, for the purpose of this demo I will be using
-    Instagram. If you are more interested in the 
+    Instagram. If you are more interested in the
     <span class="code-font">SCSS</span> then click
-    <span class="underline-definition">
-      <a href="https://codepen.io/andrewrock/pen/MpVgpw"> Here </a>
-    </span>
-    for the core <span class="code-font">SCSS</span>,
-    <span class="code-font">Flexbox</span>.
+    <span class="underline-definition"><a href="https://codepen.io/andrewrock/pen/MpVgpw">Here</a></span>
   </p>
-
   <p class="tutorial-paragraph">
     Lets get started, to follow this demo you will need the following
-    <span class="underline-definition">
-      <a href="http://instafeedjs.com/"> Instafeed.js </a>
-    </span> and
-    <span class="underline-definition">
-      <a href="https://www.instagram.com/developer/"> Instagram developer access </a>
-    </span>
+    <span class="underline-definition"><a href="http://instafeedjs.com/"> Instafeed.js </a></span> 
+    and
+    <span class="underline-definition"><a href="https://www.instagram.com/developer/"> Instagram developer access </a></span>
   </p>
-
   <h2 class="tutorial-section-heading"> Getting started </h2>
-  <p class="tutorial-paragraph">
-    To start we must add
-    <span class="underline-definition">
-      <a href="http://instafeedjs.com/"> Instafeed.js </a>
-    </span>
-    to our project. Download the file and put in the javascript directory.
-    For detailed information about the API head over to the
-    <span class="underline-definition">
-      <a href="https://github.com/stevenschobert/instafeed.js"> Github page </a>
-    </span>.
+  <p class="tutorial-paragraph">Once you have downloaded
+    <span class="underline-definition"><a href="http://instafeedjs.com/"> Instafeed.js </a>
+    </span> place it your javascript directory and reference it
   </p>
-
   <div class="code-container">
     <pre class="code code-html"><code class="no-padding">&lt;script type="text/javascript" src="js/instafeed.min.js"&gt;</code></pre>
   </div>
-
   <p class="tutorial-paragraph"> Then we add it to our html </p>
-
   <div class="code-container">
     <pre class="code code-html"><code class="no-padding">&lt;div id="instafeed-tutorial"&gt;&lt;/div&gt;</code></pre>
   </div>
-
   <h2 class="tutorial-section-heading"> Instagram Developer </h2>
   <p class="tutorial-paragraph">
-    To use <span class="code-font">instafeed</span> first we must first register our application with
-    Instagram. Follow the following steps to get step up.
+    Before we can access our photos we must first register our 
+    application with Instagram. In terms of API's this one is relatively
+    simple to set up. 
+  </p>
+  <p class="tutorial-paragraph">
+    The following steps are to set up a developer account with Instagram,
+    without developer access we cannot fetch photos, once we have access
+    we can configure our options, but first to gain access.
   </p>
   <ul class="instafeed-setup">
-    <li> Head to the
-      <span class="underline-definition">
-        <a href="https://www.instagram.com/developer/"> Instagram developer portal </a>
-      </span>
+    <li>
+      <p>Go to
+        <span class="underline-definition">
+        <a href="https://www.instagram.com/developer/"> 
+        Instagram developer portal
+        </a>
+        </span>
+      </p>
     </li>
-    <li> Click the
-      <span class="underline-definition">'Register Your Application'</span>
-      button
+    <li>
+      <p> Click the
+        <span class="underline-definition">
+        'Register Your Application'
+        </span>
+        button.
+      </p>
     </li>
-    <li>Fill out the form, Let's quickly go through what should go in each field. </li>
   </ul>
-
   <div class="definition-wrapper">
     <table class="definition-list">
       <tr>
@@ -87,7 +76,7 @@ padding: no
           <p>Application Name:</p>
         </td>
         <td>
-          <p class="tutorial-paragraph">This can be anything,
+          <p>This can be anything,
             As long as it does not contain any of the following:
             ‘insta’, ‘gram’, ‘IG’ or ‘Instagram’ 
           </p>
@@ -98,8 +87,7 @@ padding: no
           <p>Description:</p>
         </td>
         <td>
-          <p class="tutorial-paragraph">Best to keep this simple,
-            e.g. "Gallery for personal site" 
+          <p>Best to keep this simple, e.g. "Gallery for personal site" 
           </p>
         </td>
       </tr>
@@ -108,7 +96,7 @@ padding: no
           <p>Company Name:</p>
         </td>
         <td>
-          <p class="tutorial-paragraph">Company name can be your name</p>
+          <p>Company name can be your name</p>
         </td>
       </tr>
       <tr>
@@ -116,7 +104,7 @@ padding: no
           <p>Website URL:</p>
         </td>
         <td>
-          <p class="tutorial-paragraph">This is the url of your website</p>
+          <p>This is the url of your website</p>
         </td>
       </tr>
       <tr>
@@ -124,10 +112,9 @@ padding: no
           <p>Valid Redirect URIs:</p>
         </td>
         <td>
-          <p class="tutorial-paragraph">Have you ever used Facebook or
-            Twitter to sign in to another website, this is what a valid
-            redirect URI is, for the purpose of this demo nobody will be
-            logging into our application as we are running in Sandbox mode.
+          <p>For the purpose of this demo your sites URL will suffice
+            nobody will be logging into our application as we are running 
+            in Sandbox mode.
           </p>
         </td>
       </tr>
@@ -136,8 +123,8 @@ padding: no
           <p>Privacy Policy:</p>
         </td>
         <td>
-          <p class="tutorial-paragraph">If you have a privacy policy
-            include it here, if not just add your site URL.
+          <p>If you have a privacy policy include it here, if not just
+            add your site URL.
           </p>
         </td>
       </tr>
@@ -146,84 +133,66 @@ padding: no
           <p>Contact Email:</p>
         </td>
         <td>
-          <p class="tutorial-paragraph">Add your email</p>
+          <p>Add your email</p>
         </td>
       </tr>
     </table>
   </div>
-
   <p class="tutorial-paragraph">Finally, switch to the Security tab and
     deselect the <span class="tutorial-definition">‘Disable implicit OAuth’</span>
     checkbox, then hit Register.
   </p>
-
-  <p class="tutorial-paragraph">
-    Having set up our developer access it is now time to hook up
-    <span class="code-font">instafeed</span> to display our photos.
-    There are a number of steps involved here, it may take one or two tries
-    to get it all correct.
+  <h2 class="tutorial-section-heading"> Connecting Instagram </h2>
+  <p class="tutorial-paragraph"> There are a number of steps involved 
+    here, it may take one or two tries to get it all correct.
   </p>
-
   <div class="definition-wrapper">
-    <table class="definition-list">
-      <tr>
-        <td>
-          <p> userId: </p>
-        </td>
-        <td>
-          <p class="tutorial-paragraph"> Click
-            <span class="underline-definition">
-              <a href="https://smashballoon.com/instagram-feed/find-instagram-user-id/"> here</a>
-            </span>
-            and enter you instagram username (the one you login with).
-            Once you have your userID keep it handy as you will need it soon.
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>clientId:</p>
-        </td>
-        <td>
-          <p class="tutorial-paragraph"> Now paste the following in to your browser </p>
-          <div class="code-container">
-            <pre class="code code-html"><code class="no-padding">https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token</code></pre>
-          </div>
-          <p class="tutorial-paragraph">
-            Now replace <span class="underline-definition">CLIENT-ID</span>
-            with the client ID generated.
-          </p>
-          <p class="tutorial-paragraph">
-            Now replace <span class="underline-definition">REDIRECT-URI</span>
-            with the redirect URI that you included when setting up.
-          </p>
-          <p class="tutorial-paragraph"> Load the URL.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>accessToken</p>
-        </td>
-        <td>
-          <p class="tutorial-paragraph"> Once you have loaded the URL,
-            your access token should be in the URL
-          </p>
-          <div class="code-container">
-            <pre class="code code-html"><code class="no-padding">'http://your-redirect-uri#access_token=ACCESS-TOKEN'</code></pre>
-          </div>
-          <p class="tutorial-paragraph">
-            Copy the <span class="underline-definition">ACCESS-TOKEN</span>
-          </p>
-        </td>
-      </tr>
-    </table>
+    <p class="tutorial-paragraph">
+      Before we can any further, we need to get our 
+      <span class="solid-definition">USER-ID</span>,
+      The easiest way to do this is to click
+      <span class="underline-definition">
+      <a href="https://smashballoon.com/instagram-feed/find-instagram-user-id/">
+      here
+      </a>
+      </span>
+      You want to enter the username, the one you use to sign in.
+      Once you have your own ID keep it handy as you will need it soon.
+    </p>
+    <p class="tutorial-paragraph"> To get your ClientID, paste the following
+      into your browser 
+    </p>
+    <div class="code-container">
+      <pre class="code code-html"><code>https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token</code></pre>
+    </div>
+    <p class="tutorial-paragraph">Now replace
+      <span class="solid-definition">CLIENT-ID</span> with the client ID
+      generated.
+    </p>
+    <p class="tutorial-paragraph">
+      Now replace <span class="solid-definition">REDIRECT-URI</span>
+      with the redirect URI that you included when setting up.
+    </p>
+    <p class="tutorial-paragraph"> Load the URL.</p>
+    <p class="tutorial-paragraph"> Once you have loaded the URL, your access
+      token should be in the URL
+    </p>
+    <div class="code-container">
+      <pre class="code code-html"><code>'http://your-redirect-uri#access_token=ACCESS-TOKEN'</code></pre>
+    </div>
+    <p class="tutorial-paragraph"> Copy the 
+      <span class="solid-definition">ACCESS-TOKEN</span>
+    </p>
   </div>
-
   <h2 class="tutorial-section-heading"> Instafeed Options </h2>
   <p class="tutorial-paragraph"> We now have everyhting that is needed to
-    use <span class="code-font">instafeed</span>, now lets explore the api options
+    use <span class="code-font">instafeed</span>, now lets briefly
+    explore the API options,
+    For detailed information about the API head over to the
+    <span class="underline-definition">
+    <a href="https://github.com/stevenschobert/instafeed.js"> Github page </a>
+    </span>.
   </p>
-
   <div class="definition-wrapper">
     <table class="definition-list">
       <tr>
@@ -231,14 +200,17 @@ padding: no
           <p> Resolution: </p>
         </td>
         <td>
-          <p class="tutorial-paragraph"> 
-           <span class="code-font">instafeed</span> allows us to select 
-           an image size,There are currently three options
-          </p>
+          <p class="tutorial-paragraph"> Three options:</p>
           <ul class="instafeed-setup">
-            <li>thumbnail (default) - 150 x 150 </li>
-            <li>low_resolution - 306 x 306 </li>
-            <li>standard_resolution - 612 x 612 </li>
+            <li>thumbnail (default)
+              <span class="solid-definition"> 150 x 150 </span>
+            </li>
+            <li>low_resolution
+              <span class="solid-definition"> 306 x 306 </span>
+            </li>
+            <li>standard_resolution
+              <span class="solid-definition"> 612 x 612 </span>
+            </li>
           </ul>
         </td>
       </tr>
@@ -259,9 +231,8 @@ padding: no
         </td>
         <td>
           <p class="tutorial-paragraph">Allows us to use a custom 
-          <span class="code-font">HTML</span> template to use for images,
-          I will explain this further as we will be using the template to
-          create our gallery
+            template to use for images, I will explain this further as we 
+            will be using the template to create our gallery
           </p>
         </td>
       </tr>
@@ -273,9 +244,18 @@ padding: no
           <p class="tutorial-paragraph"> There are a number of options here </p>
           <ul class="instafeed-setup">
             <li> popular (default) - Images from the popular page </li>
-            <li> tagged - Images with a specific tag. Use tagName to specify the tag. </li>
-            <li> location - Images from a location. Use locationId to specify the location </li>
-            <li> user - Images from a user. Use userId to specify the user. </li>
+            <li> tagged - Images with a specific tag. Use 
+              <span class="solid-definition"> tagName</span> 
+              to specify the tag.
+            </li>
+            <li> location - Images from a location. Use
+              <span class="solid-definition"> locationId</span> 
+              to specify the location 
+            </li>
+            <li> user - Images from a user. 
+              <span class="solid-definition"> Use userId</span>
+              to specify the user. 
+            </li>
           </ul>
         </td>
       </tr>
@@ -287,12 +267,12 @@ padding: no
           <p class="tutorial-paragraph"> There are a number of options here </p>
           <ul class="instafeed-setup">
             <li>none (default) - As they come from Instagram. </li>
-            <li>most-recent - Newest to oldest. </li>
-            <li>least-recent - Oldest to newest. </li>
-            <li>most-liked - Highest # of likes to lowest.</li>
-            <li>least-liked - Lowest # likes to highest.</li>
-            <li>most-commented - Highest # of comments to lowest.</li>
-            <li>least-commented - Lowest # of comments to highest.</li>
+            <li>most-recent</li>
+            <li>least-recent</li>
+            <li>most-liked</li>
+            <li>least-liked</li>
+            <li>most-commented</li>
+            <li>least-commented</li>
           </ul>
         </td>
       </tr>
@@ -303,9 +283,7 @@ padding: no
           </p>
         </td>
         <td>
-          <p class="tutorial-paragraph">Wrap the image in a link to
-            allow users to interact with the photo
-          </p>
+          <p class="tutorial-paragraph">Wrap the image in a link.</p>
         </td>
       </tr>
       <tr>
@@ -324,14 +302,11 @@ padding: no
       </tr>
     </table>
   </div>
-
   <h2 class="tutorial-section-heading"> Advanced Options </h2>
   <p class="tutorial-paragraph"> 
-  <span class="code-font">instafeed</span> also allows us to specify 
-  some advanced options such as what to do before an after images 
-  are returned.
+    There are a number of advanced options such as what to do before an 
+    after images are returned.
   </p>
-
   <div class="definition-wrapper">
     <table class="definition-list">
       <tr>
@@ -339,8 +314,9 @@ padding: no
           <p> Before: </p>
         </td>
         <td>
-          <p class="tutorial-paragraph"> A callback function called 
-           before fetching images from Instagram </p>
+          <p class="tutorial-paragraph"> Function called 
+            before fetching images from Instagram 
+          </p>
         </td>
       </tr>
       <tr>
@@ -348,8 +324,8 @@ padding: no
           <p> After: </p>
         </td>
         <td>
-          <p class="tutorial-paragraph"> A callback function called 
-          when images have been added to the page.
+          <p class="tutorial-paragraph"> Function called 
+            when images have been added to the page.
           </p>
         </td>
       </tr>
@@ -358,9 +334,9 @@ padding: no
           <p> Success: </p>
         </td>
         <td>
-          <p class="tutorial-paragraph"> A callback function called when
-           Instagram returns valid data.
-           </p>
+          <p class="tutorial-paragraph"> Function called
+            when Instagram returns valid data.
+          </p>
         </td>
       </tr>
       <tr>
@@ -368,8 +344,8 @@ padding: no
           <p> Error: </p>
         </td>
         <td>
-          <p class="tutorial-paragraph"> A callback function called when
-           there is an error fetching images. 
+          <p class="tutorial-paragraph"> Function called
+            when there is an error fetching images. 
           </p>
         </td>
       </tr>
@@ -380,77 +356,80 @@ padding: no
           </p>
         </td>
         <td>
-          <p class="tutorial-paragraph"> A function used to exclude 
-          images from your results, e.g Show only photos, videos
+          <p class="tutorial-paragraph"> Function used to exclude 
+            images from your results, e.g Show only photos, videos
           </p>
         </td>
       </tr>
     </table>
   </div>
-
   <h2 class="tutorial-section-heading"> Putting it all together </h2>
   <div class="code-container">
-    <pre class="code code-css"><label>JS</label><code>document.addEventListener("DOMContentLoaded", function() {
-      var tutorialFeed = new Instafeed ({
-      get: 'user',
-      userId: '623597756',
-      clientId: 'Client',
-      target: 'tutorial-instafeed',
-      accessToken: 'Access-Token',
-      resolution: 'standard_resolution',
-      sortBy: 'most-recent',
-      limit: 9,
-      template: '&lt;div class="image-item insta-page"&gt;' +
-      '&lt;a class="image insta-image" href="&#123;&#123;image&#125;&#125;&gt;' +
-      '&lt;img alt="&#123;&#123;user.full_name&#125;&#125;" src="&#123;&#123;image&#125;&#125;&gt;' +
-      '&lt;div class="img-backdrop-tutorial"&gt;' +
-      '&lt;div class="insta-caption"&gt;' +
-      '&lt;p&gt;&#123;&#123;caption&#125;&#125;&lt;/p&gt;' +
-      '&lt;/div&gt;' +
-      '&lt;/div&gt;' +
-      '&lt;div class="captions"&gt;' +
-      '&lt;a&gt;&lt;/a&gt;' +
-      '&lt;/div&gt;' +
-      '&lt;/a&gt;' +
-      '&lt;/div&gt;'
+<pre class="code code-css"><code>document.addEventListener("DOMContentLoaded", function() {
+  
+  var tutorialFeed = new Instafeed ({
+  get: 'user',
+  userId: '623597756',
+  clientId: 'Client',
+  target: 'tutorial-instafeed',
+  accessToken: 'Access-Token',
+  resolution: 'standard_resolution',
+  sortBy: 'most-recent',
+  limit: 9,
+  template: '&lt;div class="image-item insta-page"&gt;' +
+  '&lt;a class="image insta-image" href="&#123;&#123;image&#125;&#125;&gt;' +
+  '&lt;img alt="&#123;&#123;user.full_name&#125;&#125;" src="&#123;&#123;image&#125;&#125;&gt;' +
+  '&lt;div class="img-backdrop-tutorial"&gt;' +
+  '&lt;div class="insta-caption"&gt;' +
+  '&lt;p&gt;&#123;&#123;caption&#125;&#125;&lt;/p&gt;' +
+  '&lt;/div&gt;' +
+  '&lt;/div&gt;' +
+  '&lt;div class="captions"&gt;' +
+  '&lt;a&gt;&lt;/a&gt;' +
+  '&lt;/div&gt;' +
+  '&lt;/a&gt;' +
+  '&lt;/div&gt;'
 
    });
     
    tutorialFeed.run();
    
   });</code></pre>
- </div>
-
+  </div>
   <p class="tutorial-paragraph">
-    We briefly discussed the advanced instafeed options, now lets explore
-    how to use the <span class="underline-definition">Filter</span>
-    and the <span class="underline-definition">After</span> functions.
+    We briefly introduced the advanced instafeed options, now lets explore
+    how to use the <span class="solid-definition">Filter</span>
+    and the <span class="solid-definition">After</span> functions.
   </p>
-
+  <p class="tutorial-paragraph">
+    We are going to use the <span class="solid-definition">Filter</span>
+    function to only return images.
+  </p>
   <div class="code-container">
-    <pre class="code code-css"><label>JS</label><code>document.addEventListener("DOMContentLoaded", function() {
-      var tutorialFeed = new Instafeed ({
-      get: 'user',
-      userId: '623597756',
-      clientId: 'Client',
-      target: 'tutorial-instafeed',
-      accessToken: 'Access-Token',
-      resolution: 'standard_resolution',
-      sortBy: 'most-recent',
-      limit: 9,
-      template: '&lt;div class="image-item insta-page"&gt;' +
-      '&lt;a class="image insta-image" href="&#123;&#123;image&#125;&#125;&gt;' +
-      '&lt;img alt="&#123;&#123;user.full_name&#125;&#125;" src="&#123;&#123;image&#125;&#125;&gt;' +
-      '&lt;div class="img-backdrop-tutorial"&gt;' +
-      '&lt;div class="insta-caption"&gt;' +
-      '&lt;p&gt;&#123;&#123;caption&#125;&#125;&lt;/p&gt;' +
-      '&lt;/div&gt;' +
-      '&lt;/div&gt;' +
-      '&lt;div class="captions"&gt;' +
-      '&lt;a&gt;&lt;/a&gt;' +
-      '&lt;/div&gt;' +
-      '&lt;/a&gt;' +
-      '&lt;/div&gt;'
+    <pre class="code code-css"><code>document.addEventListener("DOMContentLoaded", function() {
+
+  var tutorialFeed = new Instafeed ({
+  get: 'user',
+  userId: '623597756',
+  clientId: 'Client',
+  target: 'tutorial-instafeed',
+  accessToken: 'Access-Token',
+  resolution: 'standard_resolution',
+  sortBy: 'most-recent',
+  limit: 9,
+  template: '&lt;div class="image-item insta-page"&gt;' +
+  '&lt;a class="image insta-image" href="&#123;&#123;image&#125;&#125;&gt;' +
+  '&lt;img alt="&#123;&#123;user.full_name&#125;&#125;" src="&#123;&#123;image&#125;&#125;&gt;' +
+  '&lt;div class="img-backdrop-tutorial"&gt;' +
+  '&lt;div class="insta-caption"&gt;' +
+  '&lt;p&gt;&#123;&#123;caption&#125;&#125;&lt;/p&gt;' +
+  '&lt;/div&gt;' +
+  '&lt;/div&gt;' +
+  '&lt;div class="captions"&gt;' +
+  '&lt;a&gt;&lt;/a&gt;' +
+  '&lt;/div&gt;' +
+  '&lt;/a&gt;' +
+  '&lt;/div&gt;'
 
    filter: function(image) {
     return image.type === 'image';
@@ -459,68 +438,60 @@ padding: no
   tutorialFeed.run();
 
 });</code></pre>
- </div>
-
-  <p class="tutorial-paragraph"> By using the filter function we can tell
-    <span class="code-font">instafeed</span> to ignore certain fil types.
-     In this example I have requested we only return images
-  </p>
-
+  </div>
   <p class="tutorial-paragraph">
-    We can now use the <span class="underline-definition">After</span> 
-    function to add display a loading animation while the photos are 
-    being returned.
+    We can now use the <span class="solid-definition">After</span> 
+    function to display a loading animation while the photos are 
+    being returned. This is a nice way to let your users know the images
+    are on their way.
   </p>
-
   <p class="tutorial-paragraph">
-    We are also using the <span class="underline-definition">After</span>
-    function. To check if any more images are available, if images are
+    We can check to see if any more images are available, if images are
     available we show the load more button, if no images are 
     available we hide the button.
   </p>
-
   <div class="code-container">
-    <pre class="code code-css"><label>JS</label><code>document.addEventListener("DOMContentLoaded", function() {
-      var tutorialFeed = new Instafeed ({
-      get: 'user',
-      userId: '623597756',
-      clientId: 'Client',
-      accessToken: 'Access-Token',
-      resolution: 'standard_resolution',
-      sortBy: 'most-recent',
-      limit: 9,
-      template: '&lt;div class="image-item insta-page"&gt;' +
-      '&lt;a class="image insta-image" href="&#123;&#123;image&#125;&#125;&gt;' +
-      '&lt;img alt="&#123;&#123;user.full_name&#125;&#125;" src="&#123;&#123;image&#125;&#125;&gt;' +
-      '&lt;div class="img-backdrop-tutorial"&gt;' +
-      '&lt;div class="insta-caption"&gt;' +
-      '&lt;p&gt;&#123;&#123;caption&#125;&#125;&lt;/p&gt;' +
-      '&lt;/div&gt;' +
-      '&lt;/div&gt;' +
-      '&lt;div class="captions"&gt;' +
-      '&lt;a&gt;&lt;/a&gt;' +
-      '&lt;/div&gt;' +
-      '&lt;/a&gt;' +
-      '&lt;/div&gt;'
+    <pre class="code code-css"><code>document.addEventListener("DOMContentLoaded", function() {
+ 
+ var tutorialFeed = new Instafeed ({
+ get: 'user',
+ userId: '623597756',
+ clientId: 'Client',
+ accessToken: 'Access-Token',
+ resolution: 'standard_resolution',
+ sortBy: 'most-recent',
+ limit: 9,
+ template: '&lt;div class="image-item insta-page"&gt;' +
+  '&lt;a class="image insta-image" href="&#123;&#123;image&#125;&#125;&gt;' +
+  '&lt;img alt="&#123;&#123;user.full_name&#125;&#125;" src="&#123;&#123;image&#125;&#125;&gt;' +
+  '&lt;div class="img-backdrop-tutorial"&gt;' +
+  '&lt;div class="insta-caption"&gt;' +
+  '&lt;p&gt;&#123;&#123;caption&#125;&#125;&lt;/p&gt;' +
+  '&lt;/div&gt;' +
+  '&lt;/div&gt;' +
+  '&lt;div class="captions"&gt;' +
+  '&lt;a&gt;&lt;/a&gt;' +
+  '&lt;/div&gt;' +
+  '&lt;/a&gt;' +
+  '&lt;/div&gt;'
       
-   filter: function(image) {
-    return image.type === 'image';
-   },
-   after: function () {
-    loader.style.display = 'none';
+ filter: function(image) {
+  return image.type === 'image';
+ },
+ 
+ after: function () {
+  loader.style.display = 'none';
     if (!this.hasNext()) {
       loadButton.setAttribute('disabled', 'disabled');
     }
   }
 });
   
-  tutorialFeed.run();
+tutorialFeed.run();
 
 });</code></pre>
+  </div>
 </div>
-
-</div>
-
 <div class="tutorial-insta-container">
   <div class="image-wrapper" id="tutorial-instafeed">
     <div class="loader" id="loader">
@@ -532,102 +503,89 @@ padding: no
   </div>
   <button id="insta-btn" class="insta-btn">See more</button>
 </div>
-
 <div class="tutorial-body">
-  <p class="tutorial-paragraph"> As you can see 
-  <span class="code-font">instafeed</span> will return our images, if 
-  you hover the image you can see that I have added the caption also.
+  <p class="tutorial-paragraph">We now have our instagram photos showing
+    on our site. 
   </p>
-
-  <p class="tutorial-paragraph"><span class="code-font">instafeed</span>
-   also allows us to return more than  the caption, we can return likes,
+  <p class="tutorial-paragraph"> As you can see will return our images, if 
+    you hover the image you can see that the caption is also returned, We 
+    also are allowed us to return more than the caption, we can return likes,
     comments, post type etc.
     See  <span class="underline-definition">
     <a href="https://github.com/stevenschobert/instafeed.js/issues/21">
-      here 
-    </a>
-     </span> 
-    for a full list of model options
+    here 
+    </a></span> for a full list of returnable properties.
   </p>
-
   <h2 class="tutorial-section-heading"> Styling Images </h2>
   <p class="tutorial-paragraph"> We are going to use 
-  <span class="code-font">flexbox</span> to display our images, combine
-   this with SCSS and we can style our images quickly, we can also add 
-   animations and transition delays using the native
-   <span class="code-font">SCSS</span> forLoops.
+    <span class="code-font">flexbox</span> to display our images, combine
+    this with SCSS and we can style our images quickly, we can also add 
+    animations and transition delays using the native
+    <span class="code-font">SCSS</span> forLoops.
   </p>
-
   <p class="tutorial-paragraph">
     Using flexbox we set the image-wrapper to display as a row that will
     wrap when there is no more space left.
   </p>
-
   <p class="tutorial-paragraph">
     Don't let the <span class="code-font">SCSS</span> put you off, 
     it's really quite simple, we already
     set a limit of ten images so we set the loop to run for every image.
     We put the image-item in the loop.
   </p>
-
   <p class="tutorial-paragraph">
     To keep our images fluid, we use the flex property. I could write a 
     whole post on <span class="code-font">flexbox</span>, but for now 
     I will just briefly explain.
   </p>
-
   <div class="code-container">
     <pre class="code code-css"><code class="no-padding">flex: 1 0 33%;</code></pre>
   </div>
-
   <p class="tutorial-paragraph">
     What does it tell all image items to grow and shrink at the same rate
     while maintaining 33% of the space available
   </p>
-
   <p class="tutorial-paragraph">
     We use the loop to add a new animation delay to each item adding 1s
     second for each item. Setting each item to be invisible prior to the
     animation running.
   </p>
-
   <div class="code-container">
-    <pre class="code code-css"><code class="no-padding">animation-delay: (#{$i * .1s});</code></pre>
+    <pre class="code code-css"><code>animation-delay: (#{$i * .1s});</code></pre>
   </div>
+  <div class='code-container'>
+    <pre class='code code-css'><code>$insta-wrapper-max-width: 965px;
+$insta-wrapper-min-height: 100px;
+$transition: all .17s cubic-bezier(.4, 0, 1, 1);
 
-<div class='code-container'>
-<pre class='code code-css'><label>SCSS</label><code>$insta-wrapper-max-width: 965px;
-  $insta-wrapper-min-height: 100px;
-  $transition: all .17s cubic-bezier(.4, 0, 1, 1);
+.image-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin: 0 auto 30px;
+  max-width: $insta-wrapper-max-width;
+  min-height: $insta-wrapper-min-height;
+  position: relative;
+  width: $width;
+}
 
-  .image-wrapper {
-   box-sizing: border-box;
-   display: flex;
-   flex-flow: row wrap;
-   flex-grow: 1;
-   justify-content: space-around;
-   margin: 0 auto 30px;
-   max-width: $insta-wrapper-max-width;
-   min-height: $insta-wrapper-min-height;
-   position: relative;
-   width: $width;
-  }
-
-  @for $i from 1 through 10 {
+@for $i from 1 through 10 {
   .image-item {
-   animation: slide-item .3s ease forwards;
-   box-sizing: border-box;
-   flex: 1 0 33%;
-   transform: translateY(250px);
-   visibility: hidden;
-   width: $width;
-
-   &:nth-child(#{$i}) {
+    animation: slide-item .3s ease forwards;
+    box-sizing: border-box;
+    flex: 1 0 33%;
+    transform: translateY(250px);
+    visibility: hidden;
+    width: $width;
+    &:nth-child(#{$i}) {
      animation-delay: (#{$i * .1s});
-   }
- }
-
-  .insta-page { padding: 10px; }
+    }
+  }
+  .insta-page { 
+   padding: 10px; 
+  }
 }
 
   .image {
@@ -635,24 +593,23 @@ padding: no
    position: relative;
    transition: $transition;
    width: $width;
-
-  img {
-   display: block;
-   max-width: $width;
-  }
- }</code></pre>
+    
+   img {
+    display: block;
+    max-width: $width;
+   }
+}</code></pre>
 </div>
-
-<p class="tutorial-paragraph"> And finally the animations </p>
-
-<pre class='code code-css'><label>SCSS</label><code>@keyframes slide-item {
-  60% { transform: translateY(-10px); }
   
-  100% {
-   opacity: 1;
-   transform: translateY(0);
-   visibility: visible;
-  }
- }</code></pre>
+<p class="tutorial-paragraph"> And finally the animations </p>
+<pre class='code code-css'><code>@keyframes slide-item {
+ 60% { 
+ transform: translateY(-10px);
+ }
+ 100% {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+ }
+}</code></pre>
 </div>
-

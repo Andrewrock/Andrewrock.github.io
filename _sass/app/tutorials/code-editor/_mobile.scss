@@ -25,27 +25,14 @@ pre {
 
 .code {
   border-radius: 4px;
-  margin: 0 0 20px;
+  margin: 0 0 24px;
   position: relative;
-
-  label {
-    color: $background-white;
-    font-size: $font-size-base;
-    font-weight: bold;
-    left: 1px;
-    pointer-events: none;
-    position: absolute;
-    text-align: center;
-    top: 15px;
-    width: $label-width;
-  }
 
   code {
     border-left: 1px solid $grey;
     display: block;
-    font-size: $font-size-base;
-    line-height: 19px;
-    margin: 0 0 0 $label-width;
+    font-family: $source-code;
+    font-size: .75rem;
     padding: 15px;
     white-space: pre-wrap;
 
@@ -60,7 +47,7 @@ pre {
 }
 
 .code-html {
-  color: $html-color;
+  color: $white;
 }
 
 .keyframe {

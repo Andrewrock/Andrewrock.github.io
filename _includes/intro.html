@@ -3,13 +3,14 @@
 </div>
 <div class="home-posts">
   {% for post in site.posts %}
-  <div class="post">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-      <div class="post-wrapper">
-        <div class="post-body">
-          <div class="post-content">
-            <div class="post-icon">
-              <svg class="icon-mobile" viewBox="0,0,40,78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+  <div class="post-container">
+    <div class="post">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <div class="post-wrapper">
+          <div class="post-body">
+            <div class="post-content">
+              <div class="post-icon">
+                <svg class="icon-mobile" viewBox="0,0,40,78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
             <g>
               <g id="Icons">
                 <path class="microphone" d="M23.8493,72.0043l-7.6987,0c-1.062,0 -1.9243,-0.4385 -1.9243,-1.5023c0,-1.0635 0.8623,-1.502 1.9243,-1.502l7.6987,0c1.062,0 1.9245,0.4385 1.9245,1.502c0,1.0638 -0.8625,1.5023 -1.9245,1.5023" style="fill-rule:nonzero;" />
@@ -24,65 +25,18 @@
               </g>
             </g>
           </svg>
-            </div>
-            <div class="content-title">
-              <h2 class="title"> {{ post.title }}</h2>
-            </div>
-            <div class="post-content-body">
-              <h5> {{post.lead_text}} </h5>
-            </div>
-          </div>
-        </div>
-        <div class="post-footer">
-          <div class="post-details">
-            <div class="svg-wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" version="1.1">
-                <g>
-                  <line fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" x1="46" y1="10" x2="18" y2="10"/>
-                  <polyline fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" points="12,10 1,10 1,58 63,58 63,10 52,10 	"/>
-                  <rect x="12" y="6" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" width="6" height="8"/>
-                  <rect x="46" y="6" fill="none"  stroke="#fff" stroke-width="2" stroke-miterlimit="10" width="6" height="8"/>
-                  <rect x="10" y="24" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
-                  <rect x="10" y="42" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
-                  <rect x="44" y="24" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
-                  <rect x="44" y="42" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
-                  <rect x="27" y="24" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
-                  <rect x="27" y="42" fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" width="10" height="10"/>
-                </g>
-                <line fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" x1="1" y1="18" x2="63" y2="18"/>
-              </svg>
-            </div>
-            <div class="date-wrapper">
-              <p class="date">{{ post.date | date_to_long_string }}</p>
-            </div>
-          </div>
-          <div class="tag-details">
-            <div class="svg-wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" version="1.1">
-                <g>
-                  <polygon fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" points="23,1 55,1 55,63 9,63 9,15 	"/>
-                  <polyline fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" points="9,15 23,15 23,1 	"/>
-                  <line fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" x1="32" y1="14" x2="46" y2="14"/>
-                  <line fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" x1="18" y1="24" x2="46" y2="24"/>
-                  <line fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" x1="18" y1="34" x2="46" y2="34"/>
-                  <line fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" x1="18" y1="44" x2="46" y2="44"/>
-                  <line fill="none" stroke="#fff" stroke-width="2" stroke-miterlimit="10" x1="18" y1="54" x2="46" y2="54"/>
-               </g>
-             </svg>
-            </div>
-            <div class="tag-wrapper">
-              {% for tag in post.tags %}
-              {% if forloop.last == true %}
-              <p>{{ tag }}</p>
-              {% else %}
-              <p>{{ tag }},</p>
-              {% endif %}
-              {% endfor %}
+              </div>
+              <div class="content-title">
+                <h2 class="title"> {{ post.title }}</h2>
+              </div>
+              <div class="post-content-body">
+                <h5> {{post.lead_text}} </h5>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
   {% endfor %}
 </div>

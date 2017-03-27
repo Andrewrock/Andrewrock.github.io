@@ -5,10 +5,14 @@ $homepage-padding: 0 20px;
   padding: $homepage-padding;
 }
 
-.post {
+.post-container {
+  display: flex;
   flex: 0 0 50%;
   padding: 0 $post-separator 0 0;
+}
 
+
+.post {
   &:nth-child(2n) {
     padding-left: $post-separator;
     padding-right: 0;

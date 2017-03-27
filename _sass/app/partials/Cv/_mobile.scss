@@ -1,14 +1,14 @@
 $cv-line-width: 1px;
 $cv-position-top: 10px;
 $cv-position-left: -4.5px;
-$cv-padding: 0 20px;
+$cv-padding: 0 24px;
 $cv-max-width: 640px;
 $cv-dot-size: 10px;
-$cv-dot-position-top: 2px;
+$cv-dot-position-top: 10px;
 $cv-dot-position-left: -9px;
-$job-margin-bottom: 35px;
+$job-margin-bottom: 24px;
 $job-padding: 15px;
-$role-padding: 5px;
+$role-padding: 6px;
 $role-margin-bottom: 10px;
 $role-dot-top: 2px;
 
@@ -45,10 +45,6 @@ $role-dot-top: 2px;
     width: $cv-dot-size;
     z-index: 2;
   }
-}
-
-.job-desc {
-  margin-bottom: 20px;
 }
 
 .cv-wrapper {
@@ -114,7 +110,6 @@ $role-dot-top: 2px;
 
   p {
     font-family: $lora;
-    line-height: 1.5;
     order: 4;
   }
 }
@@ -126,19 +121,16 @@ $role-dot-top: 2px;
 
 .role-info {
   margin: 0;
-  padding: 0 $role-padding;
   width: $width;
 
   &::before {
     height: $cv-dot-size / 2;
-    left: -5px;
-    top: 7px;
+    left: $cv-dot-size / 2;
+    top: $cv-dot-size / 2;
     width: $cv-dot-size / 2;
   }
 }
 
 .role {
-  font-family: $lora;
-  margin-bottom: $role-margin-bottom;
   padding-left: $role-padding;
 }

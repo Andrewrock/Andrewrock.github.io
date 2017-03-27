@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2017-03-27T08:50:50+01:00</updated><id>http://0.0.0.0:4000/</id><entry><title type="html">Instafeed Tutorial</title><link href="http://0.0.0.0:4000/recreating-instagram.html" rel="alternate" type="text/html" title="Instafeed Tutorial" /><published>2017-03-17T00:00:00+00:00</published><updated>2017-03-17T00:00:00+00:00</updated><id>http://0.0.0.0:4000/recreating-instagram</id><content type="html" xml:base="http://0.0.0.0:4000/recreating-instagram.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    With over 300 million daily images posted to instagram, it is
+    the number one social network for sharing images and videos.
+    This tutorial will show you how to display your instagram feed
+    on your website.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    Before we begin it is important to mention that this tutorial is not
+    exclusive to Instagram, for the purpose of this demo I will be using
+    Instagram. If you are more interested in the
+    &lt;span class=&quot;code-font&quot;&gt;SCSS&lt;/span&gt; then click
+    &lt;span class=&quot;underline-definition&quot;&gt;&lt;a href=&quot;https://codepen.io/andrewrock/pen/MpVgpw&quot;&gt;Here&lt;/a&gt;&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    Lets get started, to follow this demo you will need the following
+    &lt;span class=&quot;underline-definition&quot;&gt;&lt;a href=&quot;http://instafeedjs.com/&quot;&gt; Instafeed.js &lt;/a&gt;&lt;/span&gt; 
+    and
+    &lt;span class=&quot;underline-definition&quot;&gt;&lt;a href=&quot;https://www.instagram.com/developer/&quot;&gt; Instagram developer access &lt;/a&gt;&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Getting started &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;Once you have downloaded
+    &lt;span class=&quot;underline-definition&quot;&gt;&lt;a href=&quot;http://instafeedjs.com/&quot;&gt; Instafeed.js &lt;/a&gt;
+    &lt;/span&gt; place it your javascript directory and reference it
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-html&quot;&gt;&lt;code class=&quot;no-padding&quot;&gt;&amp;lt;script type=&quot;text/javascript&quot; src=&quot;js/instafeed.min.js&quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Then we add it to our html &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-html&quot;&gt;&lt;code class=&quot;no-padding&quot;&gt;&amp;lt;div id=&quot;instafeed-tutorial&quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Instagram Developer &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    Before we can access our photos we must first register our 
+    application with Instagram. In terms of API's this one is relatively
+    simple to set up. 
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    The following steps are to set up a developer account with Instagram,
+    without developer access we cannot fetch photos, once we have access
+    we can configure our options, but first to gain access.
+  &lt;/p&gt;
+  &lt;ul class=&quot;instafeed-setup&quot;&gt;
+    &lt;li&gt;
+      &lt;p&gt;Go to
+        &lt;span class=&quot;underline-definition&quot;&gt;
+        &lt;a href=&quot;https://www.instagram.com/developer/&quot;&gt; 
+        Instagram developer portal
+        &lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt; Click the
+        &lt;span class=&quot;underline-definition&quot;&gt;
+        'Register Your Application'
+        &lt;/span&gt;
+        button.
+      &lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;definition-wrapper&quot;&gt;
+    &lt;table class=&quot;definition-list&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Application Name:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;This can be anything,
+            As long as it does not contain any of the following:
+            ‘insta’, ‘gram’, ‘IG’ or ‘Instagram’ 
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Description:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;Best to keep this simple, e.g. &quot;Gallery for personal site&quot; 
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Company Name:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;Company name can be your name&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Website URL:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;This is the url of your website&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Valid Redirect URIs:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;For the purpose of this demo your sites URL will suffice
+            nobody will be logging into our application as we are running 
+            in Sandbox mode.
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Privacy Policy:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;If you have a privacy policy include it here, if not just
+            add your site URL.
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Contact Email:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;Add your email&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;Finally, switch to the Security tab and
+    deselect the &lt;span class=&quot;tutorial-definition&quot;&gt;‘Disable implicit OAuth’&lt;/span&gt;
+    checkbox, then hit Register.
+  &lt;/p&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Connecting Instagram &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; There are a number of steps involved 
+    here, it may take one or two tries to get it all correct.
+  &lt;/p&gt;
+  &lt;div class=&quot;definition-wrapper&quot;&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+      Before we can any further, we need to get our 
+      &lt;span class=&quot;solid-definition&quot;&gt;USER-ID&lt;/span&gt;,
+      The easiest way to do this is to click
+      &lt;span class=&quot;underline-definition&quot;&gt;
+      &lt;a href=&quot;https://smashballoon.com/instagram-feed/find-instagram-user-id/&quot;&gt;
+      here
+      &lt;/a&gt;
+      &lt;/span&gt;
+      You want to enter the username, the one you use to sign in.
+      Once you have your own ID keep it handy as you will need it soon.
+    &lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; To get your ClientID, paste the following
+      into your browser 
+    &lt;/p&gt;
+    &lt;div class=&quot;code-container&quot;&gt;
+      &lt;pre class=&quot;code code-html&quot;&gt;&lt;code&gt;https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&amp;amp;redirect_uri=REDIRECT-URI&amp;amp;response_type=token&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;Now replace
+      &lt;span class=&quot;solid-definition&quot;&gt;CLIENT-ID&lt;/span&gt; with the client ID
+      generated.
+    &lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+      Now replace &lt;span class=&quot;solid-definition&quot;&gt;REDIRECT-URI&lt;/span&gt;
+      with the redirect URI that you included when setting up.
+    &lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; Load the URL.&lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; Once you have loaded the URL, your access
+      token should be in the URL
+    &lt;/p&gt;
+    &lt;div class=&quot;code-container&quot;&gt;
+      &lt;pre class=&quot;code code-html&quot;&gt;&lt;code&gt;'http://your-redirect-uri#access_token=ACCESS-TOKEN'&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; Copy the 
+      &lt;span class=&quot;solid-definition&quot;&gt;ACCESS-TOKEN&lt;/span&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Instafeed Options &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; We now have everyhting that is needed to
+    use &lt;span class=&quot;code-font&quot;&gt;instafeed&lt;/span&gt;, now lets briefly
+    explore the API options,
+    For detailed information about the API head over to the
+    &lt;span class=&quot;underline-definition&quot;&gt;
+    &lt;a href=&quot;https://github.com/stevenschobert/instafeed.js&quot;&gt; Github page &lt;/a&gt;
+    &lt;/span&gt;.
+  &lt;/p&gt;
+  &lt;div class=&quot;definition-wrapper&quot;&gt;
+    &lt;table class=&quot;definition-list&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Resolution: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Three options:&lt;/p&gt;
+          &lt;ul class=&quot;instafeed-setup&quot;&gt;
+            &lt;li&gt;thumbnail (default)
+              &lt;span class=&quot;solid-definition&quot;&gt; 150 x 150 &lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li&gt;low_resolution
+              &lt;span class=&quot;solid-definition&quot;&gt; 306 x 306 &lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li&gt;standard_resolution
+              &lt;span class=&quot;solid-definition&quot;&gt; 612 x 612 &lt;/span&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Target &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+            Either the ID name or the DOM  element itself where you want
+            to add the images to.
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Template: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;Allows us to use a custom 
+            template to use for images, I will explain this further as we 
+            will be using the template to create our gallery
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Get: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; There are a number of options here &lt;/p&gt;
+          &lt;ul class=&quot;instafeed-setup&quot;&gt;
+            &lt;li&gt; popular (default) - Images from the popular page &lt;/li&gt;
+            &lt;li&gt; tagged - Images with a specific tag. Use 
+              &lt;span class=&quot;solid-definition&quot;&gt; tagName&lt;/span&gt; 
+              to specify the tag.
+            &lt;/li&gt;
+            &lt;li&gt; location - Images from a location. Use
+              &lt;span class=&quot;solid-definition&quot;&gt; locationId&lt;/span&gt; 
+              to specify the location 
+            &lt;/li&gt;
+            &lt;li&gt; user - Images from a user. 
+              &lt;span class=&quot;solid-definition&quot;&gt; Use userId&lt;/span&gt;
+              to specify the user. 
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; SortBy: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; There are a number of options here &lt;/p&gt;
+          &lt;ul class=&quot;instafeed-setup&quot;&gt;
+            &lt;li&gt;none (default) - As they come from Instagram. &lt;/li&gt;
+            &lt;li&gt;most-recent&lt;/li&gt;
+            &lt;li&gt;least-recent&lt;/li&gt;
+            &lt;li&gt;most-liked&lt;/li&gt;
+            &lt;li&gt;least-liked&lt;/li&gt;
+            &lt;li&gt;most-commented&lt;/li&gt;
+            &lt;li&gt;least-commented&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;
+            Links:
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;Wrap the image in a link.&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Limit: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+            By default our instagram photos will run in sandbox mode,
+            This means tht we are capped at a maximum of twenty images,
+            by adding a limit that is less than the maximum twenty
+            we can paginate through our images and take advantage of lazy
+            loading.
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Advanced Options &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; 
+    There are a number of advanced options such as what to do before an 
+    after images are returned.
+  &lt;/p&gt;
+  &lt;div class=&quot;definition-wrapper&quot;&gt;
+    &lt;table class=&quot;definition-list&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Before: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Function called 
+            before fetching images from Instagram 
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; After: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Function called 
+            when images have been added to the page.
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Success: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Function called
+            when Instagram returns valid data.
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Error: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Function called
+            when there is an error fetching images. 
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;
+            Filter:
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Function used to exclude 
+            images from your results, e.g Show only photos, videos
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Putting it all together &lt;/h2&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
+  
+  var tutorialFeed = new Instafeed ({
+  get: 'user',
+  userId: '623597756',
+  clientId: 'Client',
+  target: 'tutorial-instafeed',
+  accessToken: 'Access-Token',
+  resolution: 'standard_resolution',
+  sortBy: 'most-recent',
+  limit: 9,
+  template: '&amp;lt;div class=&quot;image-item insta-page&quot;&amp;gt;' +
+  '&amp;lt;a class=&quot;image insta-image&quot; href=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;img alt=&quot;&amp;#123;&amp;#123;user.full_name&amp;#125;&amp;#125;&quot; src=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;div class=&quot;img-backdrop-tutorial&quot;&amp;gt;' +
+  '&amp;lt;div class=&quot;insta-caption&quot;&amp;gt;' +
+  '&amp;lt;p&amp;gt;&amp;#123;&amp;#123;caption&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;div class=&quot;captions&quot;&amp;gt;' +
+  '&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;'
+
+   });
+    
+   tutorialFeed.run();
+   
+  });&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    We briefly introduced the advanced instafeed options, now lets explore
+    how to use the &lt;span class=&quot;solid-definition&quot;&gt;Filter&lt;/span&gt;
+    and the &lt;span class=&quot;solid-definition&quot;&gt;After&lt;/span&gt; functions.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    We are going to use the &lt;span class=&quot;solid-definition&quot;&gt;Filter&lt;/span&gt;
+    function to only return images.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
+
+  var tutorialFeed = new Instafeed ({
+  get: 'user',
+  userId: '623597756',
+  clientId: 'Client',
+  target: 'tutorial-instafeed',
+  accessToken: 'Access-Token',
+  resolution: 'standard_resolution',
+  sortBy: 'most-recent',
+  limit: 9,
+  template: '&amp;lt;div class=&quot;image-item insta-page&quot;&amp;gt;' +
+  '&amp;lt;a class=&quot;image insta-image&quot; href=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;img alt=&quot;&amp;#123;&amp;#123;user.full_name&amp;#125;&amp;#125;&quot; src=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;div class=&quot;img-backdrop-tutorial&quot;&amp;gt;' +
+  '&amp;lt;div class=&quot;insta-caption&quot;&amp;gt;' +
+  '&amp;lt;p&amp;gt;&amp;#123;&amp;#123;caption&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;div class=&quot;captions&quot;&amp;gt;' +
+  '&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;'
+
+   filter: function(image) {
+    return image.type === 'image';
+   }
+  
+  tutorialFeed.run();
+
+});&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    We can now use the &lt;span class=&quot;solid-definition&quot;&gt;After&lt;/span&gt; 
+    function to display a loading animation while the photos are 
+    being returned. This is a nice way to let your users know the images
+    are on their way.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    We can check to see if any more images are available, if images are
+    available we show the load more button, if no images are 
+    available we hide the button.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
+ 
+ var tutorialFeed = new Instafeed ({
+ get: 'user',
+ userId: '623597756',
+ clientId: 'Client',
+ accessToken: 'Access-Token',
+ resolution: 'standard_resolution',
+ sortBy: 'most-recent',
+ limit: 9,
+ template: '&amp;lt;div class=&quot;image-item insta-page&quot;&amp;gt;' +
+  '&amp;lt;a class=&quot;image insta-image&quot; href=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;img alt=&quot;&amp;#123;&amp;#123;user.full_name&amp;#125;&amp;#125;&quot; src=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;div class=&quot;img-backdrop-tutorial&quot;&amp;gt;' +
+  '&amp;lt;div class=&quot;insta-caption&quot;&amp;gt;' +
+  '&amp;lt;p&amp;gt;&amp;#123;&amp;#123;caption&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;div class=&quot;captions&quot;&amp;gt;' +
+  '&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;'
+      
+ filter: function(image) {
+  return image.type === 'image';
+ },
+ 
+ after: function () {
+  loader.style.display = 'none';
+    if (!this.hasNext()) {
+      loadButton.setAttribute('disabled', 'disabled');
+    }
+  }
+});
+  
+tutorialFeed.run();
+
+});&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tutorial-insta-container&quot;&gt;
+  &lt;div class=&quot;image-wrapper&quot; id=&quot;tutorial-instafeed&quot;&gt;
+    &lt;div class=&quot;loader&quot; id=&quot;loader&quot;&gt;
+      &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button id=&quot;insta-btn&quot; class=&quot;insta-btn&quot;&gt;See more&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tutorial-body&quot;&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;We now have our instagram photos showing
+    on our site. 
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; As you can see will return our images, if 
+    you hover the image you can see that the caption is also returned, We 
+    also are allowed us to return more than the caption, we can return likes,
+    comments, post type etc.
+    See  &lt;span class=&quot;underline-definition&quot;&gt;
+    &lt;a href=&quot;https://github.com/stevenschobert/instafeed.js/issues/21&quot;&gt;
+    here 
+    &lt;/a&gt;&lt;/span&gt; for a full list of returnable properties.
+  &lt;/p&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Styling Images &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; We are going to use 
+    &lt;span class=&quot;code-font&quot;&gt;flexbox&lt;/span&gt; to display our images, combine
+    this with SCSS and we can style our images quickly, we can also add 
+    animations and transition delays using the native
+    &lt;span class=&quot;code-font&quot;&gt;SCSS&lt;/span&gt; forLoops.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    Using flexbox we set the image-wrapper to display as a row that will
+    wrap when there is no more space left.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    Don't let the &lt;span class=&quot;code-font&quot;&gt;SCSS&lt;/span&gt; put you off, 
+    it's really quite simple, we already
+    set a limit of ten images so we set the loop to run for every image.
+    We put the image-item in the loop.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    To keep our images fluid, we use the flex property. I could write a 
+    whole post on &lt;span class=&quot;code-font&quot;&gt;flexbox&lt;/span&gt;, but for now 
+    I will just briefly explain.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-css&quot;&gt;&lt;code class=&quot;no-padding&quot;&gt;flex: 1 0 33%;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    What does it tell all image items to grow and shrink at the same rate
+    while maintaining 33% of the space available
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    We use the loop to add a new animation delay to each item adding 1s
+    second for each item. Setting each item to be invisible prior to the
+    animation running.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;animation-delay: (#{$i * .1s});&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;$insta-wrapper-max-width: 965px;
+$insta-wrapper-min-height: 100px;
+$transition: all .17s cubic-bezier(.4, 0, 1, 1);
+
+.image-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin: 0 auto 30px;
+  max-width: $insta-wrapper-max-width;
+  min-height: $insta-wrapper-min-height;
+  position: relative;
+  width: $width;
+}
+
+@for $i from 1 through 10 {
+  .image-item {
+    animation: slide-item .3s ease forwards;
+    box-sizing: border-box;
+    flex: 1 0 33%;
+    transform: translateY(250px);
+    visibility: hidden;
+    width: $width;
+    &amp;amp;:nth-child(#{$i}) {
+     animation-delay: (#{$i * .1s});
+    }
+  }
+  .insta-page { 
+   padding: 10px; 
+  }
+}
+
+  .image {
+   display: block;
+   position: relative;
+   transition: $transition;
+   width: $width;
+    
+   img {
+    display: block;
+    max-width: $width;
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+  
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; And finally the animations &lt;/p&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;@keyframes slide-item {
+ 60% { 
+ transform: translateY(-10px);
+ }
+ 100% {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="HTML" /><category term="Flexbox" /><category term="SCSS" /><summary type="html">With over 300 million daily images posted to instagram, it is the number one social network for sharing images and videos. This tutorial will show you how to display your instagram feed on your website. Before we begin it is important to mention that this tutorial is not exclusive to Instagram, for the purpose of this demo I will be using Instagram. If you are more interested in the SCSS then click Here Lets get started, to follow this demo you will need the following Instafeed.js and Instagram developer access Getting started Once you have downloaded Instafeed.js place it your javascript directory and reference it &amp;lt;script type=&quot;text/javascript&quot; src=&quot;js/instafeed.min.js&quot;&amp;gt; Then we add it to our html &amp;lt;div id=&quot;instafeed-tutorial&quot;&amp;gt;&amp;lt;/div&amp;gt; Instagram Developer Before we can access our photos we must first register our application with Instagram. In terms of API's this one is relatively simple to set up. The following steps are to set up a developer account with Instagram, without developer access we cannot fetch photos, once we have access we can configure our options, but first to gain access. Go to Instagram developer portal Click the 'Register Your Application' button. Application Name: This can be anything, As long as it does not contain any of the following: ‘insta’, ‘gram’, ‘IG’ or ‘Instagram’  Description: Best to keep this simple, e.g. &quot;Gallery for personal site&quot;  Company Name: Company name can be your name Website URL: This is the url of your website Valid Redirect URIs: For the purpose of this demo your sites URL will suffice nobody will be logging into our application as we are running in Sandbox mode. Privacy Policy: If you have a privacy policy include it here, if not just add your site URL. Contact Email: Add your email Finally, switch to the Security tab and deselect the ‘Disable implicit OAuth’ checkbox, then hit Register. Connecting Instagram There are a number of steps involved here, it may take one or two tries to get it all correct. Before we can any further, we need to get our USER-ID, The easiest way to do this is to click here You want to enter the username, the one you use to sign in. Once you have your own ID keep it handy as you will need it soon. To get your ClientID, paste the following into your browser https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&amp;amp;redirect_uri=REDIRECT-URI&amp;amp;response_type=token Now replace CLIENT-ID with the client ID generated. Now replace REDIRECT-URI with the redirect URI that you included when setting up. Load the URL. Once you have loaded the URL, your access token should be in the URL 'http://your-redirect-uri#access_token=ACCESS-TOKEN' Copy the ACCESS-TOKEN Instafeed Options We now have everyhting that is needed to use instafeed, now lets briefly explore the API options, For detailed information about the API head over to the Github page . Resolution: Three options: thumbnail (default) 150 x 150 low_resolution 306 x 306 standard_resolution 612 x 612 Target Either the ID name or the DOM element itself where you want to add the images to. Template: Allows us to use a custom template to use for images, I will explain this further as we will be using the template to create our gallery Get: There are a number of options here popular (default) - Images from the popular page tagged - Images with a specific tag. Use tagName to specify the tag. location - Images from a location. Use locationId to specify the location user - Images from a user. Use userId to specify the user. SortBy: There are a number of options here none (default) - As they come from Instagram. most-recent least-recent most-liked least-liked most-commented least-commented Links: Wrap the image in a link. Limit: By default our instagram photos will run in sandbox mode, This means tht we are capped at a maximum of twenty images, by adding a limit that is less than the maximum twenty we can paginate through our images and take advantage of lazy loading. Advanced Options There are a number of advanced options such as what to do before an after images are returned. Before: Function called before fetching images from Instagram After: Function called when images have been added to the page. Success: Function called when Instagram returns valid data. Error: Function called when there is an error fetching images. Filter: Function used to exclude images from your results, e.g Show only photos, videos Putting it all together document.addEventListener(&quot;DOMContentLoaded&quot;, function() { var tutorialFeed = new Instafeed ({ get: 'user', userId: '623597756', clientId: 'Client', target: 'tutorial-instafeed', accessToken: 'Access-Token', resolution: 'standard_resolution', sortBy: 'most-recent', limit: 9, template: '&amp;lt;div class=&quot;image-item insta-page&quot;&amp;gt;' + '&amp;lt;a class=&quot;image insta-image&quot; href=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' + '&amp;lt;img alt=&quot;&amp;#123;&amp;#123;user.full_name&amp;#125;&amp;#125;&quot; src=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' + '&amp;lt;div class=&quot;img-backdrop-tutorial&quot;&amp;gt;' + '&amp;lt;div class=&quot;insta-caption&quot;&amp;gt;' + '&amp;lt;p&amp;gt;&amp;#123;&amp;#123;caption&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;div class=&quot;captions&quot;&amp;gt;' + '&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;/a&amp;gt;' + '&amp;lt;/div&amp;gt;'</summary></entry><entry><title type="html">The lighten and darken functions</title><link href="http://0.0.0.0:4000/ligthen-darken.html" rel="alternate" type="text/html" title="The lighten and darken functions" /><published>2017-03-15T00:00:00+00:00</published><updated>2017-03-15T00:00:00+00:00</updated><id>http://0.0.0.0:4000/ligthen-darken</id><content type="html" xml:base="http://0.0.0.0:4000/ligthen-darken.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Thinking back to school, I can remember I
+ was never any good at drawing, most of the time I was just happy to be 
+ sitting in a double art class 
+rather than a french class, but like all good teachers, Mr Barrett had a
+way of making you remember the important things, and just as 
+'In 1492 Columbus sailed the ocean blue.', I left school forgetting all 
+about Mr Barrett and his encouragement to use color to influence mood and
+create a story if possible.
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; It's ten years since those art classes and
+ the way use color throughout our sites has been fairly restrictive,
+ relying on javascript and static colors. However now we have the ability
+ to easily manipulate a single color resulting in a myriad of different
+ colors
+ &lt;/p&gt;
+ 
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;To start we need one color, we will use
+this color as our base color. The color I have used for my own site is
+&lt;span class=&quot;code-font purple&quot;&gt;#6534ff &lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;T Sass offers us plenty of options for 
+creating unique and different color combinations. Lets look at the following&lt;/p&gt;
+
+  &lt;ul class=&quot;instafeed-setup&quot;&gt;
+    &lt;li&gt;
+      &lt;p&gt; Shade&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt; Tint &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt; Lighten &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt; Darken &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt; Combine effects &lt;/p&gt;
+    &lt;/li&gt;
+
+  &lt;/ul&gt;
+
+
+
+&lt;div class=&quot;color-functions&quot;&gt;
+&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;Shade&lt;/h2&gt;
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;
+Adding tints and shades to your color palette will give you a greater 
+number of colors to work with in your project, while still achieving 
+consistency and adhering to your original color palette. To get the 
+tints and shades of a color in Sass, the mix() function can be used with
+ white and black, respectively:
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+  &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;
+@function shade($color, $percentage) {
+  @return mix($body-color, $color, $percentage);
+}
+
+$body-color: #282828;
+$grey: #999;
+$purple: #6534ff;
+
+.shade li {
+  background: $purple;
+  flex: 1 0 auto;
+  $shade-num: 6;
+
+  @for $i from 1 through $shade-num {
+    &amp;amp;:nth-of-type(#{$i}) {
+      background-color: shade($purple, ($i * 10%));
+    }
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; He we created a function to add shade to
+our item. The color uses a color and a percentage, using 
+&lt;span class=&quot;code-font&quot;&gt; SCSS &lt;/span&gt; we can increase the amount of shade
+applied to each item.
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Knowing we have six items and we want to
+show the gradual increase of shading from 0-100. We write a loop for six 
+items, indidicating that the shading should increase by 10%;
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+ &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;
+ $shade-num: 6;
+  
+ @for $i from 1 through $shade-num {
+   &amp;amp;:nth-of-type(#{$i}) {
+     background-color: shade($purple, ($i * 10%));
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul class=&quot;shade&quot;&gt;
+  &lt;li&gt;0&lt;/li&gt;
+  &lt;li&gt;20&lt;/li&gt;
+  &lt;li&gt;40&lt;/li&gt;
+  &lt;li&gt;60&lt;/li&gt;
+  &lt;li&gt;80&lt;/li&gt;
+  &lt;li&gt;100&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;Tint&lt;/h2&gt;
+&lt;ul class=&quot;tint&quot;&gt;
+  &lt;li&gt;0&lt;/li&gt;
+  &lt;li&gt;20&lt;/li&gt;
+  &lt;li&gt;40&lt;/li&gt;
+  &lt;li&gt;60&lt;/li&gt;
+  &lt;li&gt;80&lt;/li&gt;
+  &lt;li&gt;100&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;lighten&lt;/h2&gt;
+&lt;ul class=&quot;light-dark&quot;&gt;
+  &lt;li&gt;Original color&lt;/li&gt;
+  &lt;li&gt;Lighten (2.5%)&lt;/li&gt;
+  &lt;li&gt;Lighten (5%)&lt;/li&gt;
+  &lt;li&gt;Lighten (7.5%)&lt;/li&gt;
+  &lt;li&gt;Lighten (10%)&lt;/li&gt;
+  &lt;li&gt;Lighten (12.5%)&lt;/li&gt;
+  &lt;li&gt;Original color&lt;/li&gt;
+  &lt;li&gt;Darken (2.5%)&lt;/li&gt;
+  &lt;li&gt;Darken (5%)&lt;/li&gt;
+  &lt;li&gt;Darken (7.5%)&lt;/li&gt;
+  &lt;li&gt;Darken (10%)&lt;/li&gt;
+  &lt;li&gt;Darken (12.5%)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;Possible blend combinations&lt;/h2&gt;
+&lt;ul class=&quot;alternate-blend&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2 class=&quot;tutorial-section-heading&quot;&gt;Combined&lt;/h2&gt;
+&lt;ul class=&quot;combined&quot;&gt;
+  &lt;li&gt;0&lt;/li&gt;
+  &lt;li&gt;20&lt;/li&gt;
+  &lt;li&gt;40&lt;/li&gt;
+  &lt;li&gt;60&lt;/li&gt;
+  &lt;li&gt;80&lt;/li&gt;
+  &lt;li&gt;100&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+
+
+  
+
+
+&lt;/div&gt;</content><author><name></name></author><category term="HTML" /><category term="SCSS" /><summary type="html">Thinking back to school, I can remember I was never any good at drawing, most of the time I was just happy to be sitting in a double art class rather than a french class, but like all good teachers, Mr Barrett had a way of making you remember the important things, and just as 'In 1492 Columbus sailed the ocean blue.', I left school forgetting all about Mr Barrett and his encouragement to use color to influence mood and create a story if possible.</summary></entry><entry><title type="html">Background-blend modes</title><link href="http://0.0.0.0:4000/background-blend-modes.html" rel="alternate" type="text/html" title="Background-blend modes" /><published>2017-03-15T00:00:00+00:00</published><updated>2017-03-15T00:00:00+00:00</updated><id>http://0.0.0.0:4000/background-blend-modes</id><content type="html" xml:base="http://0.0.0.0:4000/background-blend-modes.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; If you browse the web, read newspapers,
+    glance at advertising or even watch television, there is
+    a chance that you are familiar with blending.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Blending essentially allows you to
+    combine two different layers together to create a new layer,
+    typically we combine an image and a color, however our options are
+    not just limited to colors and images.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; This technique has been used for a
+    long time especially in graphic design. While still relatively new
+    in web design, it has been  gaining in popularity in recent times
+    with sites such as &lt;a href=&quot;#&quot;&gt; Fantasy Football &lt;/a&gt;  and
+    &lt;a href=&quot;#&quot;&gt; Spotify &lt;/a&gt; utilising these techniques in recent
+    brand design overhauls.
+  &lt;/p&gt;
+  &lt;div class=&quot;reference-image&quot;&gt;
+    &lt;img src=&quot;../img/fantasy-football.jpg&quot; /&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Hello,
+    &lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt;
+  &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; With browser support currently at over
+    75% with the exception of internet explorer and edge. The benefit of
+    using the &lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt;
+    property is that you are no longer required to perform image
+    manipulation through photoshop.
+  &lt;/p&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Getting started &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Before we begin creating our own 
+    background-blends, there are three terms that will feature heavily
+    throughout this tutorial, take time to familiarise yourself with 
+    &lt;span class=&quot;underline-definition&quot;&gt;Destination&lt;/span&gt;,
+    &lt;span class=&quot;underline-definition&quot;&gt;Source&lt;/span&gt;, 
+    &lt;span class=&quot;underline-definition&quot;&gt;Backdrop&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;div class=&quot;definition-wrapper&quot;&gt;
+    &lt;table class=&quot;definition-list&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Destination:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;Bottom layer usually a color or gradient&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Source:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;Top layer usually an image&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Backdrop:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;The area below the source, this is where the blending occurs&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;Understanding the relationship between
+    &lt;span class=&quot;underline-definition&quot;&gt;Destination&lt;/span&gt;,
+    &lt;span class=&quot;underline-definition&quot;&gt;Source&lt;/span&gt;, 
+    &lt;span class=&quot;underline-definition&quot;&gt;Backdrop&lt;/span&gt; means that we are 
+    ready to experiment with the different
+    &lt;span class=&quot;code-font&quot;&gt;background-blend-modes&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; The blend types &lt;/h2&gt;
+  &lt;div class=&quot;blend-type&quot;&gt;
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;normal&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;This is the default attribute which specifies no blending. The blending formula simply selects the source color.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;multiply&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;The source color is multiplied by the destination color and replaces the destination. The resultant color is always at least as dark as either the source or destination color. Multiplying any color with black results in black. Multiplying any color with white preserves the original color.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;screen&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Multiplies the complements of the backdrop and source color values, then complements the result. The result color is always at least as light as either of the two constituent colors. Screening any color with white produces white; screening with black leaves the original color unchanged. The effect is similar to projecting multiple photographic slides simultaneously onto a single screen&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;overlay&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Multiplies or screens the colors, depending on the backdrop color value. Source colors overlay the backdrop while preserving its highlights and shadows. The backdrop color is not replaced but is mixed with the source color to reflect the lightness or darkness of the backdrop.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;darken&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Selects the darker of the backdrop and source colors. The backdrop is replaced with the source where the source is darker otherwise, it is left unchanged.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;lighten&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Selects the lighter of the backdrop and source colors. The backdrop is replaced with the source where the source is lighter otherwise, it is left unchanged.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;color-dodge&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Brightens the backdrop color to reflect the source color Painting with black produces no changes.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;color-burn&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Darkens the backdrop color to reflect the source color. Painting with white produces no change&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;hard-light&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Multiplies or screens the colors, depending on the source color value. The effect is similar to shining a harsh spotlight on the backdrop.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;soft-light&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Darkens or lightens the colors, depending on the source color value. The effect is similar to shining a diffused spotlight on the backdrop.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;difference&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Subtracts the darker of the two constituent colors from the lighter color. Painting with white inverts the backdrop color painting with black produces no change.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;exclusion&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Produces an effect similar to that of the Difference mode but lower in contrast. Painting with white inverts the backdrop color, painting with black produces no change.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;hue&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Creates a color with the hue of the source color and the saturation and luminosity of the backdrop color.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;saturation&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Creates a color with the saturation of the source color and the hue and luminosity of the backdrop color. Painting with this mode in an area of the backdrop that is a pure gray (no saturation) produces no change.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;color&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color. This preserves the gray levels of the backdrop and is useful for coloring monochrome images or tinting color images&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;luminosity&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color. This produces an inverse effect to that of the Color mode.&lt;/p&gt;
+    
+    
+    &lt;a class=&quot;author-link&quot; href=&quot;https://drafts.fxtf.org/compositing-1/#blending&quot;&gt;
+    -per W3C
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Remembering that each 
+    &lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt; result is 
+    dependent on the destination color and the source, Let's look at how 
+    we apply an effect in a typical scenario, a hero image.
+  &lt;/p&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Syntax &lt;/h2&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.example-hero {
+ background: url('../img/bg44.jpg') #6534ff;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-blend-mode: 'normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue |saturation | color | luminosity';
+}&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Putting it all together &lt;/h2&gt;
+  &lt;div class=&quot;example-post&quot;&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; Previously we discussed that in order to
+      achieve the blend effect we need three things
+      &lt;span class=&quot;underline-definition&quot;&gt;Destination&lt;/span&gt;,
+      &lt;span class=&quot;underline-definition&quot;&gt;Source&lt;/span&gt;, 
+      &lt;span class=&quot;underline-definition&quot;&gt;Backdrop&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; In our case the 
+      &lt;span class=&quot;underline-definition&quot;&gt;Destination&lt;/span&gt; will our hero with
+      this the background color &lt;span class=&quot;box&quot;&gt;&lt;/span&gt; 
+      next we need a &lt;span class=&quot;underline-definition&quot;&gt;Source&lt;/span&gt;
+      we can use the following image.
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;example-hero&quot;&gt; &lt;/div&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-html&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;example-hero&quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Deciding on a particular blend in my 
+    experience is more trial and error than anything else. To speed the 
+    process up, I will apply each
+    &lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt; to our hero to
+    determine which suits us best.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+     To create the animation, there are a few things to consider.
+    We want each blend to have the same amount of time, to achieve this
+    we divide the total number of blend types by 100%.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    &lt;span class=&quot;code-font&quot;&gt; 100 / 16 = 6.25%&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; 
+    This means we change the &lt;span class=&quot;code-font&quot;&gt;blend-mode&lt;/span&gt;
+    every 6.5%. Next we must decide on how long we want each blend to be applied.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; 
+    We want each blend to be 3.5s long, to achieve this we
+    again multiply the number of blends by duration,
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; 
+    &lt;span class=&quot;code-font&quot;&gt;16 * 3.5s = 56s &lt;/span&gt;
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; 
+    This is how long we will play the animation for. As you can see in 
+    the image below the image will alternate between blends every 3.5s
+  &lt;/p&gt;
+  &lt;div class=&quot;example-hero-container&quot;&gt;
+    &lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; 
+    To alternate between blends we can use &lt;span class=&quot;code-font&quot;&gt;CSS Keyframes&lt;/span&gt;.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; 
+    Remembering that we have already calculated that we want the 
+    animation to run for a total of 56s and that we have 16 blend modes. 
+    We use our animation time as a full cycle or 100%. 
+    This means that change each blend every 6.5% of our full animation.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;&lt;span class=&quot;keyframe&quot;&gt;@keyframes&lt;/span&gt; blendTransition {
+ 0% { background-blend-mode: normal; }
+ 6.25% {background-blend-mode: multiply; }
+ 12.5% { background-blend-mode: screen; }
+ 18.75% { background-blend-mode: overlay; }
+ 25% { background-blend-mode: darken; }
+ 31.25% { background-blend-mode: lighten; }
+ 37.5% { background-blend-mode: color-dodge; }
+ 43.75% { background-blend-mode: color-burn; }
+ 50% { background-blend-mode: hard-light; }
+ 56.25% { background-blend-mode: soft-light; }
+ 62.5% { background-blend-mode: difference; }
+ 68.75% { background-blend-mode: exclusion; }
+ 75% { background-blend-mode: hue; }
+ 81.25% { background-blend-mode: saturation; }
+ 87.5% { background-blend-mode: color; }
+ 93.75% { background-blend-mode: luminosity; }
+ 100% {background-blend-mode: normal;}
+}&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    We can also print the &lt;span class=&quot;code-font&quot;&gt;blend-mode&lt;/span&gt; over
+    our image, this will allow us to identify the 
+    &lt;span class=&quot;code-font&quot;&gt;blend-mode&lt;/span&gt;. Add the caption to our
+    &lt;span class=&quot;code-font&quot;&gt;HTML&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    To print the &lt;span class=&quot;code-font&quot;&gt;blend-mode&lt;/span&gt; we use the 
+    &lt;span class=&quot;code-font&quot;&gt;::after&lt;/span&gt; selector to fetch the blend name.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-html&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;example-hero&quot;&amp;gt;
+   &amp;lt;div class=&quot;caption&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.caption {
+ background-color: $white;
+ bottom: 0;
+ color: #6534ff;
+ font-family: $lora;
+ font-size: $h5;
+ left: 0;
+ padding: 12px;
+ position: absolute;
+ text-align: center;
+ z-index: 2;
+
+  &amp;amp;::after {
+    animation: blend 56s ease infinite;
+    color: #6534ff;
+    content: '';
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;&lt;span class=&quot;keyframe&quot;&gt;@keyframes&lt;/span&gt; blendType {
+ 0% { content: 'normal';}
+ 6.25% { content: 'multiply';}
+ 12.5% { content: 'screen';}
+ 18.75% { content: 'overlay';}
+ 25% { content: 'darken';}
+ 31.25% { content: 'lighten';}
+ 37.5% { content: 'color-dodge';}
+ 43.75% { content: 'color-burn';}
+ 50% { content: 'hard-light';}
+ 56.25% { content: 'soft-light';}
+ 62.5% { content: 'difference';}
+ 68.75% { content: 'exclusion';}
+ 75% { content: 'hue';}
+ 81.25% { content: 'saturation';}
+ 87.5% { content: 'color'; }
+ 93.75% { content: 'luminosity';}
+ 100% {content: 'unset';}
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+  
+  
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Multiple images &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    What we are yet to discuss is what happens when we provide more than one 
+    &lt;span class=&quot;underline-definition&quot;&gt;Source&lt;/span&gt;. 
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    If you have used multiple background images before, you are aware
+    that you can style each image individually, the same principal applies
+    here.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; In other words we have the ability
+    to assign a different effect different images.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.example-hero-double-blend {
+ animation: multipleBlendTransition 56s infinite;
+ background-image: url('../img/bg44.jpg'), url('../img/bg13.jpg')
+ background-color: lighten(#6534ff, 25%);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-blend-mode: screen, darken;
+ box-sizing: border-box;
+ display: flex;
+ height: 220px;
+ justify-content: center;
+ margin: 20px auto;
+ overflow: hidden;
+ padding: 20px 0;
+ width: 100%;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; 
+    As you can see we have passed two images, we have also passed
+    two &lt;span class=&quot;code-font&quot;&gt;blend-modes&lt;/span&gt;
+  &lt;/p&gt;
+  
+  &lt;div class=&quot;example-hero-multiple-blend&quot;&gt;&lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; 
+    The possibilities are endless when it comes to 
+    &lt;span class=&quot;code-font&quot;&gt;blend-modes&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Play with code &lt;/h2&gt;
+  &lt;div class=&quot;codepen-wrapper&quot;&gt;
+    &lt;p data-height=&quot;265&quot; data-theme-id=&quot;dark&quot; data-slug-hash=&quot;qrPoaE&quot; data-default-tab=&quot;result&quot; data-user=&quot;andrewrock&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Hero Blend Modes&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;https://codepen.io/andrewrock/pen/qrPoaE/&quot;&gt;Hero Blend Modes&lt;/a&gt; by Andrew (&lt;a href=&quot;http://codepen.io/andrewrock&quot;&gt;@andrewrock&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+    &lt;script async=&quot;&quot; src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="HTML" /><category term="SCSS" /><summary type="html">If you browse the web, read newspapers, glance at advertising or even watch television, there is a chance that you are familiar with blending. Blending essentially allows you to combine two different layers together to create a new layer, typically we combine an image and a color, however our options are not just limited to colors and images. This technique has been used for a long time especially in graphic design. While still relatively new in web design, it has been gaining in popularity in recent times with sites such as Fantasy Football and Spotify utilising these techniques in recent brand design overhauls. Hello, background-blend-mode With browser support currently at over 75% with the exception of internet explorer and edge. The benefit of using the background-blend-mode property is that you are no longer required to perform image manipulation through photoshop. Getting started Before we begin creating our own background-blends, there are three terms that will feature heavily throughout this tutorial, take time to familiarise yourself with Destination, Source, Backdrop Destination: Bottom layer usually a color or gradient Source: Top layer usually an image Backdrop: The area below the source, this is where the blending occurs Understanding the relationship between Destination, Source, Backdrop means that we are ready to experiment with the different background-blend-modes The blend types normal This is the default attribute which specifies no blending. The blending formula simply selects the source color. multiply The source color is multiplied by the destination color and replaces the destination. The resultant color is always at least as dark as either the source or destination color. Multiplying any color with black results in black. Multiplying any color with white preserves the original color. screen Multiplies the complements of the backdrop and source color values, then complements the result. The result color is always at least as light as either of the two constituent colors. Screening any color with white produces white; screening with black leaves the original color unchanged. The effect is similar to projecting multiple photographic slides simultaneously onto a single screen overlay Multiplies or screens the colors, depending on the backdrop color value. Source colors overlay the backdrop while preserving its highlights and shadows. The backdrop color is not replaced but is mixed with the source color to reflect the lightness or darkness of the backdrop. darken Selects the darker of the backdrop and source colors. The backdrop is replaced with the source where the source is darker otherwise, it is left unchanged. lighten Selects the lighter of the backdrop and source colors. The backdrop is replaced with the source where the source is lighter otherwise, it is left unchanged. color-dodge Brightens the backdrop color to reflect the source color Painting with black produces no changes. color-burn Darkens the backdrop color to reflect the source color. Painting with white produces no change hard-light Multiplies or screens the colors, depending on the source color value. The effect is similar to shining a harsh spotlight on the backdrop. soft-light Darkens or lightens the colors, depending on the source color value. The effect is similar to shining a diffused spotlight on the backdrop. difference Subtracts the darker of the two constituent colors from the lighter color. Painting with white inverts the backdrop color painting with black produces no change. exclusion Produces an effect similar to that of the Difference mode but lower in contrast. Painting with white inverts the backdrop color, painting with black produces no change. hue Creates a color with the hue of the source color and the saturation and luminosity of the backdrop color. saturation Creates a color with the saturation of the source color and the hue and luminosity of the backdrop color. Painting with this mode in an area of the backdrop that is a pure gray (no saturation) produces no change. color Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color. This preserves the gray levels of the backdrop and is useful for coloring monochrome images or tinting color images luminosity Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color. This produces an inverse effect to that of the Color mode. -per W3C Remembering that each background-blend-mode result is dependent on the destination color and the source, Let's look at how we apply an effect in a typical scenario, a hero image. Syntax .example-hero { background: url('../img/bg44.jpg') #6534ff; background-repeat: no-repeat; background-size: cover; background-blend-mode: 'normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue |saturation | color | luminosity'; } Putting it all together  Previously we discussed that in order to achieve the blend effect we need three things Destination, Source, Backdrop In our case the Destination will our hero with this the background color   next we need a Source we can use the following image. &amp;lt;div class=&quot;example-hero&quot;&amp;gt; Deciding on a particular blend in my experience is more trial and error than anything else. To speed the process up, I will apply each background-blend-mode to our hero to determine which suits us best.  To create the animation, there are a few things to consider. We want each blend to have the same amount of time, to achieve this we divide the total number of blend types by 100%. 100 / 16 = 6.25% This means we change the blend-mode every 6.5%. Next we must decide on how long we want each blend to be applied. We want each blend to be 3.5s long, to achieve this we again multiply the number of blends by duration, 16 * 3.5s = 56s This is how long we will play the animation for. As you can see in the image below the image will alternate between blends every 3.5s To alternate between blends we can use CSS Keyframes. Remembering that we have already calculated that we want the animation to run for a total of 56s and that we have 16 blend modes. We use our animation time as a full cycle or 100%. This means that change each blend every 6.5% of our full animation. @keyframes blendTransition { 0% { background-blend-mode: normal; } 6.25% {background-blend-mode: multiply; } 12.5% { background-blend-mode: screen; } 18.75% { background-blend-mode: overlay; } 25% { background-blend-mode: darken; } 31.25% { background-blend-mode: lighten; } 37.5% { background-blend-mode: color-dodge; } 43.75% { background-blend-mode: color-burn; } 50% { background-blend-mode: hard-light; } 56.25% { background-blend-mode: soft-light; } 62.5% { background-blend-mode: difference; } 68.75% { background-blend-mode: exclusion; } 75% { background-blend-mode: hue; } 81.25% { background-blend-mode: saturation; } 87.5% { background-blend-mode: color; } 93.75% { background-blend-mode: luminosity; } 100% {background-blend-mode: normal;} } We can also print the blend-mode over our image, this will allow us to identify the blend-mode. Add the caption to our HTML To print the blend-mode we use the ::after selector to fetch the blend name. &amp;lt;div class=&quot;example-hero&quot;&amp;gt; &amp;lt;div class=&quot;caption&quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; .caption { background-color: $white; bottom: 0; color: #6534ff; font-family: $lora; font-size: $h5; left: 0; padding: 12px; position: absolute; text-align: center; z-index: 2;</summary></entry></feed>

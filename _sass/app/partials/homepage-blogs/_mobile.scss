@@ -48,29 +48,35 @@ $post-icon-height: 50px;
 }
 
 .post-wrapper {
-  background-color: darken($nav-link-color, 2%);
   color: $white;
   flex-flow: row wrap;
-  height: 400px;
   margin-bottom: $post-padding;
   overflow: hidden;
   padding: $post-padding;
 }
 
-.post {
+.post-container {
+  box-sizing: border-box;
+  display: flex;
   flex: 0 0 $width;
+  margin-bottom: 24px;
 
   &:nth-of-type(odd) {
-    .post-wrapper {
+    .post {
       background-color: lighten($nav-link-color, 2%);
     }
   }
 
   &:nth-child(4n) {
-    .post-wrapper {
+    .post {
       background-color: darken($nav-link-color, 2%);
     }
   }
+
+}
+
+.post {
+  background-color: darken($nav-link-color, 2%);
 
   a {
     text-decoration: none;
@@ -102,6 +108,10 @@ $post-icon-height: 50px;
   }
 }
 
+.post-content-body > h5 {
+  font-family: $lora;
+}
+
 .post-icon {
   flex-flow: row nowrap;
   height: $post-icon-height;
@@ -118,48 +128,3 @@ $post-icon-height: 50px;
 .title {
   text-align: center;
 }
-
-.post-footer {
-  flex-flow: row nowrap;
-  order: 2;
-}
-
-
-.tag-details,
-.post-details {
-  align-items: center;
-  flex: 1 0 50%;
-  flex-flow: row wrap;
-
-  svg,
-  p {
-    padding-right: 5px;
-  }
-
-  svg {
-    fill: $transparent;
-    height: 50px;
-    width: 35px;
-  }
-
-  p {
-    display: flex;
-    line-height: 1.2;
-  }
-}
-
-.svg-wrapper {
-  display: flex;
-  width: 25%;
-}
-
-.tag-wrapper,
-.date-wrapper {
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: row wrap;
-  margin-right: auto;
-  padding-left: 10px;
-  width: 75%;
-}
-
