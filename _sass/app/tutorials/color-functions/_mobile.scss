@@ -6,96 +6,7 @@
   @return mix($body-color, $color, $percentage);
 }
 
-$blue: #6534ff;
-$lightblue: tint($blue, 50);
-$image-one: url('/img/jellyfish.jpg');
-
-
-.purple {
-  color: $nav-link-color;
-}
-
-.tint li {
-  background: $blue;
-  flex: 1 0 auto;
-  $tint-num: 6;
-
-  @for $i from 1 through $tint-num {
-    &:nth-of-type(#{$i}) {
-      background-color: tint($blue, ($i * 10%));
-    }
-  }
-}
-
-.shade li {
-  background: $blue;
-  flex: 1 0 auto;
-  $shade-num: 6;
-
-  @for $i from 1 through $shade-num {
-    &:nth-of-type(#{$i}) {
-      background-color: shade($blue, ($i * 10%));
-    }
-  }
-}
-
-.light-dark li {
-  background-color: $blue;
-  flex: 1 0 100%;
-  $light-num: 6;
-  $dark-num: 12;
-
-  @for $i from 2 through $light-num {
-    &:nth-of-type(#{$i}) {
-     flex: 1 0 20%;
-      background-color: lighten($blue, ($i * 2.5%));
-    }
-  }
-
-  @for $i from 8 through $dark-num {
-    &:nth-of-type(#{$i}) {
-      flex: 1 0 20%;
-      background-color: darken($blue, ($i * 2.5%));
-    }
-  }
-}
-
-
-
-
-.alternate-blend li {
-  background-blend-mode: overlay;
-  flex: 1 0 100%;
-  flex-flow: row-reverse wrap;
-  $light-num: 5;
-  $dark-num: 10;
-
-  @for $i from 1 through $light-num {
-    &:nth-of-type(#{$i}) {
-      flex: 1 0 20%;
-      background: $image-one lighten($blue, ($i * 2.5%)) center center / cover no-repeat;
-    }
-  }
-
-  @for $i from 6 through $dark-num {
-    &:nth-of-type(#{$i}) {
-      flex: 1 0 20%;
-      background: $image-one darken($blue, ($i * 2.5%)) center center / cover no-repeat;
-    }
-  }
-}
-
-.combined li {
-  background: $blue;
-  flex: 1 0 auto;
-  $tint-num: 6;
-
-  @for $i from 1 through $tint-num {
-    &:nth-of-type(#{$i}) {
-      background-color: mix(darken($blue,($i * 8%)),lighten(#a00101,($i * 16%)));
-    }
-  }
-}
+$image-one: url('/img/bg2.jpg');
 
 .color-functions {
   display: flex;
@@ -112,6 +23,7 @@ $image-one: url('/img/jellyfish.jpg');
     width: 100%;
 
     li {
+      background-color: $nav-link-color;
       align-items: center;
       display: flex;
       box-sizing: border-box;
@@ -124,6 +36,251 @@ $image-one: url('/img/jellyfish.jpg');
   }
 }
 
+.tint li,
+.shade li{
+  background: $nav-link-color;
+  flex: 1 0 auto;
+}
+
+.light-dark-mix li,
+.tint-shade li {
+  background-blend-mode: overlay;
+  flex: 1 0 100%;
+}
 
 
+.purple {
+  color: $nav-link-color;
+}
 
+.pink {
+  color: $pink;
+}
+
+.tint li {
+  $tint-num: 6;
+
+  @for $i from 1 through $tint-num {
+    &:nth-of-type(#{$i}) {
+      background-color: tint($nav-link-color, ($i * 10%));
+    }
+  }
+}
+
+.shade li {
+  $shade-num: 6;
+
+  @for $i from 1 through $shade-num {
+    &:nth-of-type(#{$i}) {
+      background-color: shade($nav-link-color, ($i * 10%));
+    }
+  }
+}
+
+.tint-shade li {
+  $tint-num: 5;
+  $shade-num: 10;
+
+  @for $i from 1 through $tint-num {
+    &:nth-of-type(#{$i}) {
+      flex: 1 0 20%;
+      background: $image-one tint($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 6 through $shade-num {
+    &:nth-of-type(#{$i}) {
+      flex: 1 0 20%;
+      background: $image-one darken($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+}
+
+.light-dark li {
+  flex: 1 0 100%;
+  margin: 12px 0 0 0;
+  $light-num: 6;
+  $dark-num: 12;
+
+  @for $i from 2 through $light-num {
+    &:nth-of-type(#{$i}) {
+      margin: 0;
+      flex: 1 0 20%;
+      background-color: lighten($nav-link-color, ($i * 2.5%));
+    }
+  }
+
+  @for $i from 8 through $dark-num {
+    &:nth-of-type(#{$i}) {
+      flex: 1 0 20%;
+      margin: 0;
+      background-color: darken($nav-link-color, ($i * 2.5%));
+    }
+  }
+}
+
+.light-dark-mix li {
+  $light-num: 5;
+  $dark-num: 10;
+
+  @for $i from 1 through $light-num {
+    &:nth-of-type(#{$i}) {
+      flex: 1 0 20%;
+      background: $image-one lighten($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 6 through $dark-num {
+    &:nth-of-type(#{$i}) {
+      flex: 1 0 20%;
+      background: $image-one darken($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+
+}
+
+.all-together li {
+  $tint-num: 5;
+  $light-num: 10;
+  $shade-num: 15;
+  $darken-num: 20;
+  background-blend-mode: overlay;
+
+  @for $i from 1 through $tint-num {
+    &:nth-of-type(#{$i}) {
+      flex: 1 0 20%;
+      background: $image-one tint($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 6 through $light-num {
+    &:nth-of-type(#{$i}) {
+      flex: 1 0 20%;
+      background: $image-one lighten($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 11 through $shade-num {
+    &:nth-of-type(#{$i}) {
+      flex: 1 0 20%;
+      background: $image-one shade($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 16 through $darken-num {
+    &:nth-of-type(#{$i}) {
+      flex: 1 0 20%;
+      background: $image-one darken($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+}
+
+.combined li {
+  $combined-num: 6;
+  background: $nav-link-color;
+  flex: 1 0 auto;
+
+  @for $i from 1 through $combined-num {
+    &:nth-of-type(#{$i}) {
+      background-color: mix(darken($nav-link-color,($i * 7.5%)),lighten($pink,($i * 10%)));
+    }
+  }
+}
+
+.combined-blend li {
+  $combined-num: 6;
+  background-blend-mode: overlay;
+  flex: 1 0 20%;
+
+  @for $i from 1 through $combined-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(darken($nav-link-color,($i * 7.5%)),lighten($pink,($i * 10%))) center center / cover no-repeat;
+    }
+  }
+}
+
+
+.darken-lighten li {
+  $combined-num: 6;
+  background-blend-mode: overlay;
+  flex: 1 0 20%;
+
+  @for $i from 1 through $combined-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(tint($nav-link-color,($i * 7.5%)),shade($pink,($i * 10%))) center center / cover no-repeat;
+    }
+  }
+}
+
+
+.all-together-two li {
+  $tint-num: 10;
+  $darken-num: 20;
+  background-blend-mode: overlay;
+  flex: 1 0 20%;
+
+  @for $i from 1 through $tint-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(tint($nav-link-color,($i * 5%)),shade($pink,($i * 2%))) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 11 through $darken-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(darken($nav-link-color,($i * 5%)),lighten($pink,($i * 2%))) center center / cover no-repeat;
+    }
+  }
+}
+
+
+.all-together-all li {
+  $tint-num: 5;
+  $light-num: 10;
+  $shade-num: 15;
+  $darken-num: 20;
+  $double-tint: 25;
+  $double-lighten: 30;
+  background-blend-mode: overlay;
+  flex: 1 0 20%;
+
+  &:last-of-type {
+    background: $image-one center center / cover no-repeat;
+  }
+
+  @for $i from 1 through $tint-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one tint($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 6 through $light-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one lighten($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 11 through $shade-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one shade($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 16 through $darken-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one darken($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 21 through $double-tint {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(tint($nav-link-color,($i * 2.5%)),shade($pink,($i * 2.5%))) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 26 through $double-lighten {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(darken($nav-link-color,($i * 1.5%)),lighten($pink,($i * 2%))) center center / cover no-repeat;
+    }
+  }
+}
