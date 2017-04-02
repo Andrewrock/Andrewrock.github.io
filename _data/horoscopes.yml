@@ -1,0 +1,118 @@
+- title: "Aries"
+  dates: "March 21 - April 19"
+  element: "Fire"
+  planet: "Mars"
+  image: "img/horoscopes/aries.svg"
+  characteristics: "Active, Demanding, Determined, Effective, Ambitious.
+   Very clever and resourceful when motivated. Leans towards making impetuous choices.
+   Would rather leap before looking if there is a lure of excitement or adventure.
+   Uncomfortable with stagnation; hates to be bored. Requires deep belief or passion
+   in order to avoid tendency to be selfish"
+
+- title: "Taurus"
+  dates: "April 20 - May 20"
+  element: "Earth"
+  planet: "Venus"
+  image: "img/horoscopes/taurus.svg"
+  characteristics: "Security, Subtle strength, Appreciation, Instruction, Patience.
+  Tends to be possessive. Finds it difficult to let go of 'the way things are' and consequently resistent to change.
+  Requires a home-base, this is especially true with the family unit. Finds identity within the home.
+  Appreciates hard work and the value that comes from it."
+
+- title: "Gemini"
+  dates: "May 21 - June 20"
+  element: "Air"
+  planet: "Mercury"
+  image: "img/horoscopes/gemini.svg"
+  characteristics: "Communication, Indecision, Inquisitive, Intelligent, Changeable. A jack of all trades, but a master
+  of very few of them. Hence, able to generate surface communication about virtually any subject.
+  Quick intelligence, good at multi- tasking. Requires stimulation, variety and enjoys fast-paced situations.
+  Logical, rational and usually a masterful instructor."
+
+- title: "Cancer"
+  dates: "June 21 - Jul 22"
+  element: "Water"
+  planet: "Moon"
+  image: "img/horoscopes/cancer.svg"
+  characteristics: "Emotion, Diplomatic, Intensity, Impulsive, Selective. Difficulty letting go.
+  Often feels the target of sabotage from others. Highly imaginative and emotional. Very intuitive.
+  Follows senses rather than physical evidence. Imagines problems where there are none, therefor tends to worry
+  without cause. Gifted with instinct and creativity."
+
+- title: "Leo"
+  dates: "July 23 - August 22"
+  element: "Fire"
+  planet: "Sun"
+  image: "img/horoscopes/leo.svg"
+  characteristics: "Ruling, Warmth, Generosity, Faithful, Initiative. Confidence and charisma often leads to natural
+  opportunity. Takes great pride in accomplishment. Appreciates accolades and compliments for work well done. May have
+  tendency to vanity. Recognizes the good things in life and wants them. Expressive and prefers dominant
+  life-positions"
+
+- title: "Virgo"
+  dates: "August 23 - September 22"
+  element: "Earth"
+  planet: "Mercury"
+  image: "img/horoscopes/virgo.svg"
+  characteristics: "Analyzing, Practical, Reflective, Observation, Thoughtful. Can be scrutinizing and critical.
+   Appreciates the high integrity. Understand the true definition of value and quality. Disdains waist and excess.
+   Prefers to work with small details and may sometimes become lost in them. Often relied upon to manage effectively.
+   Highly intelligent and deft at problem-solving."
+
+- title: "Libra"
+  dates: "September 23 - October 22"
+  element: "Air"
+  planet: "Venus"
+  image: "img/horoscopes/libra.svg"
+  characteristics: "Balance, Justice, Truth, Beauty, Perfection. Easily sees both sides of an argument.
+  Highly skilled at problem-solving and decision making. Knows how to be unbiased while offering spirited debates on
+  beliefs, knowledge, politics, etc. Appreciates sharing amongst family, friends co-workers etc. Finds it difficult to
+  be alone, works best in partnerships."
+
+- title: "Scorpio"
+  dates: "October 23 - November 21"
+  element: "Water"
+  planet: "Mars"
+  image: "img/horoscopes/scorpio.svg"
+  characteristics: "Transient, Self-Willed, Purposeful, Unyielding. Not easy to pin down or predict. Prone to jealousy
+  and possessivness. Highly amorous with impressive sex drive. This drive can be expressed in vocation, beliefs sport,
+  or relationships. Tends to be competitive, especially with themselves. Can be very critical with themselves.
+  Very creative, artistic and imaginative."
+
+- title: "Sagittarius"
+  dates: "November 22 - December 21"
+  element: "Fire"
+  planet: "Jupiter"
+  image: "img/horoscopes/sagittarius.svg"
+  characteristics: "Philosophical, Motion, Experimentation, Optimism. Uneasy with routine and stagnation. Requires
+  stimulation. Imaginative and creative. Appreciates accumulation of knowledge and philosophy. Enjoys exploration and
+  travel. Tends to be unabashedly honest. Hesitant to commitment, or finds it difficult to complete promised goals."
+
+- title: "Capricorn"
+  dates: "December 22 - January 19"
+  element: "Earth"
+  planet: "Saturn"
+  image: "img/horoscopes/capricorn.svg"
+  characteristics: "Determination, Dominance, Perservering, Practical, Willful. Easily accepts obligation and
+  responsibility. Lives by a moral code which is often traditional and conventional. Skilled strategic thinker,
+  able to easily problem solve. Often achieves success by sheer hard work. Finds difficulty with change, especially
+  changing perspective if committed to a certain ideal."
+
+- title: "Aquarius"
+  dates: "January 20 - February 18"
+  element: "Air"
+  planet: "Uranus"
+  image: "img/horoscopes/aquarius.svg"
+  characteristics: "Knowledge, Humanitarianism, Serious, Insightful, Duplicitous. Original thinker, able to deftly move
+  around problems with unorthodox solutions. Idealistic, and prefers equal opportunity for all. Tends to be the defender
+  of underdogs. Philosophical and appreciates high spirited debates with others of equal intelligence. Can be
+  unpredictable, highly opinionated and remote"
+
+- title: "Pisces"
+  dates: "February 19 - March 20"
+  element: "Water"
+  planet: "Neptune"
+  image: "img/horoscopes/pisces.svg"
+  characteristics: "Fluctuation, Depth, Imagination, Reactive, Indecisive. Deeply intuitive, often lives and thinks in
+  a different world than others. Dreamer on multiple levels (in goals and in imagination). Finds difficulty facing
+  reality. Highly artistic and easily expressive. This is especially true in song and written word such as poetry."

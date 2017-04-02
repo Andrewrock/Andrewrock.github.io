@@ -5,6 +5,7 @@
   "main": "Gruntfile.js",
   "sasslintConfig": ".scss-lint.yml",
   "dependencies": {
+<<<<<<< HEAD
     "grunt": "^0.4.5"
   },
   "devDependencies": {
@@ -44,4 +45,16 @@
   },
   "author": "AR",
   "license": "ISC"
+=======
+    "glob": "^7.1.1",
+    "grunt": "^0.4.5",
+    "uncss": "^0.14.1"
+  },
+  "author": "AR",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-svgmin": "^4.0.0"
+  }
+>>>>>>> move-to-jekyll
 }

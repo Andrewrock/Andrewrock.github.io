@@ -1,0 +1,55 @@
+$code-are-bg: #343267;
+$css-color: #aed581;
+$keyframe-color: #7aa1f6;
+$html-color: #c75c8a;
+$label-width: 60px;
+
+.code-container,
+pre {
+  box-sizing: border-box;
+  width: $width;
+}
+
+.code-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+pre {
+  background-color: $code-are-bg;
+  font-family: $ubuntu;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: break-word;
+}
+
+.code {
+  border-radius: 4px;
+  margin: 0 0 24px;
+  position: relative;
+
+  code {
+    border-left: 1px solid $grey;
+    display: block;
+    font-family: $source-code;
+    font-size: .75rem;
+    padding: 15px;
+    white-space: pre-wrap;
+
+    &.no-padding {
+      margin: 0;
+    }
+  }
+}
+
+.code-css {
+  color: $css-color;
+}
+
+.code-html {
+  color: $white;
+}
+
+.keyframe {
+  color: $keyframe-color;
+}

@@ -1,0 +1,60 @@
+$letter-num: 26;
+
+.alphabet,
+.alphabet-container,
+.alphabet-test {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.alphabet,
+.alphabet-test {
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 50px;
+  padding: 0;
+  width: $width;
+}
+
+.alphabet > li,
+.alphabet-test > li {
+  align-items: center;
+  box-sizing: border-box;
+  color: $white;
+  display: flex;
+  flex: 1 0 20%;
+  height: 120px;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.alphabet > li {
+  @for $i from 1 through $letter-num {
+
+    &:nth-of-type(#{$i}) {
+      background-color: lighten($nav-link-color, ($i * .5%));
+    }
+  }
+}
+
+.vowel > li {
+  &:not(.vowel) {
+    display: none;
+  }
+}
+
+.alphabet-test > li {
+  background-color: $pink;
+
+  &:not(.vowel) {
+    @for $i from 1 through $letter-num {
+      &:nth-of-type(#{$i}) {
+        background-color: lighten($nav-link-color, ($i * .5%));
+      }
+    }
+  }
+}

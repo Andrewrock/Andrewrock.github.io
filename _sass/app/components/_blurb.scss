@@ -1,0 +1,51 @@
+$blurb-max-width: 640px;
+$blurb-line-height: 2px;
+$blurb-line-width: 60px;
+$blurb-margin: 24px;
+$spacer: 1rem;
+$blurb-bottom-line-margin: ($spacer / 2);
+
+.blurb-wrapper,
+.blurb,
+.sub-blurb {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.blurb-wrapper {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: $blurb-margin auto;
+  max-width: $blurb-max-width;
+  padding: $blurb-margin;
+  position: relative;
+
+  &::after {
+    background-color: $nav-link-color;
+    content: '';
+    display: block;
+    height: $blurb-line-height;
+    margin: $blurb-bottom-line-margin auto 0;
+    width: $blurb-line-width;
+  }
+}
+
+.blurb,
+.sub-blurb {
+  font-family: $lora;
+  width: $width;
+}
+
+.blurb {
+
+  &::first-letter {
+    color: $nav-link-color;
+    font-size: $h2;
+  }
+}
+
+.sub-blurb {
+  padding: 0 10px;
+}

@@ -1,0 +1,226 @@
+---
+layout: tutorial
+title: ':not() selector'
+date: 2017-03-27
+definition: <span class="code-font">:not()</span> is a CSS negation
+            pseudo-class selector. It is a functional pseudo-class
+            selector that takes a <span class="underline-definition"><a href="https://www.w3.org/TR/selectors/#simple-selectors-dfn">simple</a></span> selector as an argument, and then matches
+            one or more elements that are not represented by the argument.
+definition-link: 'https://developer.mozilla.org/en/docs/Web/CSS/:not'
+definition-source: 'MDN'
+lead_text: Using the alphabet to play with <span class="code-font">:not()</span>
+---
+<div class="tutorial-body">
+  <p class="tutorial-paragraph"> The <span class="code-font">:not()</span>
+    selector may be one of the least used <span class="code-font">css</span>
+    selectors, however, knowing when and how to use it can save a lot of time.
+   <span class="code-font">:not()</span> can be used with any regular selector such as 
+  </p>
+
+  <ul class="simple-list">
+    <li>
+      <p>Type selectors (e.g
+        <span class="code-font">p</span>,
+        <span class="code-font">button</span>,
+        <span class="code-font">pre</span>)
+      </p>
+    </li>
+    <li><p>Class selectors (e.g
+      <span class="code-font">.header</span>,
+      <span class="code-font">.footer</span>,
+      <span class="code-font">.nav</span>)
+    </p>
+    </li>
+    <li><p>ID selector (e.g
+      <span class="code-font">#logo</span>)
+    </p>
+    </li>
+    <li><p>Pseudo-class selectors (e.g
+      <span class="code-font">:checked</span>,
+      <span class="code-font">:active</span>)
+    </p>
+    </li>
+    <li><p>Attribute selector (e.g
+      <span class="code-font">:[type="submit"]</span>)
+    </p>
+    </li>
+  </ul>
+
+  
+  <p class="tutorial-paragraph">To use the <span class="code-font">:not()</span>
+  you pass an argument to the selector. The <span class="code-font">:not()</span>
+  will then apply the styling rules to all the elements except for the selector in its argument.
+  </p>
+
+  <div class="code-container">
+    <pre class="code code-css"><code>:not(selector) {
+ css declarations;
+}
+</code></pre>
+  </div>
+  
+  <div class="code-container">
+<pre class="code code-css"><code>li:not(.active) {
+  /* will  style all list items except the list item with the class active */
+}</code></pre>
+  </div>
+
+
+  <p class="tutorial-paragraph"> The <span class="code-font">:not()</span> is not
+    without it's caveats. The argument passed to <span class="code-font">:not()</span> cannot, 
+    be a pseudo-element (eg as <span class="code-font">:first-line</span>
+    and <span class="code-font">:first-letter</span> etc).
+  </p>
+  
+  <p class="tutorial-paragraph">You may have noticed that you can apply
+    <span class="code-font">:not()</span> with a pseudo-class but not a pseudo-element.
+    For information on the difference between psuedo-classes and psuedo-elements
+    click
+    <span class="underline-definition">
+      <a href="http://www.d.umn.edu/~lcarlson/csswork/selectors/pseudo_dif.html">
+        here
+      </a>
+    </span>
+  </p>
+  
+  <p class="tutorial-paragraph">It is also possible to chain<span class="code-font">:not()</span> selector
+    with other <span class="code-font">:not()</span> selectors. 
+    E.g. the following will match all articles except the one with a class of
+    <span class="code-font">active</span>, and then will filter out the list 
+    item that is the last item.
+  </p>
+
+  <div class="code-container">
+<pre class="code code-css"><code>li:not(.active):not(:last-of-type) {
+  /* style list items that are not active or last */
+}
+</code></pre>
+  </div>
+
+  <h2 class="tutorial-section-heading">Alphabet &
+    <span class="code-font"> :not()</span>
+  </h2>
+  
+  <p class="tutorial-paragraph">
+    As mentioned before, the <span class="code-font">:not()</span> selector matches the element that 
+    is not represented by the selector in its argument. We can use the alphabet to illustrate the
+    power of the <span class="code-font">:not()</span>. Consider the following
+  </p>
+  
+  <div class="alphabet-container">
+    <ul class="alphabet">
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+      <li>d</li>
+      <li>e</li>
+      <li>f</li>
+      <li>g</li>
+      <li>h</li>
+      <li>i</li>
+      <li>j</li>
+      <li>k</li>
+      <li>l</li>
+      <li>m</li>
+      <li>n</li>
+      <li>o</li>
+      <li>p</li>
+      <li>q</li>
+      <li>r</li>
+      <li>s</li>
+      <li>t</li>
+      <li>u</li>
+      <li>v</li>
+      <li>y</li>
+      <li>x</li>
+      <li>y</li>
+      <li>z</li>
+    </ul>
+
+    <p class="tutorial-paragraph"> Now let's say you want to show only the vowels.
+      You can achieve this by adding <span class="code-font">vowel</span>
+      class to each vowel in the list of letters. <span class="code-font">:not()</span>
+      selector will check against this class before styling the letters.
+    </p>
+
+    <div class="code-container">
+<pre class="code code-css"><code>.alphabet > li:not(.vowel) {
+  display: none;
+}</code></pre>
+    </div>
+    
+    <ul class="alphabet vowel">
+      <li class="vowel">a</li>
+      <li>b</li>
+      <li>c</li>
+      <li>d</li>
+      <li class="vowel">e</li>
+      <li>f</li>
+      <li>g</li>
+      <li>h</li>
+      <li class="vowel">i</li>
+      <li>j</li>
+      <li>k</li>
+      <li>l</li>
+      <li>m</li>
+      <li>n</li>
+      <li class="vowel">o</li>
+      <li>p</li>
+      <li>q</li>
+      <li>r</li>
+      <li>s</li>
+      <li>t</li>
+      <li class="vowel">u</li>
+      <li>v</li>
+      <li>y</li>
+      <li>x</li>
+      <li>y</li>
+      <li>z</li>
+    </ul>
+    <p class="tutorial-paragraph"> You can only us <span class="code-font">:not()</span> to 
+      change the <span class="code-font">background-color</span> for vowels only.
+    </p>
+    <div class="code-container">
+    <pre class="code code-css"><code>.alphabet-test > li {
+      background-color: $nav-link-color;
+      &:not(.vowel) {
+      background-color: grey;
+      color: $body-color;
+    }
+  }</code></pre>
+    </div>
+    <ul class="alphabet-test">
+      <li class="vowel">a</li>
+      <li>b</li>
+      <li>c</li>
+      <li>d</li>
+      <li class="vowel">e</li>
+      <li>f</li>
+      <li>g</li>
+      <li>h</li>
+      <li class="vowel">i</li>
+      <li>j</li>
+      <li>k</li>
+      <li>l</li>
+      <li>m</li>
+      <li>n</li>
+      <li class="vowel">o</li>
+      <li>p</li>
+      <li>q</li>
+      <li>r</li>
+      <li>s</li>
+      <li>t</li>
+      <li class="vowel">u</li>
+      <li>v</li>
+      <li>y</li>
+      <li>x</li>
+      <li>y</li>
+      <li>z</li>
+    </ul>
+    <p class="tutorial-paragraph">You can play with the code here
+     <span class="underline-definition">
+       <a href="http://codepen.io/andrewrock/pen/aJagPm">Here</a>
+     </span>
+    </p>
+  </div>
+</div>

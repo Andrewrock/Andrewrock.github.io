@@ -1,9 +1,0 @@
-# Site Settings
-title: 'Welcome'
-description: 'A site dedicated to front-end tutorials'
-url: 'http://127.0.0.0:4000' # the base hostname & protocol for your site
-footer_text: 'Come back soon.'
-
-# Admin Settings
-admin_name: 'Andrew Rock'
-admin_email: 'arock91@icloud.com'

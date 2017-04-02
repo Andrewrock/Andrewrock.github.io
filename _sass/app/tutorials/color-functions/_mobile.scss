@@ -1,0 +1,281 @@
+@function tint($color, $percentage) {
+  @return mix($white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix($body-color, $color, $percentage);
+}
+
+$image-one: url('/img/bg2.jpg');
+$list-item-height: 120px;
+
+.color-functions {
+  display: flex;
+  flex-flow: row wrap;
+
+  ul {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto 50px;
+    padding: 0;
+    width: $width;
+
+    li {
+      align-items: center;
+      background-color: $nav-link-color;
+      box-sizing: border-box;
+      color: $white;
+      display: flex;
+      height: $list-item-height;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+
+.tint > li,
+.shade > li {
+  background-color: $nav-link-color;
+  flex: 1 0 auto;
+}
+
+.light-dark-mix > li,
+.tint-shade > li {
+  background-blend-mode: overlay;
+  flex: 1 0 100%;
+}
+
+.purple {
+  color: $nav-link-color;
+}
+
+.pink {
+  color: $pink;
+}
+
+.tint > li {
+  $tint-num: 6;
+
+  @for $i from 1 through $tint-num {
+    &:nth-of-type(#{$i}) {
+      background-color: tint($nav-link-color, ($i * 10%));
+    }
+  }
+}
+
+.shade > li {
+  $shade-num: 6;
+
+  @for $i from 1 through $shade-num {
+    &:nth-of-type(#{$i}) {
+      background-color: shade($nav-link-color, ($i * 10%));
+    }
+  }
+}
+
+.tint-shade > li {
+  $tint-num: 5;
+  $shade-num: 10;
+  flex: 1 0 20%;
+
+  @for $i from 1 through $tint-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one tint($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 6 through $shade-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one darken($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+}
+
+.light-dark > li {
+  flex: 1 0 100%;
+  margin: 12px 0 0;
+  $light-num: 6;
+  $dark-num: 12;
+
+  @for $i from 2 through $light-num {
+    &:nth-of-type(#{$i}) {
+      background-color: lighten($nav-link-color, ($i * 2.5%));
+      flex: 1 0 20%;
+      margin: 0;
+    }
+  }
+
+  @for $i from 8 through $dark-num {
+    &:nth-of-type(#{$i}) {
+      background-color: darken($nav-link-color, ($i * 2.5%));
+      flex: 1 0 20%;
+      margin: 0;
+    }
+  }
+}
+
+.light-dark-mix > li {
+  $light-num: 5;
+  $dark-num: 10;
+
+  @for $i from 1 through $light-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one lighten($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+      flex: 1 0 20%;
+    }
+  }
+
+  @for $i from 6 through $dark-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one darken($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+      flex: 1 0 20%;
+    }
+  }
+}
+
+.all-together > li {
+  $tint-num: 5;
+  $light-num: 10;
+  $shade-num: 15;
+  $darken-num: 20;
+  background-blend-mode: overlay;
+
+  @for $i from 1 through $tint-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one tint($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+      flex: 1 0 20%;
+    }
+  }
+
+  @for $i from 6 through $light-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one lighten($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+      flex: 1 0 20%;
+    }
+  }
+
+  @for $i from 11 through $shade-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one shade($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+      flex: 1 0 20%;
+    }
+  }
+
+  @for $i from 16 through $darken-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one darken($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+      flex: 1 0 20%;
+    }
+  }
+}
+
+.combined > li {
+  $combined-num: 6;
+
+  background: $nav-link-color;
+  flex: 1 0 auto;
+
+  @for $i from 1 through $combined-num {
+    &:nth-of-type(#{$i}) {
+      background-color: mix(darken($nav-link-color, ($i * 7.5%)), lighten($pink, ($i * 10%)));
+    }
+  }
+}
+
+.combined-blend > li {
+  $combined-num: 6;
+  background-blend-mode: overlay;
+  flex: 1 0 20%;
+
+  @for $i from 1 through $combined-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(darken($nav-link-color, ($i * 7.5%)), lighten($pink, ($i * 10%))) center center / cover no-repeat;
+    }
+  }
+}
+
+.darken-lighten > li {
+  $combined-num: 6;
+  background-blend-mode: overlay;
+  flex: 1 0 20%;
+
+  @for $i from 1 through $combined-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(tint($nav-link-color, ($i * 7.5%)), shade($pink, ($i * 10%))) center center / cover no-repeat;
+    }
+  }
+}
+
+.all-together-two > li {
+  $tint-num: 10;
+  $darken-num: 20;
+  background-blend-mode: overlay;
+  flex: 1 0 20%;
+
+  @for $i from 1 through $tint-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(tint($nav-link-color, ($i * 5%)), shade($pink, ($i * 2%))) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 11 through $darken-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(darken($nav-link-color, ($i * 5%)), lighten($pink, ($i * 2%))) center center / cover no-repeat;
+    }
+  }
+}
+
+.all-together-all > li {
+  $tint-num: 5;
+  $light-num: 10;
+  $shade-num: 15;
+  $darken-num: 20;
+  $double-tint: 25;
+  $double-lighten: 30;
+  background-blend-mode: overlay;
+  flex: 1 0 20%;
+
+  &:last-of-type {
+    background: $image-one center center / cover no-repeat;
+  }
+
+  @for $i from 1 through $tint-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one tint($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 6 through $light-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one lighten($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 11 through $shade-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one shade($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 16 through $darken-num {
+    &:nth-of-type(#{$i}) {
+      background: $image-one darken($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 21 through $double-tint {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(tint($nav-link-color, ($i * 2.5%)), shade($pink, ($i * 2.5%))) center center / cover no-repeat;
+    }
+  }
+
+  @for $i from 26 through $double-lighten {
+    &:nth-of-type(#{$i}) {
+      background: $image-one mix(darken($nav-link-color, ($i * 1.5%)), lighten($pink, ($i * 2%))) center center / cover no-repeat;
+    }
+  }
+}

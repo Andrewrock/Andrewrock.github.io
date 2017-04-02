@@ -1,0 +1,452 @@
+<!doctype html>
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <title> Background-blend modes </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Favicons -->
+  <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64 96x96" href="http://127.0.0.0:4000/favicon.ico">
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Source+Code+Pro:300|Ubuntu" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-wrapper">
+    <ul class="socials">
+      <li class="social">
+        <a href="https://github.com/Andrewrock">
+          <svg viewBox="0 0 512 512">
+            <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="social">
+        <a href="https://twitter.com/andrewrock9">
+          <svg viewBox="0 0 512 512">
+            <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="social">
+        <a href="https://ie.linkedin.com/in/rockandrew">
+          <svg viewBox="0 0 512 512">
+            <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <ul class="topics">
+      
+      
+      <li>
+        <a href="/">Home</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/cv">CV</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/instagram">Instagram</a>
+      </li>
+      
+      
+    </ul>
+  </div>
+</nav>
+
+<header class="tutorial">
+  <div class="svg-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <polygon class="svg--sm" points="0,0 30,100 65,21 90,100 100,75 100,100 0,100"/>
+      <polygon class="svg--lg" points="0,0 15,100 33,21 45,100 50,75 55,100 72,20 85,100 95,50 100,80 100,100 0,100" />
+    </svg>
+  </div>
+</header>
+
+
+  <div class="tutorial-container">
+    
+    <div class="blurb-wrapper">
+      <h2 class="blurb"> Background-blend modes </h2>
+      <h5 class="sub-blurb"> Photoshop in the browser </h5>
+    </div>
+    
+    <div class="tutorial-definition-wrapper">
+      <p>
+        "The <span class="code-font">background-blend-mode</span> CSS property describes how the element's background images should blend with each other and the element's background color."
+        <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode' class="tutorial-link"> -MDN </a>
+      </p>
+    </div>
+    
+    
+    
+    <!--this is closed in tutorial.html -->
+
+  <div class="tutorial-content">
+    <div class="tutorial-body">
+  <p class="tutorial-paragraph"> Browsing the web, reading newspapers,
+    watching television, if you do any these then you are familiar 
+    with image blending.
+  </p>
+  <p class="tutorial-paragraph"> Blending essentially allows you to
+    combine two different layers together to create a new layer,
+    typically we combine an image and a colour, however our options are
+    not just limited to colours and images.
+  </p>
+  <p class="tutorial-paragraph"> Blending is not a new technique, it is however 
+    relatively novel in web design. With browser support on the rise, 
+    <span class="code-font">background-blend-modes</span> have featured heavily throughout
+    sites such as <span class="underline-definition">
+      <a href="https://fantasy.premierleague.com/"> 
+        Fantasy Premier League 
+      </a>
+    </span> and
+    <span class="underline-definition">
+    <a href="https://www.spotify.com/ie/"> Spotify</a>
+    </span>.
+  </p>
+ 
+  <div class='reference-image'>
+    <img src="../img/fantasy-football.jpg">
+  </div>
+  
+  <h4 class="tutorial-section-heading"> Hello,
+    <span class="code-font">background-blend-mode</span>
+  </h4>
+  <p class="tutorial-paragraph"> With browser support at over
+    75% with the excluding internet explorer and edge. The benefits of
+    using the <span class="code-font">background-blend-mode</span> now
+    outweigh the risks of encountering an unsupported browser.
+  </p>
+ 
+  <h4 class="tutorial-section-heading"> Getting started </h4>
+  <p class="tutorial-paragraph"> Before creating
+    <span class="code-font">background-blends</span>take time to
+    familiarise yourself with these terms as they will feature heavily
+    throughout.
+    <span class="code-font">Destination</span>,
+    <span class="code-font">Source</span>,
+    <span class="code-font">Backdrop</span>
+  </p>
+  <div class="definition-wrapper">
+    <table class="definition-list">
+      <tr>
+        <td>
+          <p>Destination:</p>
+        </td>
+        <td>
+          <p class="tutorial-paragraph">Bottom layer usually a colour or gradient</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Source:</p>
+        </td>
+        <td>
+          <p class="tutorial-paragraph">Top layer usually an image</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Backdrop:</p>
+        </td>
+        <td>
+          <p class="tutorial-paragraph">The area below the source, this is where the blending occurs</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <h4 class="tutorial-section-heading"> The blend types </h4>
+  <div class="blend-type">
+    
+    
+    <h5 class="blend-list-title">normal</h5>
+    <p class="blend-list-description">This is the default attribute which specifies no blending. The blending formula simply selects the source color.</p>
+    
+    
+    
+    <h5 class="blend-list-title">multiply</h5>
+    <p class="blend-list-description">The source color is multiplied by the destination color and replaces the destination. The resultant color is always at least as dark as either the source or destination color. Multiplying any color with black results in black. Multiplying any color with white preserves the original color.</p>
+    
+    
+    
+    <h5 class="blend-list-title">screen</h5>
+    <p class="blend-list-description">Multiplies the complements of the backdrop and source color values, then complements the result. The result color is always at least as light as either of the two constituent colors. Screening any color with white produces white; screening with black leaves the original color unchanged. The effect is similar to projecting multiple photographic slides simultaneously onto a single screen</p>
+    
+    
+    
+    <h5 class="blend-list-title">overlay</h5>
+    <p class="blend-list-description">Multiplies or screens the colors, depending on the backdrop color value. Source colors overlay the backdrop while preserving its highlights and shadows. The backdrop color is not replaced but is mixed with the source color to reflect the lightness or darkness of the backdrop.</p>
+    
+    
+    
+    <h5 class="blend-list-title">darken</h5>
+    <p class="blend-list-description">Selects the darker of the backdrop and source colors. The backdrop is replaced with the source where the source is darker otherwise, it is left unchanged.</p>
+    
+    
+    
+    <h5 class="blend-list-title">lighten</h5>
+    <p class="blend-list-description">Selects the lighter of the backdrop and source colors. The backdrop is replaced with the source where the source is lighter otherwise, it is left unchanged.</p>
+    
+    
+    
+    <h5 class="blend-list-title">color-dodge</h5>
+    <p class="blend-list-description">Brightens the backdrop color to reflect the source color Painting with black produces no changes.</p>
+    
+    
+    
+    <h5 class="blend-list-title">color-burn</h5>
+    <p class="blend-list-description">Darkens the backdrop color to reflect the source color. Painting with white produces no change</p>
+    
+    
+    
+    <h5 class="blend-list-title">hard-light</h5>
+    <p class="blend-list-description">Multiplies or screens the colors, depending on the source color value. The effect is similar to shining a harsh spotlight on the backdrop.</p>
+    
+    
+    
+    <h5 class="blend-list-title">soft-light</h5>
+    <p class="blend-list-description">Darkens or lightens the colors, depending on the source color value. The effect is similar to shining a diffused spotlight on the backdrop.</p>
+    
+    
+    
+    <h5 class="blend-list-title">difference</h5>
+    <p class="blend-list-description">Subtracts the darker of the two constituent colors from the lighter color. Painting with white inverts the backdrop color painting with black produces no change.</p>
+    
+    
+    
+    <h5 class="blend-list-title">exclusion</h5>
+    <p class="blend-list-description">Produces an effect similar to that of the Difference mode but lower in contrast. Painting with white inverts the backdrop color, painting with black produces no change.</p>
+    
+    
+    
+    <h5 class="blend-list-title">hue</h5>
+    <p class="blend-list-description">Creates a color with the hue of the source color and the saturation and luminosity of the backdrop color.</p>
+    
+    
+    
+    <h5 class="blend-list-title">saturation</h5>
+    <p class="blend-list-description">Creates a color with the saturation of the source color and the hue and luminosity of the backdrop color. Painting with this mode in an area of the backdrop that is a pure gray (no saturation) produces no change.</p>
+    
+    
+    
+    <h5 class="blend-list-title">color</h5>
+    <p class="blend-list-description">Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color. This preserves the gray levels of the backdrop and is useful for coloring monochrome images or tinting color images</p>
+    
+    
+    
+    <h5 class="blend-list-title">luminosity</h5>
+    <p class="blend-list-description">Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color. This produces an inverse effect to that of the Color mode.</p>
+    
+    
+    <a class="author-link" href='https://drafts.fxtf.org/compositing-1/#blending'>
+      -per W3C
+    </a>
+  </div>
+
+  <h4 class="tutorial-section-heading"> Syntax </h4>
+  <div class='code-container'>
+<pre class='code code-css'><code>.example-hero {
+  background: url('../img/bg44.jpg') #6534ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: 'normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue |saturation | color | luminosity';
+}</code></pre>
+  </div>
+  
+  <h4 class="tutorial-section-heading"> Building our own 
+  <span class="code-font">background-blend</span> </h4>
+  <div class="example-post">
+    <p class="tutorial-paragraph">Starting with the <span class="code-font">HTML</span></p>
+    
+    <div class="code-container">
+      <pre class="code code-html"><code>&lt;div class="example-hero"&gt;</code></pre>
+    </div>
+
+    <p class="tutorial-paragraph"> For the 
+      <span class="code-font">Destination</span>
+      this <span class="code-font">background-color</span> will do,
+      <span class="box"></span>  and for the
+      <span class="code-font">Source</span> we can use the this image
+    </p>
+  </div>
+  
+  <div class="example-hero"> </div>
+  
+  <p class="tutorial-paragraph"> Selecting a
+    <span class="code-font">background-blend-mode</span> that fits
+    your design is often a frustrating endeavour.
+    To make my life easier, I like to animate the
+    <span class="code-font">background-blend-modes</span>.
+  </p>
+  
+  <p class="tutorial-paragraph">
+     When creating the animation, each blend should be given the
+    same amount of time over the image. To achieve this
+    divide the total number of blend types by 100.
+  </p>
+ 
+  <p class="tutorial-paragraph">
+    <span class="code-font"> 100 / 16 = 6.25%</span>
+  </p>
+ 
+  <p class="tutorial-paragraph"> This means that each
+   <span class="code-font">background-blend-mode</span> will be given
+    6.25% of the full animation. Next we must decide on
+    how long we want each blend to be applied for.
+  </p>
+  <p class="tutorial-paragraph"> There are 16 <span class="code-font">background-blend-modes</span>.
+    If each blend were to applied for 3.5s long, then our total duration would be 
+    56s.
+  </p>
+  <p class="tutorial-paragraph">
+    <span class="code-font">16 * 3.5s = 56s </span>
+  </p>
+  <p class="tutorial-paragraph">We know we have 16
+  <span class="code-font">background-blend-modes</span>, we want
+  each blend to be applied for 3.5s each and the animation will run
+  for 56s.
+  </p>
+  <p class="tutorial-paragraph"> Next we need to alternate between blends using 
+    <span class="code-font">CSS Keyframes</span>.
+  </p>
+  <div class="code-container">
+<pre class="code code-css"><code><span class="keyframe">@keyframes</span> blendTransition {
+  0% { background-blend-mode: normal; }
+  6.25% {background-blend-mode: multiply; }
+  12.5% { background-blend-mode: screen; }
+  18.75% { background-blend-mode: overlay; }
+  25% { background-blend-mode: darken; }
+  31.25% { background-blend-mode: lighten; }
+  37.5% { background-blend-mode: color-dodge; }
+  43.75% { background-blend-mode: color-burn; }
+  50% { background-blend-mode: hard-light; }
+  56.25% { background-blend-mode: soft-light; }
+  62.5% { background-blend-mode: difference; }
+  68.75% { background-blend-mode: exclusion; }
+  75% { background-blend-mode: hue; }
+  81.25% { background-blend-mode: saturation; }
+  87.5% { background-blend-mode: color; }
+  93.75% { background-blend-mode: luminosity; }
+  100% {background-blend-mode: normal;}
+}</code></pre>
+  </div>
+ 
+  <p class="tutorial-paragraph"> I like to print the 
+    <span class="code-font">blend-mode</span> on the screen.
+    To do this use the
+    <span class="code-font">::after</span> selector to fetch the blend name.
+  </p>
+  
+  <div class="code-container">
+<pre class="code code-html"><code>&lt;div class="example-hero"&gt;
+ &lt;div class="caption"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<pre class="code code-css"><code>.caption {
+  background-color: #fff;
+  bottom: 0;
+  color: #6534ff;
+  font-family: $lora;
+  font-size: 20px;
+  left: 0;
+  padding: 12px;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+
+  &::after {
+  animation: blend 56s ease infinite;
+  color: #6534ff;
+  content: '';
+  }
+}</code></pre>
+<pre class="code code-css"><code><span class="keyframe">@keyframes</span> blendType {
+  0% { content: 'normal';}
+  6.25% { content: 'multiply';}
+  12.5% { content: 'screen';}
+  18.75% { content: 'overlay';}
+  25% { content: 'darken';}
+  31.25% { content: 'lighten';}
+  37.5% { content: 'color-dodge';}
+  43.75% { content: 'color-burn';}
+  50% { content: 'hard-light';}
+  56.25% { content: 'soft-light';}
+  62.5% { content: 'difference';}
+  68.75% { content: 'exclusion';}
+  75% { content: 'hue';}
+  81.25% { content: 'saturation';}
+  87.5% { content: 'color'; }
+  93.75% { content: 'luminosity';}
+  100% {content: 'unset';}
+}</code></pre>
+  </div>
+
+  <div class="example-hero-container">
+    <div class="caption"></div>
+  </div>
+
+  <div class="example-post">
+  <h4 class="tutorial-section-heading"> Multiple images </h4>
+  <p class="tutorial-paragraph">Blending can also be used with more than one
+    <span class="code-font">Source</span>.
+  </p>
+  <p class="tutorial-paragraph"> If you have used multiple
+    <span class="code-font">background-images</span> before,
+    you will know that you can style each image individually, the same principle
+    also applies here.
+  </p>
+
+  <p class="tutorial-paragraph"> This means you have the ability
+    to assign a <span class="code-font">background-blend</span>
+    per each <span class="code-font">background-image</span>.
+  </p>
+
+  <div class="code-container">
+<pre class="code code-css"><code>.example-hero-double-blend {
+  animation: multipleBlendTransition 56s infinite;
+  background-image: url('../img/bg44.jpg'), url('../img/bg13.jpg')
+  background-color: lighten(#6534ff, 25%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen, darken;
+  box-sizing: border-box;
+  display: flex;
+  height: 220px;
+  justify-content: center;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 20px 0;
+  width: 100%;
+}</code></pre>
+  </div>
+
+  <p class="tutorial-paragraph">
+    As you can see we have passed two images, we have also passed
+    two <span class="code-font">background-blend-modes</span>
+  </p>
+
+  <div class="example-hero-multiple-blend"></div>
+</div>  
+
+  <h4 class="tutorial-section-heading"> Play with code </h4>
+  <div class="codepen-wrapper">
+    <p data-height="265" data-theme-id="dark" data-slug-hash="qrPoaE" data-default-tab="result" data-user="andrewrock" data-embed-version="2" data-pen-title="Hero Blend Modes" class="codepen">See the Pen <a href="https://codepen.io/andrewrock/pen/qrPoaE/">Hero Blend Modes</a> by Andrew (<a href="http://codepen.io/andrewrock">@andrewrock</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+  </div>
+
+</div>
+  </div>
+</div>
+
+<script src="/js/instafeed.js"></script>

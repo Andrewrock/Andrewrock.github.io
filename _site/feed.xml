@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-26T16:17:20+01:00</updated><id>http://localhost:4000/</id><entry><title type="html">Welcome To Jekyll</title><link href="http://localhost:4000/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome To Jekyll" /><published>2017-03-02T00:00:00+00:00</published><updated>2017-03-02T00:00:00+00:00</updated><id>http://localhost:4000/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/welcome-to-jekyll.html">&lt;!-------&gt;
 &lt;!--layout: posts--&gt;
 &lt;!--title:  &quot;Welcome to Jekyll!&quot;--&gt;
@@ -46,3 +47,1904 @@
 &lt;p&gt;My name is Rhoda Morgenstern. I was born in the Bronx, New York in December of 1941. I’ve always felt responsible for World War II. The first thing I remember liking that liked me back was food. I had a bad puberty; it lasted seventeen years. I’m a high school graduate. I went to art school. My entrance exam was on a book of matches. I decided to move out of the house when I was twenty-four. My mother still refers to this as the time I ran away from home. Eventually, I ran to Minneapolis, where it’s cold and I figured I’d keep better. Now I’m back in Manhattan. New York, this is your last chance!&lt;/p&gt;
 
 &lt;p&gt;Dr. David Banner: physician; scientist. Searching for a way to tap into the hidden strengths that all humans have… then an accidental overdose of gamma radiation alters his body chemistry. And now when David Banner grows angry or outraged, a startling metamorphosis occurs. The creature is driven by rage and pursued by an investigative reporter. The creature is wanted for a murder he didn’t commit. David Banner is believed to be dead, and he must let the world think that he is dead, until he can find a way to control the raging spirit that dwells within him.&lt;/p&gt;</content><author><name></name></author><category term="cats" /><category term="dogs" /><category term="code" /><summary type="html">Steve Austin: Astronaut. A man barely alive. Gentlemen… we can rebuild him. We have the technology. We have the capability to make the world’s first bionic man. Steve Austin will be that man. Better than he was before. Better. Stronger. Faster.</summary></entry></feed>
+=======
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://github.com/pages/Andrewrock/feed.xml" rel="self" type="application/atom+xml" /><link href="http://github.com/pages/Andrewrock/" rel="alternate" type="text/html" /><updated>2017-04-02T21:54:56+01:00</updated><id>http://github.com/pages/Andrewrock/</id><entry><title type="html">mix-blend modes</title><link href="http://github.com/pages/Andrewrock/blend-text.html" rel="alternate" type="text/html" title="mix-blend modes" /><published>2017-03-31T00:00:00+01:00</published><updated>2017-03-31T00:00:00+01:00</updated><id>http://github.com/pages/Andrewrock/blend-text</id><content type="html" xml:base="http://github.com/pages/Andrewrock/blend-text.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; We have previously looked at 
+&lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt; you can find that
+&lt;span class=&quot;underline-definition&quot;&gt;
+&lt;a href=&quot;background-blend-modes.html&quot;&gt;here&lt;/a&gt;&lt;/span&gt;. I discuss the 
+different &lt;span class=&quot;code-font&quot;&gt;background-blend-modes&lt;/span&gt;, when
+, how and why to use them. If you have no experience with blending I
+recommend you checkout that post. This tutorial will focus on
+&lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt;, however some examples
+will feature both &lt;span class=&quot;code-font&quot;&gt;background-blend-modes&lt;/span&gt;
+and &lt;span class=&quot;code-font&quot;&gt;mix-blend-modes&lt;/span&gt;. Let's jump into some
+examples first and look at the code after.
+&lt;/p&gt;
+
+&lt;div class=&quot;blend-container&quot;&gt;
+ &lt;div class=&quot;blend-item mcgregor&quot;&gt;
+&lt;h1&gt;&lt;span&gt;I&lt;/span&gt; &lt;span&gt;think&lt;/span&gt;
+&lt;span&gt;sharp&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;I&lt;/span&gt;
+&lt;span&gt;dream&lt;/span&gt; &lt;span&gt;big&lt;/span&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;blend-container&quot;&gt;
+ &lt;div class=&quot;blend-item bukowski&quot;&gt;
+   &lt;h1&gt;&lt;span&gt;Find&lt;/span&gt; &lt;span&gt;what&lt;/span&gt; &lt;span&gt;you&lt;/span&gt;
+   &lt;span&gt;love&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;let&lt;/span&gt; &lt;span&gt;it&lt;/span&gt;
+   &lt;span&gt;kill&lt;/span&gt;&lt;span&gt;you&lt;/span&gt;&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;blend-container&quot;&gt;
+ &lt;div class=&quot;blend-item fergie&quot;&gt;
+  &lt;h1&gt;It's getting tickly now &lt;span&gt;squeaky-bum&lt;/span&gt; time I call it&lt;/h1&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tutorial-body&quot;&gt;
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; As you can see adding
+&lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt; can change how text is
+presented, couple this with a 
+&lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt; and you can create
+some unique designs.
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;To begin create a 
+&lt;span class=&quot;code-font&quot;&gt;div&lt;/span&gt; to serve as a container for our 
+content, a &lt;span class=&quot;code-font&quot;&gt;div&lt;/span&gt; to hold our 
+&lt;span class=&quot;code-font&quot;&gt;background-image&lt;/span&gt; and heading to apply the 
+&lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt;. Lets look at how to 
+build the Charles Bukowski quote using both a
+&lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt; and
+&lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt;.
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;The &lt;span class=&quot;code-font&quot;&gt;html&lt;/span&gt; is
+quite simple.
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-html&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;blend-container&quot;&amp;gt;
+ &amp;lt;div class=&quot;blend-item bukowski&quot;&amp;gt;
+   &amp;lt;h1&amp;gt;&amp;lt;span&amp;gt;find&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;what&amp;lt;/span&amp;gt;
+    &amp;lt;span&amp;gt;you&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;love&amp;lt;/span&amp;gt;
+    &amp;lt;span&amp;gt;and&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;let&amp;lt;/span&amp;gt;
+    &amp;lt;span&amp;gt;kill&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;you&amp;lt;/span&amp;gt;
+   &amp;lt;/h1&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;I have added a class to the
+&lt;span class=&quot;code-font&quot;&gt;blend-item&lt;/span&gt;, this class
+&lt;span class=&quot;code-font&quot;&gt;bukowski&lt;/span&gt; will add the 
+&lt;span class=&quot;code-font&quot;&gt;background-image&lt;/span&gt;,
+&lt;span class=&quot;code-font&quot;&gt;background-color&lt;/span&gt; and 
+&lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;You may have noticed that every word
+is wrapped in a
+&lt;span class=&quot;code-font&quot;&gt;span&lt;/span&gt;. This will allow each one to be
+individually targeted when applying different properties such as
+colour, fonts etc.
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; First start by defining our images, 
+colours and general styling.&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;$image-two: url('../img/bukowski.jpg');
+$colors: #556270, #4ECDC4, #C7F464, #FF6B6B, #C44D58, #6534ff;
+$purple: #6534ff;
+$width: 100%;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Next, style the container and the item
+we want to use. I have called these,
+&lt;span class=&quot;code-font&quot;&gt;blend-container&lt;/span&gt; and 
+&lt;span class=&quot;code-font&quot;&gt;blend-item&lt;/span&gt;.
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;$image-two: url('../img/bukowski.jpg');
+$colors: #556270, #4ECDC4, #C7F464, #FF6B6B, #C44D58, #6534ff;
+$purple: #6534ff;
+$width: 100%;
+
+.blend-container,
+.blend-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  width: $width;
+}
+
+.blend-item {
+  align-items: center;
+  background-size: cover;
+  box-sizing: border-box;
+  justify-content: center;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: .5;
+    margin: 0;
+    padding: 0 24px;
+    text-align: center;
+    @media screen and (max-width: 400px) {
+      font-size: 4.5rem;
+      line-height: .7;
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;Create an array of colours. We will use
+this to style each &lt;span class=&quot;code-font&quot;&gt;span&lt;/span&gt; tag.
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;$colors: #556270, #4ECDC4, #C7F464, #FF6B6B, #C44D58, #6534ff;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;To add our desired effects, we have set the
+&lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt; to 
+&lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt;. If you need to catchup on the 
+different &lt;span class=&quot;code-font&quot;&gt;blend-modes&lt;/span&gt; you can 
+&lt;span class=&quot;underline-definition&quot;&gt;
+&lt;a href=&quot;background-blend-modes.html&quot;&gt;here&lt;/a&gt;&lt;/span&gt;. 
+&lt;/p&gt;
+
+&lt;div class=&quot;blend-container&quot;&gt;
+ &lt;div class=&quot;blend-item bukowski&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.bukowski {
+ background: $image-two $purple center center / cover no-repeat;
+ background-blend-mode: darken;
+
+  h1 {
+   mix-blend-mode: exclusion;
+  }
+
+  span {
+    mix-blend-mode: color;
+    @for $i from 1 through length($colors) {
+      &amp;:nth-child(#{length($colors)}n+#{$i}) {
+        color: nth($colors, $i);
+      }
+    }
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; Styling the text, we set the heading to
+&lt;span class=&quot;code-font&quot;&gt;exclusion&lt;/span&gt; and each word in our heading
+to &lt;span class=&quot;code-font&quot;&gt;color&lt;/span&gt;.
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;Using the array we already created, we write
+a loop that will add a new colour for each 
+&lt;span class=&quot;code&quot;&gt;span&lt;/span&gt;. After each iteration the loop will
+begin again at the start. To avoid duplicate colours, you can add more
+colours to our array.
+&lt;/p&gt;
+
+&lt;div class=&quot;blend-container&quot;&gt;
+ &lt;div class=&quot;blend-item bukowski&quot;&gt;
+   &lt;h1&gt;&lt;span&gt;Find&lt;/span&gt; &lt;span&gt;what&lt;/span&gt; &lt;span&gt;you&lt;/span&gt;
+   &lt;span&gt;love&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;let&lt;/span&gt; &lt;span&gt;it&lt;/span&gt;
+   &lt;span&gt;kill&lt;/span&gt;&lt;span&gt;you&lt;/span&gt;&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;As you can see the 
+&lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt; is pretty powerful. The use
+of a &lt;span class=&quot;code-font&quot;&gt;background-image&lt;/span&gt; is optional. As you
+see below the &lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt; will style 
+work.&lt;/p&gt;
+
+&lt;div class=&quot;blend-container&quot;&gt;
+ &lt;div class=&quot;blend-item bukowski no-image&quot;&gt;
+   &lt;h1&gt;&lt;span&gt;Find&lt;/span&gt; &lt;span&gt;what&lt;/span&gt; &lt;span&gt;you&lt;/span&gt;
+   &lt;span&gt;love&lt;/span&gt; &lt;span&gt;and&lt;/span&gt; &lt;span&gt;let&lt;/span&gt; &lt;span&gt;it&lt;/span&gt;
+   &lt;span&gt;kill&lt;/span&gt;&lt;span&gt;you&lt;/span&gt;&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;Taking this one step further, Consider the
+following example, a technique that is often used in graphic design and
+digital media.
+&lt;/p&gt;
+
+&lt;div class=&quot;blend-container&quot;&gt;
+ &lt;div class=&quot;blend-item ireland&quot;&gt;
+   &lt;h1&gt;Visit Ireland&lt;/h1&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;Here we have and image and a 
+ heading.
+&lt;/p&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;The approach to recreate this is the same
+as the Bukowski example. We will need a container, a div and a heading.
+The only difference here is that we give the heading a 
+&lt;span class=&quot;code-font&quot;&gt;background-color&lt;/span&gt;
+and a &lt;span class=&quot;code-font&quot;&gt;color&lt;/span&gt;.
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;$image-four: url('../img/ireland.jpg');
+$background-white: #f4f3f1;
+$irish-green: #009A49;
+$irish-orange: #FF7900;
+
+.ireland {
+  align-items: center;
+  background: $image-four center center / cover no-repeat;
+
+  h1 {
+   background-color: $background-white;
+   color: $irish-green;
+   line-height: 1.2;
+   mix-blend-mode: hard-light;
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;Removing the image we are left with&lt;/p&gt;
+
+&lt;div class=&quot;blend-container small&quot;&gt;
+ &lt;div class=&quot;blend-item ireland no-image&quot;&gt;
+   &lt;h1&gt;Visit Ireland&lt;/h1&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;We then simply place the heading over our
+image to generate the effect.
+&lt;/p&gt;
+
+&lt;div class=&quot;blend-container&quot;&gt;
+ &lt;div class=&quot;blend-item ireland&quot;&gt;
+   &lt;h1&gt;Visit Ireland&lt;/h1&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;So far we focused on combining
+&lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt; and
+&lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt;. We can now
+focus on the &lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt; alone.
+&lt;/p&gt;
+
+
+&lt;p class =&quot;tutorial-paragraph&quot;&gt;Let's use the alphabet to understand
+&lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt;.
+&lt;/p&gt;
+
+&lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;$letter-num: 26;
+$colors: #556270, #4ECDC4, #C7F464, #FF6B6B, #C44D58, #6534ff;
+
+.text-blend {
+ font-size: 7rem;
+ font-weight: 700;
+ letter-spacing: -1.2rem;
+
+   @for $i from 1 through length($colors) {
+     span {
+       &amp;:nth-child(#{length($colors)}n+#{$i}) {
+         color: nth($colors, $i)
+       }
+     }
+   }
+ }&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;blend-container small&quot;&gt;
+ &lt;div class=&quot;blend-item&quot;&gt;
+&lt;h1 class=&quot;text-blend unset&quot;&gt;&lt;span&gt;a&lt;/span&gt;&lt;span&gt;b&lt;/span&gt;&lt;span&gt;c&lt;/span&gt;
+&lt;span&gt;d&lt;/span&gt;&lt;span&gt;e&lt;/span&gt;&lt;span&gt;f&lt;/span&gt;&lt;span&gt;g&lt;/span&gt;&lt;span&gt;h&lt;/span&gt;
+&lt;span&gt;i&lt;/span&gt;&lt;span&gt;j&lt;/span&gt;&lt;span&gt;k&lt;/span&gt;&lt;span&gt;l&lt;/span&gt;&lt;span&gt;m&lt;/span&gt;
+&lt;span&gt;n&lt;/span&gt;&lt;span&gt;o&lt;/span&gt;&lt;span&gt;p&lt;/span&gt;&lt;span&gt;q&lt;/span&gt;&lt;span&gt;r&lt;/span&gt;
+&lt;span&gt;s&lt;/span&gt;&lt;span&gt;t&lt;/span&gt;&lt;span&gt;u&lt;/span&gt;&lt;span&gt;v&lt;/span&gt;&lt;span&gt;w&lt;/span&gt;
+&lt;span&gt;x&lt;/span&gt;&lt;span&gt;y&lt;/span&gt;&lt;span&gt;z&lt;/span&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt;Adding a 
+&lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt; we get the following
+&lt;/p&gt;
+
+&lt;div class=&quot;blend-container small&quot;&gt;
+ &lt;div class=&quot;blend-item&quot;&gt;
+&lt;h1 class=&quot;text-blend&quot;&gt;&lt;span&gt;a&lt;/span&gt;&lt;span&gt;b&lt;/span&gt;&lt;span&gt;c&lt;/span&gt;
+&lt;span&gt;d&lt;/span&gt;&lt;span&gt;e&lt;/span&gt;&lt;span&gt;f&lt;/span&gt;&lt;span&gt;g&lt;/span&gt;&lt;span&gt;h&lt;/span&gt;
+&lt;span&gt;i&lt;/span&gt;&lt;span&gt;j&lt;/span&gt;&lt;span&gt;k&lt;/span&gt;&lt;span&gt;l&lt;/span&gt;&lt;span&gt;m&lt;/span&gt;
+&lt;span&gt;n&lt;/span&gt;&lt;span&gt;o&lt;/span&gt;&lt;span&gt;p&lt;/span&gt;&lt;span&gt;q&lt;/span&gt;&lt;span&gt;r&lt;/span&gt;
+&lt;span&gt;s&lt;/span&gt;&lt;span&gt;t&lt;/span&gt;&lt;span&gt;u&lt;/span&gt;&lt;span&gt;v&lt;/span&gt;&lt;span&gt;w&lt;/span&gt;
+&lt;span&gt;x&lt;/span&gt;&lt;span&gt;y&lt;/span&gt;&lt;span&gt;z&lt;/span&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;tutorial-paragraph&quot;&gt; We can go one step further and animate
+the &lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt;
+&lt;/p&gt;
+
+
+&lt;div class=&quot;blend-container small&quot;&gt;
+ &lt;div class=&quot;blend-item&quot;&gt;
+&lt;h1 class=&quot;text-blend animate&quot;&gt;&lt;span&gt;a&lt;/span&gt;&lt;span&gt;b&lt;/span&gt;&lt;span&gt;c&lt;/span&gt;
+&lt;span&gt;d&lt;/span&gt;&lt;span&gt;e&lt;/span&gt;&lt;span&gt;f&lt;/span&gt;&lt;span&gt;g&lt;/span&gt;&lt;span&gt;h&lt;/span&gt;
+&lt;span&gt;i&lt;/span&gt;&lt;span&gt;j&lt;/span&gt;&lt;span&gt;k&lt;/span&gt;&lt;span&gt;l&lt;/span&gt;&lt;span&gt;m&lt;/span&gt;
+&lt;span&gt;n&lt;/span&gt;&lt;span&gt;o&lt;/span&gt;&lt;span&gt;p&lt;/span&gt;&lt;span&gt;q&lt;/span&gt;&lt;span&gt;r&lt;/span&gt;
+&lt;span&gt;s&lt;/span&gt;&lt;span&gt;t&lt;/span&gt;&lt;span&gt;u&lt;/span&gt;&lt;span&gt;v&lt;/span&gt;&lt;span&gt;w&lt;/span&gt;
+&lt;span&gt;x&lt;/span&gt;&lt;span&gt;y&lt;/span&gt;&lt;span&gt;z&lt;/span&gt;&lt;/h1&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">We have previously looked at background-blend-mode you can find that here. I discuss the different background-blend-modes, when , how and why to use them. If you have no experience with blending I recommend you checkout that post. This tutorial will focus on mix-blend-mode, however some examples will feature both background-blend-modes and mix-blend-modes. Let's jump into some examples first and look at the code after.</summary></entry><entry><title type="html">Background-blend modes</title><link href="http://github.com/pages/Andrewrock/background-blend-modes.html" rel="alternate" type="text/html" title="Background-blend modes" /><published>2017-03-30T00:00:00+01:00</published><updated>2017-03-30T00:00:00+01:00</updated><id>http://github.com/pages/Andrewrock/background-blend-modes</id><content type="html" xml:base="http://github.com/pages/Andrewrock/background-blend-modes.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Browsing the web, reading newspapers,
+    watching television, if you do any these then you are familiar 
+    with image blending.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Blending essentially allows you to
+    combine two different layers together to create a new layer,
+    typically we combine an image and a colour, however our options are
+    not just limited to colours and images.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Blending is not a new technique, it is however 
+    relatively novel in web design. With browser support on the rise, 
+    &lt;span class=&quot;code-font&quot;&gt;background-blend-modes&lt;/span&gt; have featured heavily throughout
+    sites such as &lt;span class=&quot;underline-definition&quot;&gt;
+      &lt;a href=&quot;https://fantasy.premierleague.com/&quot;&gt; 
+        Fantasy Premier League 
+      &lt;/a&gt;
+    &lt;/span&gt; and
+    &lt;span class=&quot;underline-definition&quot;&gt;
+    &lt;a href=&quot;https://www.spotify.com/ie/&quot;&gt; Spotify&lt;/a&gt;
+    &lt;/span&gt;.
+  &lt;/p&gt;
+ 
+  &lt;div class='reference-image'&gt;
+    &lt;img src=&quot;../img/fantasy-football.jpg&quot;&gt;
+  &lt;/div&gt;
+  
+  &lt;h4 class=&quot;tutorial-section-heading&quot;&gt; Hello,
+    &lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt;
+  &lt;/h4&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; With browser support at over
+    75% with the excluding internet explorer and edge. The benefits of
+    using the &lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt; now
+    outweigh the risks of encountering an unsupported browser.
+  &lt;/p&gt;
+ 
+  &lt;h4 class=&quot;tutorial-section-heading&quot;&gt; Getting started &lt;/h4&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Before creating
+    &lt;span class=&quot;code-font&quot;&gt;background-blends&lt;/span&gt;take time to
+    familiarise yourself with these terms as they will feature heavily
+    throughout.
+    &lt;span class=&quot;code-font&quot;&gt;Destination&lt;/span&gt;,
+    &lt;span class=&quot;code-font&quot;&gt;Source&lt;/span&gt;,
+    &lt;span class=&quot;code-font&quot;&gt;Backdrop&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;div class=&quot;definition-wrapper&quot;&gt;
+    &lt;table class=&quot;definition-list&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Destination:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;Bottom layer usually a colour or gradient&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Source:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;Top layer usually an image&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Backdrop:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;The area below the source, this is where the blending occurs&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+
+  &lt;h4 class=&quot;tutorial-section-heading&quot;&gt; The blend types &lt;/h4&gt;
+  &lt;div class=&quot;blend-type&quot;&gt;
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;normal&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;This is the default attribute which specifies no blending. The blending formula simply selects the source color.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;multiply&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;The source color is multiplied by the destination color and replaces the destination. The resultant color is always at least as dark as either the source or destination color. Multiplying any color with black results in black. Multiplying any color with white preserves the original color.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;screen&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Multiplies the complements of the backdrop and source color values, then complements the result. The result color is always at least as light as either of the two constituent colors. Screening any color with white produces white; screening with black leaves the original color unchanged. The effect is similar to projecting multiple photographic slides simultaneously onto a single screen&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;overlay&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Multiplies or screens the colors, depending on the backdrop color value. Source colors overlay the backdrop while preserving its highlights and shadows. The backdrop color is not replaced but is mixed with the source color to reflect the lightness or darkness of the backdrop.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;darken&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Selects the darker of the backdrop and source colors. The backdrop is replaced with the source where the source is darker otherwise, it is left unchanged.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;lighten&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Selects the lighter of the backdrop and source colors. The backdrop is replaced with the source where the source is lighter otherwise, it is left unchanged.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;color-dodge&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Brightens the backdrop color to reflect the source color Painting with black produces no changes.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;color-burn&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Darkens the backdrop color to reflect the source color. Painting with white produces no change&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;hard-light&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Multiplies or screens the colors, depending on the source color value. The effect is similar to shining a harsh spotlight on the backdrop.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;soft-light&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Darkens or lightens the colors, depending on the source color value. The effect is similar to shining a diffused spotlight on the backdrop.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;difference&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Subtracts the darker of the two constituent colors from the lighter color. Painting with white inverts the backdrop color painting with black produces no change.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;exclusion&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Produces an effect similar to that of the Difference mode but lower in contrast. Painting with white inverts the backdrop color, painting with black produces no change.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;hue&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Creates a color with the hue of the source color and the saturation and luminosity of the backdrop color.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;saturation&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Creates a color with the saturation of the source color and the hue and luminosity of the backdrop color. Painting with this mode in an area of the backdrop that is a pure gray (no saturation) produces no change.&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;color&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color. This preserves the gray levels of the backdrop and is useful for coloring monochrome images or tinting color images&lt;/p&gt;
+    
+    
+    
+    &lt;h5 class=&quot;blend-list-title&quot;&gt;luminosity&lt;/h5&gt;
+    &lt;p class=&quot;blend-list-description&quot;&gt;Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color. This produces an inverse effect to that of the Color mode.&lt;/p&gt;
+    
+    
+    &lt;a class=&quot;author-link&quot; href='https://drafts.fxtf.org/compositing-1/#blending'&gt;
+      -per W3C
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;h4 class=&quot;tutorial-section-heading&quot;&gt; Syntax &lt;/h4&gt;
+  &lt;div class='code-container'&gt;
+&lt;pre class='code code-css'&gt;&lt;code&gt;.example-hero {
+  background: url('../img/bg44.jpg') #6534ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: 'normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue |saturation | color | luminosity';
+}&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  
+  &lt;h4 class=&quot;tutorial-section-heading&quot;&gt; Building our own 
+  &lt;span class=&quot;code-font&quot;&gt;background-blend&lt;/span&gt; &lt;/h4&gt;
+  &lt;div class=&quot;example-post&quot;&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;Starting with the &lt;span class=&quot;code-font&quot;&gt;HTML&lt;/span&gt;&lt;/p&gt;
+    
+    &lt;div class=&quot;code-container&quot;&gt;
+      &lt;pre class=&quot;code code-html&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;example-hero&quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; For the 
+      &lt;span class=&quot;code-font&quot;&gt;Destination&lt;/span&gt;
+      this &lt;span class=&quot;code-font&quot;&gt;background-color&lt;/span&gt; will do,
+      &lt;span class=&quot;box&quot;&gt;&lt;/span&gt;  and for the
+      &lt;span class=&quot;code-font&quot;&gt;Source&lt;/span&gt; we can use the this image
+    &lt;/p&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;example-hero&quot;&gt; &lt;/div&gt;
+  
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Selecting a
+    &lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt; that fits
+    your design is often a frustrating endeavour.
+    To make my life easier, I like to animate the
+    &lt;span class=&quot;code-font&quot;&gt;background-blend-modes&lt;/span&gt;.
+  &lt;/p&gt;
+  
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+     When creating the animation, each blend should be given the
+    same amount of time over the image. To achieve this
+    divide the total number of blend types by 100.
+  &lt;/p&gt;
+ 
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    &lt;span class=&quot;code-font&quot;&gt; 100 / 16 = 6.25%&lt;/span&gt;
+  &lt;/p&gt;
+ 
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; This means that each
+   &lt;span class=&quot;code-font&quot;&gt;background-blend-mode&lt;/span&gt; will be given
+    6.25% of the full animation. Next we must decide on
+    how long we want each blend to be applied for.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; There are 16 &lt;span class=&quot;code-font&quot;&gt;background-blend-modes&lt;/span&gt;.
+    If each blend were to applied for 3.5s long, then our total duration would be 
+    56s.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    &lt;span class=&quot;code-font&quot;&gt;16 * 3.5s = 56s &lt;/span&gt;
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;We know we have 16
+  &lt;span class=&quot;code-font&quot;&gt;background-blend-modes&lt;/span&gt;, we want
+  each blend to be applied for 3.5s each and the animation will run
+  for 56s.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Next we need to alternate between blends using 
+    &lt;span class=&quot;code-font&quot;&gt;CSS Keyframes&lt;/span&gt;.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;&lt;span class=&quot;keyframe&quot;&gt;@keyframes&lt;/span&gt; blendTransition {
+  0% { background-blend-mode: normal; }
+  6.25% {background-blend-mode: multiply; }
+  12.5% { background-blend-mode: screen; }
+  18.75% { background-blend-mode: overlay; }
+  25% { background-blend-mode: darken; }
+  31.25% { background-blend-mode: lighten; }
+  37.5% { background-blend-mode: color-dodge; }
+  43.75% { background-blend-mode: color-burn; }
+  50% { background-blend-mode: hard-light; }
+  56.25% { background-blend-mode: soft-light; }
+  62.5% { background-blend-mode: difference; }
+  68.75% { background-blend-mode: exclusion; }
+  75% { background-blend-mode: hue; }
+  81.25% { background-blend-mode: saturation; }
+  87.5% { background-blend-mode: color; }
+  93.75% { background-blend-mode: luminosity; }
+  100% {background-blend-mode: normal;}
+}&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+ 
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; I like to print the 
+    &lt;span class=&quot;code-font&quot;&gt;blend-mode&lt;/span&gt; on the screen.
+    To do this use the
+    &lt;span class=&quot;code-font&quot;&gt;::after&lt;/span&gt; selector to fetch the blend name.
+  &lt;/p&gt;
+  
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-html&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;example-hero&quot;&amp;gt;
+ &amp;lt;div class=&quot;caption&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.caption {
+  background-color: #fff;
+  bottom: 0;
+  color: #6534ff;
+  font-family: $lora;
+  font-size: 20px;
+  left: 0;
+  padding: 12px;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+
+  &amp;::after {
+  animation: blend 56s ease infinite;
+  color: #6534ff;
+  content: '';
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;&lt;span class=&quot;keyframe&quot;&gt;@keyframes&lt;/span&gt; blendType {
+  0% { content: 'normal';}
+  6.25% { content: 'multiply';}
+  12.5% { content: 'screen';}
+  18.75% { content: 'overlay';}
+  25% { content: 'darken';}
+  31.25% { content: 'lighten';}
+  37.5% { content: 'color-dodge';}
+  43.75% { content: 'color-burn';}
+  50% { content: 'hard-light';}
+  56.25% { content: 'soft-light';}
+  62.5% { content: 'difference';}
+  68.75% { content: 'exclusion';}
+  75% { content: 'hue';}
+  81.25% { content: 'saturation';}
+  87.5% { content: 'color'; }
+  93.75% { content: 'luminosity';}
+  100% {content: 'unset';}
+}&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;example-hero-container&quot;&gt;
+    &lt;div class=&quot;caption&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;example-post&quot;&gt;
+  &lt;h4 class=&quot;tutorial-section-heading&quot;&gt; Multiple images &lt;/h4&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;Blending can also be used with more than one
+    &lt;span class=&quot;code-font&quot;&gt;Source&lt;/span&gt;.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; If you have used multiple
+    &lt;span class=&quot;code-font&quot;&gt;background-images&lt;/span&gt; before,
+    you will know that you can style each image individually, the same principle
+    also applies here.
+  &lt;/p&gt;
+
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; This means you have the ability
+    to assign a &lt;span class=&quot;code-font&quot;&gt;background-blend&lt;/span&gt;
+    per each &lt;span class=&quot;code-font&quot;&gt;background-image&lt;/span&gt;.
+  &lt;/p&gt;
+
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.example-hero-double-blend {
+  animation: multipleBlendTransition 56s infinite;
+  background-image: url('../img/bg44.jpg'), url('../img/bg13.jpg')
+  background-color: lighten(#6534ff, 25%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen, darken;
+  box-sizing: border-box;
+  display: flex;
+  height: 220px;
+  justify-content: center;
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 20px 0;
+  width: 100%;
+}&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    As you can see we have passed two images, we have also passed
+    two &lt;span class=&quot;code-font&quot;&gt;background-blend-modes&lt;/span&gt;
+  &lt;/p&gt;
+
+  &lt;div class=&quot;example-hero-multiple-blend&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;  
+
+  &lt;h4 class=&quot;tutorial-section-heading&quot;&gt; Play with code &lt;/h4&gt;
+  &lt;div class=&quot;codepen-wrapper&quot;&gt;
+    &lt;p data-height=&quot;265&quot; data-theme-id=&quot;dark&quot; data-slug-hash=&quot;qrPoaE&quot; data-default-tab=&quot;result&quot; data-user=&quot;andrewrock&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Hero Blend Modes&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;https://codepen.io/andrewrock/pen/qrPoaE/&quot;&gt;Hero Blend Modes&lt;/a&gt; by Andrew (&lt;a href=&quot;http://codepen.io/andrewrock&quot;&gt;@andrewrock&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+    &lt;script async src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Browsing the web, reading newspapers, watching television, if you do any these then you are familiar with image blending. Blending essentially allows you to combine two different layers together to create a new layer, typically we combine an image and a colour, however our options are not just limited to colours and images. Blending is not a new technique, it is however relatively novel in web design. With browser support on the rise, background-blend-modes have featured heavily throughout sites such as Fantasy Premier League and Spotify . Hello, background-blend-mode With browser support at over 75% with the excluding internet explorer and edge. The benefits of using the background-blend-mode now outweigh the risks of encountering an unsupported browser. Getting started Before creating background-blendstake time to familiarise yourself with these terms as they will feature heavily throughout. Destination, Source, Backdrop Destination: Bottom layer usually a colour or gradient Source: Top layer usually an image Backdrop: The area below the source, this is where the blending occurs</summary></entry><entry><title type="html">:not() selector</title><link href="http://github.com/pages/Andrewrock/not-selector.html" rel="alternate" type="text/html" title=":not() selector" /><published>2017-03-27T00:00:00+01:00</published><updated>2017-03-27T00:00:00+01:00</updated><id>http://github.com/pages/Andrewrock/not-selector</id><content type="html" xml:base="http://github.com/pages/Andrewrock/not-selector.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; The &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt;
+    selector may be one of the least used &lt;span class=&quot;code-font&quot;&gt;css&lt;/span&gt;
+    selectors, however, knowing when and how to use it can save a lot of time.
+   &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt; can be used with any regular selector such as 
+  &lt;/p&gt;
+
+  &lt;ul class=&quot;simple-list&quot;&gt;
+    &lt;li&gt;
+      &lt;p&gt;Type selectors (e.g
+        &lt;span class=&quot;code-font&quot;&gt;p&lt;/span&gt;,
+        &lt;span class=&quot;code-font&quot;&gt;button&lt;/span&gt;,
+        &lt;span class=&quot;code-font&quot;&gt;pre&lt;/span&gt;)
+      &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;Class selectors (e.g
+      &lt;span class=&quot;code-font&quot;&gt;.header&lt;/span&gt;,
+      &lt;span class=&quot;code-font&quot;&gt;.footer&lt;/span&gt;,
+      &lt;span class=&quot;code-font&quot;&gt;.nav&lt;/span&gt;)
+    &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;ID selector (e.g
+      &lt;span class=&quot;code-font&quot;&gt;#logo&lt;/span&gt;)
+    &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;Pseudo-class selectors (e.g
+      &lt;span class=&quot;code-font&quot;&gt;:checked&lt;/span&gt;,
+      &lt;span class=&quot;code-font&quot;&gt;:active&lt;/span&gt;)
+    &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;Attribute selector (e.g
+      &lt;span class=&quot;code-font&quot;&gt;:[type=&quot;submit&quot;]&lt;/span&gt;)
+    &lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;To use the &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt;
+  you pass an argument to the selector. The &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt;
+  will then apply the styling rules to all the elements except for the selector in its argument.
+  &lt;/p&gt;
+
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;:not(selector) {
+ css declarations;
+}
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;li:not(.active) {
+  /* will  style all list items except the list item with the class active */
+}&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+
+
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; The &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt; is not
+    without it's caveats. The argument passed to &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt; cannot, 
+    be a pseudo-element (eg as &lt;span class=&quot;code-font&quot;&gt;:first-line&lt;/span&gt;
+    and &lt;span class=&quot;code-font&quot;&gt;:first-letter&lt;/span&gt; etc).
+  &lt;/p&gt;
+  
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;You may have noticed that you can apply
+    &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt; with a pseudo-class but not a pseudo-element.
+    For information on the difference between psuedo-classes and psuedo-elements
+    click
+    &lt;span class=&quot;underline-definition&quot;&gt;
+      &lt;a href=&quot;http://www.d.umn.edu/~lcarlson/csswork/selectors/pseudo_dif.html&quot;&gt;
+        here
+      &lt;/a&gt;
+    &lt;/span&gt;
+  &lt;/p&gt;
+  
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;It is also possible to chain&lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt; selector
+    with other &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt; selectors. 
+    E.g. the following will match all articles except the one with a class of
+    &lt;span class=&quot;code-font&quot;&gt;active&lt;/span&gt;, and then will filter out the list 
+    item that is the last item.
+  &lt;/p&gt;
+
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;li:not(.active):not(:last-of-type) {
+  /* style list items that are not active or last */
+}
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt;Alphabet &amp;
+    &lt;span class=&quot;code-font&quot;&gt; :not()&lt;/span&gt;
+  &lt;/h2&gt;
+  
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    As mentioned before, the &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt; selector matches the element that 
+    is not represented by the selector in its argument. We can use the alphabet to illustrate the
+    power of the &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt;. Consider the following
+  &lt;/p&gt;
+  
+  &lt;div class=&quot;alphabet-container&quot;&gt;
+    &lt;ul class=&quot;alphabet&quot;&gt;
+      &lt;li&gt;a&lt;/li&gt;
+      &lt;li&gt;b&lt;/li&gt;
+      &lt;li&gt;c&lt;/li&gt;
+      &lt;li&gt;d&lt;/li&gt;
+      &lt;li&gt;e&lt;/li&gt;
+      &lt;li&gt;f&lt;/li&gt;
+      &lt;li&gt;g&lt;/li&gt;
+      &lt;li&gt;h&lt;/li&gt;
+      &lt;li&gt;i&lt;/li&gt;
+      &lt;li&gt;j&lt;/li&gt;
+      &lt;li&gt;k&lt;/li&gt;
+      &lt;li&gt;l&lt;/li&gt;
+      &lt;li&gt;m&lt;/li&gt;
+      &lt;li&gt;n&lt;/li&gt;
+      &lt;li&gt;o&lt;/li&gt;
+      &lt;li&gt;p&lt;/li&gt;
+      &lt;li&gt;q&lt;/li&gt;
+      &lt;li&gt;r&lt;/li&gt;
+      &lt;li&gt;s&lt;/li&gt;
+      &lt;li&gt;t&lt;/li&gt;
+      &lt;li&gt;u&lt;/li&gt;
+      &lt;li&gt;v&lt;/li&gt;
+      &lt;li&gt;y&lt;/li&gt;
+      &lt;li&gt;x&lt;/li&gt;
+      &lt;li&gt;y&lt;/li&gt;
+      &lt;li&gt;z&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; Now let's say you want to show only the vowels.
+      You can achieve this by adding &lt;span class=&quot;code-font&quot;&gt;vowel&lt;/span&gt;
+      class to each vowel in the list of letters. &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt;
+      selector will check against this class before styling the letters.
+    &lt;/p&gt;
+
+    &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.alphabet &gt; li:not(.vowel) {
+  display: none;
+}&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    
+    &lt;ul class=&quot;alphabet vowel&quot;&gt;
+      &lt;li class=&quot;vowel&quot;&gt;a&lt;/li&gt;
+      &lt;li&gt;b&lt;/li&gt;
+      &lt;li&gt;c&lt;/li&gt;
+      &lt;li&gt;d&lt;/li&gt;
+      &lt;li class=&quot;vowel&quot;&gt;e&lt;/li&gt;
+      &lt;li&gt;f&lt;/li&gt;
+      &lt;li&gt;g&lt;/li&gt;
+      &lt;li&gt;h&lt;/li&gt;
+      &lt;li class=&quot;vowel&quot;&gt;i&lt;/li&gt;
+      &lt;li&gt;j&lt;/li&gt;
+      &lt;li&gt;k&lt;/li&gt;
+      &lt;li&gt;l&lt;/li&gt;
+      &lt;li&gt;m&lt;/li&gt;
+      &lt;li&gt;n&lt;/li&gt;
+      &lt;li class=&quot;vowel&quot;&gt;o&lt;/li&gt;
+      &lt;li&gt;p&lt;/li&gt;
+      &lt;li&gt;q&lt;/li&gt;
+      &lt;li&gt;r&lt;/li&gt;
+      &lt;li&gt;s&lt;/li&gt;
+      &lt;li&gt;t&lt;/li&gt;
+      &lt;li class=&quot;vowel&quot;&gt;u&lt;/li&gt;
+      &lt;li&gt;v&lt;/li&gt;
+      &lt;li&gt;y&lt;/li&gt;
+      &lt;li&gt;x&lt;/li&gt;
+      &lt;li&gt;y&lt;/li&gt;
+      &lt;li&gt;z&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; You can only us &lt;span class=&quot;code-font&quot;&gt;:not()&lt;/span&gt; to 
+      change the &lt;span class=&quot;code-font&quot;&gt;background-color&lt;/span&gt; for vowels only.
+    &lt;/p&gt;
+    &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;.alphabet-test &gt; li {
+      background-color: $nav-link-color;
+      &amp;:not(.vowel) {
+      background-color: grey;
+      color: $body-color;
+    }
+  }&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;alphabet-test&quot;&gt;
+      &lt;li class=&quot;vowel&quot;&gt;a&lt;/li&gt;
+      &lt;li&gt;b&lt;/li&gt;
+      &lt;li&gt;c&lt;/li&gt;
+      &lt;li&gt;d&lt;/li&gt;
+      &lt;li class=&quot;vowel&quot;&gt;e&lt;/li&gt;
+      &lt;li&gt;f&lt;/li&gt;
+      &lt;li&gt;g&lt;/li&gt;
+      &lt;li&gt;h&lt;/li&gt;
+      &lt;li class=&quot;vowel&quot;&gt;i&lt;/li&gt;
+      &lt;li&gt;j&lt;/li&gt;
+      &lt;li&gt;k&lt;/li&gt;
+      &lt;li&gt;l&lt;/li&gt;
+      &lt;li&gt;m&lt;/li&gt;
+      &lt;li&gt;n&lt;/li&gt;
+      &lt;li class=&quot;vowel&quot;&gt;o&lt;/li&gt;
+      &lt;li&gt;p&lt;/li&gt;
+      &lt;li&gt;q&lt;/li&gt;
+      &lt;li&gt;r&lt;/li&gt;
+      &lt;li&gt;s&lt;/li&gt;
+      &lt;li&gt;t&lt;/li&gt;
+      &lt;li class=&quot;vowel&quot;&gt;u&lt;/li&gt;
+      &lt;li&gt;v&lt;/li&gt;
+      &lt;li&gt;y&lt;/li&gt;
+      &lt;li&gt;x&lt;/li&gt;
+      &lt;li&gt;y&lt;/li&gt;
+      &lt;li&gt;z&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;You can play with the code here
+     &lt;span class=&quot;underline-definition&quot;&gt;
+       &lt;a href=&quot;http://codepen.io/andrewrock/pen/aJagPm&quot;&gt;Here&lt;/a&gt;
+     &lt;/span&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">The :not() selector may be one of the least used css selectors, however, knowing when and how to use it can save a lot of time. :not() can be used with any regular selector such as</summary></entry><entry><title type="html">Light &amp;amp; Dark, Shade &amp;amp; Tint</title><link href="http://github.com/pages/Andrewrock/ligthen-darken.html" rel="alternate" type="text/html" title="Light &amp; Dark, Shade &amp; Tint" /><published>2017-03-26T00:00:00+00:00</published><updated>2017-03-26T00:00:00+00:00</updated><id>http://github.com/pages/Andrewrock/ligthen-darken</id><content type="html" xml:base="http://github.com/pages/Andrewrock/ligthen-darken.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Thinking back to school, I can remember
+    I was never any good at art, I was mostly happy just
+    sitting in a double art class and not a French class.
+    Just as the history teacher would drill into you
+    that 'In 1492 Columbus sailed the ocean blue.', Our art teacher would
+    encourage the use of the colour to tell a story, influence moods and to
+    serve as a bridge to something new.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Ten years have passed since those art
+    classes, the relationship between colour and the web has remained stagnant, with
+    limited choices available before having to turn to JavaScript or relying
+    on the support of a polyfill library.
+  &lt;/p&gt;
+
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Enter &lt;span class=&quot;code-font&quot;&gt;mix-blend-mode&lt;/span&gt;, we now
+    have the ability to easily manipulate a single colour into a plethora of different
+    colours.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;To begin we use one colour, setting this
+    as the base colour. E.g. &lt;span class=&quot;code-font purple&quot;&gt;#6534ff&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; &lt;span class=&quot;code-font&quot;&gt;Sass&lt;/span&gt;
+    provides plenty of options out of the box allowing us to create unique
+    and different colour combinations with ease. We will be looking at the 
+    three most common colour functions
+  &lt;/p&gt;
+  &lt;ul class=&quot;simple-list&quot;&gt;
+    &lt;li&gt;&lt;p&gt;Shade &amp; Tint&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;Lighten &amp; Darken&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;Multiple colours&lt;/p&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;color-functions&quot;&gt;
+    &lt;h4 class=&quot;tutorial-section-heading&quot;&gt;Shade &amp; Tint&lt;/h4&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; To use the &lt;span class=&quot;code-font&quot;&gt;
+      tint&lt;/span&gt; and &lt;span class=&quot;code-font&quot;&gt; shade&lt;/span&gt;
+      we use the &lt;span class=&quot;code-font&quot;&gt;mix()&lt;/span&gt; function.
+      mixing the colour with white (&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;)
+      and black (&lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;)
+    &lt;/p&gt;
+    &lt;div class='code-container'&gt;
+&lt;pre class='code code-css'&gt;&lt;code&gt;$body-color: #282828;
+$grey: #999;
+  
+  @function shade($color, $percentage) {
+    @return mix($body-color, $color, $percentage);
+  }
+
+  @function tint($color, $percentage) {
+    @return mix($white, $color, $percentage);
+}&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; We name each function 
+      &lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt; and &lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;
+      so it is easy to differentiate between them.
+    &lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;There are several reasons to use 
+      &lt;span class=&quot;code-font&quot;&gt; tint&lt;/span&gt; and
+      &lt;span class=&quot;code-font&quot;&gt; shade&lt;/span&gt;. It is not outside the realms of possibility
+      to generate a whole palette from one colour using the
+      &lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt; and &lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt; functions.
+    &lt;/p&gt;
+    &lt;div class='code-container'&gt;
+&lt;pre class='code code-css'&gt;&lt;code&gt;@function shade($color, $percentage) {
+  @return mix($body-color, $color, $percentage);
+}
+  
+ $body-color: #282828;
+ $grey: #999;
+ $purple: #6534ff;
+
+   .tint li
+   .shade li {
+     background: $blue;
+     flex: 1 0 auto;
+   }
+
+ .tint li {
+ $tint-num: 6;
+ 
+  @for $i from 1 through $shade-num {
+   &amp;:nth-of-type(#{$i}) {
+     background-color: tint($purple, ($i * 10%));
+   }
+  }
+}
+  
+ .shade li {
+  $shade-num: 6;
+
+  @for $i from 1 through $shade-num {
+   &amp;:nth-of-type(#{$i}) {
+     background-color: shade($purple, ($i * 10%));
+   }
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    
+    
+    &lt;h2 class=&quot;code-font&quot;&gt; Shade &lt;/h2&gt;
+    &lt;ul class=&quot;shade&quot;&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 class=&quot;code-font&quot;&gt; Tint &lt;/h2&gt;
+    &lt;ul class=&quot;tint&quot;&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; Starting at 0 we increase the amount of
+      &lt;span class=&quot;code-font&quot;&gt; tint&lt;/span&gt; and &lt;span class=&quot;code-font&quot;&gt; shade&lt;/span&gt;
+      in increments of ten until we reach 100.
+    &lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;To increase the increment every item, we
+      first need to need know how many increments are needed. In this case it is
+      six. Using the loop we cycle through each and apply our desired
+      &lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt; or &lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;div class='code-container'&gt;
+&lt;pre class='code code-css'&gt;&lt;code&gt;
+  $shade-num: 6;
+  $tint-num: 6;
+
+  @for $i from 1 through $shade-num {
+    &amp;:nth-of-type(#{$i}) {
+      background-color: shade($purple, ($i * 10%));
+   }
+ }
+
+  @for $i from 1 through $shade-num {
+    &amp;:nth-of-type(#{$i}) {
+      background-color: tint($purple, ($i * 10%));
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; If you are questioning when to use
+      either function.
+    &lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+      &lt;span class=&quot;code-font&quot;&gt;shade:&lt;/span&gt; mixture of a colour with
+      black, which reduces lightness.
+    &lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+      &lt;span class=&quot;code-font&quot;&gt;tint:&lt;/span&gt; mixture of a colour with
+      white, which increases lightness
+    &lt;/p&gt;
+    &lt;h4 class=&quot;tutorial-section-heading&quot;&gt;Possible blend combinations&lt;/h4&gt;
+    &lt;ul class=&quot;tint-shade&quot;&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    
+    &lt;h4 class=&quot;tutorial-section-heading&quot;&gt;lighten &amp; darken&lt;/h4&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; Often, it is just a single
+      shade or highlight that is desired. To achieve this
+      we use the &lt;span class=&quot;code-font&quot;&gt;Sass&lt;/span&gt; function for
+      &lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt; and
+      &lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt;. 
+    &lt;/p&gt;
+    &lt;div class='code-container'&gt;
+&lt;pre class='code code-css'&gt;&lt;code&gt;darken($color, 10%);
+lighten($color, 10%);&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; As the &lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt;
+      and &lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt; functions can quickly result
+      in solid white and solid black, try staying in the range of
+      3-20%. &lt;span class=&quot;code-font&quot;&gt;Sass&lt;/span&gt; will produce an error if the
+      percentage being passed in the function exceeds 100%. This is important
+      especially if using a single colour for multiple items, or
+      outputting an incremented value from a large amount of items.
+    &lt;/p&gt;
+    &lt;ul class=&quot;light-dark&quot;&gt;
+      &lt;li&gt;Original colour&lt;/li&gt;
+      &lt;li&gt;Lighten (2.5%)&lt;/li&gt;
+      &lt;li&gt;Lighten (5%)&lt;/li&gt;
+      &lt;li&gt;Lighten (7.5%)&lt;/li&gt;
+      &lt;li&gt;Lighten (10%)&lt;/li&gt;
+      &lt;li&gt;Lighten (12.5%)&lt;/li&gt;
+      &lt;li&gt;Original colour&lt;/li&gt;
+      &lt;li&gt;Darken (2.5%)&lt;/li&gt;
+      &lt;li&gt;Darken (5%)&lt;/li&gt;
+      &lt;li&gt;Darken (7.5%)&lt;/li&gt;
+      &lt;li&gt;Darken (10%)&lt;/li&gt;
+      &lt;li&gt;Darken (12.5%)&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h4 class=&quot;tutorial-section-heading&quot;&gt;Possible blend combinations&lt;/h4&gt;
+    &lt;ul class=&quot;light-dark-mix&quot;&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h4 class=&quot;tutorial-section-heading&quot;&gt;&lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
+      &lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;,
+      &lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt;
+      &lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt;
+    &lt;/h4&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+      Lets put everything together
+      &lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
+      &lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt;,
+      &lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt; and
+      &lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt;.
+    &lt;/p&gt;
+    &lt;ul class=&quot;all-together&quot;&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    
+    &lt;h4 class=&quot;tutorial-section-heading&quot;&gt;Multiple colours&lt;/h4&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; So far we have worked
+      with a singular colour &lt;span class=&quot;code-font purple&quot;&gt;#6534ff&lt;/span&gt;.
+      We also have the ability to use multiple colours, Let's use
+      &lt;span class=&quot;code-font purple&quot;&gt;#6534ff&lt;/span&gt;
+      &lt;span class=&quot;code-font pink&quot;&gt;#fc0152&lt;/span&gt;
+    &lt;/p&gt;
+    
+    &lt;ul class=&quot;combined&quot;&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; As you can see from the code below, the
+      approach is similar to using a single colour.
+    &lt;/p&gt;
+    &lt;div class='code-container'&gt;
+&lt;pre class='code code-css'&gt;&lt;code&gt;$purple: #6534ff;
+$pink: #fc0152;
+  
+ .combined li {
+   background: $nav-link-color;
+   flex: 1 0 auto;
+   $combine-num: 6;
+
+ @for $i from 1 through $combine-num {
+   &amp;:nth-of-type(#{$i}) {
+    background-color: mix(darken($nav-link-color,($i * 7.5%)),lighten($pink,($i * 10%)));
+   }
+ }á
+}&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    
+    &lt;h4 class=&quot;code-font&quot;&gt; lighten &amp; darken &lt;/h4&gt;
+    &lt;ul class=&quot;combined-blend&quot;&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;h4 class=&quot;code-font&quot;&gt; tint &amp; shade &lt;/h4&gt;
+    &lt;ul class=&quot;combined-blend darken-lighten&quot;&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;We already compared the differences
+      between &lt;span class=&quot;code-font&quot;&gt;tint&lt;/span&gt;,
+      &lt;span class=&quot;code-font&quot;&gt;shade&lt;/span&gt;,
+      &lt;span class=&quot;code-font&quot;&gt;lighten&lt;/span&gt; and
+      &lt;span class=&quot;code-font&quot;&gt;darken&lt;/span&gt; with a single colour, now let's
+      compare with two colours.
+    &lt;/p&gt;
+    &lt;ul class=&quot;all-together-two&quot;&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;div class='code-container'&gt;
+&lt;pre class='code code-css'&gt;&lt;code&gt;.all-together-two li {
+$tint-num: 10;
+$darken-num: 20;
+background-blend-mode: overlay;
+flex: 1 0 20%;
+
+  @for $i from 1 through $tint-num {
+   &amp;:nth-of-type(#{$i}) {
+    background: $image-one mix(tint($nav-link-color,($i * 5%)),shade($pink,($i * 2%))) center center / cover no-repeat;
+   }
+  }
+
+  @for $i from 11 through $darken-num {
+   &amp;:nth-of-type(#{$i}) {
+    background: $image-one mix(darken($nav-link-color,($i * 5%)),lighten($pink,($i * 2%))) center center / cover no-repeat;
+   }
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; For the ultimate comparison, Let's combine
+      all the effects together
+    &lt;/p&gt;
+    &lt;ul class=&quot;all-together-all&quot;&gt;
+      &lt;li&gt;tint&lt;/li&gt;
+      &lt;li&gt;tint&lt;/li&gt;
+      &lt;li&gt;tint&lt;/li&gt;
+      &lt;li&gt;tint&lt;/li&gt;
+      &lt;li&gt;tint&lt;/li&gt;
+      &lt;li&gt;lighten&lt;/li&gt;
+      &lt;li&gt;lighten&lt;/li&gt;
+      &lt;li&gt;lighten&lt;/li&gt;
+      &lt;li&gt;lighten&lt;/li&gt;
+      &lt;li&gt;lighten&lt;/li&gt;
+      &lt;li&gt;shade&lt;/li&gt;
+      &lt;li&gt;shade&lt;/li&gt;
+      &lt;li&gt;shade&lt;/li&gt;
+      &lt;li&gt;shade&lt;/li&gt;
+      &lt;li&gt;shade&lt;/li&gt;
+      &lt;li&gt;darken&lt;/li&gt;
+      &lt;li&gt;darken&lt;/li&gt;
+      &lt;li&gt;darken&lt;/li&gt;
+      &lt;li&gt;darken&lt;/li&gt;
+      &lt;li&gt;darken&lt;/li&gt;
+      &lt;li&gt;tint-shade&lt;/li&gt;
+      &lt;li&gt;tint-shade&lt;/li&gt;
+      &lt;li&gt;tint-shade&lt;/li&gt;
+      &lt;li&gt;tint-shade&lt;/li&gt;
+      &lt;li&gt;tint-shade&lt;/li&gt;
+      &lt;li&gt;light-dark&lt;/li&gt;
+      &lt;li&gt;light-dark&lt;/li&gt;
+      &lt;li&gt;light-dark&lt;/li&gt;
+      &lt;li&gt;light-dark&lt;/li&gt;
+      &lt;li&gt;light-dark&lt;/li&gt;
+      &lt;li&gt; original &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Thinking back to school, I can remember I was never any good at art, I was mostly happy just sitting in a double art class and not a French class. Just as the history teacher would drill into you that 'In 1492 Columbus sailed the ocean blue.', Our art teacher would encourage the use of the colour to tell a story, influence moods and to serve as a bridge to something new. Ten years have passed since those art classes, the relationship between colour and the web has remained stagnant, with limited choices available before having to turn to JavaScript or relying on the support of a polyfill library.</summary></entry><entry><title type="html">Instafeed Tutorial</title><link href="http://github.com/pages/Andrewrock/recreating-instagram.html" rel="alternate" type="text/html" title="Instafeed Tutorial" /><published>2017-03-17T00:00:00+00:00</published><updated>2017-03-17T00:00:00+00:00</updated><id>http://github.com/pages/Andrewrock/recreating-instagram</id><content type="html" xml:base="http://github.com/pages/Andrewrock/recreating-instagram.html">&lt;div class=&quot;tutorial-body&quot;&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    With over 300 million daily images posted to instagram, it is
+    the number one social network for sharing images and videos.
+    This tutorial will show you how to display your instagram feed
+    on your website.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    If you are more interested in the
+    &lt;span class=&quot;code-font&quot;&gt;Sass&lt;/span&gt; then click
+    &lt;span class=&quot;underline-definition&quot;&gt;
+    &lt;a href=&quot;https://codepen.io/andrewrock/pen/MpVgpw&quot;&gt;Here&lt;/a&gt;&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Getting started &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    To follow this demo you will need the following
+    &lt;span class=&quot;underline-definition&quot;&gt;&lt;a href=&quot;http://instafeedjs.com/&quot;&gt; Instafeed.js &lt;/a&gt;&lt;/span&gt; 
+    and
+    &lt;span class=&quot;underline-definition&quot;&gt;&lt;a href=&quot;https://www.instagram.com/developer/&quot;&gt; Instagram developer access &lt;/a&gt;&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;Once you have downloaded
+    &lt;span class=&quot;code-font&quot;&gt;instafeed&lt;/span&gt; place it your javascript 
+    directory and reference it.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-html&quot;&gt;&lt;code class=&quot;no-padding&quot;&gt;&amp;lt;script type=&quot;text/javascript&quot; src=&quot;js/instafeed.min.js&quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; Then add it to the 
+    &lt;span class=&quot;code-font&quot;&gt;html&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+    &lt;pre class=&quot;code code-html&quot;&gt;&lt;code class=&quot;no-padding&quot;&gt;&amp;lt;div id=&quot;instafeed-tutorial&quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Instagram Developer &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    Before you can access your photos you must first register your 
+    application with Instagram.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    The following steps are to set up a developer account.
+    Without developer access Instagram does not permit the retrieval of 
+    images.
+  &lt;/p&gt;
+  &lt;ul class=&quot;simple-list&quot;&gt;
+    &lt;li&gt;
+      &lt;p&gt;Go to
+        &lt;span class=&quot;underline-definition&quot;&gt;
+        &lt;a href=&quot;https://www.instagram.com/developer/&quot;&gt; 
+        Instagram developer portal
+        &lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt; Click the
+        &lt;span class=&quot;underline-definition&quot;&gt;
+        'Register Your Application'
+        &lt;/span&gt;
+        button.
+      &lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;definition-wrapper&quot;&gt;
+    &lt;table class=&quot;definition-list&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Application Name:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;This can be anything,
+            As long as it does not contain any of the following:
+            ‘insta’, ‘gram’, ‘IG’ or ‘Instagram’ 
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Description:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;Best to keep this simple, e.g. &quot;Gallery for personal site&quot; 
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Company Name:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;Company name can be your name&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Website URL:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;This is the url of your website&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Valid Redirect URIs:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;For the purpose of this demo your sites URL will suffice
+            nobody will be logging into your application as we are running 
+            in Sandbox mode (see api docs).
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Privacy Policy:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;If you have a privacy policy include it here, if not just
+            add your site URL.
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Contact Email:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p&gt;Add your email&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;Finally, switch to the Security tab and
+    deselect the &lt;span class=&quot;tutorial-definition&quot;&gt;‘Disable implicit OAuth’&lt;/span&gt;
+    checkbox, then hit Register.
+  &lt;/p&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Connecting Instagram &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; There are a number of steps involved 
+    here, it may take one or two tries to get it all correct.
+  &lt;/p&gt;
+  &lt;div class=&quot;definition-wrapper&quot;&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+      Next step is to get a 
+      &lt;span class=&quot;code-font&quot;&gt;USER-ID&lt;/span&gt;, click
+      &lt;span class=&quot;underline-definition&quot;&gt;
+      &lt;a href=&quot;https://smashballoon.com/instagram-feed/find-instagram-user-id/&quot;&gt;
+      here
+      &lt;/a&gt;
+      &lt;/span&gt;. You want to enter the username, the one you use to sign 
+      in. Once you have your own ID keep it handy as you will need it soon.
+    &lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; To get your 
+      &lt;span class=&quot;code-font&quot;&gt;CLIENT-ID&lt;/span&gt;, paste the following into 
+      your browser 
+    &lt;/p&gt;
+    &lt;div class=&quot;code-container&quot;&gt;
+      &lt;pre class=&quot;code code-html&quot;&gt;&lt;code&gt;https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&amp;redirect_uri=REDIRECT-URI&amp;response_type=token&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;Now replace
+      &lt;span class=&quot;code-font&quot;&gt;CLIENT-ID&lt;/span&gt; with the
+      &lt;span class=&quot;code-font&quot;&gt;CLIENT-ID&lt;/span&gt; generated.
+    &lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+      Now replace &lt;span class=&quot;code-font&quot;&gt;REDIRECT-URI&lt;/span&gt;
+      with the &lt;span class=&quot;code-font&quot;&gt;REDIRECT-URI&lt;/span&gt; that you 
+      included when setting up.
+    &lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; Load the URL.&lt;/p&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; Once you have loaded the URL, your 
+      &lt;span class=&quot;code-font&quot;&gt;ACCESS-TOKEN&lt;/span&gt; should be in the URL
+    &lt;/p&gt;
+    &lt;div class=&quot;code-container&quot;&gt;
+      &lt;pre class=&quot;code code-html&quot;&gt;&lt;code&gt;'http://your-redirect-uri#access_token=ACCESS-TOKEN'&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;tutorial-paragraph&quot;&gt; Copy the 
+      &lt;span class=&quot;code-font&quot;&gt;ACCESS-TOKEN&lt;/span&gt;
+    &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Instafeed Options &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; You now have everything needed to use 
+    the &lt;span class=&quot;code-font&quot;&gt;instafeed&lt;/span&gt;, now let's briefly
+    explore the API options, For detailed information about the API head 
+    over to the &lt;span class=&quot;underline-definition&quot;&gt;
+    &lt;a href=&quot;https://github.com/stevenschobert/instafeed.js&quot;&gt;Github page&lt;/a&gt;
+    &lt;/span&gt;.
+  &lt;/p&gt;
+  &lt;div class=&quot;definition-wrapper&quot;&gt;
+    &lt;table class=&quot;definition-list&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Resolution:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Three options:&lt;/p&gt;
+          &lt;ul class=&quot;simple-list&quot;&gt;
+            &lt;li&gt;thumbnail (default)
+              &lt;span class=&quot;solid-definition&quot;&gt; 150 x 150 &lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li&gt;low_resolution
+              &lt;span class=&quot;solid-definition&quot;&gt; 306 x 306 &lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li&gt;standard_resolution
+              &lt;span class=&quot;solid-definition&quot;&gt; 612 x 612 &lt;/span&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Target&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+            Either the ID name or the DOM element itself where you want
+            to add the images to.
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Template:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;Allows us to use a custom 
+            template to use for images, we 
+            will be using the template to create our gallery
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Get: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; There are a number of options here &lt;/p&gt;
+          &lt;ul class=&quot;simple-list&quot;&gt;
+            &lt;li&gt; popular (default) - Images from the popular page &lt;/li&gt;
+            &lt;li&gt; tagged - Images with a specific tag. Use 
+              &lt;span class=&quot;code-font&quot;&gt; tagName&lt;/span&gt; 
+              to specify the tag.
+            &lt;/li&gt;
+            &lt;li&gt; location - Images from a location. Use
+              &lt;span class=&quot;code-font&quot;&gt; locationId&lt;/span&gt; 
+              to specify the location 
+            &lt;/li&gt;
+            &lt;li&gt; user - Images from a user. 
+              &lt;span class=&quot;code-font&quot;&gt; Use userId&lt;/span&gt;
+              to specify the user. 
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;SortBy:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; There are a number of options here &lt;/p&gt;
+          &lt;ul class=&quot;simple-list&quot;&gt;
+            &lt;li&gt;none (default) - As they come from Instagram. &lt;/li&gt;
+            &lt;li&gt;most-recent&lt;/li&gt;
+            &lt;li&gt;least-recent&lt;/li&gt;
+            &lt;li&gt;most-liked&lt;/li&gt;
+            &lt;li&gt;least-liked&lt;/li&gt;
+            &lt;li&gt;most-commented&lt;/li&gt;
+            &lt;li&gt;least-commented&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Links:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;Wrap the image in a link.&lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;Limit:&lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+            By default instagram photos will run in sandbox mode,
+            This means that image retrieval is capped at a maximum of 
+            twenty images,by adding a limit that is less than the 
+            maximum twenty we can paginate through our images and reduce
+            the initial page load.
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Advanced Options &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; 
+    There are a number of advanced options such as what to do before and 
+    after images are returned.
+  &lt;/p&gt;
+  &lt;div class=&quot;definition-wrapper&quot;&gt;
+    &lt;table class=&quot;definition-list&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Before: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Function called 
+            before fetching images from Instagram 
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; After: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Function called 
+            when images have been added to the page.
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Success: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Function called
+            when Instagram returns valid data.
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt; Error: &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Function called
+            when there is an error fetching images. 
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p&gt;
+            Filter:
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;tutorial-paragraph&quot;&gt; Function used to exclude 
+            images from your results, e.g Show only photos, videos
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Putting it all together &lt;/h2&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
+  
+  var tutorialFeed = new Instafeed ({
+  get: 'user',
+  userId: '623597756',
+  clientId: 'Client',
+  target: 'tutorial-instafeed',
+  accessToken: 'Access-Token',
+  resolution: 'standard_resolution',
+  sortBy: 'most-recent',
+  limit: 9,
+  template: '&amp;lt;div class=&quot;image-item insta-page&quot;&amp;gt;' +
+  '&amp;lt;a class=&quot;image insta-image&quot; href=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;img alt=&quot;&amp;#123;&amp;#123;user.full_name&amp;#125;&amp;#125;&quot; src=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;div class=&quot;img-backdrop-tutorial&quot;&amp;gt;' +
+  '&amp;lt;div class=&quot;insta-caption&quot;&amp;gt;' +
+  '&amp;lt;p&amp;gt;&amp;#123;&amp;#123;caption&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;div class=&quot;captions&quot;&amp;gt;' +
+  '&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;'
+
+   });
+    
+   tutorialFeed.run();
+   
+});&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    Having briefly introduced the advanced 
+    &lt;span class=&quot;code-font&quot;&gt;instafeed&lt;/span&gt; options, now let's explore
+    how to use the &lt;span class=&quot;solid-definition&quot;&gt;Filter&lt;/span&gt;
+    and the &lt;span class=&quot;solid-definition&quot;&gt;After&lt;/span&gt; functions.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    We are going to use the &lt;span class=&quot;solid-definition&quot;&gt;Filter&lt;/span&gt;
+    function to only return images.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
+
+  var tutorialFeed = new Instafeed ({
+  get: 'user',
+  userId: '623597756',
+  clientId: 'Client',
+  target: 'tutorial-instafeed',
+  accessToken: 'Access-Token',
+  resolution: 'standard_resolution',
+  sortBy: 'most-recent',
+  limit: 9,
+  template: '&amp;lt;div class=&quot;image-item insta-page&quot;&amp;gt;' +
+  '&amp;lt;a class=&quot;image insta-image&quot; href=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;img alt=&quot;&amp;#123;&amp;#123;user.full_name&amp;#125;&amp;#125;&quot; src=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;div class=&quot;img-backdrop-tutorial&quot;&amp;gt;' +
+  '&amp;lt;div class=&quot;insta-caption&quot;&amp;gt;' +
+  '&amp;lt;p&amp;gt;&amp;#123;&amp;#123;caption&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;div class=&quot;captions&quot;&amp;gt;' +
+  '&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;'
+
+   filter: function(image) {
+    return image.type === 'image';
+   }
+  
+  tutorialFeed.run();
+
+});&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    We can now use the &lt;span class=&quot;solid-definition&quot;&gt;After&lt;/span&gt; 
+    function to display a loading animation while the photos are 
+    being returned. This is a nice way to let your users know the images
+    are on their way.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    You can check to see if any more images are available, if images are
+    available show the load more button, if no images are 
+    available hide the button.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
+ 
+ var tutorialFeed = new Instafeed ({
+ get: 'user',
+ userId: '623597756',
+ clientId: 'Client',
+ accessToken: 'Access-Token',
+ resolution: 'standard_resolution',
+ sortBy: 'most-recent',
+ limit: 9,
+ template: '&amp;lt;div class=&quot;image-item insta-page&quot;&amp;gt;' +
+  '&amp;lt;a class=&quot;image insta-image&quot; href=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;img alt=&quot;&amp;#123;&amp;#123;user.full_name&amp;#125;&amp;#125;&quot; src=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' +
+  '&amp;lt;div class=&quot;img-backdrop-tutorial&quot;&amp;gt;' +
+  '&amp;lt;div class=&quot;insta-caption&quot;&amp;gt;' +
+  '&amp;lt;p&amp;gt;&amp;#123;&amp;#123;caption&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;div class=&quot;captions&quot;&amp;gt;' +
+  '&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;' +
+  '&amp;lt;/a&amp;gt;' +
+  '&amp;lt;/div&amp;gt;'
+      
+ filter: function(image) {
+  return image.type === 'image';
+ },
+ 
+ after: function () {
+  loader.style.display = 'none';
+    if (!this.hasNext()) {
+      loadButton.setAttribute('disabled', 'disabled');
+    }
+  }
+});
+  
+tutorialFeed.run();
+
+});&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tutorial-insta-container&quot;&gt;
+  &lt;div class=&quot;image-wrapper&quot; id=&quot;tutorial-instafeed&quot;&gt;
+    &lt;div class=&quot;loader&quot; id=&quot;loader&quot;&gt;
+      &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;line&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button id=&quot;insta-btn&quot; class=&quot;insta-btn&quot;&gt;See more&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tutorial-body&quot;&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;You now have your instagram photos 
+    showing on your site. 
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; If you hover the image you can see that
+    the caption is also returned, &lt;span class=&quot;code-font&quot;&gt;instafeed&lt;/span&gt;
+    allows developers to return more than the caption, you can return likes,
+    comments, post type etc. See  &lt;span class=&quot;underline-definition&quot;&gt;
+    &lt;a href=&quot;https://github.com/stevenschobert/instafeed.js/issues/21&quot;&gt;
+    here 
+    &lt;/a&gt;&lt;/span&gt; for a full list of returnable properties.
+  &lt;/p&gt;
+  &lt;h2 class=&quot;tutorial-section-heading&quot;&gt; Styling Images &lt;/h2&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; We are going to use 
+    &lt;span class=&quot;code-font&quot;&gt;flexbox&lt;/span&gt; to display our images, combine
+    this with &lt;span class=&quot;code-font&quot;&gt;Sass&lt;/span&gt; and we can style our 
+    images quickly, we can also add animations and transition delays 
+    using &lt;span class=&quot;code-font&quot;&gt;Sass&lt;/span&gt; loops.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    Using flexbox set the image-wrapper to display as a row that will
+    wrap when there is no more space left.
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    To keep the images fluid, use the flex property. I could write a 
+    whole post on &lt;span class=&quot;code-font&quot;&gt;flexbox&lt;/span&gt;, but for now 
+    I will just briefly explain.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code class=&quot;no-padding&quot;&gt;flex: 1 0 33%;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    Each image will now grow and shrink at the same rate while 
+    maintaining 33% of the space available
+  &lt;/p&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt;
+    Using a &lt;span class=&quot;code-font&quot;&gt;loop&lt;/span&gt;, add a new animation 
+    delay to each item. I chose to add 1s delay between each item. 
+    Setting each item to be invisible prior to the animation running.
+  &lt;/p&gt;
+  &lt;div class=&quot;code-container&quot;&gt;
+&lt;pre class=&quot;code code-css&quot;&gt;&lt;code&gt;animation-delay: (#{$i * .1s});&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;div class='code-container'&gt;
+&lt;pre class='code code-css'&gt;&lt;code&gt;$insta-wrapper-max-width: 965px;
+$insta-wrapper-min-height: 100px;
+$transition: all .17s cubic-bezier(.4, 0, 1, 1);
+  
+.image-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin: 0 auto 24px;
+  max-width: $insta-wrapper-max-width;
+  min-height: $insta-wrapper-min-height;
+  position: relative;
+  width: $width;
+}
+  
+.image-item {
+  animation: slide-item .3s ease forwards;
+  box-sizing: border-box;
+  flex: 1 0 33%;
+  transform: translateY(250px);
+  visibility: hidden;
+  width: $width;
+  @for $i from 1 through 10 {
+   &amp;:nth-child(#{$i}) {
+    animation-delay: (#{$i * .1s});
+   }
+ }
+}
+
+.insta-page {
+  padding: 12px;
+}
+
+.image {
+ display: block;
+ position: relative;
+ transition: $transition;
+ width: $width;
+  
+ img {
+  display: block;
+  max-width: $width;
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+  &lt;p class=&quot;tutorial-paragraph&quot;&gt; And finally the animations &lt;/p&gt;
+&lt;pre class='code code-css'&gt;&lt;code&gt;@keyframes slide-item {
+ 60% { 
+ transform: translateY(-10px);
+ }
+ 100% {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">With over 300 million daily images posted to instagram, it is the number one social network for sharing images and videos. This tutorial will show you how to display your instagram feed on your website. If you are more interested in the Sass then click Here Getting started To follow this demo you will need the following Instafeed.js and Instagram developer access Once you have downloaded instafeed place it your javascript directory and reference it. &amp;lt;script type=&quot;text/javascript&quot; src=&quot;js/instafeed.min.js&quot;&amp;gt; Then add it to the html &amp;lt;div id=&quot;instafeed-tutorial&quot;&amp;gt;&amp;lt;/div&amp;gt; Instagram Developer Before you can access your photos you must first register your application with Instagram. The following steps are to set up a developer account. Without developer access Instagram does not permit the retrieval of images. Go to Instagram developer portal Click the 'Register Your Application' button. Application Name: This can be anything, As long as it does not contain any of the following: ‘insta’, ‘gram’, ‘IG’ or ‘Instagram’  Description: Best to keep this simple, e.g. &quot;Gallery for personal site&quot;  Company Name: Company name can be your name Website URL: This is the url of your website Valid Redirect URIs: For the purpose of this demo your sites URL will suffice nobody will be logging into your application as we are running in Sandbox mode (see api docs). Privacy Policy: If you have a privacy policy include it here, if not just add your site URL. Contact Email: Add your email Finally, switch to the Security tab and deselect the ‘Disable implicit OAuth’ checkbox, then hit Register. Connecting Instagram There are a number of steps involved here, it may take one or two tries to get it all correct. Next step is to get a USER-ID, click here . You want to enter the username, the one you use to sign in. Once you have your own ID keep it handy as you will need it soon. To get your CLIENT-ID, paste the following into your browser https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&amp;redirect_uri=REDIRECT-URI&amp;response_type=token Now replace CLIENT-ID with the CLIENT-ID generated. Now replace REDIRECT-URI with the REDIRECT-URI that you included when setting up. Load the URL. Once you have loaded the URL, your ACCESS-TOKEN should be in the URL 'http://your-redirect-uri#access_token=ACCESS-TOKEN' Copy the ACCESS-TOKEN Instafeed Options You now have everything needed to use the instafeed, now let's briefly explore the API options, For detailed information about the API head over to the Github page . Resolution: Three options: thumbnail (default) 150 x 150 low_resolution 306 x 306 standard_resolution 612 x 612 Target Either the ID name or the DOM element itself where you want to add the images to. Template: Allows us to use a custom template to use for images, we will be using the template to create our gallery Get: There are a number of options here popular (default) - Images from the popular page tagged - Images with a specific tag. Use tagName to specify the tag. location - Images from a location. Use locationId to specify the location user - Images from a user. Use userId to specify the user. SortBy: There are a number of options here none (default) - As they come from Instagram. most-recent least-recent most-liked least-liked most-commented least-commented Links: Wrap the image in a link. Limit: By default instagram photos will run in sandbox mode, This means that image retrieval is capped at a maximum of twenty images,by adding a limit that is less than the maximum twenty we can paginate through our images and reduce the initial page load. Advanced Options There are a number of advanced options such as what to do before and after images are returned. Before: Function called before fetching images from Instagram After: Function called when images have been added to the page. Success: Function called when Instagram returns valid data. Error: Function called when there is an error fetching images. Filter: Function used to exclude images from your results, e.g Show only photos, videos Putting it all together document.addEventListener(&quot;DOMContentLoaded&quot;, function() { var tutorialFeed = new Instafeed ({ get: 'user', userId: '623597756', clientId: 'Client', target: 'tutorial-instafeed', accessToken: 'Access-Token', resolution: 'standard_resolution', sortBy: 'most-recent', limit: 9, template: '&amp;lt;div class=&quot;image-item insta-page&quot;&amp;gt;' + '&amp;lt;a class=&quot;image insta-image&quot; href=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' + '&amp;lt;img alt=&quot;&amp;#123;&amp;#123;user.full_name&amp;#125;&amp;#125;&quot; src=&quot;&amp;#123;&amp;#123;image&amp;#125;&amp;#125;&amp;gt;' + '&amp;lt;div class=&quot;img-backdrop-tutorial&quot;&amp;gt;' + '&amp;lt;div class=&quot;insta-caption&quot;&amp;gt;' + '&amp;lt;p&amp;gt;&amp;#123;&amp;#123;caption&amp;#125;&amp;#125;&amp;lt;/p&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;div class=&quot;captions&quot;&amp;gt;' + '&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;' + '&amp;lt;/div&amp;gt;' + '&amp;lt;/a&amp;gt;' + '&amp;lt;/div&amp;gt;'</summary></entry></feed>
+>>>>>>> move-to-jekyll

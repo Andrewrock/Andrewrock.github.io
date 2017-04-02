@@ -1,0 +1,69 @@
+$insta-wrapper-max-width: 965px;
+$insta-wrapper-min-height: 100px;
+$transition: all .17s cubic-bezier(.4, 0, 1, 1);
+
+.image-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+  margin: 0 auto 24px;
+  max-width: $insta-wrapper-max-width;
+  min-height: $insta-wrapper-min-height;
+  position: relative;
+  width: $width;
+}
+
+  .image-item {
+    animation: slide-item .3s ease forwards;
+    box-sizing: border-box;
+    flex: 1 0 33%;
+    transform: translateY(250px);
+    visibility: hidden;
+    width: $width;
+    @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: (#{$i * .1s});
+    }
+  }
+}
+
+.insta-page {
+  padding: 6px;
+}
+
+.image {
+  display: block;
+  position: relative;
+  transition: $transition;
+  width: $width;
+
+  img {
+    display: block;
+    max-width: $width;
+  }
+}
+
+@keyframes slide-item {
+  60% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@keyframes fadeIn {
+
+  0% {
+    transform: translateX(-150px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

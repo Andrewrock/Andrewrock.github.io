@@ -1,26 +1,20 @@
-$header-height: 280px;
-$header-gradient1: #667eea;
-$header-gradient2: #764ba2;
+$header-height: 288px;
 $spike-height: 80px;
-$header-bottom: 30px;
+$header-top: 208px;
+$header-bottom: 24px;
 $speed: 2s;
 
 header {
   align-items: center;
-  background: url('../img/bg7.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
-  display: flex;
+  background: url('/img/bg7.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
   background-blend-mode: screen;
-  transition: background-color .5s;
+  display: flex;
   height: $header-height;
   justify-content: center;
   margin-bottom: $header-bottom;
   position: relative;
-
-  &::after{
-    content:'';
-    display:block;
-    padding-bottom:25%;
-  }
+  transition: background .25s ease-in-out;
+  width: $width;
 
   svg {
     bottom: 0;
@@ -30,20 +24,39 @@ header {
     transition: background-color $speed ease;
     width: $width;
   }
+}
 
-  h1 {
-    color: $white;
-    font-family: $playfair;
-    font-size: $h1;
-    text-align: center;
-  }
+.svg-wrap {
+  animation: fadeIn ease-in-out .1s forwards 1s;
+  box-sizing: border-box;
+  display: flex;
+  height: $height;
+  opacity: 0;
+  position: relative;
+  width: $width;
+}
+
+.insta,
+.tutorial {
+  background-blend-mode: screen;
 }
 
 .insta {
-  background: url('../img/bg16.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
-  background-blend-mode: screen;
-  transition: background-color .5s;
-  width: $width;
+  background: url('/img/bg16.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
+}
+
+.tutorial {
+  background: url('/img/bg2.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
+}
+
+.cv {
+  background: url('/img/bg52.jpg') lighten($nav-link-color, 25%) center center / cover no-repeat;
+  background-blend-mode: color-dodge;
+
+  svg {
+    position: absolute;
+    top: $header-top;
+  }
 }
 
 @media (max-width: 699px) {
@@ -58,4 +71,14 @@ header {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    top: -5%;
+  }
 
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}

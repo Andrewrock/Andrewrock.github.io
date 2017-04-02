@@ -1,0 +1,218 @@
+$tutorial-max-width: 640px;
+$tutorial-content-margin: 24px;
+$definition-max-width: 460px;
+$reference-image-height: 240px;
+$insta-max-width: 935px;
+
+.tutorial-container,
+.tutorial-definition-wrapper,
+.tutorial-body,
+.definition-wrapper,
+.blend-list-title,
+.blend-list-description,
+.reference-image,
+.box,
+.codepen-wrapper {
+  width: $width;
+}
+
+.tutorial-container,
+.tutorial-definition-wrapper,
+.tutorial-body,
+.definition-wrapper,
+.codepen-wrapper,
+.definition-list,
+.blend-list-title,
+.blend-list-description,
+.box {
+  box-sizing: border-box;
+}
+
+.tutorial-container,
+.tutorial-definition-wrapper,
+.tutorial-body,
+.definition-wrapper,
+.codepen-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tutorial-definition-wrapper,
+.tutorial-paragraph,
+.tutorial-link {
+  font-family: $lora;
+}
+
+.tutorial-definition-wrapper,
+.blend-list-description {
+  background-color: $white;
+}
+
+.tutorial-container {
+  background-color: $background-white;
+  margin: auto;
+  max-width: $tutorial-max-width;
+  padding: $tutorial-content-margin;
+
+  &.no-padding {
+    max-width: $insta-max-width;
+    padding: 0;
+  }
+}
+
+.no-padding {
+  .tutorial-body {
+    box-sizing: border-box;
+    max-width: $tutorial-max-width;
+    padding: $tutorial-content-margin;
+    width: $width;
+  }
+}
+
+.tutorial-definition-wrapper {
+  justify-content: center;
+  margin: 0 auto $tutorial-content-margin;
+  max-width: $definition-max-width;
+  text-align: left;
+
+  p {
+    margin: 0;
+    padding: $tutorial-content-margin;
+  }
+}
+
+.tutorial-paragraph {
+
+  & a {
+    color: inherit;
+  }
+}
+
+.underline-definition {
+  border-bottom: 1px solid $nav-link-color;
+  box-shadow: inset 0 -2px 0 $nav-link-color;
+  font-family: $ubuntu;
+  transition: background .1s cubic-bezier(.33, .66, .66, 1);
+
+  &:hover {
+    background-color: $nav-link-color;
+    color: $white;
+  }
+}
+
+.underline-definition + a {
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.tutorial-link,
+.author-link {
+  color: $nav-link-color;
+}
+
+.code-font,
+.blend-list-title {
+  font-family: $source-code;
+}
+
+.tutorial-body {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: 640px;
+  overflow: hidden;
+  width: $width;
+}
+
+.tutorial-body > .tutorial-body {
+  padding: 0;
+}
+
+.definition-wrapper {
+  padding: $tutorial-content-margin 0;
+}
+
+.definition-list {
+  border-collapse: collapse;
+  margin: 0 auto;
+  max-width: $definition-max-width;
+  table-layout: fixed;
+  width: $width;
+
+  td > ul {
+    margin-bottom: 24px;
+  }
+
+  td {
+    color: $body-color;
+    text-align: left;
+
+    &:nth-of-type(1) {
+      color: $nav-link-color;
+      font-family: $ubuntu;
+      width: 33%;
+    }
+
+    &.codes {
+      width: $width;
+    }
+  }
+
+  span {
+    display: inline-block;
+  }
+}
+
+.author-link,
+.definition-list-list-item {
+  margin-bottom: $tutorial-content-margin;
+}
+
+.blend-type {
+  margin-bottom: $tutorial-content-margin;
+  margin-top: $tutorial-content-margin;
+}
+
+.blend-list-title {
+  background-color: $nav-link-color;
+  color: $white;
+  margin: 0;
+  padding: $tutorial-content-margin / 2;
+}
+
+.blend-list-description {
+  background-color: $white;
+  margin-bottom: $tutorial-content-margin;
+  padding: $tutorial-content-margin / 2;
+}
+
+.reference-image {
+  display: flex;
+  height: $reference-image-height;
+  margin: 0 auto $tutorial-content-margin;
+
+  img {
+    display: block;
+    height: auto;
+    width: $width;
+  }
+}
+
+.tutorial-section-heading + .code-container {
+  margin-top: 12px;
+}
+
+.tutorial-section-heading {
+  color: $nav-link-color;
+  margin-bottom: $tutorial-content-margin / 2;
+  margin-top: $tutorial-content-margin / 2;
+}
+
+.codepen-wrapper > div {
+  width: $width;
+}

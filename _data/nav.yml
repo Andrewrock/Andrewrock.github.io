@@ -5,11 +5,6 @@ main:
   }
 
     - {
-    url: '/Blogs',
-    title: 'Blogs'
-  }
-
-    - {
     url: '/cv',
     title: 'CV'
   }

@@ -1,27 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display');
-@import url('http://weloveiconfonts.com/api/?family=entypo');
-
-$playfair: 'Playfair Display', serif;
-$fauna: 'Fauna One', serif;;
-
-$open-sans: 'Open Sans', sans-serif;
-$libre: 'Libre Baskerville', serif;
-
+$ubuntu: 'Ubuntu', sans-serif;
+$lora: 'Lora', serif;
+$source-code: 'Source Code Pro', monospace;
 $font-size-base: 1rem;
 $font-weight-normal: 400;
 $font-weight-bold: 600;
 $line-height-base: 1.5;
-
 $h1: 2.5rem;
 $h2: 2rem;
 $h3: 1.75rem;
 $h4: 1.5rem;
 $h5: 1.25rem;
 $h6: 1rem;
-
 $spacer: 1rem !default;
-
 $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-weight: 500 !default;
 $headings-line-height: 1.1 !default;
@@ -32,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $libre;
+  font-family: $ubuntu;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
   margin: 0 0 $headings-margin-bottom;
@@ -45,6 +35,7 @@ h4 { font-size: $h4; }
 h5 { font-size: $h5; }
 h6 { font-size: $h6; }
 
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
+p {
+  line-height: $line-height-base;
+  margin-bottom: 24px;
 }

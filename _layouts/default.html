@@ -4,6 +4,12 @@
 
 {% include intro.html %}
 
+<<<<<<< HEAD
 {% include container.html %}
+=======
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
+>>>>>>> move-to-jekyll
 
 {% include footer.html %}

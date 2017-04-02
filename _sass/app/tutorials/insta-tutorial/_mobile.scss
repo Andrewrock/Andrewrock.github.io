@@ -1,0 +1,41 @@
+$insta-button-bg: #3897f0;
+$insta-button-color: $white;
+$breakpoint-tablet: 735px;
+$breakpoint-desktop: 736px;
+
+.tutorial-insta-container,
+.tutorial-content,
+.checklist {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tutorial-insta-container,
+.checklist {
+  margin: auto;
+}
+
+.tutorial-insta-container {
+  flex: 1 0 $width;
+  justify-content: center;
+}
+
+.tutorial-content {
+  width: $width;
+}
+
+.checklist {
+  justify-content: flex-start;
+  max-width: 530px;
+  width: $width;
+}
+
+.checklist > li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.checklist-item {
+  color: $nav-link-color;
+}

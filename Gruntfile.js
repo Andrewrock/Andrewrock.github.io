@@ -1,138 +1,78 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-    connect: {
-      all: {
-        options:{
-          port: 9000,
-          hostname: "0.0.0.0",
-          keepalive: true
-        }
-      }
-    },
-    uglify: {
-      build: {
-        src: ['js/*.js'],
-        dest: 'dist/main.min.js'
-      }
+    sasslint: {
+      options: {
+        configFile: '/.sass-lint.yml'
+      },
+      target: ['_sass/**/*.scss']
     },
     htmlmin: {
       dist: {
         options: {
           removeComments: true,
-          collapseWhitespace: true
+          collapseWhitespace: true,
+          collapseBooleanAttributes: true,
+          removeAttributeQuotes: true,
+          removeRedundantAttributes: true,
+          removeEmptyAttributes: true,
+          minifyJS: true,
+          minifyCSS: true
         },
         files: {
-          'index.html': 'dist/index.html'
+          'dist/index.html': '_site/index.html',
+          'dist/background-blend-modes.html': '_site/background-blend-modes.html',
+          'dist/lighten-darken.html': '_site/lighten-darken.html',
+          'dist/not-selector.html': '_site/not-selector.html',
+          'dist/recreating-instagram.html': '_site/recreating-instagram.html'
         }
       }
     },
-    sass: {
-      dist: {
+    imagemin: {
+      png: {
         options: {
-          sourcemap: 'none'
+          optimizationLevel: 7
         },
-        files: [{
-          expand: true,
-          cwd: 'sass',
-          src: ['**/*.scss'],
-          dest: 'dist',
-          ext: '.css'
-        }]
-      }
-    },
-    scsslint: {
-      allFiles: [
-        'sass/**/*.scss',
-      ],
-      options: {
-        bundleExec: false,
-        colorizeOutput: true,
-        config: 'sass/.scss-lint-test.yml',
-        reporterOutput: null
-      }
-    },
-    postcss: {
-      options: {
-        map: true,
-        processors: [
-          require('autoprefixer')({browsers: ['last 3 versions']}),
+        files: [
+          {
+            // Set to true to enable the following options…
+            expand: true,
+            // cwd is 'current working directory'
+            cwd: '_img/',
+            src: ['**/*.png'],
+            // Could also match cwd line above. i.e. project-directory/img/
+            dest: '_img/',
+            ext: '.png'
+          }
         ]
       },
-      dist: {
-        src: 'dist/main.css'
-      }
-    },
-    cssmin: {
-      target: {
-        files: [{
-          expand: true,
-          cwd: 'dist',
-          src: ['*.css', '!*.min.css'],
-          dest: 'dist',
-          ext: '.min.css'
-        }]
-      }
-    },
-    svgmin: {
-      withconfig: {
+      jpg: {
         options: {
-          plugins: [
-            {removeViewBox: false},
-            {convertPathData: {straightCurves: false}}
-          ]
-        }
-      },
-      multiple: {
-        files: [{
-          expand: true,
-          cwd: 'img/',
-          src: ['**/*.svg'],
-          dest: 'img/'
-        }]
+          progressive: true
+        },
+        files: [
+          {
+            // Set to true to enable the following options…
+            expand: true,
+            // cwd is 'current working directory'
+            cwd: 'img/',
+            src: ['**/*.jpg'],
+            // Could also match cwd. i.e. project-directory/img/
+            dest: 'img/',
+            ext: '.jpg'
+          }
+        ]
       }
-    },
-    watch: { // Compile everything into one task with Watch Plugin
-      css: {
-        files: '**/*.scss',
-        tasks: ['sass', 'postcss', 'cssmin']
-      },
-      js: {
-        files: '**/*.js',
-        tasks: ['uglify']
-      }
-    }
-  });
+    }  });
 
-  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-sass-lint');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  grunt.loadNpmTasks('grunt-csscomb');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-scss-lint');
-  grunt.loadNpmTasks('grunt-postcss');
-  grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   grunt.registerTask('build', [
-    'scsslint',
-    'sass',
-    'postcss',
-    'cssmin',
-    'uglify',
-    'htmlmin'
-  ]);
-
-  grunt.registerTask('default', [
-    'connect',
-    'scsslint',
-    'sass',
-    'postcss',
-    'cssmin',
-    'uglify',
-    'htmlmin'
+    'sasslint',
+    'htmlmin',
+    'imagemin'
   ]);
 
 };

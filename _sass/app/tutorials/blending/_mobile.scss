@@ -1,0 +1,211 @@
+$image-one: url('../img/ireland-baby2.jpg');
+$image-two: url('../img/bukowski.jpg');
+$image-three: url('../img/fergie.jpg');
+$image-four: url('../img/ireland.jpg');
+$image-five: url('../img/underwood.jpg');
+$irish-green: #009a49;
+$irish-orange: #ff7900;
+$letter-num: 26;
+$dark-bg: #556270;
+$mcgregor-color-one: #4ecdc4;
+$mcgregor-color-two: #ff6b6b;
+$manchester-red: #da020e;
+$manchester-yellow: #ffe500;
+$colors: #556270, #4ecdc4, #c7f464, #ff6b6b, #c44dd58, #6534ff, #fc0152;
+
+.blend-container,
+.blend-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  width: $width;
+}
+
+.blend-container {
+  height: 550px;
+  margin-bottom: 24px;
+  width: $width;
+
+  &.small {
+    height: auto;
+    margin-bottom: 48px;
+  }
+}
+
+.smaller {
+  height: 225px;
+
+  &.not-image {
+    height: auto;
+
+    .blend-item {
+      background-color: $grey;
+      padding: 24px;
+    }
+  }
+}
+
+.blend-item {
+  align-items: center;
+  background-size: cover;
+  box-sizing: border-box;
+  justify-content: center;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: .5;
+    margin: 0;
+    text-align: center;
+
+    @media screen and (max-width: 400px) {
+      font-size: 4.5rem;
+      line-height: .7;
+    }
+  }
+
+  div {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
+.mcgregor {
+  background: $image-one $dark-bg center center / cover no-repeat;
+  background-blend-mode: overlay;
+
+  h1 {
+    mix-blend-mode: lighten;
+  }
+
+  & span {
+    mix-blend-mode: color-dodge;
+
+    &:nth-of-type(2n+1) {
+      color: $mcgregor-color-one;
+    }
+
+    &:nth-of-type(2n) {
+      color: $mcgregor-color-two;
+    }
+  }
+}
+
+.bukowski {
+  background: $image-two $nav-link-color center center / cover no-repeat;
+  background-blend-mode: darken;
+
+  h1 {
+    mix-blend-mode: exclusion;
+  }
+
+  span {
+    mix-blend-mode: color;
+
+    @for $i from 1 through length($colors) {
+
+      &:nth-child(#{length($colors)}n+#{$i}) {
+        color: nth($colors, $i);
+      }
+    }
+  }
+
+  &.no-image {
+    background: $nav-link-color;
+  }
+}
+
+.fergie {
+  background: $image-three center center / cover no-repeat;
+
+  h1 {
+    color: $manchester-red;
+    mix-blend-mode: color-dodge;
+  }
+
+  span {
+    color: $manchester-yellow;
+    display: flex;
+    mix-blend-mode: color;
+  }
+}
+
+.ireland {
+  align-items: center;
+  background: $image-four center center / cover no-repeat;
+
+  h1 {
+    background-color: $background-white;
+    color: $irish-green;
+    line-height: 1.2;
+    mix-blend-mode: hard-light;
+  }
+
+  &.no-image {
+    background: transparent;
+  }
+}
+
+.text-blend {
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: -1.2rem;
+
+  &.unset {
+    span {
+      mix-blend-mode: unset;
+    }
+  }
+
+  span {
+    mix-blend-mode: color-burn;
+
+    @for $i from 1 through length($colors) {
+
+      &:nth-child(#{length($colors)}n+#{$i}) {
+        color: nth($colors, $i);
+      }
+    }
+  }
+}
+
+.animate {
+  background: $dark-bg;
+  background-blend-mode: overlay;
+  padding: 40px 0;
+
+  span {
+    mix-blend-mode: color-burn;
+
+    @for $i from 1 through length($colors) {
+
+      &:nth-child(#{length($colors)}n+#{$i}) {
+        animation: mixBlendTransition 56s ease infinite;
+        color: nth($colors, $i);
+      }
+    }
+  }
+}
+
+@keyframes mixBlendTransition {
+  0% {mix-blend-mode: normal;}
+  6.25% {mix-blend-mode: multiply;}
+  12.5% {mix-blend-mode: screen;}
+  18.75% {mix-blend-mode: overlay;}
+  25% {mix-blend-mode: darken;}
+  31.25% {mix-blend-mode: lighten;}
+  37.5% {mix-blend-mode: color-dodge;}
+  43.75% {mix-blend-mode: color-burn;}
+  50% {mix-blend-mode: hard-light;}
+  56.25% {mix-blend-mode: soft-light;}
+  62.5% {mix-blend-mode: difference;}
+  68.75% {mix-blend-mode: exclusion;}
+  75% {mix-blend-mode: hue;}
+  81.25% {mix-blend-mode: saturation;}
+  87.5% {mix-blend-mode: color;}
+  93.75% {mix-blend-mode: luminosity;}
+  100% {mix-blend-mode: normal;}
+}
+
