@@ -5,11 +5,11 @@ main:
   }
 
     - {
-    url: '/cv',
+    url: '/cv.html',
     title: 'CV'
   }
 
     - {
-    url: '/instagram',
+    url: '/instagram.html',
     title: 'Instagram'
   }
