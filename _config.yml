@@ -62,3 +62,5 @@ exclude:
 sass:
   style: :compressed
   sass_dir: _sass
+
+repository: Andrewrock/andrewrock.github.io
