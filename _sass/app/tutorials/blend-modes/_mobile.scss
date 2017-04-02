@@ -1,6 +1,7 @@
+$tutorial-content-margin: 24px;
 $example-hero-height: 240px;
 $image-one: url('../img/bg50.jpg');
-$image-two: url('../img/bg51.jpg');
+$image-two: url('../img/bg48.jpg');
 
 .example-hero-container,
 .example-hero,
@@ -16,9 +17,21 @@ $image-two: url('../img/bg51.jpg');
 .example-hero-container {
   align-items: center;
   animation: blendTransition 56s ease infinite;
-  background: $image-one lighten($nav-link-color, 25%) center center / cover no-repeat;
+  background: $image-two lighten($nav-link-color, 25%) center center / cover no-repeat;
   background-blend-mode: screen;
   z-index: 1;
+}
+
+.example-post {
+  width: $width;
+}
+
+.box {
+  background-color: lighten($nav-link-color, 5%);
+  box-sizing: border-box;
+  display: block;
+  height: 40px;
+  margin: $tutorial-content-margin 0;
 }
 
 .caption {
@@ -41,7 +54,7 @@ $image-two: url('../img/bg51.jpg');
 }
 
 .example-hero {
-  background: $image-one center center / cover no-repeat;
+  background: $image-two center center / cover no-repeat;
   background-blend-mode: screen;
 }
 

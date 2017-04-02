@@ -19,6 +19,7 @@ $blurb-bottom-line-margin: ($spacer / 2);
   justify-content: center;
   margin: $blurb-margin auto;
   max-width: $blurb-max-width;
+  padding: $blurb-margin;
   position: relative;
 
   &::after {

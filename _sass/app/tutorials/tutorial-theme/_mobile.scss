@@ -1,8 +1,7 @@
 $tutorial-max-width: 640px;
 $tutorial-content-margin: 24px;
-$definition-max-width: 530px;
+$definition-max-width: 460px;
 $reference-image-height: 240px;
-$box-height: 40px;
 $insta-max-width: 935px;
 
 .tutorial-container,
@@ -101,10 +100,6 @@ $insta-max-width: 935px;
   }
 }
 
-.solid-definition {
-  color: $nav-link-color;
-}
-
 .underline-definition + a {
   color: $white;
 
@@ -132,6 +127,14 @@ $insta-max-width: 935px;
   max-width: 640px;
   overflow: hidden;
   width: $width;
+}
+
+.tutorial-body > .tutorial-body {
+  padding: 0;
+}
+
+.definition-wrapper {
+  padding: $tutorial-content-margin 0;
 }
 
 .definition-list {
@@ -176,7 +179,7 @@ $insta-max-width: 935px;
 }
 
 .blend-list-title {
-  background-color: darken($nav-link-color, 3.5%);
+  background-color: $nav-link-color;
   color: $white;
   margin: 0;
   padding: $tutorial-content-margin / 2;
@@ -208,13 +211,6 @@ $insta-max-width: 935px;
   color: $nav-link-color;
   margin-bottom: $tutorial-content-margin / 2;
   margin-top: $tutorial-content-margin / 2;
-}
-
-.box {
-  background-color: lighten($nav-link-color, 25%);
-  display: block;
-  height: $box-height;
-  margin: $tutorial-content-margin 0;
 }
 
 .codepen-wrapper > div {

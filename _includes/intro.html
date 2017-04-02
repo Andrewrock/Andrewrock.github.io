@@ -2,7 +2,7 @@
   <h2 class="blurb"> Front-end Developer from Dublin, Ireland </h2>
 </div>
 <div class="home-posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
   <div class="post-container">
     <div class="post">
       <a href="{{ post.url | prepend: site.baseurl }}">
@@ -39,4 +39,8 @@
     </div>
   </div>
   {% endfor %}
+  {% include pagination.html %}
 </div>
+
+
+

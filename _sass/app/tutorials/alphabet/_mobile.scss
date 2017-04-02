@@ -33,20 +33,28 @@ $letter-num: 26;
 }
 
 .alphabet > li {
-
   @for $i from 1 through $letter-num {
+
     &:nth-of-type(#{$i}) {
       background-color: lighten($nav-link-color, ($i * .5%));
     }
   }
 }
 
+.vowel > li {
+  &:not(.vowel) {
+    display: none;
+  }
+}
 
 .alphabet-test > li {
-  background-color: $nav-link-color;
+  background-color: $pink;
 
   &:not(.vowel) {
-    background-color: $grey;
-    color: $body-color;
+    @for $i from 1 through $letter-num {
+      &:nth-of-type(#{$i}) {
+        background-color: lighten($nav-link-color, ($i * .5%));
+      }
+    }
   }
 }

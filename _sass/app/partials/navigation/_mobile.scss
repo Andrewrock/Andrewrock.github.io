@@ -2,9 +2,8 @@ $nav-social-width: 120px;
 $nav-padding: 15px;
 $nav-social-icons-width-height: 40px;
 $nav-social-icon-width: 25%;
-$nav-font-size: 15px;
 $nav-link-line-height: 2;
-$nav-link-divide-padding: 10px;
+$nav-link-divide-padding: 12px;
 
 nav {
   padding: $nav-padding;
@@ -55,7 +54,7 @@ nav,
 .socials {
   align-items: center;
   flex-flow: row nowrap;
-  margin: 0 0 20px;
+  margin: 0 0 24px;
   width: $nav-social-width;
 }
 
@@ -73,7 +72,6 @@ nav,
       color: inherit;
       content: '/';
       display: flex;
-      font-size: $nav-font-size;
       padding-left: $nav-link-divide-padding;
     }
   }
@@ -83,14 +81,14 @@ nav,
       color: $nav-link-color;
 
       &:hover {
-        box-shadow: 0 -3px 0 darken($nav-link-color, 5%) inset;
+        background-color: lighten($nav-link-color, 5%);
       }
     }
   }
 }
 
 .current {
-  padding: 0 10px;
+  padding: 0 12px;
 
   a {
     box-sizing: border-box;
@@ -116,9 +114,12 @@ nav,
 
 .topics > li > a {
   font-family: $ubuntu;
-  font-size: $nav-font-size;
   line-height: $nav-link-line-height;
-  padding: 0 $nav-link-divide-padding 5px;
+  padding: 0 $nav-link-divide-padding 6px;
+
+  &:hover {
+    color: $white;
+  }
 }
 
 

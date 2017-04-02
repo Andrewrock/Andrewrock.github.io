@@ -1,5 +1,5 @@
-$post-separator: 5px;
-$homepage-padding: 0 20px;
+$post-separator: 12px;
+$homepage-padding: 24px;
 
 .home-posts {
   padding: $homepage-padding;
@@ -9,12 +9,9 @@ $homepage-padding: 0 20px;
   display: flex;
   flex: 0 0 50%;
   padding: 0 $post-separator 0 0;
-}
 
-
-.post {
-  &:nth-child(2n) {
-    padding-left: $post-separator;
+  &:nth-of-type(2n) {
+    padding-left: 0;
     padding-right: 0;
   }
 }

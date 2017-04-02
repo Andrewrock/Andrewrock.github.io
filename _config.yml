@@ -9,7 +9,7 @@ data_dir: ./_data
 # Handling Reading
 safe:         false
 include:      [".htaccess"]
-exclude:      []
+exclude: ['node_modules']
 keep_files:   [".git", ".svn"]
 encoding:     "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
@@ -22,7 +22,7 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems:      [jekyll-paginate, octopress-autoprefixer]
+gems: [jekyll-paginate, octopress-autoprefixer, octopress-paginate]
 
 # Conversion
 markdown:    kramdown
@@ -37,9 +37,10 @@ host:    127.0.0.0
 baseurl: "" # does not include hostname
 
 # Outputting
-permalink:     /:title.html
-paginate: 10
-paginate_path: /page:num
+permalink:  /:title.html
+paginate: 6
+per_page: 1
+paginate_path: /posts/page:num/
 timezone:      null
 
 quiet:    false
@@ -57,3 +58,7 @@ include: ['_pages']
 exclude:
   - Gemfile
   - Gemfile.lock
+
+sass:
+  style: :compressed
+  sass_dir: _sass

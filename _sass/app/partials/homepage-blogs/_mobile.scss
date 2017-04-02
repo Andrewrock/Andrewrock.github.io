@@ -1,18 +1,17 @@
 $homepage-max-width: 900px;
-$homepage-padding: 0 20px;
+$homepage-padding: 0 24px;
 $post-separator: 5px;
-$post-padding: 20px;
+$post-padding: 24px;
 $post-icon-height: 50px;
+$post-num: 20;
 
 .home-posts,
 .post-wrapper,
+.post-container,
 .post,
 .post-body,
 .post-content,
-.post-icon,
-.post-footer,
-.post-details,
-.tag-details {
+.post-icon {
   box-sizing: border-box;
   display: flex;
 }
@@ -25,21 +24,10 @@ $post-icon-height: 50px;
   width: $width;
 }
 
-.post-details,
-.tag-details {
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.svg-wrapper,
-.tag-wrapper {
-  align-items: stretch;
-}
-
 .home-posts {
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin: 0 auto;
+  margin: 24px auto;
   max-width: $homepage-max-width;
 }
 
@@ -56,27 +44,18 @@ $post-icon-height: 50px;
 }
 
 .post-container {
-  box-sizing: border-box;
-  display: flex;
   flex: 0 0 $width;
-  margin-bottom: 24px;
+  margin-bottom: $post-padding;
 
-  &:nth-of-type(odd) {
+  &:nth-of-type(2n) {
     .post {
-      background-color: lighten($nav-link-color, 2%);
+      background-color: lighten($pink, 10%);
     }
   }
-
-  &:nth-child(4n) {
-    .post {
-      background-color: darken($nav-link-color, 2%);
-    }
-  }
-
 }
 
 .post {
-  background-color: darken($nav-link-color, 2%);
+  background-color: lighten($nav-link-color, 10%);
   flex: 1;
   justify-content: center;
 
@@ -86,7 +65,7 @@ $post-icon-height: 50px;
 }
 
 .content-title {
-  margin-bottom: 20px;
+  margin-bottom: $post-padding;
   position: relative;
 
   &::after {
@@ -94,7 +73,7 @@ $post-icon-height: 50px;
     content: '';
     display: block;
     height: 2px;
-    margin: 20px auto 0;
+    margin: $post-padding auto 0;
     width: 60px;
   }
 }
@@ -118,7 +97,7 @@ $post-icon-height: 50px;
   flex-flow: row nowrap;
   height: $post-icon-height;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: $post-padding;
 
   svg {
     fill: $white;

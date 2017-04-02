@@ -1,10 +1,10 @@
 $cv-line-width: 1px;
-$cv-position-top: 10px;
+$cv-position-top: 4px;
 $cv-position-left: -4.5px;
-$cv-padding: 0 24px;
+$cv-padding: 0 12px;
 $cv-max-width: 640px;
 $cv-dot-size: 10px;
-$cv-dot-position-top: 10px;
+$cv-dot-position-top: 4px;
 $cv-dot-position-left: -9px;
 $job-margin-bottom: 24px;
 $job-padding: 15px;
@@ -125,7 +125,6 @@ $role-dot-top: 2px;
 
   &::before {
     height: $cv-dot-size / 2;
-    left: $cv-dot-size / 2;
     top: $cv-dot-size / 2;
     width: $cv-dot-size / 2;
   }

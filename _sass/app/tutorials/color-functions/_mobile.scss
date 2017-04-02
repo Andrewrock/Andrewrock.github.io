@@ -80,18 +80,17 @@ $list-item-height: 120px;
 .tint-shade > li {
   $tint-num: 5;
   $shade-num: 10;
+  flex: 1 0 20%;
 
   @for $i from 1 through $tint-num {
     &:nth-of-type(#{$i}) {
       background: $image-one tint($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
-      flex: 1 0 20%;
     }
   }
 
   @for $i from 6 through $shade-num {
     &:nth-of-type(#{$i}) {
       background: $image-one darken($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
-      flex: 1 0 20%;
     }
   }
 }

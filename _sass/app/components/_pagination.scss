@@ -1,0 +1,89 @@
+.pagination-wrap,
+.pagination,
+.pagination> li {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.pagination-wrap {
+  box-sizing: border-box;
+  justify-content: center;
+  margin: 24px 0;
+  padding: 0 24px;
+  width: $width;
+}
+
+.pagination {
+  justify-content: space-between;
+  list-style-type: none;
+  max-width: 280px;
+  padding: 0;
+}
+
+.pagination > li {
+  align-items: baseline;
+  flex: 1 0 auto;
+  justify-content: center;
+  margin-left: 6px;
+  text-align: center;
+
+  &.active {
+    background-color: $nav-link-color;
+    color: $white;
+    padding: 0;
+
+    a {
+      color: $white;
+    }
+  }
+
+  &:not(.previous):not(.next) {
+
+    &::before,
+    &::after {
+      color: inherit;
+      content: '-';
+      display: flex;
+      padding: 0 6px;
+    }
+
+    &:hover {
+      background-color: lighten($nav-link-color, 5%);
+
+      &::before,
+      &::after {
+        background-color: lighten($nav-link-color, 5%);
+        color: $white;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+.pagination > li > a {
+  color: $nav-link-color;
+  font-family: $ubuntu;
+  line-height: 2;
+  padding: 6px;
+}
+
+.previous,
+.next {
+  flex: 0 1 auto;
+  justify-content: flex-start;
+  margin-left: 0;
+  padding: 0;
+
+  &::before,
+  &::after {
+    content: none;
+  }
+
+  &:hover {
+    background: $transparent;
+    color: $nav-link-color;
+  }
+}

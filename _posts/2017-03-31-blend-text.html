@@ -1,0 +1,358 @@
+---
+layout: tutorial
+title: 'mix-blend modes'
+date: 2017-03-31
+definition: The <span class="code-font">mix-blend-mode</span> CSS 
+            property describes how an element's content should blend 
+            with the content of the element's direct parent and the 
+            element's background.
+definition-link: 'https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode'
+definition-source: 'MDN'
+lead_text: Exploring <span class="code-font">blend-mode</span>
+padding: no
+---
+
+<div class="tutorial-body">
+<p class="tutorial-paragraph"> We have previously looked at 
+<span class="code-font">background-blend-mode</span> you can find that
+<span class="underline-definition">
+<a href="background-blend-modes.html">here</a></span>. I discuss the 
+different <span class="code-font">background-blend-modes</span>, when
+, how and why to use them. If you have no experience with blending I
+recommend you checkout that post. This tutorial will focus on
+<span class="code-font">mix-blend-mode</span>, however some examples
+will feature both <span class="code-font">background-blend-modes</span>
+and <span class="code-font">mix-blend-modes</span>. Let's jump into some
+examples first and look at the code after.
+</p>
+
+<div class="blend-container">
+ <div class="blend-item mcgregor">
+<h1><span>I</span> <span>think</span>
+<span>sharp</span> <span>and</span> <span>I</span>
+<span>dream</span> <span>big</span></h1>
+</div>
+</div>
+
+<div class="blend-container">
+ <div class="blend-item bukowski">
+   <h1><span>Find</span> <span>what</span> <span>you</span>
+   <span>love</span> <span>and</span> <span>let</span> <span>it</span>
+   <span>kill</span><span>you</span></h1>
+  </div>
+</div>
+
+<div class="blend-container">
+ <div class="blend-item fergie">
+  <h1>It's getting tickly now <span>squeaky-bum</span> time I call it</h1>
+ </div>
+</div>
+
+<div class="tutorial-body">
+<p class="tutorial-paragraph"> As you can see adding
+<span class="code-font">mix-blend-mode</span> can change how text is
+presented, couple this with a 
+<span class="code-font">background-blend-mode</span> and you can create
+some unique designs.
+</p>
+
+<p class="tutorial-paragraph">To begin create a 
+<span class="code-font">div</span> to serve as a container for our 
+content, a <span class="code-font">div</span> to hold our 
+<span class="code-font">background-image</span> and heading to apply the 
+<span class="code-font">mix-blend-mode</span>. Lets look at how to 
+build the Charles Bukowski quote using both a
+<span class="code-font">background-blend-mode</span> and
+<span class="code-font">mix-blend-mode</span>.
+</p>
+
+<p class="tutorial-paragraph">The <span class="code-font">html</span> is
+quite simple.
+</p>
+
+<div class="code-container">
+<pre class="code code-html"><code>&lt;div class="blend-container"&gt;
+ &lt;div class="blend-item bukowski"&gt;
+   &lt;h1&gt;&lt;span&gt;find&lt;/span&gt;&lt;span&gt;what&lt;/span&gt;
+    &lt;span&gt;you&lt;/span&gt;&lt;span&gt;love&lt;/span&gt;
+    &lt;span&gt;and&lt;/span&gt;&lt;span&gt;let&lt;/span&gt;
+    &lt;span&gt;kill&lt;/span&gt;&lt;span&gt;you&lt;/span&gt;
+   &lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+<p class="tutorial-paragraph">I have added a class to the
+<span class="code-font">blend-item</span>, this class
+<span class="code-font">bukowski</span> will add the 
+<span class="code-font">background-image</span>,
+<span class="code-font">background-color</span> and 
+<span class="code-font">background-blend-mode</span>
+</p>
+
+<p class="tutorial-paragraph">You may have noticed that every word
+is wrapped in a
+<span class="code-font">span</span>. This will allow each one to be
+individually targeted when applying different properties such as
+colour, fonts etc.
+</p>
+
+<p class="tutorial-paragraph"> First start by defining our images, 
+colours and general styling.</p>
+
+<div class="code-container">
+<pre class="code code-css"><code>$image-two: url('../img/bukowski.jpg');
+$colors: #556270, #4ECDC4, #C7F464, #FF6B6B, #C44D58, #6534ff;
+$purple: #6534ff;
+$width: 100%;
+</code></pre>
+</div>
+
+<p class="tutorial-paragraph"> Next, style the container and the item
+we want to use. I have called these,
+<span class="code-font">blend-container</span> and 
+<span class="code-font">blend-item</span>.
+</p>
+
+<div class="code-container">
+<pre class="code code-css"><code>$image-two: url('../img/bukowski.jpg');
+$colors: #556270, #4ECDC4, #C7F464, #FF6B6B, #C44D58, #6534ff;
+$purple: #6534ff;
+$width: 100%;
+
+.blend-container,
+.blend-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  width: $width;
+}
+
+.blend-item {
+  align-items: center;
+  background-size: cover;
+  box-sizing: border-box;
+  justify-content: center;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: .5;
+    margin: 0;
+    padding: 0 24px;
+    text-align: center;
+    @media screen and (max-width: 400px) {
+      font-size: 4.5rem;
+      line-height: .7;
+    }
+  }
+}
+</code></pre>
+</div>
+
+<p class="tutorial-paragraph">Create an array of colours. We will use
+this to style each <span class="code-font">span</span> tag.
+</p>
+
+<div class="code-container">
+<pre class="code code-css"><code>$colors: #556270, #4ECDC4, #C7F464, #FF6B6B, #C44D58, #6534ff;
+</code></pre>
+</div>
+
+<p class="tutorial-paragraph">To add our desired effects, we have set the
+<span class="code-font">background-blend-mode</span> to 
+<span class="code-font">darken</span>. If you need to catchup on the 
+different <span class="code-font">blend-modes</span> you can 
+<span class="underline-definition">
+<a href="background-blend-modes.html">here</a></span>. 
+</p>
+
+<div class="blend-container">
+ <div class="blend-item bukowski"></div>
+</div>
+
+<div class="code-container">
+<pre class="code code-css"><code>.bukowski {
+ background: $image-two $purple center center / cover no-repeat;
+ background-blend-mode: darken;
+
+  h1 {
+   mix-blend-mode: exclusion;
+  }
+
+  span {
+    mix-blend-mode: color;
+    @for $i from 1 through length($colors) {
+      &:nth-child(#{length($colors)}n+#{$i}) {
+        color: nth($colors, $i);
+      }
+    }
+  }
+}</code></pre>
+</div>
+
+<p class="tutorial-paragraph"> Styling the text, we set the heading to
+<span class="code-font">exclusion</span> and each word in our heading
+to <span class="code-font">color</span>.
+</p>
+
+<p class="tutorial-paragraph">Using the array we already created, we write
+a loop that will add a new colour for each 
+<span class="code">span</span>. After each iteration the loop will
+begin again at the start. To avoid duplicate colours, you can add more
+colours to our array.
+</p>
+
+<div class="blend-container">
+ <div class="blend-item bukowski">
+   <h1><span>Find</span> <span>what</span> <span>you</span>
+   <span>love</span> <span>and</span> <span>let</span> <span>it</span>
+   <span>kill</span><span>you</span></h1>
+  </div>
+</div>
+
+<p class="tutorial-paragraph">As you can see the 
+<span class="code-font">mix-blend-mode</span> is pretty powerful. The use
+of a <span class="code-font">background-image</span> is optional. As you
+see below the <span class="code-font">mix-blend-mode</span> will style 
+work.</p>
+
+<div class="blend-container">
+ <div class="blend-item bukowski no-image">
+   <h1><span>Find</span> <span>what</span> <span>you</span>
+   <span>love</span> <span>and</span> <span>let</span> <span>it</span>
+   <span>kill</span><span>you</span></h1>
+  </div>
+</div>
+
+<p class="tutorial-paragraph">Taking this one step further, Consider the
+following example, a technique that is often used in graphic design and
+digital media.
+</p>
+
+<div class="blend-container">
+ <div class="blend-item ireland">
+   <h1>Visit Ireland</h1>
+ </div>
+</div>
+
+<p class="tutorial-paragraph">Here we have and image and a 
+ heading.
+</p>
+
+<p class="tutorial-paragraph">The approach to recreate this is the same
+as the Bukowski example. We will need a container, a div and a heading.
+The only difference here is that we give the heading a 
+<span class="code-font">background-color</span>
+and a <span class="code-font">color</span>.
+</p>
+
+<div class="code-container">
+<pre class="code code-css"><code>$image-four: url('../img/ireland.jpg');
+$background-white: #f4f3f1;
+$irish-green: #009A49;
+$irish-orange: #FF7900;
+
+.ireland {
+  align-items: center;
+  background: $image-four center center / cover no-repeat;
+
+  h1 {
+   background-color: $background-white;
+   color: $irish-green;
+   line-height: 1.2;
+   mix-blend-mode: hard-light;
+  }
+}</code></pre>
+</div>
+
+
+<p class="tutorial-paragraph">Removing the image we are left with</p>
+
+<div class="blend-container small">
+ <div class="blend-item ireland no-image">
+   <h1>Visit Ireland</h1>
+ </div>
+</div>
+
+<p class="tutorial-paragraph">We then simply place the heading over our
+image to generate the effect.
+</p>
+
+<div class="blend-container">
+ <div class="blend-item ireland">
+   <h1>Visit Ireland</h1>
+ </div>
+</div>
+
+<p class="tutorial-paragraph">So far we focused on combining
+<span class="code-font">mix-blend-mode</span> and
+<span class="code-font">background-blend-mode</span>. We can now
+focus on the <span class="code-font">mix-blend-mode</span> alone.
+</p>
+
+
+<p class ="tutorial-paragraph">Let's use the alphabet to understand
+<span class="code-font">mix-blend-mode</span>.
+</p>
+
+<div class="code-container">
+<pre class="code code-css"><code>$letter-num: 26;
+$colors: #556270, #4ECDC4, #C7F464, #FF6B6B, #C44D58, #6534ff;
+
+.text-blend {
+ font-size: 7rem;
+ font-weight: 700;
+ letter-spacing: -1.2rem;
+
+   @for $i from 1 through length($colors) {
+     span {
+       &:nth-child(#{length($colors)}n+#{$i}) {
+         color: nth($colors, $i)
+       }
+     }
+   }
+ }</code></pre>
+</div>
+
+<div class="blend-container small">
+ <div class="blend-item">
+<h1 class="text-blend unset"><span>a</span><span>b</span><span>c</span>
+<span>d</span><span>e</span><span>f</span><span>g</span><span>h</span>
+<span>i</span><span>j</span><span>k</span><span>l</span><span>m</span>
+<span>n</span><span>o</span><span>p</span><span>q</span><span>r</span>
+<span>s</span><span>t</span><span>u</span><span>v</span><span>w</span>
+<span>x</span><span>y</span><span>z</span></h1>
+</div>
+</div>
+
+<p class="tutorial-paragraph">Adding a 
+<span class="code-font">mix-blend-mode</span> we get the following
+</p>
+
+<div class="blend-container small">
+ <div class="blend-item">
+<h1 class="text-blend"><span>a</span><span>b</span><span>c</span>
+<span>d</span><span>e</span><span>f</span><span>g</span><span>h</span>
+<span>i</span><span>j</span><span>k</span><span>l</span><span>m</span>
+<span>n</span><span>o</span><span>p</span><span>q</span><span>r</span>
+<span>s</span><span>t</span><span>u</span><span>v</span><span>w</span>
+<span>x</span><span>y</span><span>z</span></h1>
+</div>
+</div>
+
+<p class="tutorial-paragraph"> We can go one step further and animate
+the <span class="code-font">mix-blend-mode</span>
+</p>
+
+
+<div class="blend-container small">
+ <div class="blend-item">
+<h1 class="text-blend animate"><span>a</span><span>b</span><span>c</span>
+<span>d</span><span>e</span><span>f</span><span>g</span><span>h</span>
+<span>i</span><span>j</span><span>k</span><span>l</span><span>m</span>
+<span>n</span><span>o</span><span>p</span><span>q</span><span>r</span>
+<span>s</span><span>t</span><span>u</span><span>v</span><span>w</span>
+<span>x</span><span>y</span><span>z</span></h1>
+</div>
+</div>

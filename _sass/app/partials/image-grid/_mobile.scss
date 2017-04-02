@@ -8,14 +8,13 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
   flex-flow: row wrap;
   flex-grow: 1;
   justify-content: space-around;
-  margin: 0 auto 30px;
+  margin: 0 auto 24px;
   max-width: $insta-wrapper-max-width;
   min-height: $insta-wrapper-min-height;
   position: relative;
   width: $width;
 }
 
-@for $i from 1 through 10 {
   .image-item {
     animation: slide-item .3s ease forwards;
     box-sizing: border-box;
@@ -23,15 +22,15 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
     transform: translateY(250px);
     visibility: hidden;
     width: $width;
-
+    @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
       animation-delay: (#{$i * .1s});
     }
   }
+}
 
-  .insta-page {
-    padding: 10px;
-  }
+.insta-page {
+  padding: 6px;
 }
 
 .image {

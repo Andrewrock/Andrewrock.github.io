@@ -2,14 +2,14 @@ $image-max-height: 295px;
 $insta-wrapper-max-width: 965px;
 $backdrop1: #667eea;
 $backdrop2: #764ba2;
-$insta-quote-padding: 10px 40px;
-$author-padding: 0 40px;
+$insta-quote-padding: 0 24px;
+$author-padding: 0 24px;
 $quote-width-height: 20px;
 $loader-size: 40px;
 $loader-animation-duration: 1.15s;
 $insta-wrapper-min-height: 100px;
 $insta-button-width: 130px;
-$insta-button-padding: 10px;
+$insta-button-padding: 12px;
 $transition: all .17s cubic-bezier(.4, 0, 1, 1);
 
 .insta-quote,
@@ -24,7 +24,7 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
   flex-flow: row wrap;
   margin: 0 auto 30px;
   max-width: $insta-wrapper-max-width;
-  padding: 0 $insta-quote-padding;
+  padding: $insta-quote-padding;
 }
 
 .quote-wrapper,
@@ -45,7 +45,6 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
 }
 
 .quote-wrapper {
-  padding: $insta-quote-padding;
 
   span {
     font-family: $lora;
@@ -66,7 +65,6 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
     flex-shrink: 3;
     font-size: $h5;
     order: 2;
-    padding: 0 5px;
     text-align: left;
   }
 }
@@ -100,7 +98,7 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
 .insta-caption {
   display: none;
   flex-flow: row wrap;
-  padding: 0 30px;
+  padding: 0 24px;
   text-align: left;
 
   p {
@@ -117,7 +115,7 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
   cursor: pointer;
   display: block;
   font-family: $ubuntu;
-  margin: 0 auto 30px;
+  margin: 0 auto 24px;
   outline: 0;
   padding: $insta-button-padding;
   position: relative;

@@ -33,7 +33,7 @@
         </a>
       </li>
       <li class="social">
-        <a href="">
+        <a href="https://ie.linkedin.com/in/rockandrew">
           <svg viewBox="0 0 512 512">
             <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/>
           </svg>
@@ -75,18 +75,16 @@
 
 
 <div class="tutorial-container no-padding">
-
   
-
     <div class="blurb-wrapper">
       <h2 class="blurb"> Instafeed Tutorial </h2>
       <h5 class="sub-blurb"> Display your instagram photos on your site. </h5>
     </div>
-
     
-
-
-      <!--this is closed in tutorial.html -->
+    
+    <script src="/js/insta-tutorial.js"></script>
+    
+    <!--this is closed in tutorial.html -->
 
   <div class="tutorial-content">
     <div class="tutorial-body">
@@ -97,40 +95,40 @@
     on your website.
   </p>
   <p class="tutorial-paragraph">
-    Before we begin it is important to mention that this tutorial is not
-    exclusive to Instagram, for the purpose of this demo I will be using
-    Instagram. If you are more interested in the
-    <span class="code-font">SCSS</span> then click
-    <span class="underline-definition"><a href="https://codepen.io/andrewrock/pen/MpVgpw">Here</a></span>
+    If you are more interested in the
+    <span class="code-font">Sass</span> then click
+    <span class="underline-definition">
+    <a href="https://codepen.io/andrewrock/pen/MpVgpw">Here</a></span>
   </p>
+  <h2 class="tutorial-section-heading"> Getting started </h2>
   <p class="tutorial-paragraph">
-    Lets get started, to follow this demo you will need the following
+    To follow this demo you will need the following
     <span class="underline-definition"><a href="http://instafeedjs.com/"> Instafeed.js </a></span> 
     and
     <span class="underline-definition"><a href="https://www.instagram.com/developer/"> Instagram developer access </a></span>
   </p>
-  <h2 class="tutorial-section-heading"> Getting started </h2>
   <p class="tutorial-paragraph">Once you have downloaded
-    <span class="underline-definition"><a href="http://instafeedjs.com/"> Instafeed.js </a>
-    </span> place it your javascript directory and reference it
+    <span class="code-font">instafeed</span> place it your javascript 
+    directory and reference it.
   </p>
   <div class="code-container">
     <pre class="code code-html"><code class="no-padding">&lt;script type="text/javascript" src="js/instafeed.min.js"&gt;</code></pre>
   </div>
-  <p class="tutorial-paragraph"> Then we add it to our html </p>
+  <p class="tutorial-paragraph"> Then add it to the 
+    <span class="code-font">html</span>
+  </p>
   <div class="code-container">
     <pre class="code code-html"><code class="no-padding">&lt;div id="instafeed-tutorial"&gt;&lt;/div&gt;</code></pre>
   </div>
   <h2 class="tutorial-section-heading"> Instagram Developer </h2>
   <p class="tutorial-paragraph">
-    Before we can access our photos we must first register our 
-    application with Instagram. In terms of API's this one is relatively
-    simple to set up. 
+    Before you can access your photos you must first register your 
+    application with Instagram.
   </p>
   <p class="tutorial-paragraph">
-    The following steps are to set up a developer account with Instagram,
-    without developer access we cannot fetch photos, once we have access
-    we can configure our options, but first to gain access.
+    The following steps are to set up a developer account.
+    Without developer access Instagram does not permit the retrieval of 
+    images.
   </p>
   <ul class="simple-list">
     <li>
@@ -195,8 +193,8 @@
         </td>
         <td>
           <p>For the purpose of this demo your sites URL will suffice
-            nobody will be logging into our application as we are running 
-            in Sandbox mode.
+            nobody will be logging into your application as we are running 
+            in Sandbox mode (see api docs).
           </p>
         </td>
       </tr>
@@ -230,56 +228,55 @@
   </p>
   <div class="definition-wrapper">
     <p class="tutorial-paragraph">
-      Before we can any further, we need to get our 
-      <span class="solid-definition">USER-ID</span>,
-      The easiest way to do this is to click
+      Next step is to get a 
+      <span class="code-font">USER-ID</span>, click
       <span class="underline-definition">
       <a href="https://smashballoon.com/instagram-feed/find-instagram-user-id/">
       here
       </a>
-      </span>
-      You want to enter the username, the one you use to sign in.
-      Once you have your own ID keep it handy as you will need it soon.
+      </span>. You want to enter the username, the one you use to sign 
+      in. Once you have your own ID keep it handy as you will need it soon.
     </p>
-    <p class="tutorial-paragraph"> To get your ClientID, paste the following
-      into your browser 
+    <p class="tutorial-paragraph"> To get your 
+      <span class="code-font">CLIENT-ID</span>, paste the following into 
+      your browser 
     </p>
     <div class="code-container">
-      <pre class="code code-html"><code>https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&amp;redirect_uri=REDIRECT-URI&amp;response_type=token</code></pre>
+      <pre class="code code-html"><code>https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token</code></pre>
     </div>
     <p class="tutorial-paragraph">Now replace
-      <span class="solid-definition">CLIENT-ID</span> with the client ID
-      generated.
+      <span class="code-font">CLIENT-ID</span> with the
+      <span class="code-font">CLIENT-ID</span> generated.
     </p>
     <p class="tutorial-paragraph">
-      Now replace <span class="solid-definition">REDIRECT-URI</span>
-      with the redirect URI that you included when setting up.
+      Now replace <span class="code-font">REDIRECT-URI</span>
+      with the <span class="code-font">REDIRECT-URI</span> that you 
+      included when setting up.
     </p>
     <p class="tutorial-paragraph"> Load the URL.</p>
-    <p class="tutorial-paragraph"> Once you have loaded the URL, your access
-      token should be in the URL
+    <p class="tutorial-paragraph"> Once you have loaded the URL, your 
+      <span class="code-font">ACCESS-TOKEN</span> should be in the URL
     </p>
     <div class="code-container">
       <pre class="code code-html"><code>'http://your-redirect-uri#access_token=ACCESS-TOKEN'</code></pre>
     </div>
     <p class="tutorial-paragraph"> Copy the 
-      <span class="solid-definition">ACCESS-TOKEN</span>
+      <span class="code-font">ACCESS-TOKEN</span>
     </p>
   </div>
   <h2 class="tutorial-section-heading"> Instafeed Options </h2>
-  <p class="tutorial-paragraph"> We now have everyhting that is needed to
-    use <span class="code-font">instafeed</span>, now lets briefly
-    explore the API options,
-    For detailed information about the API head over to the
-    <span class="underline-definition">
-    <a href="https://github.com/stevenschobert/instafeed.js"> Github page </a>
+  <p class="tutorial-paragraph"> You now have everything needed to use 
+    the <span class="code-font">instafeed</span>, now let's briefly
+    explore the API options, For detailed information about the API head 
+    over to the <span class="underline-definition">
+    <a href="https://github.com/stevenschobert/instafeed.js">Github page</a>
     </span>.
   </p>
   <div class="definition-wrapper">
     <table class="definition-list">
       <tr>
         <td>
-          <p> Resolution: </p>
+          <p>Resolution:</p>
         </td>
         <td>
           <p class="tutorial-paragraph"> Three options:</p>
@@ -298,22 +295,22 @@
       </tr>
       <tr>
         <td>
-          <p> Target </p>
+          <p>Target</p>
         </td>
         <td>
           <p class="tutorial-paragraph">
-            Either the ID name or the DOM  element itself where you want
+            Either the ID name or the DOM element itself where you want
             to add the images to.
           </p>
         </td>
       </tr>
       <tr>
         <td>
-          <p> Template: </p>
+          <p>Template:</p>
         </td>
         <td>
           <p class="tutorial-paragraph">Allows us to use a custom 
-            template to use for images, I will explain this further as we 
+            template to use for images, we 
             will be using the template to create our gallery
           </p>
         </td>
@@ -327,15 +324,15 @@
           <ul class="simple-list">
             <li> popular (default) - Images from the popular page </li>
             <li> tagged - Images with a specific tag. Use 
-              <span class="solid-definition"> tagName</span> 
+              <span class="code-font"> tagName</span> 
               to specify the tag.
             </li>
             <li> location - Images from a location. Use
-              <span class="solid-definition"> locationId</span> 
+              <span class="code-font"> locationId</span> 
               to specify the location 
             </li>
             <li> user - Images from a user. 
-              <span class="solid-definition"> Use userId</span>
+              <span class="code-font"> Use userId</span>
               to specify the user. 
             </li>
           </ul>
@@ -343,7 +340,7 @@
       </tr>
       <tr>
         <td>
-          <p> SortBy: </p>
+          <p>SortBy:</p>
         </td>
         <td>
           <p class="tutorial-paragraph"> There are a number of options here </p>
@@ -360,9 +357,7 @@
       </tr>
       <tr>
         <td>
-          <p>
-            Links:
-          </p>
+          <p>Links:</p>
         </td>
         <td>
           <p class="tutorial-paragraph">Wrap the image in a link.</p>
@@ -370,15 +365,15 @@
       </tr>
       <tr>
         <td>
-          <p> Limit: </p>
+          <p>Limit:</p>
         </td>
         <td>
           <p class="tutorial-paragraph">
-            By default our instagram photos will run in sandbox mode,
-            This means tht we are capped at a maximum of twenty images,
-            by adding a limit that is less than the maximum twenty
-            we can paginate through our images and take advantage of lazy
-            loading.
+            By default instagram photos will run in sandbox mode,
+            This means that image retrieval is capped at a maximum of 
+            twenty images,by adding a limit that is less than the 
+            maximum twenty we can paginate through our images and reduce
+            the initial page load.
           </p>
         </td>
       </tr>
@@ -386,7 +381,7 @@
   </div>
   <h2 class="tutorial-section-heading"> Advanced Options </h2>
   <p class="tutorial-paragraph"> 
-    There are a number of advanced options such as what to do before an 
+    There are a number of advanced options such as what to do before and 
     after images are returned.
   </p>
   <div class="definition-wrapper">
@@ -476,10 +471,11 @@
     
    tutorialFeed.run();
    
-  });</code></pre>
+});</code></pre>
   </div>
   <p class="tutorial-paragraph">
-    We briefly introduced the advanced instafeed options, now lets explore
+    Having briefly introduced the advanced 
+    <span class="code-font">instafeed</span> options, now let's explore
     how to use the <span class="solid-definition">Filter</span>
     and the <span class="solid-definition">After</span> functions.
   </p>
@@ -488,7 +484,7 @@
     function to only return images.
   </p>
   <div class="code-container">
-    <pre class="code code-css"><code>document.addEventListener("DOMContentLoaded", function() {
+<pre class="code code-css"><code>document.addEventListener("DOMContentLoaded", function() {
 
   var tutorialFeed = new Instafeed ({
   get: 'user',
@@ -528,12 +524,12 @@
     are on their way.
   </p>
   <p class="tutorial-paragraph">
-    We can check to see if any more images are available, if images are
-    available we show the load more button, if no images are 
-    available we hide the button.
+    You can check to see if any more images are available, if images are
+    available show the load more button, if no images are 
+    available hide the button.
   </p>
   <div class="code-container">
-    <pre class="code code-css"><code>document.addEventListener("DOMContentLoaded", function() {
+<pre class="code code-css"><code>document.addEventListener("DOMContentLoaded", function() {
  
  var tutorialFeed = new Instafeed ({
  get: 'user',
@@ -586,14 +582,13 @@ tutorialFeed.run();
   <button id="insta-btn" class="insta-btn">See more</button>
 </div>
 <div class="tutorial-body">
-  <p class="tutorial-paragraph">We now have our instagram photos showing
-    on our site. 
+  <p class="tutorial-paragraph">You now have your instagram photos 
+    showing on your site. 
   </p>
-  <p class="tutorial-paragraph"> As you can see will return our images, if 
-    you hover the image you can see that the caption is also returned, We 
-    also are allowed us to return more than the caption, we can return likes,
-    comments, post type etc.
-    See  <span class="underline-definition">
+  <p class="tutorial-paragraph"> If you hover the image you can see that
+    the caption is also returned, <span class="code-font">instafeed</span>
+    allows developers to return more than the caption, you can return likes,
+    comments, post type etc. See  <span class="underline-definition">
     <a href="https://github.com/stevenschobert/instafeed.js/issues/21">
     here 
     </a></span> for a full list of returnable properties.
@@ -601,90 +596,84 @@ tutorialFeed.run();
   <h2 class="tutorial-section-heading"> Styling Images </h2>
   <p class="tutorial-paragraph"> We are going to use 
     <span class="code-font">flexbox</span> to display our images, combine
-    this with SCSS and we can style our images quickly, we can also add 
-    animations and transition delays using the native
-    <span class="code-font">SCSS</span> forLoops.
+    this with <span class="code-font">Sass</span> and we can style our 
+    images quickly, we can also add animations and transition delays 
+    using <span class="code-font">Sass</span> loops.
   </p>
   <p class="tutorial-paragraph">
-    Using flexbox we set the image-wrapper to display as a row that will
+    Using flexbox set the image-wrapper to display as a row that will
     wrap when there is no more space left.
   </p>
   <p class="tutorial-paragraph">
-    Don't let the <span class="code-font">SCSS</span> put you off, 
-    it's really quite simple, we already
-    set a limit of ten images so we set the loop to run for every image.
-    We put the image-item in the loop.
-  </p>
-  <p class="tutorial-paragraph">
-    To keep our images fluid, we use the flex property. I could write a 
+    To keep the images fluid, use the flex property. I could write a 
     whole post on <span class="code-font">flexbox</span>, but for now 
     I will just briefly explain.
   </p>
   <div class="code-container">
-    <pre class="code code-css"><code class="no-padding">flex: 1 0 33%;</code></pre>
+<pre class="code code-css"><code class="no-padding">flex: 1 0 33%;</code></pre>
   </div>
   <p class="tutorial-paragraph">
-    What does it tell all image items to grow and shrink at the same rate
-    while maintaining 33% of the space available
+    Each image will now grow and shrink at the same rate while 
+    maintaining 33% of the space available
   </p>
   <p class="tutorial-paragraph">
-    We use the loop to add a new animation delay to each item adding 1s
-    second for each item. Setting each item to be invisible prior to the
-    animation running.
+    Using a <span class="code-font">loop</span>, add a new animation 
+    delay to each item. I chose to add 1s delay between each item. 
+    Setting each item to be invisible prior to the animation running.
   </p>
   <div class="code-container">
-    <pre class="code code-css"><code>animation-delay: (#{$i * .1s});</code></pre>
+<pre class="code code-css"><code>animation-delay: (#{$i * .1s});</code></pre>
   </div>
-  <div class="code-container">
-    <pre class="code code-css"><code>$insta-wrapper-max-width: 965px;
+  <div class='code-container'>
+<pre class='code code-css'><code>$insta-wrapper-max-width: 965px;
 $insta-wrapper-min-height: 100px;
 $transition: all .17s cubic-bezier(.4, 0, 1, 1);
-
+  
 .image-wrapper {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
   flex-grow: 1;
   justify-content: space-around;
-  margin: 0 auto 30px;
+  margin: 0 auto 24px;
   max-width: $insta-wrapper-max-width;
   min-height: $insta-wrapper-min-height;
   position: relative;
   width: $width;
 }
-
-@for $i from 1 through 10 {
-  .image-item {
-    animation: slide-item .3s ease forwards;
-    box-sizing: border-box;
-    flex: 1 0 33%;
-    transform: translateY(250px);
-    visibility: hidden;
-    width: $width;
-    &amp;:nth-child(#{$i}) {
-     animation-delay: (#{$i * .1s});
-    }
-  }
-  .insta-page { 
-   padding: 10px; 
-  }
+  
+.image-item {
+  animation: slide-item .3s ease forwards;
+  box-sizing: border-box;
+  flex: 1 0 33%;
+  transform: translateY(250px);
+  visibility: hidden;
+  width: $width;
+  @for $i from 1 through 10 {
+   &:nth-child(#{$i}) {
+    animation-delay: (#{$i * .1s});
+   }
+ }
 }
 
-  .image {
-   display: block;
-   position: relative;
-   transition: $transition;
-   width: $width;
-    
-   img {
-    display: block;
-    max-width: $width;
-   }
-}</code></pre>
-</div>
+.insta-page {
+  padding: 12px;
+}
+
+.image {
+ display: block;
+ position: relative;
+ transition: $transition;
+ width: $width;
   
-<p class="tutorial-paragraph"> And finally the animations </p>
-<pre class="code code-css"><code>@keyframes slide-item {
+ img {
+  display: block;
+  max-width: $width;
+ }
+}</code></pre>
+  </div>
+  <p class="tutorial-paragraph"> And finally the animations </p>
+<pre class='code code-css'><code>@keyframes slide-item {
  60% { 
  transform: translateY(-10px);
  }
@@ -695,9 +684,7 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
  }
 }</code></pre>
 </div>
-
   </div>
 </div>
 
 <script src="/js/instafeed.js"></script>
-<script src="/js/power.js"></script>
