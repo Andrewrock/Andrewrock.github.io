@@ -1,6 +1,6 @@
 ---
 layout: insta
 title: Instagram
-permalink: /Instagram/
+permalink: /instagram/
 ---
 

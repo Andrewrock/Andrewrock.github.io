@@ -1,6 +1,6 @@
 ---
 layout: cv
 title: CV
-permalink: /Cv/
+permalink: /cv/
 ---
 
