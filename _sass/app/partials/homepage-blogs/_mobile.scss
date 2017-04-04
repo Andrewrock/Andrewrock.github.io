@@ -1,4 +1,4 @@
-$homepage-max-width: 900px;
+$homepage-max-width: 75rem;
 $homepage-padding: 0 24px;
 $post-separator: 5px;
 $post-padding: 24px;
@@ -26,7 +26,7 @@ $post-num: 20;
 .home-posts {
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin: 24px auto;
+  margin: $post-padding auto;
   max-width: $homepage-max-width;
 }
 

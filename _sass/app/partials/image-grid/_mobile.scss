@@ -1,5 +1,5 @@
-$insta-wrapper-max-width: 965px;
-$insta-wrapper-min-height: 100px;
+$insta-wrapper-max-width: 984px;
+$insta-wrapper-min-height: 120px;
 $transition: all .17s cubic-bezier(.4, 0, 1, 1);
 
 .image-wrapper {
@@ -17,7 +17,7 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
   .image-item {
     animation: slide-item .3s ease forwards;
     flex: 1 0 33%;
-    transform: translateY(250px);
+    transform: translateY(240px);
     visibility: hidden;
     width: $width;
     @for $i from 1 through 10 {
@@ -45,7 +45,7 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
 
 @keyframes slide-item {
   60% {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
   }
 
   100% {
@@ -58,7 +58,7 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
 @keyframes fadeIn {
 
   0% {
-    transform: translateX(-150px);
+    transform: translateX(-156px);
   }
 
   100% {

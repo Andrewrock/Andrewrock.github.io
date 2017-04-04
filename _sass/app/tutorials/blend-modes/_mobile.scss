@@ -29,7 +29,7 @@ $image-two: url('../img/bg48.jpg');
 .box {
   background-color: lighten($nav-link-color, 5%);
   display: block;
-  height: 40px;
+  height: 48px;
   margin: $tutorial-content-margin 0;
 }
 
@@ -62,7 +62,7 @@ $image-two: url('../img/bg48.jpg');
   background: $image-one, $image-two lighten($nav-link-color, 25%) center center / cover no-repeat;
   background-blend-mode: screen, darken;
   overflow: hidden;
-  padding: 20px 0;
+  padding: 24px 0;
   width: $width;
 }
 
