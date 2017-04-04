@@ -15,7 +15,6 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
 .insta-quote,
 .quote-wrapper,
 .author-wrapper {
-  box-sizing: border-box;
   display: flex;
   width: $width;
 }

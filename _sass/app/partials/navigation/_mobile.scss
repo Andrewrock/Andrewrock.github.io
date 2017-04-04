@@ -25,7 +25,6 @@ nav,
 nav,
 .nav-wrapper,
 .topics {
-  box-sizing: border-box;
   width: $width;
 }
 
@@ -36,7 +35,6 @@ nav,
 
 .nav-wrapper {
   align-items: center;
-  box-sizing: border-box;
   flex-flow: row wrap;
   justify-content: flex-start;
   list-style: none;
@@ -91,7 +89,6 @@ nav,
   padding: 0 12px;
 
   a {
-    box-sizing: border-box;
     color: $white;
     position: relative;
     width: $width;

@@ -15,7 +15,6 @@ $colors: #556270, #4ecdc4, #c7f464, #ff6b6b, #c44dd58, #6534ff, #fc0152;
 
 .blend-container,
 .blend-item {
-  box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
   width: $width;
@@ -48,7 +47,6 @@ $colors: #556270, #4ecdc4, #c7f464, #ff6b6b, #c44dd58, #6534ff, #fc0152;
 .blend-item {
   align-items: center;
   background-size: cover;
-  box-sizing: border-box;
   justify-content: center;
 
   h1 {
@@ -58,14 +56,13 @@ $colors: #556270, #4ecdc4, #c7f464, #ff6b6b, #c44dd58, #6534ff, #fc0152;
     margin: 0;
     text-align: center;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 25em) {
       font-size: 4.5rem;
       line-height: .7;
     }
   }
 
   div {
-    box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;

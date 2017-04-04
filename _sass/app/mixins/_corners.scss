@@ -1,7 +1,6 @@
 @mixin corners($bg, $border-bg, $border-width, $bracket-width) {
   background-color: $bg;
   border: $border-width solid $border-bg;
-  box-sizing: border-box;
   position: relative;
   z-index: 2;
 

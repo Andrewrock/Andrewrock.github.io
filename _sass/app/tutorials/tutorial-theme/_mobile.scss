@@ -20,18 +20,6 @@ $insta-max-width: 935px;
 .tutorial-definition-wrapper,
 .tutorial-body,
 .definition-wrapper,
-.codepen-wrapper,
-.definition-list,
-.blend-list-title,
-.blend-list-description,
-.box {
-  box-sizing: border-box;
-}
-
-.tutorial-container,
-.tutorial-definition-wrapper,
-.tutorial-body,
-.definition-wrapper,
 .codepen-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -62,7 +50,6 @@ $insta-max-width: 935px;
 
 .no-padding {
   .tutorial-body {
-    box-sizing: border-box;
     max-width: $tutorial-max-width;
     padding: $tutorial-content-margin;
     width: $width;
@@ -119,7 +106,6 @@ $insta-max-width: 935px;
 }
 
 .tutorial-body {
-  box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;

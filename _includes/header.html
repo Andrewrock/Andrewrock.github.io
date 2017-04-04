@@ -44,15 +44,21 @@
       {% for item in site.data.nav.main %}
       {% if item.title == page.title %}
       <li class="current">
-        <a href="{{ item.url }}">{{ item.title }}</a>
+        <a href="{{ item.url }}">
+          {{ item.title }}
+        </a>
       </li>
       {% elsif item.url == page.url %}
       <li class="current">
-        <a href="{{ item.url }}">{{ item.title }}</a>
+        <a href="{{ item.url }}">
+          {{ item.title }}
+        </a>
       </li>
       {% else %}
       <li>
-        <a href="{{ item.url }}">{{ item.title }}</a>
+        <a href="{{ item.url }}">
+          {{ item.title }}
+        </a>
       </li>
       {% endif %}
       {% endfor %}

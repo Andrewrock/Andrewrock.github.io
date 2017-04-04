@@ -17,7 +17,6 @@ $colors: $nav-link-color;
   width: $width;
 }
 
-@for $i from 1 through length($colors) {
   .line {
     animation: expand 1s ease-in-out infinite;
     border-radius: $line-border-radius;
@@ -26,7 +25,7 @@ $colors: $nav-link-color;
     margin: $line-margin;
     transform-origin: center center;
     width: $line-width;
-
+  @for $i from 1 through length($colors) {
     &:nth-child(#{length($colors)}n+#{$i}) {
       background: lighten(nth($colors, $i), 20%);
     }
