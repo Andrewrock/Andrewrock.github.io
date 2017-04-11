@@ -1,5 +1,4 @@
 
-@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,700);
 
 $augusta-green: #197b50;
 $bg-green: #c7f464;
@@ -39,7 +38,7 @@ $medium-img-height: 280px;
 
 .grid-header,
 .grid-blurb {
-  padding: 12px;
+  padding: 6px;
 }
 
 .stats {
@@ -232,15 +231,15 @@ $medium-img-height: 280px;
     }
   }
 
+  .quote {
+    margin: 24px auto;
+  }
+
   .grid-blurb {
     display: flex;
     flex-flow: row wrap;
     font-size: .8rem;
     grid-column: 1 / span 4;
-
-    .quote {
-      margin: 24px auto;
-    }
 
     &:nth-of-type(2) {
       grid-row: 4;
@@ -249,6 +248,11 @@ $medium-img-height: 280px;
     &:nth-of-type(3) {
       grid-column: 1 / span 4;
     }
+
+    &:last-of-type {
+      grid-column: 1 / span 4;
+    }
+
   }
 }
 
