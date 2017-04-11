@@ -14,13 +14,13 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
   width: $width;
 }
 
-  .image-item {
-    animation: slide-item .3s ease forwards;
-    flex: 1 0 33%;
-    transform: translateY(240px);
-    visibility: hidden;
-    width: $width;
-    @for $i from 1 through 10 {
+.image-item {
+  animation: slide-item .3s ease forwards;
+  flex: 1 0 33%;
+  transform: translateY(240px);
+  visibility: hidden;
+  width: $width;
+  @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
       animation-delay: (#{$i * .1s});
     }

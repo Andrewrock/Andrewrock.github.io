@@ -17,14 +17,14 @@ $colors: $nav-link-color;
   width: $width;
 }
 
-  .line {
-    animation: expand 1s ease-in-out infinite;
-    border-radius: $line-border-radius;
-    display: inline-block;
-    height: $line-height;
-    margin: $line-margin;
-    transform-origin: center center;
-    width: $line-width;
+.line {
+  animation: expand 1s ease-in-out infinite;
+  border-radius: $line-border-radius;
+  display: inline-block;
+  height: $line-height;
+  margin: $line-margin;
+  transform-origin: center center;
+  width: $line-width;
   @for $i from 1 through length($colors) {
     &:nth-child(#{length($colors)}n+#{$i}) {
       background: lighten(nth($colors, $i), 20%);
