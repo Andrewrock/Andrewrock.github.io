@@ -3,13 +3,13 @@
 </div>
 <div class="home-posts">
   {% for post in paginator.posts %}
-  <div class="post-container">
-    <div class="post">
-      <a href="{{ post.url | prepend: site.baseurl }}">
-        <div class="post-wrapper">
-          <div class="post-body">
-            <div class="post-content">
-              <div class="post-icon">
+   <div class="post-container">
+     <div class="post">
+       <a href="{{ post.url | prepend: site.baseurl }}">
+         <div class="post-wrapper">
+           <div class="post-body">
+             <div class="post-content">
+               <div class="post-icon">
                 <svg class="icon-mobile" viewBox="0,0,40,78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
             <g>
               <g id="Icons">
@@ -26,11 +26,15 @@
             </g>
           </svg>
               </div>
-              <div class="content-title">
-                <h2 class="title"> {{ post.title }}</h2>
-              </div>
-              <div class="post-content-body">
-                <h5> {{post.lead_text}} </h5>
+               <div class="content-title">
+                   <h2 class="title">
+                     {{ post.title }}
+                   </h2>
+                 </div>
+               <div class="post-content-body">
+                 <h5>
+                  {{post.lead_text}}
+                 </h5>
               </div>
             </div>
           </div>

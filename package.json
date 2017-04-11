@@ -13,6 +13,18 @@
   "license": "ISC",
   "devDependencies": {
     "grunt-contrib-imagemin": "^1.0.1",
-    "grunt-svgmin": "^4.0.0"
-  }
+    "grunt-svgmin": "^4.0.0",
+    "grunt-uncss": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrewrock/Andrewrock.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Andrewrock/Andrewrock.github.io/issues"
+  },
+  "homepage": "https://github.com/Andrewrock/Andrewrock.github.io#readme"
 }

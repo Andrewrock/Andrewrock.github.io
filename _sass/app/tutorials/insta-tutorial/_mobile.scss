@@ -1,12 +1,11 @@
 $insta-button-bg: #3897f0;
 $insta-button-color: $white;
-$breakpoint-tablet: 735px;
-$breakpoint-desktop: 736px;
+$breakpoint-tablet: 731px;
+$breakpoint-desktop: 732px;
 
 .tutorial-insta-container,
 .tutorial-content,
 .checklist {
-  box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
 }
@@ -32,7 +31,7 @@ $breakpoint-desktop: 736px;
 }
 
 .checklist > li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   position: relative;
 }
 

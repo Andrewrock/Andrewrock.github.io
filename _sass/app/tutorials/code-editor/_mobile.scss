@@ -6,7 +6,6 @@ $label-width: 60px;
 
 .code-container,
 pre {
-  box-sizing: border-box;
   width: $width;
 }
 
@@ -33,7 +32,7 @@ pre {
     display: block;
     font-family: $source-code;
     font-size: .75rem;
-    padding: 15px;
+    padding: 12px;
     white-space: pre-wrap;
 
     &.no-padding {

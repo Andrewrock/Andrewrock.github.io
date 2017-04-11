@@ -86,12 +86,8 @@ video {
 }
 
 * {
+  box-sizing: border-box;
   text-rendering: optimizeLegibility;
-
-  &::before,
-  &::after {
-    box-sizing: inherit;
-  }
 }
 
 article,

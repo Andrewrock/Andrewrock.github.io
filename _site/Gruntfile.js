@@ -73,6 +73,7 @@ module.exports = function(grunt) {
     'sasslint',
     'htmlmin',
     'imagemin'
+
   ]);
 
 };

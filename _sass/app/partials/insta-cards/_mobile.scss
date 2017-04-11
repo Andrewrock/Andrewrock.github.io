@@ -1,5 +1,5 @@
-$image-max-height: 295px;
-$insta-wrapper-max-width: 965px;
+$image-max-height: 300px;
+$insta-wrapper-max-width: 984px;
 $backdrop1: #667eea;
 $backdrop2: #764ba2;
 $insta-quote-padding: 0 24px;
@@ -15,7 +15,6 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
 .insta-quote,
 .quote-wrapper,
 .author-wrapper {
-  box-sizing: border-box;
   display: flex;
   width: $width;
 }
