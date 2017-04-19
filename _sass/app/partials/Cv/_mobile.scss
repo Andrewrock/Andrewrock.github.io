@@ -76,34 +76,34 @@ $role-dot-top: 2px;
     margin-bottom: 0;
   }
 
-  h4,
-  h5,
-  h6,
-  p {
+  .job-title,
+  .location,
+  .company,
+  .job-desc {
     width: $width;
   }
 
-  h5,
-  h6 {
+  .location,
+  .company {
     color: $grey;
   }
 
-  h4 {
+  .job-title {
     color: $nav-link-color;
     order: 1;
   }
 
-  h5 {
+  .company {
     align-items: center;
     order: 2;
   }
 
-  h6 {
+  .location {
     order: 3;
     padding: 0;
   }
 
-  p {
+  .job-desc {
     font-family: $lora;
     order: 4;
   }

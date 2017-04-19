@@ -8,10 +8,10 @@
     {% for nav in site.data.jobs %}
     {% if nav.subcategories != null %}
     <li class="job-info">
-      <h4> {{ nav.title }} </h4>
-      <h5> {{ nav.company }} </h5>
-      <h6> {{ nav.location }} </h6>
-      <p>  {{ nav.description }}</p>
+      <h4 class="job-title"> {{ nav.title }} </h4>
+      <h5 class="company"> {{ nav.company }} </h5>
+      <h6 class="location"> {{ nav.location }} </h6>
+      <p class="job-desc">  {{ nav.description }}</p>
       <ul class="role-wrapper">
         {% for subcategory in nav.subcategories %}
         <li class="role-info">
