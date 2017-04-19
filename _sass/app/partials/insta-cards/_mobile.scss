@@ -21,7 +21,7 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
 
 .insta-quote {
   flex-flow: row wrap;
-  margin: 0 auto 30px;
+  margin: 0 auto 24px;
   max-width: $insta-wrapper-max-width;
   padding: $insta-quote-padding;
 }
@@ -38,23 +38,17 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
   span {
     color: $nav-link-color;
     display: flex;
-    font-family: $ubuntu;
-    font-size: 3.5rem;
   }
 }
 
 .quote-wrapper {
 
   span {
-    font-family: $lora;
-
-    &:nth-of-type(1) {
-      order: 1;
-    }
+    font-size: 3.5rem;
 
     &:nth-of-type(2) {
       align-items: flex-end;
-      order: 3;
+      order: 2;
     }
   }
 
@@ -70,13 +64,6 @@ $transition: all .17s cubic-bezier(.4, 0, 1, 1);
 
 .author-wrapper {
   justify-content: flex-end;
-  padding: $author-padding;
-
-  .author {
-    font-size: $h6;
-    margin-left: auto;
-    order: 4;
-  }
 }
 
 .img-backdrop {

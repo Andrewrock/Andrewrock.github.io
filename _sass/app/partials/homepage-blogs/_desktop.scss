@@ -1,12 +1,11 @@
 $post-separator: 12px;
-$homepage-padding: 24px;
+$homepage-padding: 12px;
 
 .home-posts {
   padding: $homepage-padding;
 }
 
 .post-container {
-  display: flex;
   flex: 0 0 50%;
   padding: 0 $post-separator 0 0;
 

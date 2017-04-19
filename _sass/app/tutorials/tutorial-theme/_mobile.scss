@@ -1,12 +1,11 @@
 $tutorial-max-width: 640px;
 $tutorial-content-margin: 24px;
-$definition-max-width: 460px;
+$definition-max-width: 516px;
 $reference-image-height: 240px;
 $insta-max-width: 935px;
 
 .tutorial-container,
 .tutorial-definition-wrapper,
-.tutorial-body,
 .definition-wrapper,
 .blend-list-title,
 .blend-list-description,
@@ -68,13 +67,6 @@ $insta-max-width: 935px;
   }
 }
 
-.tutorial-paragraph {
-
-  & a {
-    color: inherit;
-  }
-}
-
 .underline-definition {
   border-bottom: 1px solid $nav-link-color;
   box-shadow: inset 0 -2px 0 $nav-link-color;
@@ -106,13 +98,8 @@ $insta-max-width: 935px;
 }
 
 .tutorial-body {
-  display: flex;
-  flex-flow: row wrap;
   justify-content: flex-start;
   margin: 0 auto;
-  max-width: 648px;
-  overflow: hidden;
-  width: $width;
 }
 
 .tutorial-body > .tutorial-body {

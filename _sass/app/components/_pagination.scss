@@ -22,8 +22,8 @@
 .pagination > li {
   align-items: baseline;
   flex: 1 0 auto;
-  justify-content: center;
-  margin-left: 6px;
+  margin: 0 auto;
+  max-width: 75px;
   text-align: center;
 
   &.active {
@@ -86,3 +86,4 @@
     color: $nav-link-color;
   }
 }
+

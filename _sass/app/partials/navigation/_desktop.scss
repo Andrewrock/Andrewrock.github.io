@@ -1,37 +1,31 @@
 $nav-width: 1200px;
 $nav-social-width: 33%;
 $nav-menu-width: 80%;
-$nav-padding: 20px 40px;
 $nav-social-icons-width-height: 40px;
 $nav-link-width: 90px;
-$nav-font-size: 18px;
-$nav-social-icon-width: 25%;
-
-nav {
-  padding: $nav-padding;
-  width: $width;
-}
 
 .nav-wrapper {
-  width: $nav-width;
+  max-width: $nav-width;
 }
 
-.nav-wrapper > ul > li {
-  justify-content: center;
+.nav-wrapper>ul {
+  align-items: stretch;
+  height: $height;
+}
+
+.nav-wrapper > ul li {
+  align-items: center;
 }
 
 .socials {
+  flex: 1 1 20%;
+  justify-content: space-around;
   margin: 0;
-  width: $nav-social-width;
-
-  li {
-    width: $nav-social-icon-width;
-  }
 }
 
 .topics {
+  flex: 1 1 80%;
   justify-content: flex-end;
-  width: calc(100% - #{$nav-social-width});
 }
 
 .topics > li {
@@ -41,11 +35,6 @@ nav {
       padding: 0 $nav-link-divide-padding 5px;
     }
   }
-}
-
-.topics > li > a {
-  font-size: $nav-font-size;
-  padding: 0 $nav-link-divide-padding;
 }
 
 
