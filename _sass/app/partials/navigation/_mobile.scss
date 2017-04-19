@@ -30,6 +30,7 @@ nav,
 
 .socials,
 .topics {
+  align-items: baseline;
   justify-content: flex-start;
   padding: 0;
 }
@@ -42,7 +43,6 @@ nav,
 }
 
 .socials {
-  align-items: center;
   flex: 1 1 100%;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -78,7 +78,7 @@ nav,
   &:last-child {
     margin-left: 6px;
 
-    a {
+    .topic-link {
       padding: 0 $nav-link-divide-padding 5px;
     }
   }

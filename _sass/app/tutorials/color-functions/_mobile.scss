@@ -6,8 +6,9 @@
   @return mix($body-color, $color, $percentage);
 }
 
-$image-one: url('/img/bg2.jpg');
+$image-one: url('https://Andrewrock.github.io/img/bg2.jpg');
 $list-item-height: 120px;
+$combined-num: 6;
 
 .color-functions {
   display: flex;
@@ -25,7 +26,6 @@ $list-item-height: 120px;
 
     li {
       align-items: center;
-      background-color: $nav-link-color;
       box-sizing: border-box;
       color: $white;
       display: flex;
@@ -38,14 +38,12 @@ $list-item-height: 120px;
 
 .tint > li,
 .shade > li {
-  background-color: $nav-link-color;
   flex: 1 0 auto;
 }
 
 .light-dark-mix > li,
 .tint-shade > li {
   background-blend-mode: overlay;
-  flex: 1 0 100%;
 }
 
 .purple {
@@ -95,16 +93,22 @@ $list-item-height: 120px;
 }
 
 .light-dark > li {
+  background-color: $nav-link-color;
   flex: 1 0 100%;
   margin: 12px 0 0;
   $light-num: 6;
   $dark-num: 12;
 
+  @for $i from 2 through $dark-num {
+    &:nth-of-type(#{$i}) {
+      margin: 0;
+    }
+  }
+
   @for $i from 2 through $light-num {
     &:nth-of-type(#{$i}) {
       background-color: lighten($nav-link-color, ($i * 2.5%));
       flex: 1 0 20%;
-      margin: 0;
     }
   }
 
@@ -112,7 +116,6 @@ $list-item-height: 120px;
     &:nth-of-type(#{$i}) {
       background-color: darken($nav-link-color, ($i * 2.5%));
       flex: 1 0 20%;
-      margin: 0;
     }
   }
 }
@@ -120,18 +123,17 @@ $list-item-height: 120px;
 .light-dark-mix > li {
   $light-num: 5;
   $dark-num: 10;
+  flex: 1 0 20%;
 
   @for $i from 1 through $light-num {
     &:nth-of-type(#{$i}) {
       background: $image-one lighten($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
-      flex: 1 0 20%;
     }
   }
 
   @for $i from 6 through $dark-num {
     &:nth-of-type(#{$i}) {
       background: $image-one darken($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
-      flex: 1 0 20%;
     }
   }
 }
@@ -142,39 +144,34 @@ $list-item-height: 120px;
   $shade-num: 15;
   $darken-num: 20;
   background-blend-mode: overlay;
+  flex: 1 0 20%;
 
   @for $i from 1 through $tint-num {
     &:nth-of-type(#{$i}) {
       background: $image-one tint($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
-      flex: 1 0 20%;
     }
   }
 
   @for $i from 6 through $light-num {
     &:nth-of-type(#{$i}) {
       background: $image-one lighten($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
-      flex: 1 0 20%;
     }
   }
 
   @for $i from 11 through $shade-num {
     &:nth-of-type(#{$i}) {
       background: $image-one shade($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
-      flex: 1 0 20%;
     }
   }
 
   @for $i from 16 through $darken-num {
     &:nth-of-type(#{$i}) {
       background: $image-one darken($nav-link-color, ($i * 2.5%)) center center / cover no-repeat;
-      flex: 1 0 20%;
     }
   }
 }
 
 .combined > li {
-  $combined-num: 6;
-
   background: $nav-link-color;
   flex: 1 0 auto;
 
@@ -186,7 +183,6 @@ $list-item-height: 120px;
 }
 
 .combined-blend > li {
-  $combined-num: 6;
   background-blend-mode: overlay;
   flex: 1 0 20%;
 
@@ -198,7 +194,6 @@ $list-item-height: 120px;
 }
 
 .darken-lighten > li {
-  $combined-num: 6;
   background-blend-mode: overlay;
   flex: 1 0 20%;
 
