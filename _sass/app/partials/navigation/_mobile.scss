@@ -1,7 +1,6 @@
-$nav-social-width: 120px;
 $nav-padding: 12px;
 $nav-social-icons-width-height: 40px;
-$nav-social-icon-width: 25%;
+$nav-social-icon-width: 33%;
 $nav-link-line-height: 2;
 $nav-link-divide-padding: 12px;
 
@@ -51,12 +50,13 @@ nav,
 
 .socials {
   align-items: center;
+  flex: 1 1 100%;
   flex-flow: row nowrap;
   margin: 0 0 24px;
-  width: $nav-social-width;
 }
 
 .topics {
+  flex: 1 1 100%;
   flex-flow: row wrap;
   text-align: center;
 }
@@ -81,6 +81,18 @@ nav,
       &:hover {
         background-color: lighten($nav-link-color, 5%);
       }
+    }
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    margin-left: 6px;
+
+    a {
+      padding: 0 $nav-link-divide-padding 5px;
     }
   }
 }

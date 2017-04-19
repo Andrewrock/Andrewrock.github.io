@@ -5,12 +5,6 @@ $blurb-margin: 24px;
 $spacer: 1rem;
 $blurb-bottom-line-margin: ($spacer / 2);
 
-.blurb-wrapper,
-.blurb,
-.sub-blurb {
-  text-align: center;
-}
-
 .blurb-wrapper {
   align-items: center;
   display: flex;
@@ -20,6 +14,7 @@ $blurb-bottom-line-margin: ($spacer / 2);
   max-width: $blurb-max-width;
   padding: $blurb-margin;
   position: relative;
+  text-align: center;
 
   &::after {
     background-color: $nav-link-color;
@@ -33,7 +28,6 @@ $blurb-bottom-line-margin: ($spacer / 2);
 
 .blurb,
 .sub-blurb {
-  font-family: $lora;
   width: $width;
 }
 
@@ -46,5 +40,5 @@ $blurb-bottom-line-margin: ($spacer / 2);
 }
 
 .sub-blurb {
-  padding: 0 10px;
+  padding: 0 12px;
 }

@@ -21,9 +21,8 @@ $colors: #556270, #4ecdc4, #c7f464, #ff6b6b, #c44dd58, #6534ff, #fc0152;
 }
 
 .blend-container {
-  height: 550px;
+  height: 552px;
   margin-bottom: 24px;
-  width: $width;
 
   &.small {
     height: auto;
@@ -32,7 +31,7 @@ $colors: #556270, #4ecdc4, #c7f464, #ff6b6b, #c44dd58, #6534ff, #fc0152;
 }
 
 .smaller {
-  height: 228px;
+  height: 276px;
 
   &.not-image {
     height: auto;
@@ -46,14 +45,12 @@ $colors: #556270, #4ecdc4, #c7f464, #ff6b6b, #c44dd58, #6534ff, #fc0152;
 
 .blend-item {
   align-items: center;
-  background-size: cover;
   justify-content: center;
 
   h1 {
     font-size: 5rem;
     font-weight: 700;
     line-height: .5;
-    margin: 0;
     text-align: center;
 
     @media screen and (max-width: 25rem) {

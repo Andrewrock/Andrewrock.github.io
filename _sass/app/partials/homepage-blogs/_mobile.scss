@@ -1,8 +1,8 @@
 $homepage-max-width: 56.25rem;
 $homepage-padding: 0 24px;
-$post-separator: 5px;
+$post-separator: 6px;
 $post-padding: 24px;
-$post-icon-height: 50px;
+$post-icon-height: 48px;
 $post-num: 20;
 
 .home-posts,
@@ -17,8 +17,6 @@ $post-num: 20;
 
 .home-posts,
 .post-wrapper,
-.post-content,
-.post-body,
 .post-footer {
   width: $width;
 }
@@ -30,14 +28,9 @@ $post-num: 20;
   max-width: $homepage-max-width;
 }
 
-.post-body {
-  order: 1;
-}
-
 .post-wrapper {
   color: $white;
   flex-flow: row wrap;
-  margin-bottom: $post-padding;
   overflow: hidden;
   padding: $post-padding;
 }
@@ -57,10 +50,6 @@ $post-num: 20;
   background-color: lighten($nav-link-color, 10%);
   flex: 1;
   justify-content: center;
-
-  a {
-    text-decoration: none;
-  }
 }
 
 .content-title {
@@ -80,16 +69,14 @@ $post-num: 20;
 .post-content {
   align-items: center;
   flex-flow: column wrap;
-  height: $height;
-  justify-content: center;
-
-  h2 {
-    text-align: center;
-  }
 }
 
 .post-content-body > h5 {
   font-family: $lora;
+}
+
+.post-content-body {
+  flex: 1;
 }
 
 .post-icon {
@@ -105,6 +92,3 @@ $post-num: 20;
   }
 }
 
-.title {
-  text-align: center;
-}
