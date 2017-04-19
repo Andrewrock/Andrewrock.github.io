@@ -1,8 +1,6 @@
 .svg-wrap {
-  animation: fadeIn ease-in-out .1s forwards 1s;
   display: flex;
   height: 100%;
-  opacity: 0;
   position: relative;
   width: 100%;
 }
@@ -33,15 +31,5 @@
 @media (min-width: 625px) {
   .svg--sm {
     display: none;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    top: -5%;
-  }
-  to {
-    opacity: 1;
-    top: 0;
   }
 }
