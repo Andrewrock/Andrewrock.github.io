@@ -8,13 +8,14 @@ $nav-link-width: 90px;
   max-width: $nav-width;
 }
 
-.nav-wrapper>ul {
-  align-items: stretch;
-  height: $height;
-}
-
 .nav-wrapper > ul li {
   align-items: center;
+}
+
+.socials,
+.topics {
+  align-items: stretch;
+  height: $height;
 }
 
 .socials {

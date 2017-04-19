@@ -2,22 +2,23 @@ $nav-padding: 12px;
 $nav-social-icons-width-height: 40px;
 $nav-social-icon-width: 33%;
 $nav-link-line-height: 2;
-$nav-link-divide-padding: 12px;
+$nav-link-divide-padding: 6px;
 
 nav {
-  padding: $nav-padding;
+  padding: 12px;
+}
 
-  svg {
-    fill: $nav-link-color;
-    height: $nav-social-icons-width-height;
-    width: $nav-social-icons-width-height;
-  }
+.nav-svg {
+  fill: #6534ff;
+  height: 40px;
+  width: 40px;
 }
 
 nav,
 .nav-wrapper,
-.nav-wrapper > ul,
-.nav-wrapper > ul > li {
+.socials,
+.topics,
+.social {
   display: flex;
 }
 
@@ -30,6 +31,7 @@ nav,
 .socials,
 .topics {
   justify-content: flex-start;
+  padding: 0;
 }
 
 .nav-wrapper {
@@ -39,19 +41,11 @@ nav,
   list-style: none;
 }
 
-.nav-wrapper > ul {
-  padding: 0;
-
-  li {
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-  }
-}
-
 .socials {
   align-items: center;
   flex: 1 1 100%;
   flex-flow: row nowrap;
+  justify-content: flex-start;
   margin: 0 0 24px;
 }
 
@@ -62,6 +56,9 @@ nav,
 }
 
 .topics > li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 
   &:not(:last-of-type) {
 
@@ -71,16 +68,6 @@ nav,
       content: '/';
       display: flex;
       padding-left: $nav-link-divide-padding;
-    }
-  }
-
-  &:not(.current) {
-    a {
-      color: $nav-link-color;
-
-      &:hover {
-        background-color: lighten($nav-link-color, 5%);
-      }
     }
   }
 
@@ -99,36 +86,43 @@ nav,
 
 .current {
   padding: 0 12px;
-
-  a {
-    color: $white;
-    position: relative;
-    width: $width;
-    z-index: 2;
-
-    &::before {
-      background-color: $nav-link-color;
-      content: '';
-      height: calc(#{$height} - 5px);
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform: translate(0% , 5%)scaleX(1);
-      transition: .3s ease;
-      width: $width;
-      z-index: -1;
-    }
-  }
 }
 
-.topics > li > a {
+.topic-link {
   font-family: $ubuntu;
   line-height: $nav-link-line-height;
-  padding: 0 $nav-link-divide-padding 6px;
+  padding: 6px;
+
+  &:not(.current-link) {
+    color: $nav-link-color;
+  }
 
   &:hover {
+    background-color: lighten($nav-link-color, 5%);
     color: $white;
   }
 }
 
+.current-link {
+  color: $white;
+  position: relative;
+  width: $width;
+
+  &::before {
+    background-color: $nav-link-color;
+    content: '';
+    height: calc(#{$height} - 5px);
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(0% , 5%)scaleX(1);
+    transition: .3s ease;
+    width: $width;
+    z-index: -1;
+  }
+
+  &:hover {
+    background-color: inherit;
+  }
+}
 
