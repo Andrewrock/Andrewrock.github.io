@@ -2,7 +2,7 @@ $nav-padding: 12px;
 $nav-social-icons-width-height: 40px;
 $nav-social-icon-width: 33%;
 $nav-link-line-height: 2;
-$nav-link-divide-padding: 12px;
+$nav-link-divide-padding: 6px;
 
 nav {
   padding: 12px;
@@ -91,7 +91,7 @@ nav,
 .topic-link {
   font-family: $ubuntu;
   line-height: $nav-link-line-height;
-  padding: 0 $nav-link-divide-padding;
+  padding: 6px;
 
   &:not(.current-link) {
     color: $nav-link-color;
