@@ -7,6 +7,7 @@
   "dependencies": {
     "glob": "^7.1.1",
     "grunt": "^0.4.5",
+    "grunt-htmlmin": "^0.1.4",
     "uncss": "^0.14.1"
   },
   "author": "AR",

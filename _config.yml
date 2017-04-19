@@ -22,11 +22,11 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems: [jekyll-paginate, octopress-autoprefixer, octopress-paginate]
+gems: [jekyll-paginate, octopress-autoprefixer, octopress-paginate, jekyll-press]
 
 # Conversion
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 lsi:         false
 excerpt_separator: "\n\n"
 
