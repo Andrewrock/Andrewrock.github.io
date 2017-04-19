@@ -76,33 +76,29 @@ $role-dot-top: 2px;
     margin-bottom: 0;
   }
 
-  h1,
-  h2,
-  h3,
+  h4,
+  h5,
+  h6,
   p {
-    display: flex;
     width: $width;
   }
 
-  h2,
-  h3 {
+  h5,
+  h6 {
     color: $grey;
   }
 
-  h1 {
+  h4 {
     color: $nav-link-color;
-    font-size: $h4;
     order: 1;
   }
 
-  h2 {
+  h5 {
     align-items: center;
-    font-size: $h5;
     order: 2;
   }
 
-  h3 {
-    font-size: $h6;
+  h6 {
     order: 3;
     padding: 0;
   }
