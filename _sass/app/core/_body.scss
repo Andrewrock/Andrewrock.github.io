@@ -3,3 +3,16 @@ $mobile-only: 600px;
 $height: 100%;
 $width: 100%;
 $max-width: 1104px;
+
+body {
+  background-color:#f4f3f1;
+  color: $body-color;
+  font-family: $body;
+  height: $height;
+  line-height: $line-height-base;
+  width: $width;
+}
+
+a {
+  color: $body-color;
+}

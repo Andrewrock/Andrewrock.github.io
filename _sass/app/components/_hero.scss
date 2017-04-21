@@ -1,8 +1,32 @@
+$hero-bg: #c6b4ff;
+
+header{
+  align-items: center;
+  background:url("https://Andrewrock.github.io/img/bg7.jpg") $hero-bg center center/cover no-repeat;
+  background-blend-mode: screen;
+  display: flex;
+  height: 288px;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: relative;
+  transition: background .25s ease-in-out;
+  width: $width;
+}
+
+.spikes{
+  bottom:0;
+  fill: $background-white;
+  height: 72px;
+  position: absolute;
+  transition:background-color 2s ease;
+  width: $width;
+}
+
 .svg-wrap {
   display: flex;
-  height: 100%;
+  height: $height;
   position: relative;
-  width: 100%;
+  width: $width;
 }
 
 .insta,
@@ -11,15 +35,15 @@
 }
 
 .insta {
-  background: url("https://Andrewrock.github.io/img/bg16.jpg") #c6b4ff center center/cover no-repeat;
+  background: url("https://Andrewrock.github.io/img/bg16.jpg") $hero-bg center center/cover no-repeat;
 }
 
 .tutorial {
-  background: url("https://Andrewrock.github.io/img/bg2.jpg") #c6b4ff center center/cover no-repeat;
+  background: url("https://Andrewrock.github.io/img/bg2.jpg") $hero-bg center center/cover no-repeat;
 }
 
 .cv {
-  background: url("https://Andrewrock.github.io/img/bg52.jpg") #c6b4ff center center/cover no-repeat;
+  background: url("https://Andrewrock.github.io/img/bg52.jpg") $hero-bg center center/cover no-repeat;
   background-blend-mode: color-dodge;
 }
 
