@@ -5,6 +5,21 @@ $post-padding: 24px;
 $post-icon-height: 48px;
 $post-num: 20;
 
+.home-posts,
+.post-wrapper,
+.post-container,
+.post,
+.post-body,
+.post-content,
+.post-icon{
+  display:flex
+}
+.home-posts,
+.post-wrapper,
+.post-footer{
+  width: $width;
+}
+
 .home-posts {
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -54,11 +69,6 @@ $post-num: 20;
   align-items: center;
   flex-flow: column wrap;
 }
-
-.lead-text {
-  font-family: $lora;
-}
-
 
 .post-content-body {
   flex: 1;

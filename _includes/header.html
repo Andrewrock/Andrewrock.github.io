@@ -8,10 +8,22 @@
   <meta content="yes" name="apple-mobile-web-app-capable">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <!-- Favicons -->
-  <!-- Styles -->
-  <style>
-    body{background-color:#f4f3f1;color:#282828;font-family:'Lora',serif;height:100%;line-height:1.5;width:100%}a{color:#282828}header{align-items:center;background:url("https://Andrewrock.github.io/img/bg7.jpg") #c6b4ff center center/cover no-repeat;background-blend-mode:screen;display:flex;height:288px;justify-content:center;margin-bottom:24px;position:relative;transition:background .25s ease-in-out;width:100%}.spikes{bottom:0;fill:#f4f3f1;height:72px;position:absolute;transition:background-color 2s ease;width:100%}  .home-posts,.post-wrapper,.post-container,.post,.post-body,.post-content,.post-icon{display:flex}.home-posts,.post-wrapper,.post-footer{width:100%} </style>
-  <link rel="stylesheet" href="/css/style.css">
   <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64 96x96" href="{{ site.data.global.url }}/favicon.ico">
+  <!-- Styles -->
+  <!-- Critical CSS -->
+  <style>
+    html,body,div,ul,li,nav{border:0;margin:0;padding:0;vertical-align:baseline}*{box-sizing:border-box;text-rendering:optimizeLegibility}nav{display:block}ul{list-style:none}nav{padding:12px}.nav-svg{fill:#6534ff;height:40px;width:40px}nav,.nav-wrapper,.socials,.social{display:flex}nav,.nav-wrapper{width:100%}.socials{align-items:baseline;justify-content:flex-start;padding:0}.nav-wrapper{align-items:center;flex-flow:row wrap;justify-content:flex-start;list-style:none}.socials{flex:1 1 100%;flex-flow:row nowrap;justify-content:flex-start;margin:0 0 24px}@media screen and (min-width:624px){.nav-wrapper{max-width:1200px}.nav-wrapper>ul li{align-items:center}.socials{align-items:stretch;height:100%}.socials{flex:1 1 20%;justify-content:space-around;margin:0}svg{fill:#fff;}}
+  </style>
+
+<script>var cb = function() {
+  var l = document.createElement('link'); l.rel = 'stylesheet';
+  l.href = '/css/style.css';
+  var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+};
+var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+if (raf) raf(cb);
+else window.addEventListener('load', cb);
+</script>
 </head>
 <body>
