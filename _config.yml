@@ -24,6 +24,9 @@ unpublished: false
 whitelist: []
 gems: [jekyll-paginate, octopress-autoprefixer, octopress-paginate, jekyll-press]
 
+autoprefixer:
+    browsers: ["last 2 versions","> 5%","IE 9"]
+
 # Conversion
 markdown:    kramdown
 highlighter: rouge
