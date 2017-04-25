@@ -1,0 +1,256 @@
+$steve: url('../img/steve.png');
+$steve-young: url('../img/jobs-young.jpg');
+$steve-young-two: url('../img/jobs-young2.jpg');
+$steve-old: url('../img/jobs-old.jpg');
+$steve-old-two: url('../img/jobs-old2.jpg');
+$jobs-floor: url('../img/jobs-floor.jpg');
+
+$oswald: 'Oswald', sans-serif;;
+
+$hero-bg: #000;
+$transparent-bg: rgba(0, 0, 0, .25);
+$apple-logo-green: #61bb46;
+$apple-logo-yellow: #fdb827;
+$apple-logo-orange: #f5821f;
+$apple-logo-red: #e03a3e;
+$apple-logo-purple: #963d97;
+$apple-logo-blue: #009ddc;
+
+$large-grid-gap: 48px;
+$medium-grid-gap: 24px;
+$small-grid-gap: 12px;
+$grid-break: 500px;
+$underline-height: 4px;
+$apple-gradient: linear-gradient(135deg, $apple-logo-green 0%, $apple-logo-green 16.5%, $apple-logo-yellow 16.5%, $apple-logo-yellow 33.5%, $apple-logo-orange 33.5%, $apple-logo-orange 50%, $apple-logo-red 50%, $apple-logo-red 66.5%, $apple-logo-purple 66.5%, $apple-logo-purple 83%, $apple-logo-blue 83%, $apple-logo-blue 100%);
+
+.vertical,
+.dob,
+.article-intro,
+.jobs-quote,
+.year,
+.intro-text {
+  font-family: $oswald;
+}
+
+.demo {
+  background-color: $background-white;
+  display: grid;
+  grid-gap: $large-grid-gap 0;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: minmax(840px, 1fr) auto;
+}
+
+.demo-header-container {
+  grid-column: 1 / span 5;
+}
+
+.demo-header {
+  align-items: center;
+  background: $steve center center / cover no-repeat, $apple-gradient;
+  background-blend-mode: multiply;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  margin-bottom: $large-grid-gap;
+  width: $width;
+}
+
+.vertical,
+.dob,
+.demo-text-area {
+  grid-row: 1;
+}
+
+.vertical,
+.dob {
+  align-self: flex-start;
+  font-size: 4.5rem;
+  height: $height;
+  mix-blend-mode: overlay;
+  padding: $medium-grid-gap 0;
+  writing-mode: vertical-lr;
+}
+
+.vertical {
+  color: $white;
+  grid-column: 1;
+}
+
+.dob {
+  color: $apple-logo-red;
+  grid-column: 5;
+  mix-blend-mode: difference;
+}
+
+.demo-text-area {
+  align-self: flex-end;
+  background-color: $transparent-bg;
+  border-radius: $small-grid-gap;
+  display: flex;
+  flex-flow: row wrap;
+  grid-column: 2 / span 3;
+  grid-row: 1;
+  padding: $medium-grid-gap $small-grid-gap;
+
+  @media screen and (max-width: $grid-break) {
+    grid-column: 1 / span 5;
+    grid-row: 2;
+    margin: auto;
+    max-width: 90%;
+  }
+}
+
+.rainbow-text {
+  color: $apple-logo-green;
+
+  &:nth-of-type(2) {
+    color: $apple-logo-yellow;
+  }
+
+  &:nth-of-type(3) {
+    color: $apple-logo-orange;
+  }
+
+  &:nth-of-type(4) {
+    color: $apple-logo-red;
+  }
+
+  &:nth-of-type(5) {
+    color: $apple-logo-purple;
+  }
+
+  &:nth-of-type(6) {
+    color: $apple-logo-blue;
+  }
+}
+
+.apple-logo {
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  margin: auto;
+  width: 96px;
+}
+
+.demo-stats {
+  align-items: flex-end;
+  display: flex;
+  flex-flow: row wrap;
+  grid-column: 1 / span 5;
+  justify-content: space-around;
+  text-align: center;
+
+  li {
+    padding: 0 6px;
+  }
+}
+
+.hr {
+  display: block;
+  height: $underline-height;
+  margin: auto;
+  padding: $medium-grid-gap 0;
+  position: relative;
+  width: $width;
+
+  &::after,
+  &::before {
+    bottom: 50%;
+    content: '';
+    height: $underline-height;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  &::before {
+    background: $apple-gradient;
+    z-index: 1;
+  }
+}
+
+.year {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.demo-text-body {
+  padding: $large-grid-gap $small-grid-gap;
+  position: relative;
+}
+
+.article-intro {
+  font-size: 6rem;
+  margin-bottom: $large-grid-gap;
+  width: 70%;
+}
+
+.demo-content-container {
+  grid-column: 1 / span 5;
+  padding: 0 $medium-grid-gap;
+}
+
+.intro-text {
+  color: $apple-logo-red;
+  display: block;
+  float: left;
+  font-family: serif;
+  font-size: 10rem;
+  line-height: .75;
+  margin-right: $small-grid-gap;
+  text-transform: capitalize;
+}
+
+.jobs-images {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $medium-grid-gap;
+  overflow: hidden;
+}
+
+.steve {
+  display: flex;
+  flex: 0 0 33%;
+  height: 180px;
+}
+
+.three,
+.four {
+  flex: 0 0 50%;
+}
+
+.one {
+  background: $steve-young center center / cover no-repeat;
+}
+
+.two {
+  background: $steve-young-two center center / cover no-repeat;
+}
+
+.three {
+  background: $steve-old center center / cover no-repeat;
+}
+
+.four {
+  background: $steve-old-two center center / cover no-repeat;
+}
+
+.five {
+  align-items: center;
+  background: $jobs-floor center center / cover no-repeat;
+  background-blend-mode: screen;
+  justify-content: center;
+}
+
+.jobs-quote {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: $apple-gradient;
+  color: $transparent;
+  margin-bottom: $small-grid-gap;
+  text-align: center;
+}
+

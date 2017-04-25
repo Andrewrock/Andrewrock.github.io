@@ -1,4 +1,288 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://github.com/pages/Andrewrock/feed.xml" rel="self" type="application/atom+xml" /><link href="http://github.com/pages/Andrewrock/" rel="alternate" type="text/html" /><updated>2017-04-21T16:03:24+01:00</updated><id>http://github.com/pages/Andrewrock/</id><entry><title type="html">CSS Grid</title><link href="http://github.com/pages/Andrewrock/css-grid.html" rel="alternate" type="text/html" title="CSS Grid" /><published>2017-04-09T00:00:00+01:00</published><updated>2017-04-09T00:00:00+01:00</updated><id>http://github.com/pages/Andrewrock/css-grid</id><content type="html" xml:base="http://github.com/pages/Andrewrock/css-grid.html">&lt;div class=&quot;grid&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://github.com/pages/Andrewrock/feed.xml" rel="self" type="application/atom+xml" /><link href="http://github.com/pages/Andrewrock/" rel="alternate" type="text/html" /><updated>2017-04-25T21:57:23+01:00</updated><id>http://github.com/pages/Andrewrock/</id><entry><title type="html">CSS Grid pt2</title><link href="http://github.com/pages/Andrewrock/steve-jobs.html" rel="alternate" type="text/html" title="CSS Grid pt2" /><published>2017-04-09T00:00:00+01:00</published><updated>2017-04-09T00:00:00+01:00</updated><id>http://github.com/pages/Andrewrock/steve-jobs</id><content type="html" xml:base="http://github.com/pages/Andrewrock/steve-jobs.html">&lt;style&gt;
+  @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+&lt;/style&gt;
+
+&lt;div class=&quot;demo&quot;&gt;
+
+  &lt;div class=&quot;demo-header-container&quot;&gt;
+    &lt;div class=&quot;demo-header&quot;&gt;
+      &lt;h1 class=&quot;vertical&quot;&gt;THINK DIFFERENT&lt;/h1&gt;
+      &lt;h1 class=&quot;dob&quot;&gt;1955-2011&lt;/h1&gt;
+
+      &lt;div class=&quot;demo-text-area&quot;&gt;
+        &lt;p&gt;
+      &lt;span class=&quot;rainbow-text&quot;&gt;Here's to the crazy ones. The misfits. The rebels. The troublemakers.
+      The round pegs in the square holes.&lt;/span&gt;
+      &lt;span class=&quot;rainbow-text&quot;&gt;The ones who see things differently.
+      They're not fond of rules. And they have no respect for the status quo.
+      You can quote them,&lt;/span&gt;
+      &lt;span class=&quot;rainbow-text&quot;&gt; disagree with them, glorify or vilify them.
+      About the only thing you can't do is ignore them.&lt;/span&gt;
+      &lt;span class=&quot;rainbow-text&quot;&gt;Because they change things. They push the human race forward.
+      And while some may see them as the crazy ones,&lt;/span&gt;
+      &lt;span class=&quot;rainbow-text&quot;&gt;we see genius.
+      Because the people who are crazy enough&lt;/span&gt;
+      &lt;span class=&quot;rainbow-text&quot;&gt; to think they can change the world,
+      are the ones who do.&lt;/span&gt;
+        &lt;/p&gt;
+
+        &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;
+        &lt;!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  --&gt;
+
+        &lt;svg
+   xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot;
+   xmlns:cc=&quot;http://creativecommons.org/ns#&quot;
+   xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;
+   xmlns:svg=&quot;http://www.w3.org/2000/svg&quot;
+   xmlns=&quot;http://www.w3.org/2000/svg&quot;
+   xmlns:sodipodi=&quot;http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd&quot;
+   xmlns:inkscape=&quot;http://www.inkscape.org/namespaces/inkscape&quot;
+   version=&quot;1.1&quot;
+   id=&quot;Layer_1&quot;
+   class=&quot;apple-logo&quot;
+   width=&quot;500&quot;
+   height=&quot;550&quot;
+   viewBox=&quot;0 0 500.00001 549.99998&quot;
+   overflow=&quot;visible&quot;
+   enable-background=&quot;new 0 0 499.524 554.546&quot;
+   xml:space=&quot;preserve&quot;
+   inkscape:version=&quot;0.48.1 &quot;
+   sodipodi:docname=&quot;20111009182803!Apple_Computer_Logo_rainbow.svg&quot;
+   style=&quot;overflow:visible&quot;&gt;&lt;metadata
+   id=&quot;metadata25&quot;&gt;&lt;rdf:RDF&gt;&lt;cc:Work
+       rdf:about=&quot;&quot;&gt;&lt;dc:format&gt;image/svg+xml&lt;/dc:format&gt;&lt;dc:type
+         rdf:resource=&quot;http://purl.org/dc/dcmitype/StillImage&quot; /&gt;&lt;/cc:Work&gt;&lt;/rdf:RDF&gt;&lt;/metadata&gt;&lt;defs
+   id=&quot;defs23&quot; /&gt;&lt;sodipodi:namedview
+   pagecolor=&quot;#ffffff&quot;
+   bordercolor=&quot;#666666&quot;
+   borderopacity=&quot;1&quot;
+   objecttolerance=&quot;10&quot;
+   gridtolerance=&quot;10&quot;
+   guidetolerance=&quot;10&quot;
+   inkscape:pageopacity=&quot;0&quot;
+   inkscape:pageshadow=&quot;2&quot;
+   inkscape:window-width=&quot;1280&quot;
+   inkscape:window-height=&quot;738&quot;
+   id=&quot;namedview21&quot;
+   showgrid=&quot;false&quot;
+   showguides=&quot;true&quot;
+   inkscape:guide-bbox=&quot;true&quot;
+   inkscape:zoom=&quot;0.93590068&quot;
+   inkscape:cx=&quot;249.76199&quot;
+   inkscape:cy=&quot;277.27301&quot;
+   inkscape:window-x=&quot;-8&quot;
+   inkscape:window-y=&quot;-8&quot;
+   inkscape:window-maximized=&quot;1&quot;
+   inkscape:current-layer=&quot;Layer_1&quot; /&gt;
+&lt;g
+   id=&quot;g3&quot;
+   transform=&quot;matrix(0.9869271,0,0,0.99106002,3.5008005,0.90716963)&quot;&gt;
+
+		&lt;path
+   clip-rule=&quot;evenodd&quot;
+   stroke-miterlimit=&quot;2.6131&quot;
+   d=&quot;m 25.824,200.612 c 0.166,-0.273 0.342,-0.542 0.518,-0.806 28.447,-43.799 73.32,-69.434 115.518,-69.434 42.969,0 69.98,23.555 105.498,23.555 34.463,0 55.454,-23.589 105.132,-23.589 37.534,0 77.329,20.439 105.674,55.781 -7.837,4.292 -14.907,9.165 -21.226,14.521 l -411.114,-0.028 0,0 z&quot;
+   id=&quot;path5&quot;
+   inkscape:connector-curvature=&quot;0&quot;
+   style=&quot;fill:#61bb46;fill-rule:evenodd;stroke:#61bb46;stroke-width:2.9849;stroke-miterlimit:2.61310005&quot; /&gt;
+
+		&lt;path
+   clip-rule=&quot;evenodd&quot;
+   stroke-miterlimit=&quot;2.6131&quot;
+   d=&quot;M 314.808,90.875 C 332.84,67.716 346.556,35.016 341.585,1.583 312.103,3.604 277.62,22.374 257.479,46.808 c -18.276,22.197 -33.364,55.117 -27.49,87.095 32.187,1.001 65.483,-18.218 84.819,-43.028 l 0,0 z&quot;
+   id=&quot;path7&quot;
+   inkscape:connector-curvature=&quot;0&quot;
+   style=&quot;fill:#61bb46;fill-rule:evenodd;stroke:#61bb46;stroke-width:2.9849;stroke-miterlimit:2.61310005&quot; /&gt;
+
+		&lt;path
+   clip-rule=&quot;evenodd&quot;
+   stroke-miterlimit=&quot;2.6131&quot;
+   d=&quot;M 24.356544,199.96661 C 12.105918,219.15949 3.6294315,246.66842 1.38,270.79701 l 397.43701,-0.0102 c 4.29717,-26.39752 18.58564,-51.61732 41.233,-70.79103 l -415.693466,-0.0292 0.02346,0 z&quot;
+   id=&quot;path9&quot;
+   style=&quot;fill:#fdb827;fill-rule:evenodd;stroke:none&quot;
+   inkscape:connector-curvature=&quot;0&quot;
+   sodipodi:nodetypes=&quot;ccccccc&quot; /&gt;
+
+		&lt;path
+   clip-rule=&quot;evenodd&quot;
+   stroke-miterlimit=&quot;2.6131&quot;
+   d=&quot;M 4.989,340.998 C 1.127,316.354 0.502,292.595 2.928,270.798 l 394.341,-0.01 c -3.857,23.638 -0.62,48.237 9.136,70.225 l -401.416,-0.015 0,0 z&quot;
+   id=&quot;path11&quot;
+   inkscape:connector-curvature=&quot;0&quot;
+   style=&quot;fill:#f5821f;fill-rule:evenodd;stroke:#f5821f;stroke-width:2.9849;stroke-miterlimit:2.61310005&quot; /&gt;
+
+		&lt;path
+   clip-rule=&quot;evenodd&quot;
+   stroke-miterlimit=&quot;2.6131&quot;
+   d=&quot;M 24.261,411.193 C 14.949,387.609 8.573,363.922 4.989,340.998 l 401.416,0.015 c 12.427,28.018 35.425,51.821 67.808,64.053 -0.962,2.139 -1.89,4.185 -2.783,6.157 l -447.169,-0.03 0,0 z&quot;
+   id=&quot;path13&quot;
+   inkscape:connector-curvature=&quot;0&quot;
+   style=&quot;fill:#e03a3e;fill-rule:evenodd;stroke:#e03a3e;stroke-width:2.9849;stroke-miterlimit:2.61310005&quot; /&gt;
+
+		&lt;path
+   clip-rule=&quot;evenodd&quot;
+   stroke-miterlimit=&quot;2.6131&quot;
+   d=&quot;m 471.429,411.222 c -11.118,24.443 -17.563,37.129 -32.949,60.547 -2.07,3.145 -4.209,6.362 -6.436,9.609 L 61.517,481.412 C 60.33,479.644 59.154,477.877 57.996,476.124 44.143,455.025 32.928,433.15 24.261,411.192 l 447.168,0.03 0,0 z&quot;
+   id=&quot;path15&quot;
+   inkscape:connector-curvature=&quot;0&quot;
+   style=&quot;fill:#963d97;fill-rule:evenodd;stroke:#963d97;stroke-width:2.9849;stroke-miterlimit:2.61310005&quot; /&gt;
+	&lt;path
+   stroke-miterlimit=&quot;2.6131&quot;
+   d=&quot;m 472.972,550.7778 c 13.589,0 24.604,-11.016 24.604,-24.595 0,-13.589 -11.016,-24.6 -24.604,-24.6 -13.588,0 -24.604,11.011 -24.604,24.6 0,13.579 11.015,24.595 24.604,24.595 m -6.992,-9.648 v -27.485 h 11.011 m 6.645,27.182 -6.553,-13.892 m -11.054,-0.244 h 11.006 m -0.01,-0.034 c 2.734,0 5.503,-2.891 5.503,-6.46 0,-3.799 -2.886,-6.553 -5.537,-6.553&quot;
+   id=&quot;path17&quot;
+   inkscape:connector-curvature=&quot;0&quot;
+   style=&quot;fill:none;stroke:#000000;stroke-width:3.89479995;stroke-miterlimit:2.61310005&quot; /&gt;
+
+		&lt;path
+   clip-rule=&quot;evenodd&quot;
+   stroke-miterlimit=&quot;2.6131&quot;
+   d=&quot;m 432.044,481.378 c -22.666,33.203 -53.096,69.741 -90.02,70.088 -36.03,0.327 -45.273,-23.447 -94.155,-23.179 -48.882,0.273 -59.087,23.594 -95.117,23.257 -38.521,-0.356 -68.433,-36.24 -91.235,-70.132 l 370.527,-0.034 0,0 z&quot;
+   id=&quot;path19&quot;
+   inkscape:connector-curvature=&quot;0&quot;
+   style=&quot;fill:#009ddc;fill-rule:evenodd;stroke:#009ddc;stroke-width:2.9849;stroke-miterlimit:2.61310005&quot; /&gt;
+&lt;/g&gt;
+&lt;/svg&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;ul class=&quot;demo-stats&quot;&gt;
+      &lt;li&gt;&lt;span class=&quot;year&quot;&gt;1984&lt;/span&gt; The Macintosh
+      &lt;span class=&quot;hr&quot;&gt;&lt;/span&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;span class=&quot;year&quot;&gt;1986-1996&lt;/span&gt; From NeXT to Pixar
+        &lt;span class=&quot;hr&quot;&gt;&lt;/span&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;span class=&quot;year&quot;&gt;1997-2004&lt;/span&gt; iMac and iPod
+        &lt;span class=&quot;hr&quot;&gt;&lt;/span&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;span class=&quot;year&quot;&gt;2005-2011&lt;/span&gt; iPhone and iPad
+        &lt;span class=&quot;hr&quot;&gt;&lt;/span&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;demo-content-container&quot;&gt;
+    &lt;h1 class=&quot;article-intro&quot;&gt;iMourn The Loss..&lt;/h1&gt;
+    &lt;div class=&quot;demo-blurb&quot;&gt;
+      &lt;p&gt;&lt;span class=&quot;intro-text&quot;&gt;I&lt;/span&gt; spend most of any waking day inside Steve
+        jobs' idea. I'm roused out of bed by an alarm clock set by my
+        iPhone, which is docked to it. I get up and go for a run,
+        listening to my iPod Nano on shuffle. Back home I get
+        dressed,listening to NPR (iPhone app).
+        Breakfast time and I read the paper,
+        which is not on the doorstep yet but is on my iPad. Walk the kids to school,
+        checking tweets on the way back. Spend the day at my desk, looking into a
+        rectangle with a glowing Apple in back of it. At night, as Time's television
+        critic, I'm in front of the TV—usually with the iPad on my lap.
+      &lt;/p&gt;
+
+      &lt;p&gt;That's where I was when word of Jobs' death came to me as he would have wanted it to:
+        as a news alert on my iPad. I was watching Jeopardy! with my kids and found myself
+        trying to explain why I would be sad about the death of the founder of a giant company,
+        whom I didn't know. So I told them about all the things they use and see every day
+        that came from Jobs: the computers, the touchscreens, the Pixar movies, the computer mouse.
+      &lt;/p&gt;
+
+      &lt;h2 class=&quot;jobs-quote&quot;&gt;when word of Jobs' death came to me as he would have wanted it to: as a news alert on my iPad&lt;/h2&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;demo-blurb&quot;&gt;
+      &lt;p&gt;
+        But really what we got from Jobs and his company was an idea: that computers were
+        something that belonged in your life, not in a science lab. That you would want to use them,
+        play with them, touch them, carry them with you. That they were not just for numbers but also for music,
+        movies, magazines, creation, communication. A lot of people made computers in the
+        past decades, but it was Steve Jobs who understood that he was making media.
+      &lt;/p&gt;
+
+      &lt;h2 class=&quot;jobs-quote&quot;&gt;computers were something that belonged in your life, not in a science lab&lt;/h2&gt;
+
+      &lt;p&gt;
+        It's been said, correctly, that Jobs did not invent many of the innovations that Apple came
+        to be known for: the graphical user interface, the touchscreen, the personal computer itself.
+        He was a popularizer, but I'm not sure that's a lesser accomplishment. The technology to put
+        a friendly interface on your desk, a music and video library in your pocket, an arsenal of info-
+        appliances on your phone would have existed without him. Someone would even have tried to sell it.
+        But without Jobs to realize, before we knew it, how we wanted to use technology as an
+        effortless extension of our consciousness, not a specialist's tool—none of it would
+        be as ubiquitous or as well realized. Steve Jobs was a great salesman because he was a great consumer.
+      &lt;/p&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;jobs-images&quot;&gt;
+      &lt;div class=&quot;steve one&quot;&gt;&lt;/div&gt;
+      &lt;h2 class=&quot;jobs-quote&quot;&gt;&lt;span&gt;He was a popularizer&lt;/span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;steve two&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;demo-blurb&quot;&gt;
+      &lt;p&gt;
+        And by making devices an extension of ourselves, he helped change our understanding of
+        media; it would no longer be just a system you got information from but a system you contrib uted information to.
+        As he envisioned them—before the rest of us knew we wanted this computers were
+        tools not of calculation but of communication.
+      &lt;/p&gt;
+
+      &lt;h2 class=&quot;jobs-quote&quot;&gt;computers were tools not of calculation but of communication.&lt;/h2&gt;
+
+      &lt;p&gt;
+        That's part of the reason that Jobs' aesthetic sense for Apple so famously fastidious and
+        demanding—was key to what he did. Yes, his products were pretty on purpose as were '50s sedans and
+        illuminated manuscripts. (Hence the fact that the iPad is such a luminous showcase
+        for magazines and video.) But the look and feel of Apple gadgets did not just make them beautiful or make
+        you feel cool. They communicated an idea about the world too.
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;demo-blurb&quot;&gt;
+      &lt;p&gt;
+        Like other great modernists, Jobs knew that simplicity was not just about sleekness but also about function.
+        He intuited that, as many designers say, the best design is barely there. The infinity pool like touchscreen of
+        my iPhone says this Star Trek Swiss Army knife of information in my pocket should become, wholly,
+        whatever I want it to be, with no form factor getting in the way. It should not merely run Angry Birds;
+        it should become Angry Birds. The slab-of-glass iPad was his last and truest attempt at the ideal
+        computer: a window, a pane that you brush your fingertips against, a portal you reach through.
+      &lt;/p&gt;
+      &lt;p&gt;
+        That, as I was trying to explain to my kids, is the reason I felt so deeply sad about a guy
+        who ran some company: because my experience of his products, like I suspect many of yours, was so personal.
+        Apple's devices are made, like a hot rod, for customization: your music, your pictures, your wallpaper.
+        It's no wonder that their owners should feel their identities bound up more in them than in any other
+        modern consumer goods since the automobile.
+      &lt;/p&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;jobs-images&quot;&gt;
+      &lt;div class=&quot;steve three&quot;&gt;&lt;/div&gt;
+
+      &lt;div class=&quot;steve four&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;demo-blurb&quot;&gt;
+      &lt;p&gt;
+        So, yes, my aching over Jobs' loss is partly a selfish nostalgia for my own life past.
+        Macintoshes were the first computers I ever used in a college computer lab; I wrote my first news
+        paper stories on them, played Dark Castle on them, discovered the World Wide Web on them and
+        edited my kids' baby videos on them.
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        But it's also that the things Apple makes are expressions of the idea that technology should be personal,
+        that it only matters to the extent that it can add to what we find important in life.
+        Which is why I'll spend much of tomorrow, too, inside Steve Jobs' idea that a
+        computer should be an elegant, simple frame and we should fill it with the
+        things that matter to us.
+      &lt;/p&gt;
+
+      &lt;h2 class=&quot;jobs-quote&quot;&gt;the things Apple makes are expressions of the idea that technology should be personal&lt;/h2&gt;
+
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;steve five&quot;&gt;&lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">CSS Grid</title><link href="http://github.com/pages/Andrewrock/css-grid.html" rel="alternate" type="text/html" title="CSS Grid" /><published>2017-04-09T00:00:00+01:00</published><updated>2017-04-09T00:00:00+01:00</updated><id>http://github.com/pages/Andrewrock/css-grid</id><content type="html" xml:base="http://github.com/pages/Andrewrock/css-grid.html">&lt;div class=&quot;grid&quot;&gt;
   &lt;div class=&quot;grid-header&quot;&gt;
     &lt;h1&gt;&lt;span&gt; SPORT &lt;/span&gt;&lt;/h1&gt;
     &lt;h1&gt;US MASTERS&lt;/h1&gt;
