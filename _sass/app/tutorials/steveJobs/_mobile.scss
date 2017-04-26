@@ -184,7 +184,6 @@ $apple-gradient: linear-gradient(135deg, $apple-logo-green 0%, $apple-logo-green
 .article-intro {
   font-size: 6rem;
   margin-bottom: $large-grid-gap;
-  width: 70%;
 }
 
 .demo-content-container {
@@ -209,6 +208,11 @@ $apple-gradient: linear-gradient(135deg, $apple-logo-green 0%, $apple-logo-green
   justify-content: space-between;
   margin-bottom: $medium-grid-gap;
   overflow: hidden;
+
+  .jobs-quote {
+    height: 180px;
+    writing-mode: vertical-rl;
+  }
 }
 
 .steve {
@@ -250,7 +254,7 @@ $apple-gradient: linear-gradient(135deg, $apple-logo-green 0%, $apple-logo-green
   background-clip: text;
   background-image: $apple-gradient;
   color: $transparent;
-  margin-bottom: $small-grid-gap;
+  margin-bottom: $medium-grid-gap;
   text-align: center;
 }
 

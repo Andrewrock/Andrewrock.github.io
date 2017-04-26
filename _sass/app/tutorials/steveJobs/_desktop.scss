@@ -87,6 +87,11 @@
   align-items: flex-start;
   flex-flow: row wrap;
   margin-bottom: 0;
+
+  .jobs-quote {
+    height: auto;
+    writing-mode: horizontal-tb;
+  }
 }
 
 .steve {
