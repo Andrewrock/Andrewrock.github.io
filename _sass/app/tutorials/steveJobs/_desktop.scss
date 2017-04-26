@@ -37,6 +37,7 @@
 .demo-text-area {
   align-self: center;
   grid-column: 2 / span 3;
+  grid-row: 3;
   margin-bottom: $medium-grid-gap;
   max-width: 600px;
 }
