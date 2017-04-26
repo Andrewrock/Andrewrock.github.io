@@ -211,6 +211,7 @@ $apple-gradient: linear-gradient(135deg, $apple-logo-green 0%, $apple-logo-green
 
   .jobs-quote {
     height: 180px;
+    max-width: 25%;
     writing-mode: vertical-rl;
   }
 }
