@@ -1,0 +1,42 @@
+.search-beers {
+  padding: 24px;
+}
+
+.search-box-wrapper,
+.filter-button-wrapper,
+.search-button-wrapper {
+  justify-content: center;
+}
+
+.search-box-wrapper,
+.filter-button-wrapper {
+  width: 40%;
+}
+
+.filter-button-wrapper,
+.search-button-wrapper {
+  padding-left: 12px;
+}
+
+.search-beers-wrapper {
+  padding: 24px 0;
+}
+
+.search-button-wrapper {
+  flex: 0 1 15%;
+  margin-left: auto;
+}
+
+.filter-button-wrapper {
+  padding-top: 0;
+}
+
+.search-button {
+  &:first-of-type {
+    margin-right: 0;
+  }
+}
+
+.option-type {
+  width: 33%;
+}

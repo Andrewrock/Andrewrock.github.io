@@ -1,0 +1,42 @@
+.select {
+  align-items: center;
+  background-color: $purple;
+  border-radius: 4px;
+  color: $white;
+  display: flex;
+  font-family: $body;
+  overflow: hidden;
+  padding: 12px 0;
+
+  &::after {
+    background: $purple;
+    content: '\25BC';
+    padding: 0 12px;
+    pointer-events: none;
+    transition: .25s color ease;
+  }
+
+  &:hover {
+    &::after {
+      color: $white;
+    }
+  }
+
+  select {
+    appearance: none;
+    background-color: $purple;
+    border: 0;
+    box-shadow: none;
+    color: $white;
+    cursor: pointer;
+    font-size: $h6;
+    margin: 0;
+    outline: 0;
+    padding: 0 0 0 12px;
+    width: $width;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.search-result-wrapper {
+  flex-flow: row wrap;
+}
+
+.search-result-item-link {
+  .search-wrap {
+    align-items: stretch;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 160px;
+  }
+}
+
+.search-result-beer-image,
+.beer-description {
+  display: flex;
+}
+
+.search-result-beer-image {
+  flex: 0 0 35%;
+}
+
+.beer-description {
+  flex: 0 0 65%;
+  flex-flow: column nowrap;
+}

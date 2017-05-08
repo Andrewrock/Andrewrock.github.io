@@ -1,0 +1,13 @@
+.featured-beer {
+  flex-flow: row wrap;
+}
+
+.featured-beer-image-wrapper,
+.featured-beer-info-wrapper {
+  flex-direction: column;
+  width: 50%;
+}
+
+.featured-beer-info-wrapper {
+  padding: 24px;
+}

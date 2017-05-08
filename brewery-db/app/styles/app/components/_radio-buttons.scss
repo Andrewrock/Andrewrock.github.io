@@ -1,0 +1,46 @@
+$radio-dimensions: 1px;
+$radio-label-width: 140px;
+
+.filter-button-wrapper {
+  overflow: hidden;
+}
+
+.radio {
+  border: 0;
+  // hide actual radio btn //
+  clip: rect(0, 0, 0, 0);
+  height: $radio-dimensions;
+  overflow: hidden;
+  position: absolute;
+  width: 1$radio-dimensions;
+
+  &:checked + label {
+    background-color: $purple;
+    box-shadow: none;
+    color: $white;
+  }
+}
+
+.radio-label {
+  background-color: $radio-bg;
+  display: inline-block;
+  max-width: $radio-label-width;
+  padding: 12px;
+  text-align: center;
+  transition: all .1s ease-in-out;
+  width: $width;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:first-of-type {
+    border-radius: 4px 0 0 4px;
+  }
+
+  &:last-of-type {
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+

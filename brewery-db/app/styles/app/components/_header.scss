@@ -1,0 +1,26 @@
+$hero-height: 500px;
+
+header {
+  background: url('../images/hero.jpg') $hero-bg center center / cover no-repeat;
+  background-blend-mode: difference;
+  display: flex;
+  height: $hero-height;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: relative;
+  transition: background .25s ease-in-out;
+  width: $width;
+
+  h1 {
+    align-self: flex-end;
+    color: $white;
+    font-family: $pacifico;
+    font-size: 5rem;
+    mix-blend-mode: exclusion;
+    padding-bottom: 12px;
+    text-align: center;
+    width: $width;
+  }
+}
+
+

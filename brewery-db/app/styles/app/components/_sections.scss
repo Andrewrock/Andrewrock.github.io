@@ -1,0 +1,35 @@
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 24px 12px 0;
+
+  &::after {
+    border-bottom: 1px solid $section-border;
+    content: '';
+    padding-bottom: 12px;
+    width: 90%;
+  }
+
+  &:not(.search-container) {
+    &::after {
+      padding-bottom: 64px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  section {
+    padding: 24px 24px 0;
+
+    &::after {
+      width: $width;
+    }
+
+    &:not(.search-container) {
+      &::after {
+        padding-bottom: 128px;
+      }
+    }
+  }
+}
