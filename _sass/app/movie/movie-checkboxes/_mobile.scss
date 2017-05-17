@@ -1,0 +1,64 @@
+.nested-form-wrapper {
+  display: flex;
+  flex: 0 0 $width;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.option-wrapper {
+  padding: 0 6px;
+
+  &:first-of-type {
+    padding: 0 6px 0 0;
+  }
+
+  &:last-of-type {
+    padding: 0 0 0 6px;
+  }
+}
+
+
+.checkbox {
+  // hides the actual checkbox
+  display: none;
+
+  // Label text
+  + label {
+    align-items: center;
+    display: flex;
+    position: relative;
+
+    // Unchecked checkbox box border
+    &::before {
+      border: 2px solid $lavender;
+      border-radius: 4px;
+      content: ' ';
+      cursor: pointer;
+      margin-right: 6px;
+      padding: 12px;
+    }
+  }
+
+  // Checked checkbox box border
+  &:checked + label {
+
+    &::before {
+      border: 2px solid $lavender;
+    }
+
+    // Checkmark
+    &::after {
+      border: 3px solid $lavender;
+      border-left: 0;
+      border-top: 0;
+      content: ' ';
+      cursor: pointer;
+      height: 12px;
+      left: 10px;
+      position: absolute;
+      transform: rotateZ(45deg);
+      width: 6px;
+    }
+  }
+}

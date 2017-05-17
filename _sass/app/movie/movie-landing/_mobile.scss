@@ -1,0 +1,23 @@
+$gump: url('https://images-production.global.ssl.fastly.net/uploads/posts/image/128185/forrest-gump-then-and-now.jpg') center center / contain no-repeat;
+
+$gump2: url('https://media.giphy.com/media/l2Sqc3POpzkj5r8SQ/giphy.gif') center center / contain no-repeat;
+
+
+.nothing {
+  align-items: baseline;
+  background: $gump2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 96px 0;
+  min-height: 300px;
+  width: $width;
+}
+
+.warning-message {
+  align-self: flex-start;
+  color: $lavender;
+  display: flex;
+  font-family: $rubik;
+  mix-blend-mode: exclusion;
+}

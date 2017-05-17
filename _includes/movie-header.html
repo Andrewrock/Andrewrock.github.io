@@ -1,0 +1,8 @@
+<div class="movie-header animated fadeUpOut">
+
+  <img ng-if="details.Response!='True'" ng-repeat="movie in heroResults"
+       ng-src="{{ movie.details.Poster =='N/A' ? 'https://images.unsplash.com/photo-1494380147893-cab0a83aecbe?dpr=2&auto=format&fit=crop&w=1080&h=741&q=80&cs=tinysrgb&crop=&bg=' : movie.details.Poster }}">
+
+  <img ng-if="details.Response==='True'" ng-repeat="movie in movieResults | limitTo: 5" id="{{ $index + 1 }}"
+       ng-src="{{ movie.details.Poster }}" hide-Broken>
+</div>

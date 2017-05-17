@@ -1,0 +1,15 @@
+$max-button-width: 200px;
+
+.movie-btn {
+  background-color: $lavender;
+  border: 2px solid $body-color;
+  border-radius: 4px;
+  color: $body-color;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.5;
+  max-width: $max-button-width;
+  padding: 6px 24px;
+  text-align: center;
+  text-decoration: none;
+}

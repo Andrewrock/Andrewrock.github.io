@@ -1,0 +1,8 @@
+$max-img-movie-width: 535px;
+
+.movie-header {
+
+  img {
+    max-width: $max-img-movie-width;
+  }
+}

@@ -1,0 +1,91 @@
+$search-transition: all .5s;
+$search-header-height: 300px;
+$search-shadow: rgba(0, 0, 0, .05);
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Rubik+Mono+One|Raleway');
+
+$body: 'Open Sans', sans-serif;
+$rubik: 'Rubik Mono One', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+.search-header {
+  align-items: baseline;
+  background-color: $white;
+  box-shadow: 0 2px 2px 2px $search-shadow;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: $search-header-height;
+  padding: 48px 12px;
+  position: relative;
+
+  &::after {
+    color: $lavender;
+    content: 'Search';
+    font-family: $rubik;
+    font-size: 10rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: -48px;
+  }
+}
+
+.search {
+  padding-top: 96px;
+}
+
+.search-input-wrapper,
+.note,
+.select-wrapper,
+.random-wrapper {
+  display: flex;
+  margin: 0 auto 12px;
+  max-width: 500px;
+}
+
+.search-input-wrapper {
+  align-items: center;
+  border-bottom: 1px solid $lavender;
+  border-radius: 0;
+  display: flex;
+  padding: 12px 0;
+  transition: $search-transition;
+
+  & input {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    font-family: $body;
+    font-size: $h1;
+    width: $width;
+
+    &::-webkit-input-placeholder {
+      color: $lavender;
+      font-size: $h1;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  & i {
+    color: $lavender;
+    font-size: $h2;
+  }
+}
+
+.random-wrapper {
+  flex-flow: row wrap;
+  padding: 24px 0;
+
+  .note {
+    flex: 0 0 $width;
+  }
+
+  a {
+    flex: 0 0 $width;
+  }
+}
