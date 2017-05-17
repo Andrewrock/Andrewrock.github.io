@@ -1,8 +1,8 @@
 $hero-bg: #c6b4ff;
 
-header{
+header {
   align-items: center;
-  background:url("https://Andrewrock.github.io/img/bg7.jpg") $hero-bg center center/cover no-repeat;
+  background: url('https://Andrewrock.github.io/img/bg7.jpg') $hero-bg center center / cover no-repeat;
   background-blend-mode: screen;
   display: flex;
   height: 288px;
@@ -13,12 +13,12 @@ header{
   width: $width;
 }
 
-.spikes{
+.spikes {
   bottom:0;
   fill: $background-white;
   height: 72px;
   position: absolute;
-  transition:background-color 2s ease;
+  transition: background-color 2s ease;
   width: $width;
 }
 
@@ -35,15 +35,15 @@ header{
 }
 
 .insta {
-  background: url("https://Andrewrock.github.io/img/bg16.jpg") $hero-bg center center/cover no-repeat;
+  background: url('https://Andrewrock.github.io/img/bg16.jpg') $hero-bg center center / cover no-repeat;
 }
 
 .tutorial {
-  background: url("https://Andrewrock.github.io/img/bg2.jpg") $hero-bg center center/cover no-repeat;
+  background: url('https://Andrewrock.github.io/img/bg2.jpg') $hero-bg center center / cover no-repeat;
 }
 
 .cv {
-  background: url("https://Andrewrock.github.io/img/bg52.jpg") $hero-bg center center/cover no-repeat;
+  background: url("https://Andrewrock.github.io/img/bg52.jpg") $hero-bg center center / cover no-repeat;
   background-blend-mode: color-dodge;
 }
 

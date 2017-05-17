@@ -11,12 +11,13 @@ $post-num: 20;
 .post,
 .post-body,
 .post-content,
-.post-icon{
-  display:flex
+.post-icon {
+  display: flex
 }
+
 .home-posts,
 .post-wrapper,
-.post-footer{
+.post-footer {
   width: $width;
 }
 

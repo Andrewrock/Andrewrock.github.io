@@ -1,0 +1,20 @@
+$movie-header-height: 300px;
+
+.movie-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-height: $movie-header-height;
+  overflow: hidden;
+  width: $width;
+
+  div {
+    width: $width;
+  }
+
+  img {
+    display: flex;
+    flex: 1 0 20%;
+    height: auto;
+  }
+}

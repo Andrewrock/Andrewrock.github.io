@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     '<a class="image insta-image" href="{{image}}">' +
     '<img alt="{{user.full_name}}" src="{{image}}" />' +
     '<div class="img-backdrop">' +
-    '<div class="insta-caption">' +
+    '<div class="i nsta-caption">' +
     '<p>{{caption}}</p>' +
     '</div>' +
     '</div>' +

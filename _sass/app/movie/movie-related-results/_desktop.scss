@@ -1,0 +1,48 @@
+$related-image-height: 80px;
+$related-image-width: 100px;
+
+.related-results {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 6px;
+}
+
+.related-item {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: $raleway;
+  margin-bottom: 6px;
+}
+
+.related-image {
+  display: flex;
+  height: $related-image-height;
+  padding-right: 6px;
+  width: $related-image-width;
+
+  img {
+    height: auto;
+    max-width: $width;
+  }
+}
+
+.related-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: $width;
+}
+
+.related-link {
+  color: $body-color;
+  display: flex;
+  flex: 0 0 $width;
+  font-size: $h5;
+  text-decoration: none;
+}
+
+.related-year {
+  display: flex;
+}
