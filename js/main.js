@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var feed = new Instafeed({
 
     get: 'user',
-        userId: 15736008,
-        accessToken: '15736008.b239643.d2b6bb19a3134c69bbc035dbdbaa8bd9',
+        userId: ,
+        accessToken: '',
         target: 'instafeed',
         sortBy: 'most-liked',
         limit: 10,
