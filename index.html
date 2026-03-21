@@ -1,5 +1,78 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Rock</title>
+    <meta name="description" content="Front-end Developer from Cork, Ireland." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Geist+Mono:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- BLANK -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="homepage">
+      <article>
+        <header>
+          <h1>Andrew Rock</h1>
+          <time id="date"></time>
+        </header>
+        <!-- bio -->
+      </article>
+
+      <!-- <section>
+        <h2>Writing</h2>
+        <ul>
+        </ul>
+      </section> 
+    -->
+
+      <section>
+        <h2>Pens</h2>
+        <ul id="pens">
+          <li class="pens-loading">Loading&hellip;</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <!-- to come -->
+    </footer>
+    <script>
+      // date
+      const now = new Date();
+      const day = now.getDate();
+      const month = now.toLocaleString('en', { month: 'long' });
+      const year = String(now.getFullYear()).slice(-2);
+      const el = document.getElementById('date');
+      el.textContent = `${day} ${month} ${year}`;
+      el.dateTime = now.toISOString().split('T')[0];
+
+      // codepen — served from pens.json, kept fresh by .github/workflows/sync-pens.yml
+      fetch('/pens.json')
+        .then((r) => r.json())
+        .then((items) => {
+          const list = document.getElementById('pens');
+          if (!items.length) throw new Error('empty');
+          list.innerHTML = items
+            .map(({ title, link, pubDate }) => {
+              const date = pubDate ? new Date(pubDate) : null;
+              const label = date
+                ? `${date.getDate()} ${date.toLocaleString('en', { month: 'short' })} ${String(date.getFullYear()).slice(-2)}`
+                : '';
+              return `<li><a href="${link}" target="_blank" rel="noopener noreferrer">${title}<span>${label}</span></a></li>`;
+            })
+            .join('');
+        })
+        .catch(() => {
+          document.getElementById('pens').innerHTML =
+            '<li class="pens-loading">Could not load pens.</li>';
+        });
+    </script>
+  </body>
+</html>

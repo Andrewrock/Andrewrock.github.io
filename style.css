@@ -1,0 +1,225 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   RESET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   HOMEPAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.homepage {
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+  padding-block: var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+/* bio */
+.homepage {
+  header {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semibold);
+    letter-spacing: -0.01em;
+  }
+
+  time {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.homepage article p {
+  color: var(--text-muted);
+  font-size: var(--fs-base);
+  line-height: var(--lh-loose);
+  max-width: 60ch;
+}
+
+.homepage article p + p {
+  margin-top: var(--space-4);
+}
+
+/* writing */
+.homepage section h2 {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  margin-bottom: var(--space-4);
+}
+
+.homepage section ul {
+  list-style: none;
+}
+
+.homepage section ul li a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--border-muted);
+  text-decoration: none;
+  color: var(--link);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.homepage section ul li a:hover {
+  color: var(--link-hover);
+}
+
+.homepage section ul li a span {
+  font-size: var(--fs-sm);
+  color: var(--text-subtle);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+.pens-loading {
+  font-size: var(--fs-sm);
+  color: var(--text-subtle);
+  padding-block: var(--space-3);
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   PALETTE — all oklch
+   Hues: reds/oranges 29–53 · yellows 95–105 · green 155 · pinks 8
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  --red: oklch(0.52 0.22 29);
+  --red-orange: oklch(0.56 0.21 35);
+  --hot-orange: oklch(0.65 0.22 43);
+  --orange: oklch(0.72 0.18 53);
+  --brown: oklch(0.46 0.04 55);
+  --warm-yellow: oklch(0.9 0.18 95);
+  --yellow: oklch(0.96 0.15 100);
+  --light-yellow: oklch(0.98 0.09 105);
+  --ocean-green: oklch(0.52 0.14 155);
+  --sunset-pink: oklch(0.72 0.16 8);
+  --light-pink: oklch(0.82 0.1 8);
+  --xlight-pink: oklch(0.91 0.05 8);
+
+  --white: oklch(1 0 0);
+  --gray-1: oklch(0.98 0.004 75);
+  --gray-2: oklch(0.95 0.006 75);
+  --gray-3: oklch(0.9 0.008 75);
+  --gray-4: oklch(0.82 0.01 75);
+  --gray-5: oklch(0.7 0.01 75);
+  --gray-6: oklch(0.55 0.01 75);
+  --gray-7: oklch(0.38 0.008 75);
+  --gray-8: oklch(0.22 0.006 75);
+  --gray-9: oklch(0.13 0.004 75);
+  --black: oklch(0.08 0 0);
+
+  --bg: light-dark(var(--white), var(--gray-9));
+  --bg-subtle: light-dark(var(--gray-1), var(--gray-8));
+  --bg-muted: light-dark(var(--gray-2), var(--gray-7));
+
+  --text: light-dark(var(--gray-9), var(--gray-1));
+  --text-muted: light-dark(var(--gray-6), var(--gray-4));
+  --text-subtle: light-dark(var(--gray-5), var(--gray-5));
+
+  --border: light-dark(var(--gray-3), var(--gray-7));
+  --border-muted: light-dark(var(--gray-2), var(--gray-8));
+
+  --link: light-dark(var(--gray-9), var(--gray-2));
+  --link-hover: light-dark(var(--hot-orange), var(--orange));
+  --focus: light-dark(var(--orange), var(--warm-yellow));
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Newsreader', Georgia, serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+
+  --fs-xs: clamp(0.75rem, 0.1vi + 0.73rem, 0.8125rem);
+  --fs-sm: clamp(0.875rem, 0.15vi + 0.85rem, 0.9375rem);
+  --fs-base: clamp(1rem, 0.2vi + 0.95rem, 1.0625rem);
+  --fs-md: clamp(1.125rem, 0.3vi + 1.07rem, 1.25rem);
+  --fs-lg: clamp(1.25rem, 0.5vi + 1.15rem, 1.5rem);
+  --fs-xl: clamp(1.5rem, 0.8vi + 1.32rem, 2rem);
+  --fs-2xl: clamp(2rem, 1.6vi + 1.75rem, 3.5rem);
+
+  --lh-tight: 1.2;
+  --lh-snug: 1.4;
+  --lh-normal: 1.6;
+  --lh-loose: 1.8;
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     SPACING
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     RADII
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  --radius-sm: 0.25rem;
+  --radius: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     TRANSITIONS
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast: 100ms;
+  --duration: 200ms;
+  --duration-slow: 350ms;
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     LAYOUT
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  --content-width: 36rem;
+  --content-wide: 52rem;
+
+  color-scheme: light dark;
+}
