@@ -34,8 +34,22 @@
 
       <section>
         <h2>Pens</h2>
-        <ul id="pens">
-          <li class="pens-loading">Loading&hellip;</li>
+        <ul>
+          <li><a href="https://cdpn.io/pen/debug/XJdZJLy" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://cdpn.io/pen/debug/JoXdZOB" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/QwjPzEN" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/YzbvGep" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/WNdKoqr" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/xxpwVJP" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/XWVKvVE" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/oNoYddB" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/NWvaexx" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/mdwKywd" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/bGBvJRy" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/abBVBvo" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/jOEZxrY" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/BaNNPKB" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
+          <li><a href="https://codepen.io/andrewrock/full/BwgvOV" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
         </ul>
       </section>
     </main>
@@ -53,26 +67,6 @@
       el.textContent = `${day} ${month} ${year}`;
       el.dateTime = now.toISOString().split('T')[0];
 
-      // codepen — served from pens.json, kept fresh by .github/workflows/sync-pens.yml
-      fetch('/pens.json')
-        .then((r) => r.json())
-        .then((items) => {
-          const list = document.getElementById('pens');
-          if (!items.length) throw new Error('empty');
-          list.innerHTML = items
-            .map(({ title, link, pubDate }) => {
-              const date = pubDate ? new Date(pubDate) : null;
-              const label = date
-                ? `${date.getDate()} ${date.toLocaleString('en', { month: 'short' })} ${String(date.getFullYear()).slice(-2)}`
-                : '';
-              return `<li><a href="${link}" target="_blank" rel="noopener noreferrer">${title}<span>${label}</span></a></li>`;
-            })
-            .join('');
-        })
-        .catch(() => {
-          document.getElementById('pens').innerHTML =
-            '<li class="pens-loading">Could not load pens.</li>';
-        });
     </script>
   </body>
 </html>
