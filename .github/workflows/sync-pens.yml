@@ -15,9 +15,12 @@ jobs:
 
       - name: Fetch and write pens.json
         run: |
-          curl -sf "https://codepen.io/andrewrock/public/feed/" \
-            -H "User-Agent: Mozilla/5.0" \
+          curl -sL "https://codepen.io/andrewrock/public/feed/" \
+            -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+            -H "Accept: application/rss+xml, application/xml, text/xml" \
             -o feed.xml
+          echo "--- HTTP response preview ---"
+          head -5 feed.xml
 
           node -e "
             const fs = require('fs');
