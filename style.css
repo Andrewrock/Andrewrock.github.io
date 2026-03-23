@@ -492,6 +492,9 @@
       7.5 * (var(--space-3) * 2 + var(--lh-normal) * 1rem + var(--lh-tight) * 0.75rem)
     );
     overflow: auto;
+    /* Prevent layout shift when popover appears */
+    scrollbar-gutter: stable;
+
     scrollbar-width: thin;
     li {
       overflow: hidden;
