@@ -11,18 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Geist+Mono:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
 
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="homepage">
-      <article>
-        <header>
-          <h1>Andrew Rock</h1>
-          <time id="date"></time>
-        </header>
-        <!-- bio -->
+      <header>
+        <h1>
+          Andrew
+          <span>Rock</span>
+        </h1>
+        <time id="date"></time>
+      </header>
+      <article class="bio">
+        <p>
+          I care about software that's easy to reason about. I build design systems around
+          composition, small well-defined primitives that snap together cleanly, semantic HTML as
+          the first line of accessibility. I like constraints. Not as rules to follow, but as
+          decisions already made.
+        </p>
       </article>
 
       <!-- <section>
@@ -33,30 +47,385 @@
     -->
 
       <section>
-        <h2>Pens</h2>
-        <ul>
-          <li><a href="https://cdpn.io/pen/debug/XJdZJLy" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://cdpn.io/pen/debug/JoXdZOB" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/QwjPzEN" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/YzbvGep" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/WNdKoqr" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/xxpwVJP" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/XWVKvVE" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/oNoYddB" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/NWvaexx" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/mdwKywd" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/bGBvJRy" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/abBVBvo" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/jOEZxrY" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/BaNNPKB" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-          <li><a href="https://codepen.io/andrewrock/full/BwgvOV" target="_blank" rel="noopener noreferrer">Untitled<span></span></a></li>
-        </ul>
+        <h2 id="filters-title">Pens</h2>
+        <p>
+          I owe a lot to the
+          <a href="https://codepen.io/andrewrock" target="_blank" rel="noopener noreferrer"
+            >CodePen </a
+          >team. From messing around with CSS in college, presenting at meetups, featuring in
+          CodePen newsletters, to portfolio pieces.
+        </p>
+
+        <p>
+          In a weird way like a journal, scrolling back through old pens shows how my thinking has
+          changed, but they are snapshots of that time and I try not to redo them now.
+        </p>
+
+        <article class="feature">
+          <ul class="post-filters" role="group" aria-labelledby="filters-title">
+            <li class="post-filter">
+              <input
+                type="checkbox"
+                id="filter-new-features"
+                class="filter-checkbox"
+                name="filter"
+                value="new-features"
+              /><label class="filter-label" for="filter-new-features"
+                ><span class="material-symbols-outlined">new_releases</span>New Features</label
+              >
+            </li>
+            <li class="post-filter">
+              <input
+                type="checkbox"
+                id="filter-css"
+                class="filter-checkbox"
+                name="filter"
+                value="css"
+              /><label class="filter-label" for="filter-css"
+                ><span class="material-symbols-outlined">code</span>CSS</label
+              >
+            </li>
+            <li class="post-filter">
+              <input
+                type="checkbox"
+                id="filter-ui"
+                class="filter-checkbox"
+                name="filter"
+                value="ui"
+              /><label class="filter-label" for="filter-ui"
+                ><span class="material-symbols-outlined">desktop_windows</span>UI</label
+              >
+            </li>
+          </ul>
+          <ul class="post-list">
+            <li data-category="new-features">
+              <a
+                href="https://cdpn.io/pen/debug/XJdZJLy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Combining popovers and anchors</span>
+                <span class="post-description"
+                  >Just seeing how popovers and anchors behave together.</span
+                >
+              </a>
+              <span class="badge new-features">New Features</span>
+            </li>
+            <li data-category="new-features">
+              <a
+                href="https://cdpn.io/pen/debug/JoXdZOB"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Exploring the new native HTML selects</span>
+                <span class="post-description">Had a look at the new native select stuff.</span>
+              </a>
+              <span class="badge new-features">New Features</span>
+            </li>
+            <li data-category="new-features">
+              <a
+                href="https://cdpn.io/pen/debug/OPMQyKv"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Exploring Anchor Positioning</span>
+                <span class="post-description"
+                  >Trying to get my head around anchor positioning.</span
+                >
+              </a>
+              <span class="badge new-features">New Features</span>
+            </li>
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/QwjPzEN"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Prompt Builder UI</span>
+                <span class="post-description">A rough UI for putting prompts together.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+            <li data-category="new-features">
+              <a
+                href="https://cdpn.io/pen/debug/YzbvGep"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Exploring scroll driven css animations</span>
+                <span class="post-description">Seeing what scroll-driven animations can do.</span>
+              </a>
+              <span class="badge new-features">New Features</span>
+            </li>
+
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/ogvoNEp"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Exploring CSS Grid Posters</span>
+                <span class="post-description">Messing with poster layouts using grid.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/WbegjVV"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Messi collage</span>
+                <span class="post-description">A bit of a Messi collage experiment.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+
+            <li data-category="new-features">
+              <a
+                href="https://cdpn.io/pen/debug/xxeZLJX"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Native accordion approaches</span>
+                <span class="post-description">Looking at a few native ways to do accordions.</span>
+              </a>
+              <span class="badge new-features">New Features</span>
+            </li>
+
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/WNdKoqr"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Dashboard UI</span>
+                <span class="post-description">Just a simple dashboard layout.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/zdGYYZ"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Homepage ideas</span>
+                <span class="post-description">A few homepage ideas I was playing with.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/jOLYrPe"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Poster idea golf</span>
+                <span class="post-description">A golf poster idea I tried out.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/OJzWmyP"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Agency Dashboard UI</span>
+                <span class="post-description">Another dashboard, this time more agency-ish.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/xxpwVJP"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Exploring Football UI's — Juventus</span>
+                <span class="post-description">A Juventus-themed UI idea.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/XWVKvVE"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Exploring Football UI's — Boca Juniors</span>
+                <span class="post-description">Same idea, but for Boca.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+            <li data-category="css">
+              <a
+                href="https://cdpn.io/pen/debug/oNoYddB"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">CSS motion: Pyramids of Giza</span>
+                <span class="post-description">Tried animating a desert scene in CSS.</span>
+              </a>
+              <span class="badge pure-css">Pure CSS</span>
+            </li>
+            <li data-category="css">
+              <a
+                href="https://cdpn.io/pen/debug/MWxeQQd"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Heroes in a half shell</span>
+                <span class="post-description">A CSS take on the turtles.</span>
+              </a>
+              <span class="badge pure-css">Pure CSS</span>
+            </li>
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/NWvaexx"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Travel Sites ideation UI</span>
+                <span class="post-description">Some ideas for a travel site.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/mdwKywd"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Nat Geo Travel Site ideation</span>
+                <span class="post-description">A travel layout, loosely Nat Geo inspired.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+            <li data-category="css">
+              <a
+                href="https://cdpn.io/pen/debug/bGBvJRy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">CSS Grid centering</span>
+                <span class="post-description">A handy way to center things with grid.</span>
+              </a>
+              <span class="badge pure-css">Pure CSS</span>
+            </li>
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/abBVBvo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Team Kanban Board Tailwind</span>
+                <span class="post-description">A kanban board built with Tailwind.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+            <li data-category="css">
+              <a
+                href="https://cdpn.io/pen/debug/jOEZxrY"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Pure CSS VW Camper</span>
+                <span class="post-description">Made a camper van in CSS.</span>
+              </a>
+              <span class="badge pure-css">Pure CSS</span>
+            </li>
+            <li data-category="css">
+              <a
+                href="https://cdpn.io/pen/debug/BaNNPKB"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Guinness stamp</span>
+                <span class="post-description">A Guinness-style stamp in CSS.</span>
+              </a>
+              <span class="badge pure-css">Pure CSS</span>
+            </li>
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/BwgvOV"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">Steve Jobs Tribute</span>
+                <span class="post-description">A small tribute layout for Steve Jobs.</span>
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+            <li data-category="ui">
+              <a
+                href="https://cdpn.io/pen/debug/JWgMeB"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="post-link"
+              >
+                <span class="post-title">The Masters article</span>
+                <span class="post-description"
+                  >My first go at CSS Grid, based on a magazine layout.</span
+                >
+              </a>
+              <span class="badge ui">UI</span>
+            </li>
+          </ul>
+        </article>
       </section>
     </main>
 
-    <footer>
-      <!-- to come -->
-    </footer>
+    <div class="scroller" aria-hidden="true"></div>
+    <!-- <footer>
+      <article>
+        <h4>This site</h4>
+
+        <p>
+          This site is intentionally static — no frameworks, no build tools, no external
+          dependencies. Just HTML, CSS, and a touch of JavaScript for the interactive elements such
+          as the date and dynamic anchor names.
+        </p>
+
+        <p>
+          We live in a tiny bubble where we as devs are often running latest and in some cases
+          bleeding edge browsers. The teams at the browser companies are constantly working to
+          improve the web for all of us, with two week release cycles it can be hard to keep or ship
+          the latest technologies as commercially we can't garantee users are updating.
+        </p>
+
+        <p>Here this site may or may not</p>
+      </article>
+      <article></article>
+    </footer> -->
     <script>
       // date
       const now = new Date();
@@ -67,6 +436,35 @@
       el.textContent = `${day} ${month} ${year}`;
       el.dateTime = now.toISOString().split('T')[0];
 
+      // unique anchor names for CSS anchor positioning and popover setup
+      // anchor-name and position-anchor both fail via inline styles in Chrome — inject a stylesheet instead
+      const anchorRules = [];
+      document.querySelectorAll('.post-list li').forEach((item, i) => {
+        const name = `--post-link-${i}`;
+        const popoverId = `badge-${i}`;
+        const link = item.querySelector('.post-link');
+        const badge = item.querySelector('.badge');
+
+        // Set up anchor positioning
+        link.dataset.anchorId = i;
+        anchorRules.push(`
+    [data-anchor-id="${i}"] { anchor-name: ${name}; }
+    #${popoverId} { position-anchor: ${name}; }
+  `);
+
+        // Set up popover
+        badge.id = popoverId;
+        badge.setAttribute('popover', 'manual');
+
+        // Show popover on hover/focus
+        link.addEventListener('mouseenter', () => badge.showPopover());
+        link.addEventListener('mouseleave', () => badge.hidePopover());
+        link.addEventListener('focus', () => badge.showPopover());
+        link.addEventListener('blur', () => badge.hidePopover());
+      });
+      const anchorStyles = document.createElement('style');
+      anchorStyles.textContent = anchorRules.join('\n');
+      document.head.appendChild(anchorStyles);
     </script>
   </body>
 </html>
